@@ -1,5 +1,3 @@
-## Getting Setup
-
 1. This Sushi Series will show you how to make a website look polished and professional with cool effects and layouts. You'll learn tricks to make any layout you want, see how to make it adjust itself automatically to different screen sizes, make a collage of overlapping pictures and text, and apply some neat hover and click effects that you might have seen on other websites.
 
 2. To work through the Sushi Cards you will need to start with a website that you already made. For example you can use the one that you made in the Intermediate HTML and CSS series. If you prefer, you can work with my example by either **Downloading** or **Remixing** this trinket: [dojo.soy/html3-website-start](http://dojo.soy/html3-website-start)
