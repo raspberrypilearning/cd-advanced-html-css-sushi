@@ -2,7 +2,7 @@
 
 Here's a technique you could use to make a photo gallery, or a portfolio page showing off all of your projects: little **preview cards**. 
 
-![](images/previewCard_800_214.png)
+![](images/previewCard.png)
 
 - Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
 
