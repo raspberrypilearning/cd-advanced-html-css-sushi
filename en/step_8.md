@@ -2,7 +2,7 @@
 
 Let's add a little movement when you hover over the cards you made earlier! You may remember the `transform` property from the Intermediate Sushi Cards \(when you made things rotate with `@keyframes` animations!\). You can also use it to move something up or down with `translateY` and left or right with `translateX`. 
 
-- Find the `.card:hover` CSS class from earlier and change it to the following. Try out different values in the traslate function!
++ Find the `.card:hover` CSS class from earlier and change it to the following. Try out different values in the traslate function!
 
 ```css
     .card:hover {
@@ -11,11 +11,11 @@ Let's add a little movement when you hover over the cards you made earlier! You 
     }
 ```
    
-- Play about with different pixel values in the `box-shadow` property to see what they do. 
++ Play about with different pixel values in the `box-shadow` property to see what they do. 
      
 `rgba(0,0,0,0.2)` is another way of defining a colour. It's got the usual three numbers \(from `0` up to `255`\) for Red, Green and Blue. The fourth number, called the **alpha** value, sets how see-through something is; it is a number between `0` and `1`.
 
-- Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
 
 ```css
     transition: all 0.2s ease-out;
@@ -25,7 +25,7 @@ A duration of `0.2s` means the transition lasts for `0.2 seconds`.
 
 Another effect you've probably seen on loads of websites is **lightbox**, where you click on something and the screen dims while something else, like a bigger picture or a popup box, appears in front of everything. To get this effect you will make two links.
 
-- The first link is for the actual **lightbox**. It contains all the stuff that will appear when you click. Make sure you give the link itself an `id`. I'm doing mine on the Attractions page of my website. You go with whatever page you have pictures on!
++ The first link is for the actual **lightbox**. It contains all the stuff that will appear when you click. Make sure you give the link itself an `id`. I'm doing mine on the Attractions page of my website. You go with whatever page you have pictures on!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -39,7 +39,7 @@ You can put anything you like in between the link tags. I've got a big picture, 
 
 It doesn't matter where inside the `main` element you put this code, as you will be making it invisible soon!
 
-- The other link is of course the thing that you click to make the lightbox appear. Simply add a pair of `a` tags around the element, in this case a smaller picture of a lemur. The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ The other link is of course the thing that you click to make the lightbox appear. Simply add a pair of `a` tags around the element, in this case a smaller picture of a lemur. The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
 ```html
     <a href="#boxLemur">
@@ -47,7 +47,7 @@ It doesn't matter where inside the `main` element you put this code, as you will
     </a>
 ```
 
-- Here's the CSS for the lightbox. Can you work out what most of it does?
++ Here's the CSS for the lightbox. Can you work out what most of it does?
 ```css
     .lightbox{
         background: rgba(0,0,0,0.8);

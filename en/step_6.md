@@ -1,12 +1,12 @@
 ## Design cool page layouts
 
-- For this card you should work with a page that contains a `main` element with three elements inside, one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card onto the Attractions page. 
++ For this card you should work with a page that contains a `main` element with three elements inside, one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card onto the Attractions page. 
 
 Here are three different page layouts you'll be applying: 
 
 ![](images/GridLayouts_390_1200.png)
 
-- Add new CSS classes to `main` and each of three elements inside it.
++ Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
     <main class="attPageLayoutGrid">
@@ -26,7 +26,7 @@ The container you'll change the layout of is `main`, but you could do this with 
 
 In this example the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
 
-- Set the `display` property to `grid` on the overall container:
++ Set the `display` property to `grid` on the overall container:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example the `header` and `footer` will be left out of the design, but it
     }
 ```
 
-- What do you think the `grid-column-gap` and `grid-row-gap` properties do?
++ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 
-- Next, you name a `grid-area` for each element: 
++ Next, you name a `grid-area` for each element: 
 
 ```css
     .attGridArticle {
@@ -54,7 +54,7 @@ In this example the `header` and `footer` will be left out of the design, but it
 
 Then you design your layout! Let's put the two `aside` elements side by side at the bottom. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
 
-- Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Put the following code inside the `.attPageLayoutGrid` CSS rules:
 
 ```css
     grid-template-rows: auto;
@@ -68,7 +68,7 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
 
 Let's try putting the `aside` elements over on the right, and making them half the width of the `article`.
 
-- Change the values of `grid-template-columns` and `grid-template-areas` to:
++ Change the values of `grid-template-columns` and `grid-template-areas` to:
 
 ```css
     grid-template-columns: 2fr 1fr;

@@ -1,6 +1,6 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+This Sushi Series will show you how to make a website look polished and professional with cool effects and layouts. 
 
 ### What you will make
 
@@ -14,12 +14,5 @@ Add instructions here. These should explain either how the finished project will
 
 ### What you will learn
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+You'll learn tricks to make any layout you want, see how to make it adjust itself automatically to different screen sizes, make a collage of overlapping pictures and text, and apply some neat hover and click effects that you might have seen on other websites.
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level){:target="_blank"}
-
-### Additional information for educators
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
-
-Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.

@@ -2,7 +2,7 @@
 
 If you want to add a **caption** to a picture, that is, some text that goes with it like a title or short description, then you could make use of two elements designed just for that purpose: `figure` and `figcaption`!
 
-- Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
++ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
 
 ```html
   <img id="imgTito" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
@@ -11,9 +11,9 @@ If you want to add a **caption** to a picture, that is, some text that goes with
   </p>
 ```
 
-- On the line above the code, add the tag `<figure>`. Place the closing tag `<\figure>` on a new line after the code.
++ On the line above the code, add the tag `<figure>`. Place the closing tag `<\figure>` on a new line after the code.
 
-- Next, remove the `p` tags, or whatever tags you have around the text \(maybe it's a heading, like `h2`?\) and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ Next, remove the `p` tags, or whatever tags you have around the text \(maybe it's a heading, like `h2`?\) and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
 
 ```html
   <figure>
@@ -41,7 +41,7 @@ The `figure` element acts as a sort of **container** for your picture and its ca
    
 Another useful container is `aside`. You use it when you have extra stuff that doesn't really belong with the main information on a page. For example, the Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions.
 
-- Outside of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ Outside of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
 
 ```html  
   <aside class="lightPurpleBackground">
@@ -75,6 +75,6 @@ Did you spot the bonus element in there, `span`? It's a special tag you can use 
 
 On the next card you're going to learn how to make the layout more interesting! 
 
-- To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
 
    
