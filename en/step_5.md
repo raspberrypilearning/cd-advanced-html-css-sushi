@@ -1,80 +1,55 @@
-## Sidenotes and captions
+## All in a row
 
-If you want to add a **caption** to a picture, that is, some text that goes with it like a title or short description, then you could make use of two elements designed just for that purpose: `figure` and `figcaption`!
+On this card you will learn some tricks for arranging things **horizontally** on a page.
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
+First, getting stuff centered! 
 
-```html
-  <img id="imgTito" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
-  <p>
-    Tour guide Tito!
-  </p>
-```
-
-+ On the line above the code, add the tag `<figure>`. Place the closing tag `<\figure>` on a new line after the code.
-
-+ Next, remove the `p` tags, or whatever tags you have around the text \(maybe it's a heading, like `h2`?\) and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
-
-```html
-  <figure>
-      <img id="imgTito" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
-      <figcaption>
-      Tour guide Tito!
-      </figcaption>
-  </figure>
-```
-   
-The `figcaption` element is your `caption`. It can go either above the `img` element or below it.
-
-When your web page updates, the picture and text might have changed position. Maybe you were happy with the original positioning of the elements and don't want this. Simply define CSS rules for the `figure` and set the margin properties to zero, or values that suit you. You can style both `figure` and `figcaption` as you would any other element, with background colour, borders, and everything else.
++ Add the following CSS properties to the `.card` class:
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+    margin-left: auto;
+    margin-right: auto;
 ```
 
-The `figure` element acts as a sort of **container** for your picture and its caption. As well as allowing you to treat them as one unit when defining styles, grouping them together logically helps to maintain a good structure to your website.
-   
-Another useful container is `aside`. You use it when you have extra stuff that doesn't really belong with the main information on a page. For example, the Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions.
+By setting the left and right margins to `auto` you can make any element be in the middle instead of over to the left. 
+That's one common problem solved! Another is arranging elements side by side in a row. 
 
-+ Outside of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. It's a general purpose container you can use for grouping things and making nice layouts.
 
-```html  
-  <aside class="lightPurpleBackground">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
-    </aside>
-    <aside class="lightPurpleBackground">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
-  </aside>
+```html
+    <div class="cardContainer">
 ```
 
-The `aside`, `article` and other containers are similar. The only real difference is in the **meaning**, that is, what you use them for. It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
-  
-You can write some CSS rules to make the `aside` elements look different or stand out if you want to. 
-
-Did you spot the bonus element in there, `span`? It's a special tag you can use just for adding extra CSS! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
++ Add the following CSS in your stylesheet:
 
 ```css
-  .lightPurpleBackground {
-    background-color: #CFBFFF;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
 ```
 
-On the next card you're going to learn how to make the layout more interesting! 
+Voilà! Thanks to **Flex** Your cards are now displayed side by side! 
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Drag the edge of your window to make the website wider and narrower and watch how the cards move around to fit the window size.
 
++ Try deleting the `width` and `height` properties from the `.card` class and see what happens: **Flex** cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
+
+If you have a navigation menu at the top of your page, that's another place you might use this trick. 
+
++ Find the CSS rules for your menu. If you prefer, you can try it out with my website. 
+
++ Delete `display: inline;` from the **list items** \(in my website, that's the `nav ul li` block.\). Then, in the list, `nav ul`, add in 
+
+```css
+    display: flex;
+    justify-content: flex-start;
+```
    
+You end up with pretty much the same menu, right? The cool thing about Flex is you can control the layout with the property `justify-content`. 
+
++ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
+
+**Flex** is a pretty powerful layout tool that could fill a whole Sushi Series of it's own, but you can learn more at [dojo.soy/html3-flex](http://dojo.soy/html3-flex)

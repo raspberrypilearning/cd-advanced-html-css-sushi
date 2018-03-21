@@ -1,87 +1,95 @@
-## All in a row
+## Clickable cards
 
-On this card you will learn some tricks for arranging things **horizontally** on a page.
+Here's a technique you could use to make a photo gallery, or a portfolio page showing off all of your projects: little **preview cards**. 
 
-First, getting stuff centered! 
+![](images/previewCard.png)
 
-+ By setting the left and right margins to `auto` you can make any element be in the middle instead of over to the left. Try it now on the `.card` class.
-
-```css
-    margin-left: auto;
-    margin-right: auto;
-```
-
-That's one common problem solved! Another is arranging elements side by side in a row. 
-
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. It's a general purpose container you can use for grouping things and making nice layouts.
++ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
 
 ```html
-    <div class="cardContainer">
+    <article class="card">
+        <img src="monkey-2223271_640.jpg" class="smallPics">
+        <h3>Fota Wildlife Park</h3>
+        <p>Fota Island, County Cork</p>
+    </article>
 ```
-
-+ Add the following CSS in your stylesheet:
+    
++ Add the following CSS code to create the classes `card` and `smallPics`:
 
 ```css
-    .cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
+    .smallPics {
+        height: 60px;
+        border-radius: 10px;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #F0FFFF;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        font-family: "Lato", sans-serif;
+    }
+    .card:hover {
+        border-color: #1E90FF;
     }
 ```
 
-Voilà! Thanks to **Flex** Your cards are now displayed side by side! Drag the vertical slider on Trinket's code pane and watch how the cards move around to fit the window size.
-
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: **Flex** cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
-
-If you have a navigation menu at the top of your page, that's another place you might use this trick. 
-
-+ Find the CSS rules for your menu. If you prefer, you can try it out with my website. 
-
-+ Delete `display: inline;` from the **list items** \(in my website, that's the `nav ul li` block.\). Then, in the list, `nav ul`, add in 
+The `Lato` font-family is used a lot in CoderDojo materials. You can also use `League Gothic` for a "CoderDojo-y" heading:
 
 ```css
-    display: flex;
-    justify-content: flex-start;
+    h3 {
+        font-family: "League Gothic", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+```
+
+Let's turn the whole thing into a link so people can click to see more information. 
+
++ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website or it could be another website entirely.
+
+```html
+    <a href="attractions.html#scFota">  
+        <article class="card ">
+            <img src="monkey-2223271_640.jpg" class="smallPics">
+            <h3>Fota Wildlife Park</h3>
+            <p>Fota Island, County Cork</p>
+        </article>
+    </a>
+```
+
+--- collapse ---
+---
+title: Linking to a specific part of a page
+---
+
+Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page. 
+
++ First you type the URL of the page to link to, followed by `#`. 
+
++ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Resetting styles
+---
+
+Now that the whole thing is a link, the text font may have changed. 
+
++ If so, you can fix it by adding a **CSS class** to the link, `class="cardLink"`. Here's the CSS code to put in your stylesheet:
+
+```css
+    .cardLink {
+        color: inherit;
+        text-decoration: none;
+    }
 ```
    
-You end up with pretty much the same menu, right? The cool thing about Flex is you can control the layout with the property `justify-content`. 
+Setting the value of any property to `inherit` makes it use the value that the **parent** element has, so in this case the text colour will match the rest of the text on the homepage.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
+--- /collapse ---
 
-A **responsive** website is one that adjusts itself to the screen size: so it always looks great whether you're looking at it on a computer, mobile phone or tablet. Let's make your menu responsive. Start with the regular styles: this will be your **default** behaviour.
-
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values that you are missing.
-
-```css
-    nav ul {
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
-```
-
-With the CSS above you're going **mobile first**: the default style is good for small screens. You define different styles for bigger screens like this:
-
-```css
-    @media all and (min-width: 600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
-```
-
-Everything inside this block applies whenever the window is wider than **600 pixels**. 
-
-+ Can you add another block for screens bigger than **800 pixels**, with `flex-end` instead of `space-around`?
-
-**Flex** is a pretty powerful layout tool that could fill a whole Sushi Series of it's own, but you can learn more at [dojo.soy/html3-flex](http://dojo.soy/html3-flex)
-
-+ Trinket's project window is quite small. To test out your website on a full size screen, download the project and open up the file `index.html` in a browser. Adjust the width of the window to see the menu change! You can put any CSS rules you like into these blocks, to define different styles for different screen sizes. It'll be especially useful when you do **CSS grid** layouts later!
++ Make at least four or five of these cards. If you are working from my example website you could do one for each of the sections on the attractions page. On the next Sushi Card you'll arrange the cards with a cool trick!

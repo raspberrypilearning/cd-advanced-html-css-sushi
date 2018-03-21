@@ -1,89 +1,38 @@
-## Design cool page layouts
+## Make your menu responsive
 
-+ For this card you should work with a page that contains a `main` element with three elements inside, one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card onto the Attractions page. 
+A **responsive** website is one that adjusts itself to the screen size: so it always looks great whether you're looking at it on a computer, mobile phone or tablet. Let's make your menu responsive. Start with the regular styles: this will be your **default** behaviour.
 
-Here are three different page layouts you'll be applying: 
-
-![](images/GridLayouts_390_1200.png)
-
-+ Add new CSS classes to `main` and each of three elements inside it.
-
-```html
-    <main class="attPageLayoutGrid">
-        <article class="attGridArticle">
-            <!--other stuff here-->
-        </article>
-        <aside class="attGridAside1">
-            <!--other stuff here-->
-        </aside>
-        <aside class="attGridAside1">
-            <!--other stuff here-->
-        </aside>
-    </main>
-```
-
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
-
-In this example the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
-
-+ Set the `display` property to `grid` on the overall container:
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values that you are missing.
 
 ```css
-    .attPageLayoutGrid {
-        display: grid;
-        grid-column-gap: 0.5em;
-        grid-row-gap: 1em;
+    nav ul {
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center; 
+        list-style-type: none;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
     }
 ```
 
-+ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
-
-+ Next, you name a `grid-area` for each element: 
+With the CSS above you're going **mobile first**: the default style is good for small screens. You define different styles for bigger screens like this:
 
 ```css
-    .attGridArticle {
-        grid-area: agArticle;
-    }
-    .attGridAside1 {
-        grid-area: agAside1;
-    }
-    .attGridAside2 {
-        grid-area: agAside2;
+    @media all and (min-width: 600px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
+Everything inside this block applies whenever the window is wider than **600 pixels**. 
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Can you add another block for screens bigger than **800 pixels**, with `flex-end` instead of `space-around`?
 
-```css
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "agArticle agArticle"
-        "agAside1 agAside2";
-```
-    
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+**Flex** is a pretty powerful layout tool that could fill a whole Sushi Series of it's own, but you can learn more at [dojo.soy/html3-flex](http://dojo.soy/html3-flex)
 
-Let's try putting the `aside` elements over on the right, and making them half the width of the `article`.
-
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
-
-```css
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2";
-```
-
-If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
-
-```css
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2"
-        "agArticle . ";
-```
-
-With **CSS grid** you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid)
++ Trinket's project window is quite small. To test out your website on a full size screen, download the project and open up the file `index.html` in a browser. Adjust the width of the window to see the menu change! You can put any CSS rules you like into these blocks, to define different styles for different screen sizes. It'll be especially useful when you do **CSS grid** layouts later!

@@ -1,72 +1,89 @@
-## Special effects
+## Design cool page layouts
 
-Let's add a little movement when you hover over the cards you made earlier! You may remember the `transform` property from the Intermediate Sushi Cards \(when you made things rotate with `@keyframes` animations!\). You can also use it to move something up or down with `translateY` and left or right with `translateX`. 
++ For this card you should work with a page that contains a `main` element with three elements inside, one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card onto the Attractions page. 
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following. Try out different values in the traslate function!
+Here are three different page layouts you'll be applying: 
 
-```css
-    .card:hover {
-        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
-        transform: translateY(-2px);
-    }
-```
-   
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
-     
-`rgba(0,0,0,0.2)` is another way of defining a colour. It's got the usual three numbers \(from `0` up to `255`\) for Red, Green and Blue. The fourth number, called the **alpha** value, sets how see-through something is; it is a number between `0` and `1`.
+![](images/GridLayouts_390_1200.png)
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
-
-```css
-    transition: all 0.2s ease-out;
-``` 
-
-A duration of `0.2s` means the transition lasts for `0.2 seconds`.
-
-Another effect you've probably seen on loads of websites is **lightbox**, where you click on something and the screen dims while something else, like a bigger picture or a popup box, appears in front of everything. To get this effect you will make two links.
-
-+ The first link is for the actual **lightbox**. It contains all the stuff that will appear when you click. Make sure you give the link itself an `id`. I'm doing mine on the Attractions page of my website. You go with whatever page you have pictures on!
++ Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
-    <a href="#_" class="lightbox" id="boxLemur">
-        <h3>Lemur!!</h3>
-        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" class="bigPics"/>
-        <p>A lemur enjoying a little snack</p>
-        </a>
+    <main class="attPageLayoutGrid">
+        <article class="attGridArticle">
+            <!--other stuff here-->
+        </article>
+        <aside class="attGridAside1">
+            <!--other stuff here-->
+        </aside>
+        <aside class="attGridAside1">
+            <!--other stuff here-->
+        </aside>
+    </main>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading and some text. Maybe you just want a picture and no text.
+The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
-It doesn't matter where inside the `main` element you put this code, as you will be making it invisible soon!
+In this example the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
 
-+ The other link is of course the thing that you click to make the lightbox appear. Simply add a pair of `a` tags around the element, in this case a smaller picture of a lemur. The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ Set the `display` property to `grid` on the overall container:
 
-```html
-    <a href="#boxLemur">
-        <img src="monkey-2223271_640.jpg" class="smallPics">
-    </a>
-```
-
-+ Here's the CSS for the lightbox. Can you work out what most of it does?
 ```css
-    .lightbox{
-        background: rgba(0,0,0,0.8);
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        visibility: hidden;
-        z-index: 999;
+    .attPageLayoutGrid {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 1em;
     }
-    .lightbox:target {
-        visibility: visible;
+```
+
++ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+
++ Next, you name a `grid-area` for each element: 
+
+```css
+    .attGridArticle {
+        grid-area: agArticle;
     }
+    .attGridAside1 {
+        grid-area: agAside1;
+    }
+    .attGridAside2 {
+        grid-area: agAside2;
+    }
+```
+
+Then you design your layout! Let's put the two `aside` elements side by side at the bottom. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
+
++ Put the following code inside the `.attPageLayoutGrid` CSS rules:
+
+```css
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "agArticle agArticle"
+        "agAside1 agAside2";
 ```
     
-Setting the `position` property to `fixed` means it stays put when you scroll. The `:target` **pseudo-class** only applies when the lightbox was the target of the last link clicked. So when you click anywhere the `visibility` will be set back to `hidden`.
+`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class. Just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and you use the `id` as the `href` value in that link; just as you've done above!
+Let's try putting the `aside` elements over on the right, and making them half the width of the `article`.
+
++ Change the values of `grid-template-columns` and `grid-template-areas` to:
+
+```css
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2";
+```
+
+If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
+
+```css
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2"
+        "agArticle . ";
+```
+
+With **CSS grid** you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid)
