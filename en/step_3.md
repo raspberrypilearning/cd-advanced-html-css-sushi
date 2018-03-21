@@ -1,4 +1,4 @@
-## Getting Setup
+## Getting setup
 
 To work through the Sushi Cards you will need to start with a website that you already made. For example you can use the one that you made in the Intermediate HTML and CSS series. If you prefer, you can work with my example by either **Downloading** or **Remixing** this trinket: [dojo.soy/html3-website-start](http://dojo.soy/html3-website-start)
 
