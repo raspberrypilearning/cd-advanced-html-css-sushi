@@ -27,9 +27,10 @@ On this card you'll learn about two more types of **container** element, one tha
 The `figcaption` element is your `caption`. It can go either above the `img` element or below it.
 
 --- collapse ---
---- 
+---
 title: Why is this useful?
 ---
+
 The `figure` element acts as a sort of **container** for your picture and its caption. 
 
 This allows you to treat them as one unit when defining styles.
@@ -70,7 +71,7 @@ Now let's look at another useful container: `aside`. You use it when you have ex
 ```
 
 --- collapse ---
---- 
+---
 title: Why is this useful?
 ---
 
