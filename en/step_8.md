@@ -86,4 +86,32 @@ If you don't want the `aside` elements to stretch all the way to the bottom, you
         "agArticle . ";
 ```
 
+--- challenge ---
+
+## Challenge: Make different layouts for different screen sizes
+
++ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is?
+
+--- hints ---
+
+--- hint ---
+
+The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }  
+```
+
+--- /hint ---
+
+--- /hints ---
+
+
+--- /challenge ---
+
 With **CSS grid** you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid)

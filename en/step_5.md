@@ -1,8 +1,6 @@
 ## All in a row
 
-On this card you will learn some tricks for arranging things **horizontally** on a page.
-
-First, getting stuff centered! 
+On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row. 
 
 + Add the following CSS properties to the `.card` class:
 
@@ -12,7 +10,6 @@ First, getting stuff centered!
 ```
 
 By setting the left and right margins to `auto` you can make any element be in the middle instead of over to the left. 
-That's one common problem solved! Another is arranging elements side by side in a row. 
 
 + Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. It's a general purpose container you can use for grouping things and making nice layouts.
 
