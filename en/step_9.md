@@ -50,9 +50,11 @@ This code places the cat picture **100 pixels** from the top and **60 pixels** i
 
 Note: The position values can also be negative!
 
-+ 
+Finally, you might want to have some of the pictures overlapping. But how do you choose which one goes on top?
 
-+ Try using the `z-index` property to make some of your images overlap.
++ Choose two images and give them positions that cause them to overlap.
+
++ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other. Your CSS code for those two images might look something like this now: 
 
 ```css
     #imgHorse {
@@ -69,19 +71,131 @@ Note: The position values can also be negative!
     }
 ```
 
++ Take a look at the result on your webpage.
+
+![](images/horse10Cat7.png)
+
++ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
+
+![](images/horse7Cat10.png)
+
 --- collapse ---
 ---
 title: How does z-index work?
 ---
 
-The `z-index` property lets you decide how the elements should overlap.
+The `z-index` property lets you decide how two or more elements should overlap.
 
 The value can be any whole number. 
 
-The element with the **highest** number ends up on **top** of the pile!
+The element with the **highest** number ends up on **top** of the pile, or at the very front. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
 
 --- /collapse ---
 
-You can position any html elements in this way, not just images. 
+You can position any html elements in this way, not just images. For example, you could use a `p` element to add some text over a photo, as in this example:
 
-+ Try creating your own collage of photos, perhaps with some text over the top! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
+![Photo collage with text over the top](images/photoCollageExample.png)
+
+
+--- challenge ---
+
+## Challenge: Make a photo collage
+
++ Try creating your own collage of photos like the one shown above! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
+
+
+--- hints ---
+
+--- hint ---
+
+Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+
+```html
+    <div id="photoBox" class="relPos">
+        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
+        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
+        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
+        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
+        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+        <p id="photoText" class="absPos">Ireland</p>
+    </div>
+```
+   
+--- /hint ---
+
+--- hint ---
+
+Here are the CSS rules which set the positions for each of my pictures in the collage:
+
+```css
+    #imgHorse {
+        width: 120px;
+        top: 200px;
+        left: 390px;
+        z-index: 10;
+    }
+    #imgSheep {
+        width: 200px;
+        top: 100px;
+        left: 20px;
+        z-index: 8;
+    }
+    #imgCoast {
+        width: 150px;
+        top: 250px;
+        left: 10px;
+        z-index: 5;
+    }
+    #imgTrees {
+        width: 110px;
+        top: 65px;
+        left: 205px;
+        z-index: 9;
+    }
+    #imgTeaCat {
+        width: 250px;
+        top: 210px;
+        left: 160px;
+        z-index: 7;
+    }
+    #imgStreet {
+        width: 180px;
+        top: 90px;
+        left: 310px;
+        z-index: 6;
+    }
+    #photoText {
+        font-family: "brush script MT";
+        color: lightgreen;
+        font-size: 4em;
+        left: 35px;
+        top: 15px;
+        z-index: 20;
+    }
+```
+
+--- /hint ---
+
+--- hint ---
+
+Here are the CSS classes I've used:
+
+```css
+    .collagePhoto {
+        border: 1px solid white;
+    }
+    .relPos {
+        position: relative;
+    }
+    .absPos {
+        position: absolute;
+    }
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /challenge ---
+
