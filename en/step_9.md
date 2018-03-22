@@ -15,7 +15,7 @@ On this card you will use CSS to position HTML elements exactly and make a photo
    
 The photos will appear one after the other on the web page, in the order they appear in your code.
    
-+ In your CSS file, add the following CSS class for the elements inside the `div`. The property `position: absolute;` lets you choose exact positions for them.  create an empty set of style rules for each of the elements using **id selectors**, and choose a size for each picture.
++ In your CSS file, add the following CSS class for the elements inside the `div`: 
 
 ```css
     .absPos {
@@ -29,17 +29,21 @@ The photos will appear one after the other on the web page, in the order they ap
     .relPos {
         position: relative;
     }
+    
     #photoBox {
         width: 800px;
         height: 400px;
     }
 ```
 
-+ Then, choose the exact size and position you want for each picture. There are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position and use either `left` or `right` for the horizontal position.
++ Then, create a set of style rules for each of the elements using **id selectors**, where you will define the size (`width` and/or `height` properties) as well as the exact positions.
+
+To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position and use either `left` or `right` for the horizontal position.
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-This code places the cat picture **100 pixels** from the top and **60 pixels** in from the left.
++ Using any of the properties `left`, `right`, `top`, and `bottom`, choose exact positions for each of your pictures. For example, this code places the cat picture **100 pixels** from the top and **60 pixels** in from the left.
+
 ```css
     #imgTeaCat {
         width: 250px;
@@ -48,7 +52,7 @@ This code places the cat picture **100 pixels** from the top and **60 pixels** i
     }
 ```
 
-Note: The position values can also be negative!
+Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
 
 Finally, you might want to have some of the pictures overlapping. But how do you choose which one goes on top?
 
