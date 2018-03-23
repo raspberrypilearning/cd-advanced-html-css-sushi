@@ -42,7 +42,7 @@ To define the position of an element, there are four properties you can use: `le
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Using any of the properties `left`, `right`, `top`, and `bottom`, choose exact positions for each of your pictures. For example, this code places the cat picture **100 pixels** from the top and **60 pixels** in from the left.
++ Choose exact positions for each of your pictures and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture **100 pixels** from the top and **60 pixels** in from the left.
 
 ```css
     #imgTeaCat {
@@ -58,22 +58,7 @@ Finally, you might want to have some of the pictures overlapping. But how do you
 
 + Choose two images and give them positions that cause them to overlap.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other. Your CSS code for those two images might look something like this now: 
-
-```css
-    #imgHorse {
-        width: 120px;
-        top: 20px;
-        left: 10px;
-        z-index: 10;
-    }
-    #imgTeaCat {
-        width: 250px;
-        top: 100px;
-        left: 60px;
-        z-index: 7;
-    }
-```
++ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other. 
 
 + Take a look at the result on your webpage.
 
@@ -92,20 +77,17 @@ The `z-index` property lets you decide how two or more elements should overlap.
 
 The value can be any whole number. 
 
-The element with the **highest** number ends up on **top** of the pile, or at the very front. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+The element with the **highest** number ends up on **top** of the pile, or in other words, at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
 
 --- /collapse ---
 
-You can position any html elements in this way, not just images. For example, you could use a `p` element to add some text over a photo, as in this example:
-
-![Photo collage with text over the top](images/photoCollageExample.png)
-
+You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
 
 --- challenge ---
 
 ## Challenge: Make a photo collage
 
-+ Try creating your own collage of photos like the one shown above! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
 
 
 --- hints ---
@@ -200,6 +182,8 @@ Here are the CSS classes I've used:
 --- /hint ---
 
 --- /hints ---
+
+![Photo collage with text over the top](images/photoCollageExample.png)
 
 --- /challenge ---
 
