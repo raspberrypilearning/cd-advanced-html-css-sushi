@@ -37,7 +37,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![The same image and text with styles added to create a small card effect](images/cardStyled.png)
+![Image and text with styling to create a small card effect](images/cardStyled.png)
 
 Let's turn the whole thing into a link so people can click to see more information. 
 

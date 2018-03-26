@@ -15,7 +15,7 @@ You can add code that then checks the size of the screen and makes some adjustme
 
 --- /collapse ---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values that you are missing.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
 
 ```css
     nav ul {
@@ -32,6 +32,8 @@ You can add code that then checks the size of the screen and makes some adjustme
 ```
 
 With the CSS above, your menu will be best suited to small screens. This is called **mobile first** development. 
+
+![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
 
 --- collapse ---
 ---
@@ -57,9 +59,22 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **100 pixels** wide or more, it will apply all the style rules inside the block.
+The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
 
-The block contains new values for only some properties of the nav menu. Whenever the window is wider than **1000 pixels**, these new values will be applied instead of the ones you already defined for `nav ul`. The rest of the properties you defined previously for `nav ul` will stay the same.
+![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+
+--- collapse ---
+---
+title: How does it work?
+---
+
+The block contains new values for only some properties of the nav menu. 
+
+Whenever the window is wider than **1000 pixels**, these new values will be applied instead of the ones you already defined for `nav ul`. 
+
+The rest of the properties you defined previously for `nav ul` will stay the same.
+
+--- /collapse ---
 
 + If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full size screen.
 
@@ -68,6 +83,8 @@ The block contains new values for only some properties of the nav menu. Whenever
 ## Challenge: Make your menu adjust itself for big screens
 
 + Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
+
+![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
 
 --- hints ---
 

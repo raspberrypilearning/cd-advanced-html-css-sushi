@@ -40,7 +40,7 @@ Voilà! Thanks to **Flex** Your cards are now displayed side by side!
 
 + Try deleting the `width` and `height` properties from the `.card` class and see what happens: **Flex** cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
 
-![Cards displayed neatly side by side with automatic width](images/flexAutoWidths.png)
+![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
 
 If you have a navigation menu at the top of your page, that's another place you might use this trick. Your menu needs to be composed of list elements, `li` for this next bit. If you prefer, you can try it out with my website.
 
