@@ -2,7 +2,7 @@
 
 Here's a technique you could use to make a photo gallery, or a portfolio page showing off all of your projects: little **preview cards**. 
 
-![](images/previewCard.png)
+![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
 + Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
 
@@ -13,7 +13,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
         <p>Fota Island, County Cork</p>
     </article>
 ```
-    
+
+![Image and text before styles are applied](images/cardUnstyled.png)   
+
 + Add the following CSS code to create the classes `card` and `smallPics`:
 
 ```css
@@ -28,22 +30,14 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
         border-radius: 10px;
         box-sizing: border-box;
         margin-top: 10px;
-        font-family: "Lato", sans-serif;
+        font-family: "Trebuchet MS", sans-serif;
     }
     .card:hover {
         border-color: #1E90FF;
     }
 ```
 
-The `Lato` font-family is used a lot in CoderDojo materials. You can also use `League Gothic` for a "CoderDojo-y" heading:
-
-```css
-    h3 {
-        font-family: "League Gothic", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-    }
-```
+![The same image and text with styles added to create a small card effect](images/cardStyled.png)
 
 Let's turn the whole thing into a link so people can click to see more information. 
 
@@ -58,6 +52,8 @@ Let's turn the whole thing into a link so people can click to see more informati
         </article>
     </a>
 ```
+
+![Text and picture that has been turned into a link](images/cardLink.png)
 
 --- collapse ---
 ---

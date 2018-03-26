@@ -6,11 +6,11 @@ This Sushi Series will show you how to make a website look polished and professi
 
 Add something here to showcase here, for example:
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
+<div class="trinket">
+  <iframe src="https://trinket.io/embed/html/1b60a25bf3?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  </iframe>
+  <!-- <img src="images/magazine-final.png"> -->
 </div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
 
 ### What you will learn
 
