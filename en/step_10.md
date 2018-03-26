@@ -58,7 +58,7 @@ Another effect you've probably seen on loads of websites is **lightbox**, where 
 
 To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
 
-+ Decide what things you want to appear when you click, and put them all in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ Decide what things you want to appear when you click, and add them all to your page, in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -106,5 +106,9 @@ Note: Setting the `position` property to `fixed` means it stays put when you scr
 ```
     
 The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere the `visibility` will be set back to `hidden`.
+
++ Try clicking your new link to see the lightbox appear! To make it go away, you just click anywhere.
+
+![Lightbox effect in action](images/lightboxLemur.png)
 
 You can add as many lightboxes as you want to a page. They can all use the same CSS class. Just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and you use the `id` as the `href` value in that link; just as you've done above!
