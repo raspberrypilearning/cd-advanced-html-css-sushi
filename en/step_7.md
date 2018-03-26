@@ -7,7 +7,7 @@ On this card you'll learn about two more types of **container** element, one tha
 + Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
 
 ```html
-  <img id="imgTito" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
+  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
   <p>
     Tour guide Tito!
   </p>
@@ -19,7 +19,7 @@ On this card you'll learn about two more types of **container** element, one tha
 
 ```html
   <figure>
-      <img id="imgTito" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
+      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />  		
       <figcaption>
       Tour guide Tito!
       </figcaption>
@@ -27,6 +27,8 @@ On this card you'll learn about two more types of **container** element, one tha
 ```
    
 The `figcaption` element is your `caption`. It can go either above the `img` element or below it.
+
+![Picture of Tito with a caption](images/figureAndCaption.png)
 
 --- collapse ---
 ---
@@ -58,17 +60,17 @@ The Attractions page on my website is a list of places to visit. I want to add s
 
 + Go to a page of your website that has an `article` element on it – I'm using `attractions.html`. 
 
-+ Outside of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
 
 ```html  
-  <aside class="lightPurpleBackground">
+  <aside class="sideNoteStyle">
       <h2>Getting around</h2>
       <h3>Train and bus</h3>
       <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
       <h3>Car</h3>
       <p>The easiest way to get around outside of the cities is by car.</p>
     </aside>
-    <aside class="lightPurpleBackground">
+    <aside class="sideNoteStyle">
       <h2>Weather</h2>
       <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
   </aside>
@@ -90,14 +92,19 @@ Did you spot the bonus element in there, `span`? It's a special tag you can use 
 + Add the following CSS code to your stylesheet to complete the styling for the HTML code above.
 
 ```css
-  .lightPurpleBackground {
-    background-color: #CFBFFF;
+  .sideNoteStyle {
+    border: dotted 1px purple;
+    background-color: #c1ebec;
+    padding: 0.5em;
+    margin: 0.5em;
   }
   .specialText {
       color: #FF4500;
       font-size: larger;
   }
 ```
+
+![Additional notes with their own styling](images/asidesStyled.png)
 
 On the next card you're going to learn how to make the layout more interesting! 
 

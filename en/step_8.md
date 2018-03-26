@@ -4,7 +4,7 @@
 
 Here are three different page layouts you'll be applying: 
 
-![](images/GridLayouts_390_1200.png)
+![](images/cssGridLayouts.png)
 
 + Add new CSS classes to `main` and each of three elements inside it.
 
@@ -16,7 +16,7 @@ Here are three different page layouts you'll be applying:
         <aside class="attGridAside1">
             <!--other stuff here-->
         </aside>
-        <aside class="attGridAside1">
+        <aside class="attGridAside2">
             <!--other stuff here-->
         </aside>
     </main>
@@ -52,7 +52,7 @@ In this example the `header` and `footer` will be left out of the design, but it
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
+Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic. 
 
 + Put the following code inside the `.attPageLayoutGrid` CSS rules:
 
@@ -66,6 +66,8 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
     
 `fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
 
+![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+
 Let's try putting the `aside` elements over on the right, and making them half the width of the `article`.
 
 + Change the values of `grid-template-columns` and `grid-template-areas` to:
@@ -77,7 +79,9 @@ Let's try putting the `aside` elements over on the right, and making them half t
         "agArticle agAside2";
 ```
 
-If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
+![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+
++ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
 
 ```css
     grid-template-areas: 
@@ -86,23 +90,45 @@ If you don't want the `aside` elements to stretch all the way to the bottom, you
         "agArticle . ";
 ```
 
+![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+
 --- challenge ---
 
 ## Challenge: Make different layouts for different screen sizes
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is?
++ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
 
 --- hints ---
 
 --- hint ---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+
+```css
+    @media all and (min-width: 1000px) {
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agArticle"
+                "agAside1 agAside2";
+        }
+    }  
+```
+
+--- /hint ---
+
+--- hint ---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
 
 ```css
     @media all and (min-width: 1600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-end;
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agAside1"
+                "agArticle agAside2"
+                "agArticle .";
         }
     }  
 ```
@@ -110,7 +136,6 @@ The following code defines flex properties for menu items when the screen is big
 --- /hint ---
 
 --- /hints ---
-
 
 --- /challenge ---
 
