@@ -2,6 +2,8 @@
 
 On this card you'll learn about two more types of **container** element, one that you can use to add a caption (that is, some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page. 
 
+### Pictures with captions
+
 + Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website.  
 
 ```html
@@ -50,7 +52,9 @@ You can use CSS to style `figure` and `figcaption` as you would any other elemen
   }
 ```
 
-Now let's look at another useful container: `aside`. You use it when you have extra stuff that doesn't really belong with the main information on a page. For example, the Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions.
+### Side notes
+
+The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
 
 + Go to a page of your website that has an `article` element on it – I'm using `attractions.html`. 
 

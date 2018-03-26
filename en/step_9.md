@@ -54,7 +54,8 @@ To define the position of an element, there are four properties you can use: `le
 
 Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
 
-Finally, you might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+### Making things overlap
+You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
 
 + Choose two images and give them positions that cause them to overlap.
 
