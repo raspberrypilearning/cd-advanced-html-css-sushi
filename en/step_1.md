@@ -7,7 +7,7 @@ This Sushi Series will show you how to make a website look polished and professi
 Add something here to showcase here, for example:
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/html/1b60a25bf3?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <!-- <img src="images/magazine-final.png"> -->
 </div>
