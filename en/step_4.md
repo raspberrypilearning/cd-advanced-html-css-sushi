@@ -8,7 +8,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ```html
     <article class="card">
-        <img src="monkey-2223271_640.jpg" class="tinyPics">
+        <img src="monkey-2223271_640.jpg" class="tinyPicture">
         <h3>Fota Wildlife Park</h3>
         <p>Fota Island, County Cork</p>
     </article>
@@ -16,10 +16,10 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text before styles are applied](images/cardUnstyled.png)   
 
-+ Add the following CSS code to create the classes `card` and `tinyPics`:
++ Add the following CSS code to create the classes `card` and `tinyPicture`:
 
 ```css
-    .tinyPics {
+    .tinyPicture {
         height: 60px;
         border-radius: 10px;
     }
@@ -29,6 +29,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
         border: 2px solid #F0FFFF;
         border-radius: 10px;
         box-sizing: border-box;
+        padding: 10px;
         margin-top: 10px;
         font-family: "Trebuchet MS", sans-serif;
     }
@@ -46,7 +47,7 @@ Let's turn the whole thing into a link so people can click to see more informati
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
-            <img src="monkey-2223271_640.jpg" class="tinyPics">
+            <img src="monkey-2223271_640.jpg" class="tinyPicture">
             <h3>Fota Wildlife Park</h3>
             <p>Fota Island, County Cork</p>
         </article>
