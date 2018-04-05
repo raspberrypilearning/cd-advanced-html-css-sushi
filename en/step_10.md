@@ -95,7 +95,7 @@ Note: Setting the `position` property to `fixed` means it stays put when you scr
 
 ```html
     <a href="#boxLemur">
-        <img src="monkey-2223271_640.jpg" class="tinyPicture">
+        <img src="monkey-2223271_640.jpg" class="mediumPics">
     </a>
 ```
 
