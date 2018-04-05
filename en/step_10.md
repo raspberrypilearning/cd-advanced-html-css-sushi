@@ -65,7 +65,7 @@ To get this effect you will make two links: one for the actual lightbox (the bit
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
         <h3>Lemur!!</h3>
-        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" class="bigPics"/>
+        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
         <p>A lemur enjoying a little snack</p>
     </a>
 ```
@@ -95,7 +95,7 @@ Note: Setting the `position` property to `fixed` means it stays put when you scr
 
 ```html
     <a href="#boxLemur">
-        <img src="monkey-2223271_640.jpg" class="smallPics">
+        <img src="monkey-2223271_640.jpg" class="tinyPicture">
     </a>
 ```
 
