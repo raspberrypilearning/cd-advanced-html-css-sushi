@@ -89,7 +89,7 @@ You can put anything you like in between the link tags. I've got a big picture, 
     }
 ```
 
-Note: Setting the `position` property to `fixed` means it stays put when you scroll.
+Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
 
 + Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around the element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
