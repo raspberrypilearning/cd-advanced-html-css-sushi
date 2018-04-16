@@ -32,7 +32,7 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **`flex`**, your cards are now displayed side by side! 
+Voilà! Thanks to **Flex**, your cards are now displayed side by side! 
 
 + Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
 
