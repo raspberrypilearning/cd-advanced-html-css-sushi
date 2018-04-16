@@ -1,6 +1,6 @@
 ## Photo collage
 
-On this card you will use CSS to position HTML elements exactly and make a photo collage. 
+On this card you will learn to use CSS to exactly position HTML elements and make a photo collage. 
 
 ![](images/photoCollageWithText_wide.png)
 
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (i.e. **within**) the container.
++ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then, create a set of style rules for each of the elements using **id selectors**, where you will define the size (`width` and/or `height` properties) as well as the exact positions.
++ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position and use either `left` or `right` for the horizontal position.
+To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture **100 pixels** from the top and **60 pixels** in from the left.
++ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
 
 ```css
     #imgTeaCat {
@@ -74,11 +74,9 @@ You might want to have some of the pictures overlapping. But how do you choose w
 title: How does z-index work?
 ---
 
-The `z-index` property lets you decide how two or more elements should overlap.
+The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number. 
 
-The value can be any whole number. 
-
-The element with the **highest** number ends up on **top** of the pile, or in other words, at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
 
 --- /collapse ---
 
@@ -86,10 +84,9 @@ You can position any HTML elements in this way, not just images. For example, yo
 
 --- challenge ---
 
-## Challenge: Make a photo collage
+## Challenge: make a photo collage
 
 + Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
-
 
 --- hints ---
 
@@ -113,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 --- hint ---
 
-Here are the CSS rules which set the positions for each of my pictures in the collage:
+Here are the CSS rules that set the positions for each of my pictures in the collage:
 
 ```css
     #imgHorse {
