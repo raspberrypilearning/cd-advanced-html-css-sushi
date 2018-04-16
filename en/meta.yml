@@ -1,6 +1,6 @@
-title: cd-advanced-html-css-sushi
+title: HTML/CSS Intermediate Sushi Cards
 hero_image: images/banner.png
-description: cd-advanced-html-css-sushi description
+description: Add nice layouts and cool effects to your website!
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: false
@@ -21,7 +21,7 @@ steps:
 - title: Clickable cards
 - title: All in a row
 - title: Make your menu responsive
-- title: Sidenotes and captions
+- title: Captions and side notes
 - title: Design cool page layouts
 - title: Photo collage
 - title: Special effects
