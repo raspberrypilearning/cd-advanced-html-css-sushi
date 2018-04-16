@@ -1,6 +1,6 @@
-## Sidenotes and captions
+## Captions and side notes
 
-On this card you'll learn about two more types of **container** element, one that you can use to add a caption (that is, some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page. 
+On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page. 
 
 ### Pictures with captions
 
@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element, one tha
   </p>
 ```
 
-+ On the line above the code, add the tag `<figure>`. Place the closing tag `<\figure>` on a new line after the code.
++ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `<\figure>`.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text \(maybe it's a heading, like `h2`?\) and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
 
 ```html
   <figure>
@@ -26,7 +26,7 @@ On this card you'll learn about two more types of **container** element, one tha
   </figure>
 ```
    
-The `figcaption` element is your `caption`. It can go either above the `img` element or below it.
+The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
@@ -35,15 +35,13 @@ The `figcaption` element is your `caption`. It can go either above the `img` ele
 title: Why is this useful?
 ---
 
-The `figure` element acts as a sort of **container** for your picture and its caption. 
+The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
 
-This allows you to treat them as one unit when defining styles.
-
-Grouping them together logically also helps to maintain a good structure to your website.
+Grouping them together logically also helps to maintain good structure in your website code.
 
 --- /collapse ---
 
-You can use CSS to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
 
 ```css
   figure { 
@@ -58,7 +56,7 @@ You can use CSS to style `figure` and `figcaption` as you would any other elemen
 
 The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
 
-+ Go to a page of your website that has an `article` element on it – I'm using `attractions.html`. 
++ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`. 
 
 + **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
 
@@ -81,15 +79,15 @@ The Attractions page on my website is a list of places to visit. I want to add s
 title: Why is this useful?
 ---
 
-The `aside`, `article` and other containers are similar. The only real difference is in the **meaning**, that is, what you use them for. 
+The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for. 
 
 It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
   
 --- /collapse ---
 
-Did you spot the bonus element in there, `span`? It's a special tag you can use just for adding extra CSS! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
 
-+ Add the following CSS code to your stylesheet to complete the styling for the HTML code above.
++ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
 
 ```css
   .sideNoteStyle {
@@ -106,7 +104,7 @@ Did you spot the bonus element in there, `span`? It's a special tag you can use 
 
 ![Additional notes with their own styling](images/asidesStyled.png)
 
-On the next card you're going to learn how to make the layout more interesting! 
+On the next card, you're going to learn how to make your website's layout more interesting! 
 
 + To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
 
