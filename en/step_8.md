@@ -1,6 +1,6 @@
 ## Design cool page layouts
 
-+ For this card you should work with a page that contains a `main` element with three elements inside, one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card onto the Attractions page. 
++ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
 
 Here are three different page layouts you'll be applying: 
 
@@ -24,7 +24,7 @@ Here are three different page layouts you'll be applying:
 
 The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
-In this example the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
 
 + Set the `display` property to `grid` on the overall container:
 
@@ -36,7 +36,7 @@ In this example the `header` and `footer` will be left out of the design, but it
     }
 ```
 
-+ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 
 + Next, you name a `grid-area` for each element: 
 
@@ -72,9 +72,7 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
 title: Help! I got errors and warnings!
 ---
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above.
-
-This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
 
 If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
 
@@ -82,7 +80,7 @@ If the CSS grid code gives you 'unknown property' warnings or an error like 'une
 
 ![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-Let's try putting the `aside` elements over on the right, and making them half the width of the `article`.
+Let's put the `aside` elements over on the right and make them half the width of the `article`.
 
 + Change the values of `grid-template-columns` and `grid-template-areas` to:
 
@@ -108,7 +106,7 @@ Let's try putting the `aside` elements over on the right, and making them half t
 
 --- challenge ---
 
-## Challenge: Make different layouts for different screen sizes
+## Challenge: make different layouts for different screen sizes
 
 + Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
 
@@ -153,4 +151,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 --- /challenge ---
 
-With **CSS grid** you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
