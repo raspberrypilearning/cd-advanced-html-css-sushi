@@ -5,14 +5,14 @@ theme: red # possible values: blue, green, navy, orange, red, turquoise, violet,
 duration: 2
 listed: true
 ingredient: false
-copyedit: false
-curriculum: 0, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-interests: animals, art, humour, space, photography, outdoors, music, games
-technologies: electronic-components, sense-hat, html-css-javascript, scratch, python
-site_areas: coderdojo
-hardware: electronic-components, sense-hat
-software: html-css-javascript, scratch, python
-version: 3
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+hardware: ''
+software: html-css-javascript
+version: 3.0.0
 last_tested: 2017-01-01
 steps: 
 - title: Introduction
