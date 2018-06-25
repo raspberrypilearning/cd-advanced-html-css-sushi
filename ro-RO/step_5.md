@@ -1,66 +1,59 @@
-## All in a row
+## Totul pe rând
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Pe această carte veți afla câteva trucuri pentru aranjarea lucrurilor **orizontal** pe o pagină. În primul rând, veți vedea cum să obțineți chestii centrate. Apoi veți aranja elemente alături de rând.
 
-+ Add the following CSS properties to the `.card` class:
++ Adăugați următoarele proprietăți CSS la clasa `.card`:
 
 ```css
-    margin-left: auto;
-    margin-right: auto;
+    margin-stânga: auto; margin-dreapta: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Ar trebui să vedeți că cărțile se mută în centrul paginii. Prin setarea marginilor din stânga și din dreapta la `auto`, puteți face orice element să fie în mijloc, în loc de peste la stânga.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Cardurile apar în mijloc, în loc de peste la stânga](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Glisați marginea ferestrei browserului pentru a face ca pagina să fie mai îngustă și mai largă - observați că cartele rămân centrate.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Puneți toate legăturile de card pe care tocmai le-ați făcut într-un nou element de container. Nu va fi un `articol` sau `secțiunea`, dar unul numit `div`. Acesta este un container cu destinație generală pe care îl puteți utiliza pentru a grupa lucrurile și pentru a face niște machete frumoase.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Adăugați următorul cod CSS în foaia de stil:
 
 ```css
-    .cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-    }
+    .cardContainer {display: flex; flex-wrap: folie; justify-content: spațiu-în jurul; padding: 10px; }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! Vă mulțumim pentru **Flex**, cardurile dvs. sunt acum afișate unul lângă celălalt!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Glisați marginea ferestrei pentru a face site-ul mai larg și mai îngust și urmăriți cum se deplasează cartelele pentru a se potrivi dimensiunii ferestrei, uneori înfășurându-se în linia următoare.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Cartele aranjate în două rânduri distanțate uniform pentru a se potrivi lățimii browserului](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Încercați să ștergeți proprietățile `lățime` și `înălțime` din clasa `cărții` și să vedeți ce se întâmplă: `flex` se potrivește inteligent cărților împreună ca un puzzle, păstrând o înălțime uniformă peste tot ceea ce se află în același rând.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Cartele dispuse una lângă alta cu lățimea automată](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Dacă aveți un meniu de navigare în partea de sus a paginii dvs., acesta este un alt loc unde puteți folosi acest truc. Meniul dvs. trebuie să fie compus din elemente de listă ((`li`) pentru acest bit următor. Dacă preferați, puteți să-l încercați cu site-ul meu.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Găsiți regulile CSS pentru meniu. În site-ul meu, sunt blocurile `nav ul`, `nav ul li`și `nav ul li li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Ștergeți afișarea proprietății `: în linie;` din elementele listate. Apoi, în lista `nav ul`, adăugați:
 
 ```css
-    display: flex;
-    justify-content: flex-start;
+    afișaj: flex; justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Meniu cu elemente aliniate la stânga](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Încheie cu aproape același meniu, nu? Lucrul cool despre `flex` este că puteți controla aspectul cu proprietatea `justify-content`.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Modificați valoarea `justify-content` la `flex-end` și vedeți ce se întâmplă. Sau schimbați-l la `spațiu-în jurul valorii de` pentru a face ca elementele de meniu să fie distanțate uniform, la fel ca în cazul cărților.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Meniu cu obiecte egal distanțate](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Meniu cu elemente aliniate la dreapta](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** este un instrument destul de puternic de aspect care ar putea umple o serie întreagă de Sushi Card propriu - puteți afla mai multe despre el la [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
