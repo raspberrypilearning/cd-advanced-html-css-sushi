@@ -1,90 +1,71 @@
-## Clickable cards
+## クリック可能なカード
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+少し：ここでは、フォトギャラリーを作るために使用できる技術、またはプロジェクトを披露し、ポートフォリオのページの **プレビューカード**。
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![画像のサムネイルとテキストを表示するプレビューカード](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ あなたの好きな場所であなたのウェブサイトに次のHTMLコードを追加します。 私は上の鉱山をやってる `index.htmlを`。 自分のプレビューカードに合わせて画像やテキストを変更することができます。 私はアイルランドで観光スポットのハイライトの束を行うつもりです。
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <h3>フォタワイルドライフパーク</h3>
+        <p>フォタ島、コーク州</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![スタイルが適用される前のイメージとテキスト](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ 次のCSSコードを追加して、クラス `カード` と `を作成します。tinyPicture`：
 
 ```css
-    .tinyPicture {
-        height: 60px;
-        border-radius: 10px;
-    }
-    .card {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #F0FFFF;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        margin-top: 10px;
-        font-family: "Trebuchet MS", sans-serif;
-    }
-    .card:hover {
-        border-color: #1E90FF;
-    }
+    .tinyPicture {height：60px; border-radius：10px; } .card {width：200px;}。高さ：200px; border：2px solid＃F0FFFF; border-radius：10px;ボックスサイズ：border-box;パディング：10px; margin-top：10px; font-family： "Trebuchet MS"、サンセリフ; } .card：ホバー{ボーダーカラー：＃1E90FF; }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![小さなカードエフェクトを作成するスタイリングによるイメージとテキスト](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+プレビューカード全体をリンクにして、人々がクリックして詳細を表示できるようにしましょう。
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ リンク要素内に `記事` 要素全体を配置します。 閉じている `</a>` タグが閉じた `</article>` タグの後ろにあることを確認してください！ リンク **URL** を自由にリンクしたいものに変更してください。 それはあなたのウェブサイト上の別のページでも、別のウェブサイトでもかまいません。
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>フォタ・ワイルドライフ・パーク</h3>
+            <p>フォタ島、コーク州</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![リンクに変換されたテキストと画像](images/cardLink.png)
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: Linking to a specific part of a page
+## title：ページの特定の部分にリンクする
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+私のリンクの `href` 値が `#scFota`終わっていることに注目してください。 これは、ページの特定の部分にジャンプするために使用できるきちんとしたトリックです。
 
-+ First, type the URL of the page to link to, followed by `#`.
++ まず、リンクするページのURLを入力し、 `＃`ます。
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ あなたがリンクしているページのコードファイルで、ジャンプしたい部分を見つけ、その要素に `id`を与えます。例えば、 `<section id = "scFota"`。 `id` の値は、リンクの `＃` 後に入力する値です。
 
-\--- /collapse \---
+\--- /崩壊\---
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: Resetting styles
+## title：スタイルをリセットする
 
-Now that the whole preview card is a link, the text font may have changed.
+プレビューカード全体がリンクであるため、テキストフォントが変更されている可能性があります。
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ そうであれば、リンクに **CSSクラス** を追加することで修正できます： `class = "cardLink"`。 あなたのスタイルシートに入れるCSSコードは次のとおりです：
 
 ```css
-    .cardLink {
-        color: inherit;
-        text-decoration: none;
-    }
+    .cardLink {color：inherit;テキスト装飾：なし; }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+任意のプロパティの値を設定 `継承` それがその値を使用します **親** 要素があります。 この場合、テキストの色はホームページ上のテキストの残りの部分と一致します。
 
-\--- /collapse \---
+\--- /崩壊\---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ これらのカードの少なくとも4つまたは5つを作ってください。 私のウェブサイトの例から作業している場合は、「アトラクション」ページのセクションごとに1つずつ行うことができます。 次の寿司カードでは、すばらしいトリックでカードを手配する方法を学びます！
