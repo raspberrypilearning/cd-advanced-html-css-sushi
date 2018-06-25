@@ -1,90 +1,71 @@
-## Clickable cards
+## Cartes cliquables
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Voici une technique que vous pouvez utiliser pour faire une galerie photo ou une page de portefeuille montrant vos projets: peu **cartes aperçu**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Carte de prévisualisation montrant une vignette d'image et du texte](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Ajoutez le code HTML suivant à votre site Web, où vous voulez. Je fais le mien sur `index.html`. Vous pouvez changer l'image et le texte en fonction de vos propres cartes de prévisualisation. Je vais faire un tas de points forts des attractions touristiques en Irlande.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
         <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <p>Île Fota, comté de Cork</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Image et texte avant l'application des styles](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Ajouter le code CSS suivant pour créer les classes `carte` et `tinyPicture`:
 
 ```css
-    .tinyPicture {
-        height: 60px;
-        border-radius: 10px;
-    }
-    .card {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #F0FFFF;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        margin-top: 10px;
-        font-family: "Trebuchet MS", sans-serif;
-    }
-    .card:hover {
-        border-color: #1E90FF;
-    }
+    .tinyPicture {hauteur: 60px; border-radius: 10px; } .card {width: 200px; hauteur: 200px; bordure: 2px solide # F0FFFF; border-radius: 10px; taille de boîte: border-box; rembourrage: 10px; marge supérieure: 10px; famille de polices: "Trebuchet MS", sans-serif; } .card: hover {border-color: # 1E90FF; }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Image et texte avec style pour créer un petit effet de carte](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Transformons toute la carte de prévisualisation en un lien afin que les gens puissent cliquer pour voir plus d'informations.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Placez l'élément entier `article` intérieur d'un élément de lien. Assurez-vous que l'étiquette de fermeture `</a>` est postérieure à l'étiquette de fermeture `</article>`! N'hésitez pas à changer le lien **URL** à tout ce que vous voulez lier. Cela pourrait être une autre page sur votre site Web, ou il pourrait s'agir d'un autre site entièrement.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
             <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <p>Île de Fota, comté de Cork</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Texte et image transformés en lien](images/cardLink.png)
 
-## \--- collapse \---
+## \--- effondrer \---
 
-## title: Linking to a specific part of a page
+## title: Lien vers une partie spécifique d'une page
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Remarquez comment la valeur de `href` dans mon lien se termine par `#scFota`? C'est une astuce que vous pouvez utiliser pour accéder à une partie spécifique d'une page.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Tout d'abord, tapez l'URL de la page à lier, suivie de `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ Dans le fichier de code de la page à laquelle vous vous connectez, recherchez la partie à laquelle vous souhaitez accéder et attribuez à cet élément un `id`, par exemple, `<section id = "scFota"`. La valeur du `id` est ce que vous tapez après le `#` dans votre lien.
 
-\--- /collapse \---
+\--- /effondrer \---
 
-## \--- collapse \---
+## \--- effondrer \---
 
-## title: Resetting styles
+## title: Réinitialisation des styles
 
-Now that the whole preview card is a link, the text font may have changed.
+Maintenant que la totalité de la carte de prévisualisation est un lien, la police de texte peut avoir changé.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Si c'est le cas, vous pouvez le corriger en ajoutant un **CSS class** au lien: `class = "cardLink"`. Voici le code CSS à mettre dans votre feuille de style:
 
 ```css
-    .cardLink {
-        color: inherit;
-        text-decoration: none;
-    }
+    .cardLink {color: inherit; text-decoration: aucun; }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Définir la valeur de n'importe quelle propriété à `hérite de` fait utiliser la valeur que l'élément **parent** a. Dans ce cas, la couleur du texte correspondra au reste du texte sur la page d'accueil.
 
-\--- /collapse \---
+\--- /effondrer \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Faites au moins quatre ou cinq de ces cartes. Si vous travaillez à partir de mon exemple de site Web, vous pouvez en créer un pour chacune des sections de la page "Attractions". Sur la prochaine carte de sushi, vous apprendrez comment organiser les cartes avec un truc cool!
