@@ -1,107 +1,93 @@
-## Captions and side notes
+## Leyendas y notas secundarias
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+En esta tarjeta aprenderá sobre dos tipos más de elementos **contenedor** : uno que puede usar para agregar un título (texto como un título o una breve descripción) a una imagen, y otro para cuando tenga material extra que no lo incluya. realmente pertenece con la información principal en una página.
 
-### Pictures with captions
+### Imágenes con subtítulos
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Encuentre un elemento `img` donde tenga el texto arriba o abajo que vaya con la imagen. Estoy trabajando con la imagen de Tito en `index.html`, pero puede ir con lo que esté en su sitio web. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
   <p>
-    Tour guide Tito!
+    Guía de turismo Tito!
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `<\figure>`.
++ En la línea arriba del código, agregue la etiqueta de apertura `<figure>`. En una nueva línea debajo del código, coloque la etiqueta de cierre `<\ figure>`.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ Luego, quite las etiquetas `p` , o las etiquetas que tenga alrededor del texto (tal vez sea un encabezado, como `h2`?), Y coloque el texto entre `<figcaption> <\ figcaption>` etiquetas en su lugar. Todo debe verse más o menos así:
 
 ```html
   <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
       <figcaption>
-      Tour guide Tito!
+      Guía de turismo Tito!
       </figcaption>
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+El elemento `figcaption` es tu **caption**. Puede ir arriba del elemento `img` o debajo.
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![Imagen de Tito con una leyenda](images/figureAndCaption.png)
 
-## \--- collapse \---
+## \--- colapso \---
 
-## title: Why is this useful?
+## title: ¿Por qué es esto útil?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+El elemento `figura` actúa como una especie de **contenedor** para su imagen y su título. Esto le permite tratarlos como una unidad al definir estilos.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+Agruparlos lógicamente también ayuda a mantener una buena estructura en el código de su sitio web.
 
-\--- /collapse \---
+\--- /colapso \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+Puede usar el código CSS para el estilo `figura` y `figura` como lo haría con cualquier otro elemento usando clases, identificadores o selectores de elementos. Estoy agregando las siguientes reglas para eliminar el espaciado adicional que fue agregado por el nuevo contenedor:
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+  figure {margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margen-derecha: 0px; }
 ```
 
-### Side notes
+### Notas laterales
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+La página de Atracciones en mi sitio web es una lista de lugares para visitar. Quiero agregar algunas notas sobre el clima y cómo moverse. Esa información realmente no pertenece al elemento `artículo` con todas las atracciones. Este es un ejemplo de cuándo podría usar el elemento `aside`.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ Vaya a una página de su sitio web que tiene un elemento de `artículo` en él: estoy usando `atracciones.html`.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **Fuera** del `del artículo` elemento, añadir uno o más pares de `<aside> <\ aparte>` etiquetas que contienen el material extra.
 
 ```html
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h2>Cómo desplazarse</h2>
+      <h3>Tren y autobús</h3>
+      <p>Puede llegar a la mayoría de las principales ciudades en tren desde Dublín. Hay muchos autobuses que realizan recorridos por lugares populares y atracciones turísticas.</p>
+      <h3>Coche</h3>
+      <p>La forma más fácil de moverse fuera de las ciudades es en automóvil.</p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+      <h2>Tiempo</h2>
+      <p>El clima en Irlanda es <span class="specialText">muy impredecible!</span> Lo mejor es <span class="specialText">estar preparado</span> para cualquier tipo de clima, ¡incluso si es un buen día!</p>
   </aside>
 ```
 
-## \--- collapse \---
+## \--- colapso \---
 
-## title: Why is this useful?
+## title: ¿Por qué es esto útil?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+El `aparte`, `artículo`y otros contenedores son todos similares. La única diferencia real está en el **significado**, es decir, para qué los usas.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+Es importante usar elementos HTML significativos siempre que sea posible. Le da a su sitio web una mejor estructura y es especialmente útil para las personas que usan **lectores de pantalla**.
 
-\--- /collapse \---
+\--- /colapso \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+¿Viste el otro elemento allí, `span`? ¡Esta es una etiqueta especial que puedes usar solo para agregar código CSS adicional! Puedes poner cualquier cosa entre un par de `etiquetas de span`. Es útil para cosas como diseñar una **parte** del texto en un párrafo.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ Agregue el siguiente código CSS a su hoja de estilos para completar el diseño del código HTML anterior.
 
 ```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+  .sideNoteStyle {border: punteado 1px violeta; color de fondo: # c1ebec; relleno: 0.5em; margen: 0.5em; } .specialText {color: # FF4500; tamaño de fuente: más grande; }
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![Notas adicionales con su propio estilo](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+En la siguiente tarjeta, aprenderá cómo hacer que el diseño de su sitio web sea más interesante.
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Para prepararse, haga una página que tenga un `artículo` y dos `aparte` elementos dentro de las `<main> </main>` etiquetas. O si lo prefiere, puede trabajar con la página de Atracciones en mi sitio web.
