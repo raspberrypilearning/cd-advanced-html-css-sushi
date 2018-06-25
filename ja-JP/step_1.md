@@ -1,10 +1,10 @@
-## Introduction
+## 前書き
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+これらの寿司カードは、クールなエフェクトやレイアウトを使ってウェブサイトを洗練されたものにする方法を示します。
 
-### What you will make
+### あなたが作るもの
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+下のウィンドウでマウスカーソルを動かすと、ウェブサイトでの使い方を学ぶエフェクトのいくつかが試されます：
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -12,11 +12,11 @@ Move your mouse cursor around in the window below to try out some of the effects
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### What you will learn
+### あなたが学ぶもの
 
-In these Sushi Cards, you will find out how to:
+これらの寿司カードでは、以下の方法を見つけることができます：
 
-* Create any website layout you want
-* Make your layout adjust itself automatically to different screen sizes
-* Make a collage of overlapping pictures and text
-* Apply some neat hover and click effects that you might have seen on other websites
+* 必要なウェブサイトレイアウトを作成する
+* レイアウトを異なる画面サイズに自動的に調整する
+* 重なった写真とテキストのコラージュを作成する
+* あなたが他のウェブサイトで見たかもしれない、きちんとしたホバーとクリックのエフェクトを適用する
