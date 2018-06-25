@@ -1,10 +1,10 @@
-## Photo collage
+## フォトコラージュ
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+このカードでは、CSSを使ってHTML要素を正確に配置し、写真のコラージュを作成する方法を学びます。
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ あなたのページに `div` を追加し、好きなだけ多くの画像を入れてください。 `div` と `img` 要素 `id` 値を与えます。
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,174 +13,110 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+写真は、コードに表示されている順序でWebページ上に順に表示されます。
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
-
-```css
-    .absPos {
-        position: absolute;
-    }
-```
-
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ CSSファイルで、 `div`内の要素に次のCSSクラスを追加します。 
 
 ```css
-    .relPos {
-        position: relative;
-    }
-
-    #photoBox {
-        width: 800px;
-        height: 400px;
-    }
+    .absPos {位置：絶対; }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
-
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
-
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
-
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
-
-```css
-    #imgTeaCat {
-        width: 250px;
-        top: 100px;
-        left: 60px;
-    }
-```
-
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
-
-### Making things overlap
-
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
-
-+ Choose two images and give them positions that cause them to overlap.
-
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
-
-+ Take a look at the result on your webpage.
-
-![](images/horse10Cat7.png)
-
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
-
-![](images/horse7Cat10.png)
-
-## \--- collapse \---
-
-## title: How does z-index work?
-
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
-
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
-
-\--- /collapse \---
-
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
-
-\--- challenge \---
-
-## Challenge: make a photo collage
-
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
-
-\--- hints \---
-
-\--- hint \---
-
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
-
-```html
-    <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
-    </div>
-```
-
-\--- /hint \---
-
-\--- hint \---
-
-Here are the CSS rules that set the positions for each of my pictures in the collage:
-
-```css
-    #imgHorse {
-        width: 120px;
-        top: 200px;
-        left: 390px;
-        z-index: 10;
-    }
-    #imgSheep {
-        width: 200px;
-        top: 100px;
-        left: 20px;
-        z-index: 8;
-    }
-    #imgCoast {
-        width: 150px;
-        top: 250px;
-        left: 10px;
-        z-index: 5;
-    }
-    #imgTrees {
-        width: 110px;
-        top: 65px;
-        left: 205px;
-        z-index: 9;
-    }
-    #imgTeaCat {
-        width: 250px;
-        top: 210px;
-        left: 160px;
-        z-index: 7;
-    }
-    #imgStreet {
-        width: 180px;
-        top: 90px;
-        left: 310px;
-        z-index: 6;
-    }
-    #photoText {
-        font-family: "brush script MT";
-        color: lightgreen;
-        font-size: 4em;
-        left: 35px;
-        top: 15px;
-        z-index: 20;
-    }
-```
-
-\--- /hint \---
-
-\--- hint \---
-
-Here are the CSS classes I've used:
-
-```css
-    .collagePhoto {
-        border: 1px solid white;
-    }
-    .relPos {
-        position: relative;
-    }
-    .absPos {
-        position: absolute;
-    }
-```
-
-\--- /hint \---
-
-\--- /hints \---
-
-![Photo collage with text over the top](images/photoCollageExample.png)
-
-\--- /challenge \---
++ 次に、プロパティ `位置を追加する必要があります。` をコンテナ自体に追加し、そのサイズを定義します。 これにより、他の要素の位置が、容器に対して</strong> に対して（すなわち、容器内で） **ようにする。</li> </ul> 
+    
+    ```css
+        .relPos {位置：相対; } #photoBox {width：800px;高さ：400px; }
+    ```
+    
+    + 次に、 **idセレクタ** を使って各要素のスタイルルールのセットを作成し、サイズ（`幅` および/または `高さ` プロパティ）とその正確な位置を設定します。
+    
+    要素の位置を定義するには、使用できる4つの特性がある： `左`、 `右`、 `トップ`、及び `底`。 それらは、エッジのそれぞれが親のエッジからどれくらい離れているかを表します。 いずれかの使用 `トップ` 又は `ボトム` 垂直位置のために、いずれか `左` 又は `右` 水平位置のため。
+    
+    ![上、左、下、右のプロパティが親コンテナにどのように関連しているかを示すダイアグラム](images/cssPositionProperties.png)
+    
+    + あなたの写真の各々の正確な位置を選択し、プロパティのいずれかを使用 `左に`、 `右`、 `トップ`、及び `底部` あなたのCSSルールでそれらの位置を定義します。 たとえば、このコードでは、catピクチャを上から100ピクセル、左から60ピクセル配置します。
+    
+    ```css
+        #imgTeaCat {width：250px;上：100ピクセル。左：60ピクセル。 }
+    ```
+    
+    注：位置の値は負の値にすることもできます。 負の値を使用すると、指定したエッジのいずれかで、コンテナの外に要素が移動します。
+    
+    ### 物事を重ねる
+    
+    画像の一部が重なっていることがあります。 しかし、あなたはどのように上に行くのを選ぶのですか？
+    
+    + 2つの画像を選択し、それらの画像が重なる位置を与えます。
+    
+    + 余分なプロパティを追加する、 `z-index：10;` をそれらの1つに追加し、 `z-インデックス：7を追加します。` を他方に接続する。
+    
+    + あなたのウェブページ上の結果を見てください。
+    
+    ![](images/horse10Cat7.png)
+    
+    + 今度は `z-index` 値を入れ替えて、 `7` と `10` が逆の方向になるようにします。 あなたのウェブページに違いはありますか？
+    
+    ![](images/horse7Cat10.png)
+    
+    ## \---崩壊\---
+    
+    ## title：z-indexはどのように機能しますか？
+    
+    `z-index` プロパティを使用すると、2つ以上の要素がどのように重なるかを決めることができます。 値には任意の整数を指定できます。
+    
+    **数字が** の要素は、パイルの **上** に、言い換えれば **正面**終わります。 次に高い数字の要素は、それより後ろにあり、他の要素の前にあります。他のすべての要素の背後にある最も低い番号の要素に到達するまで続きます。
+    
+    \--- /崩壊\---
+    
+    イメージだけでなく、この方法でHTML要素を配置することができます。 たとえば、 `p` 要素を使用して写真にテキストを追加することができます。
+    
+    \---挑戦\---
+    
+    ## 課題：写真コラージュを作る
+    
+    + 下に示すような独自のコラージュを作成してみてください！ 異なる `z-インデックス` 値と一緒に正確な位置合わせを使用して、オーバーラップ効果を望むように得ることができます。
+    
+    - - ヒント - -
+    
+    \---ヒント\---
+    
+    以下は、私のアイルランドのウェブサイトの写真コラージュのHTMLコードです。 `div`中に6枚の写真と1つのテキストがあります。
+    
+    ```html
+        <div id="photoBox" class="relPos">
+            <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
+            <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+            <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
+            <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
+            <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
+            <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+            <p id="photoText" class="absPos">アイルランド</p>
+        </div>
+    ```
+    
+    \--- /ヒント\---
+    
+    \---ヒント\---
+    
+    コラージュ内の各写真の位置を設定するCSSルールは次のとおりです。
+    
+    ```css
+        #imgHorse {width：120px; top：200px;左：390ピクセル。 z-インデックス：10; } #imgSheep {width：200px;}上：100ピクセル。左：20ピクセル。 z-インデックス：8; } #imgCoast {width：150px; top：250px;左：10ピクセル。 z-インデックス：5; } #imgTrees {width：110px;} top：65px;左：205ピクセル。 Z-インデックス：9; } #imgTeaCat {width：250px;}上：210ピクセル;左：160ピクセル。 z-インデックス：7; } #imgStreet {width：180px; top：90px;左：310px; z-インデックス：6; } #photoText {font-family： "ブラシスクリプトMT";色：ライトグリーン; font-size：4em;左：35ピクセル。上：15ピクセル。 z-インデックス：20; }
+    ```
+    
+    \--- /ヒント\---
+    
+    \---ヒント\---
+    
+    私が使ったCSSクラスは次のとおりです：
+    
+    ```css
+        。collagePhoto {border：1px solid white; } .relPos {位置：相対; } .absPos {位置：絶対; }
+    ```
+    
+    \--- /ヒント\---
+    
+    - - /ヒント - -
+    
+    ![テキストの上に写真のコラージュ](images/photoCollageExample.png)
+    
+    \--- /チャレンジ\---
