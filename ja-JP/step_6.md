@@ -1,107 +1,87 @@
-## Make your menu responsive
+## メニューを反応させる
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+**応答** ウェブサイトは、それは常にあなたがコンピュータ、携帯電話、またはタブレット上でそれを見ているかどうか、偉大に見えるように、画面サイズに合わせて自動的に調整です。 あなたのメニューを反応させましょう！
 
-You'll start with the regular styles: this will be your **default** behaviour.
+あなたは通常のスタイルから始めます：これはあなたの **デフォルト** 動作になります。
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: What does 'default' mean?
+## タイトル：「デフォルト」とはどういう意味ですか？
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+デフォルトのスタイルは、通常のスタイルルールのセットです。 特別な条件をチェックする前に、何に関係なく適用されます。
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+画面のサイズを確認し、必要に応じて調整を加えるコードを追加することができます。
 
-\--- /collapse \---
+\--- /崩壊\---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
-
-```css
-    nav ul {
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
-```
-
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
-
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
-
-## \--- collapse \---
-
-## title: What does 'mobile-first' mean?
-
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
-
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
-
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
-
-\--- /collapse \---
-
-+ Now add the following code to your style sheet:
++ メニューに次のCSSルールを追加します。 おそらく色と罫線も定義されているはずです。私はここにスペースを節約するためにそれらを残しました！ メニューにCSSルールがすでに定義されている場合は、不足しているプロパティと値を追加または変更するだけです。
 
 ```css
-    @media all and (min-width: 1000px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
+    nav ul {パディング：0.5em;ディスプレイ：フレックス;フレックス方向：列; } nav ul li {text-align：center;}リストスタイルタイプ：なし; margin-right：0.5em; margin-left：0.5em; }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+上記のCSSコードを使用すると、メニューは小さな画面に最適です。 これはと呼ばれる **モバイル-最初の** 開発。
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![小さな画面に縦に積み重ねたメニュー項目](images/responsiveMenuMobile.png)
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: How does it work?
+## title：「モバイルファースト」は何を意味しますか？
 
-The block contains new values for only some properties of the `nav ul` menu.
+ウェブサイトをコーディングするときは、コンピュータ画面を使用することが多く、その画面での表示方法に基づいてスタイルを定義するのが一般的です。
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+モバイルを最初にコーディングするときは、代わりにスマートフォンなどの小さな画面に適したデフォルトのスタイルを選択します。 その後、大きな画面の調整を行うために余分なコードを追加します。
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+ますます多くの人がコンピュータではなくスマートフォンやタブレットでインターネットを閲覧しているため、この点を考慮してウェブサイトを開発することをお勧めします。
 
-\--- /collapse \---
+\--- /崩壊\---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
-
-\--- challenge \---
-
-## Challenge: make your menu adjust itself for big screens
-
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
-
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
-
-\--- hints \---
-
-\--- hint \---
-
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
++ 次のコードをスタイルシートに追加します。
 
 ```css
-    @media all and (min-width: 1600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }  
+    @media allと（最小幅：1000px）{nav ul {flex-direction：row; justify-content：スペースアラウンド; }}
 ```
 
-\--- /hint \---
+上のコードの最初の行は、ブラウザウィンドウのサイズを調べます。 ウィンドウがある場合は **1000ピクセル** 広い以上、それはブロック内のすべてのスタイルルールを適用します。
 
-\--- /hints \---
+![より広い画面で1行に均等に配置されたメニュー項目](images/responsiveMenuMedium.png)
 
-\--- /challenge \---
+## \---崩壊\---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+## タイトル：どのように機能するのですか？
+
+このブロックには、 `nav ul` メニューのいくつかのプロパティの新しい値が含まれています。
+
+ウィンドウが1000ピクセルより広い場合は、 `nav ul`に対して既に定義した値の代わりに、新しい値が適用されます。
+
+`nav ul` ために以前に定義した残りのプロパティは同じままです。
+
+\--- /崩壊\---
+
++ Trinketを使用してコードを書く場合は、プロジェクトをダウンロードしてフルサイズの画面でテストできるようにすると便利です。
+
+\---挑戦\---
+
+## 課題：大きな画面でメニューを調整する
+
++ **1600ピクセル**より大きいスクリーン用にもう1つのブロックを追加できますか？ `スペース -`代わりに `フレックスエンド`？
+
+![ワイド画面の右にあるメニュー項目](images/responsiveMenuWide.png)
+
+- - ヒント - -
+
+\---ヒント\---
+
+次のコードは、画面が1600ピクセルより大きい場合のメニュー項目のflexプロパティを定義しています。
+
+```css
+    @media allと（最小幅：1600ピクセル）{nav ul {flex-direction：row; justify-content：フレックスエンド。 }}  
+```
+
+\--- /ヒント\---
+
+- - /ヒント - -
+
+\--- /チャレンジ\---
+
+好きなCSSルールをブロックに入れて、さまざまな画面サイズの異なるスタイルを定義することができます。 後でCSSグリッドレイアウトを行うときに特に役立ちます！
