@@ -1,90 +1,71 @@
-## Clickable cards
+## Carduri care pot fi incarcate
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Iată o tehnică pe care ar putea folosi pentru a face o galerie foto, sau o pagină de portofoliu care arată off proiectele tale: mici **carduri de previzualizare**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Examinați o carte care prezintă o miniatură de imagine și un anumit text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Adăugați următorul cod HTML pe site-ul dvs. Web, oriunde doriți. Fac pe a mea `index.html`. Puteți schimba imaginea și textul pentru a se potrivi propriilor carduri de previzualizare. Voi face o grămadă de atracții turistice din Irlanda.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
         <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <p>Fota Island, Cork</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Imaginea și textul înainte de aplicarea stilurilor](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Adăugați următorul cod CSS pentru a crea clasele `card` și `tinyPicture`:
 
 ```css
-    .tinyPicture {
-        height: 60px;
-        border-radius: 10px;
-    }
-    .card {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #F0FFFF;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        margin-top: 10px;
-        font-family: "Trebuchet MS", sans-serif;
-    }
-    .card:hover {
-        border-color: #1E90FF;
-    }
+    .tinyPicture {height: 60px; raza de graniță: 10 pixeli; } .card {lățime: 200px; înălțime: 200px; frontieră: 2px solid # F0FFFF; raza de graniță: 10 pixeli; box-size: caseta de margine; padding: 10px; margin-top: 10px; font-familie: "Trebuchet MS", sans-serif; } .card: hover {border-color: # 1E90FF; }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Imagine și text cu stil pentru a crea un efect de carte mică](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Să transformăm întreaga carte de previzualizare într-un link, astfel încât oamenii să poată da clic pentru a vedea mai multe informații.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Se pune tot `articolul` în interiorul unui element de legătură. Asigurați-vă că eticheta de închidere `</a>` este după eticheta de închidere `</article>`! Simțiți-vă liber să schimbați linkul **URL** la orice doriți să vă conectați. Aceasta ar putea fi o altă pagină de pe site-ul dvs. sau ar putea fi altul în întregime.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
             <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <p>Fota Island, Județul Cork</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Text și imagine care au fost transformate într-un link](images/cardLink.png)
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: Linking to a specific part of a page
+## title: Legarea la o anumită parte a unei pagini
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Observați cum valoarea `href` din linkul meu se termină în `#scFota`? Acesta este un truc elegant pe care îl puteți utiliza pentru a sări la o anumită parte a paginii.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Mai întâi, tastați adresa URL a paginii de conectat, urmată de `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ În fișierul de cod pentru pagina cu care vă conectați, găsiți partea în care doriți să faceți salt și dați elementul respectiv `id`, de exemplu `<secțiunea id = "scFota"`. Valoarea lui `id` este cea pe care o introduceți după `#` în link-ul dvs.
 
-\--- /collapse \---
+\--- / colaps \---
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: Resetting styles
+## title: Resetarea stilurilor
 
-Now that the whole preview card is a link, the text font may have changed.
+Acum că întreaga carte de previzualizare este un link, fontul textului s-ar putea să fi schimbat.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Dacă da, puteți remedia problema prin adaugarea unei **clasa CSS** la link - ul: `class = "cardLink"`. Iată codul CSS pentru a pune în foaia dvs. de stil:
 
 ```css
-    .cardLink {
-        color: inherit;
-        text-decoration: none;
-    }
+    .cardLink {culoare: inherit; text-decoration: nici unul; }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Stabilirea valorii oricărei proprietăți la `moștenesc` face utilizați valoarea pe care **- mamă** elementul are. Deci, în acest caz, culoarea textului se va potrivi cu restul textului de pe pagina de pornire.
 
-\--- /collapse \---
+\--- / colaps \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Faceți cel puțin patru sau cinci dintre aceste cărți. Dacă lucrați de pe site-ul meu de exemplu, puteți face una pentru fiecare dintre secțiunile de pe pagina Atracții. Pe următorul card Sushi, veți învăța cum să aranjați cărțile cu un truc grozav!
