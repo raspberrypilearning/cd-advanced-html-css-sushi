@@ -1,9 +1,9 @@
-## What you will need
+## Was wirst du brauchen
 
 ### Hardware
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Ein Computer, der auf [zugreifen kann trinket.io](https://trinket.io){: target = "_ blank"}
 
 ### Software
 
-This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+Dieses Projekt kann in einem Webbrowser mit [trinket.io](https://trinket.io){: target = "_ blank"} oder offline mit einem einfachen Texteditor ausgeführt werden.
