@@ -1,10 +1,10 @@
-## Photo collage
+## colaj foto
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+Pe acest card veți învăța să utilizați CSS pentru a poziționa exact elementele HTML și pentru a crea un colaj de fotografie.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ Adăugați `div` la pagina dvs. și plasați cât mai multe imagini în ea, după cum doriți. Dați valorile `div` și `img` elemente `id`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,86 +13,73 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+Fotografiile vor apărea unul după celălalt pe pagina web, în ​​ordinea în care apar în codul dvs.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
-
-```css
-    .absPos {
-        position: absolute;
-    }
-```
-
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ În fișierul dvs. CSS, adăugați următoarea clasă CSS pentru elementele din cadrul diviziei `div`: 
 
 ```css
-    .relPos {
-        position: relative;
-    }
-
-    #photoBox {
-        width: 800px;
-        height: 400px;
-    }
+    .absPos {poziție: absolută; }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
-
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
-
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
-
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ Apoi, trebuie să adăugați poziția proprietății `: relativă;` la container și definiți o dimensiune pentru acesta. Acest lucru face ca pozițiile celorlalte elemente să fie definite **față de** (adică în interiorul) containerului.
 
 ```css
-    #imgTeaCat {
-        width: 250px;
-        top: 100px;
-        left: 60px;
-    }
+    .relPos {poziție: relativă; } #photoBox {width: 800px; înălțime: 400px; }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
++ Apoi creați un set de reguli de stil pentru fiecare dintre elementele care utilizează selectori **id** pentru a seta dimensiunile acestora (`lățimi` și / sau `înălțime` proprietăți), precum și pozițiile lor exacte.
 
-### Making things overlap
+Pentru a defini poziția unui element, există patru proprietăți pe care le puteți utiliza: `stânga`, `dreapta`, `partea superioară`și `partea de jos`. Acestea reprezintă cât de departe fiecare margine ar trebui să fie de la marginea părintelui. Utilizați fie `partea inferioară` sau `inferioară` pentru poziția verticală, fie `stânga` sau `dreapta` pentru poziția orizontală.
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+![Diagrama care arată modul în care proprietățile de sus, de stânga, de jos și de dreapta se referă la containerul părinte](images/cssPositionProperties.png)
 
-+ Choose two images and give them positions that cause them to overlap.
++ Alegeți pozițiile exacte pentru fiecare dintre imaginile dvs. și utilizați oricare dintre proprietățile `stânga`, `dreapta`, `partea superioară`și `partea de jos` pentru a defini acele poziții din regulile dvs. CSS. De exemplu, acest cod plasează imaginea de pisică la 100 de pixeli din partea de sus și 60 de pixeli din stânga:
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
+```css
+    #imgTeaCat {width: 250px; top: 100px; stânga: 60px; }
+```
 
-+ Take a look at the result on your webpage.
+Notă: Valorile poziției pot fi de asemenea negative! Dacă utilizați o valoare negativă, aceasta va împinge elementul în afara containerului, peste orizontul pe care l-ați specificat.
+
+### A face lucrurile să se suprapună
+
+S-ar putea să doriți să se suprapună câteva imagini. Dar cum alegi care dintre ele merge în top?
+
++ Alegeți două imagini și le dați poziții care le determină să se suprapună.
+
++ Adăugați o proprietate suplimentară, `z-index: 10;` la unul dintre ele, apoi adăugați `z-index: 7;` la cealaltă.
+
++ Aruncați o privire asupra rezultatului pe pagina dvs. web.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ Acum schimbați valorile `z-index` , astfel că cele `7` și `10` sunt invers. Vedeți vreo diferență în pagina dvs. web?
 
 ![](images/horse7Cat10.png)
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: How does z-index work?
+## titlu: Cum funcționează z-indexul?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+Proprietatea `z-index` vă permite să decideți cum ar trebui să se suprapună două sau mai multe elemente. Valoarea poate fi orice număr întreg.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+Elementul cu **cel mai mare de** număr se termină pe **top** al grămezii, sau cu alte cuvinte , la foarte **frontală**. Elementul cu următorul număr cel mai mare este în spatele acestuia și în fața celorlalți și așa mai departe, până când ajungeți la elementul cu cel mai mic număr, care apare la spate în spatele tuturor celorlalte elemente.
 
-\--- /collapse \---
+\--- / colaps \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+Puteți poziționa astfel orice elemente HTML, nu doar imagini. De exemplu, puteți utiliza un element `p` pentru a adăuga un text pe o fotografie.
 
-\--- challenge \---
+\--- provocare \---
 
-## Challenge: make a photo collage
+## Provocare: faceți un colaj de fotografie
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Încercați să creați propriul dvs. colaj de fotografii, cum ar fi cel prezentat mai jos! Utilizați poziționarea exactă împreună cu diferite valori `z-index` pentru a obține efectul de suprapunere așa cum doriți.
 
-\--- hints \---
+\--- sugestii \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+Mai jos este codul HTML pentru colajul de fotografie de pe site-ul meu din Irlanda. Există șase fotografii și o bucată de text în interiorul unui `div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -102,85 +89,34 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
         <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
         <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
         <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <p id="photoText" class="absPos">Irlanda</p>
     </div>
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+Iată regulile CSS care stabilesc pozițiile pentru fiecare dintre fotografiile mele din colaj:
 
 ```css
-    #imgHorse {
-        width: 120px;
-        top: 200px;
-        left: 390px;
-        z-index: 10;
-    }
-    #imgSheep {
-        width: 200px;
-        top: 100px;
-        left: 20px;
-        z-index: 8;
-    }
-    #imgCoast {
-        width: 150px;
-        top: 250px;
-        left: 10px;
-        z-index: 5;
-    }
-    #imgTrees {
-        width: 110px;
-        top: 65px;
-        left: 205px;
-        z-index: 9;
-    }
-    #imgTeaCat {
-        width: 250px;
-        top: 210px;
-        left: 160px;
-        z-index: 7;
-    }
-    #imgStreet {
-        width: 180px;
-        top: 90px;
-        left: 310px;
-        z-index: 6;
-    }
-    #photoText {
-        font-family: "brush script MT";
-        color: lightgreen;
-        font-size: 4em;
-        left: 35px;
-        top: 15px;
-        z-index: 20;
-    }
+    #imgMai mult {width: 120px; top: 200px; stânga: 390px; z-index: 10; } #imgSeep {width: 200px; top: 100px; stânga: 20px; z-index: 8; } #imgCoast {width: 150px; top: 250px; stânga: 10px; z-index: 5; } #imgTrees (lățime: 110px; top: 65px; stânga: 205px; z-index: 9; } #imgTeaCat {width: 250px; top: 210px; stânga: 160px; z-index: 7; } #imgStreet {width: 180px; top: 90px; stânga: 310px; z-index: 6; } #photoText {font-family: "script de perie MT"; culoare: verde deschis; font-size: 4m; stânga: 35px; top: 15px; z-index: 20; }
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+Iată clasele CSS pe care le-am folosit:
 
 ```css
-    .collagePhoto {
-        border: 1px solid white;
-    }
-    .relPos {
-        position: relative;
-    }
-    .absPos {
-        position: absolute;
-    }
+    .collagePhoto {border: 1px solid white; } .relPos {position: relative; } .absPos {position: absolute; }
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
-\--- /hints \---
+\--- / sugestii \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![Colaj foto cu text peste partea de sus](images/photoCollageExample.png)
 
-\--- /challenge \---
+\--- /provocare \---
