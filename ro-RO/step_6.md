@@ -1,107 +1,87 @@
-## Make your menu responsive
+## Asigurați-vă că meniul dvs. este receptiv
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+Un **receptiv** site - ul web este una care se adaptează la dimensiunea ecranului , astfel că întotdeauna arată foarte bine, dacă te uiți la ea pe un computer, telefon mobil sau tableta. Să facem meniul dvs. receptiv!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Vei începe cu stiluri regulate: acest lucru va fi dvs. **implicit** comportament.
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: What does 'default' mean?
+## titlu: Ce înseamnă "implicit"?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+Stilurile implicite reprezintă setul dvs. normal de reguli de stil. Acestea sunt aplicate indiferent de ce, înainte de a verifica orice condiții speciale.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+Puteți adăuga un cod care apoi verifică dimensiunea ecranului și face unele ajustări dacă este necesar.
 
-\--- /collapse \---
+\--- / colaps \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
-
-```css
-    nav ul {
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
-```
-
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
-
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
-
-## \--- collapse \---
-
-## title: What does 'mobile-first' mean?
-
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
-
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
-
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
-
-\--- /collapse \---
-
-+ Now add the following code to your style sheet:
++ Adăugați următoarele reguli CSS în meniul dvs. Probabil că aveți și culori și granițe definite; Le-am lăsat să economisească spațiu aici! Dacă aveți deja definit reguli CSS pentru meniul dvs., trebuie doar să adăugați sau să modificați proprietățile și valorile de mai jos care lipsesc.
 
 ```css
-    @media all and (min-width: 1000px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
+    nav ul {umplutură: 0,5; afișaj: flex; direcție flexibilă: coloană; } nav ul li {text-aliniere: centru; listă-tip: none; margin-dreapta: 0,5; margin-stânga: 0,5; }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+Cu codul CSS de mai sus, meniul dvs. va fi cel mai potrivit pentru ecrane mici. Aceasta se numește **mobilă-prima**.
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![Elementele de meniu stivuite vertical pe un mic ecran](images/responsiveMenuMobile.png)
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: How does it work?
+## titlu: Ce înseamnă "mobil-prima"?
 
-The block contains new values for only some properties of the `nav ul` menu.
+Destul de des atunci când codați un site web, veți folosi un ecran de computer și probabil veți defini stilurile dvs. în funcție de modul în care arată pe ecranul respectiv.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+Când codificați mai întâi pentru mobil, în locul dvs. alegeți stiluri implicite, care sunt potrivite pentru ecrane mici, cum ar fi smartphone-uri. Apoi adăugați cod suplimentar pentru a face ajustări pentru ecrane mai mari.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+Deoarece din ce în ce mai mulți oameni navighează pe internet pe smartphone-urile sau comprimatele lor, nu pe un computer, este o practică bună să vă dezvoltați site-ul în acest sens.
 
-\--- /collapse \---
+\--- / colaps \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ Acum adăugați următorul cod în foaia de stil:
 
-\--- challenge \---
+```css
+    @media toate și (min-lățime: 1000px) {nav ul {flex-direction: row; justify-content: spațiu-în jurul; }}
+```
 
-## Challenge: make your menu adjust itself for big screens
+Prima linie de cod de mai sus verifică ce mărime este fereastra browserului. Dacă fereastra are **1000 pixeli** sau mai mult, se aplică toate regulile de stil din interiorul blocului.
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
+![Elementele de meniu distribuite uniform pe o linie pe un ecran mai larg](images/responsiveMenuMedium.png)
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+## \--- colaps \---
 
-\--- hints \---
+## titlu: Cum funcționează?
+
+Blocul conține valori noi numai pentru anumite proprietăți ale meniului `nav ul`.
+
+Ori de câte ori fereastra este mai mare de 1000 de pixeli, aceste valori noi vor fi aplicate în locul celor deja definite pentru `nav ul`.
+
+Restul proprietăților pe care le-ați definit anterior pentru `nav ul` va rămâne același.
+
+\--- / colaps \---
+
++ Dacă utilizați Trinket pentru a scrie cod, ar putea fi util să descărcați proiectul, astfel încât să îl puteți testa pe un ecran de dimensiune completă.
+
+\--- provocare \---
+
+## Provocare: aduceți-vă meniul să se ajusteze pentru ecrane mari
+
++ Puteți adăuga un alt bloc pentru ecrane mai mari de **1600 pixeli**, cu `flex-end` în loc de `spațiu-în jurul valorii de`?
+
+![Elementele de meniu din dreapta pe un ecran lat](images/responsiveMenuWide.png)
+
+\--- sugestii \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+Următorul cod definește proprietățile flexibile pentru elementele de meniu atunci când ecranul este mai mare de 1600 de pixeli:
 
 ```css
-    @media all and (min-width: 1600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }  
+    @media toate și (min-lățime: 1600px) {nav ul {flex-direction: row; justify-content: flex-end; }}  
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
-\--- /hints \---
+\--- / sugestii \---
 
-\--- /challenge \---
+\--- /provocare \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+Puteți pune orice reguli CSS doriți în blocuri ca acestea pentru a defini diferite stiluri pentru diferite dimensiuni ale ecranului. Va fi deosebit de util atunci când faci machete de grilă CSS mai târziu!
