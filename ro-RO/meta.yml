@@ -1,38 +1,38 @@
 ---
-title: Advanced HTML/CSS Sushi Cards
-hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
-theme: red
+title: Carduri avansate HTML / CSS Sushi
+hero_image: images / banner.png
+description: Adăugați machete frumoase și efecte interesante pe site-ul dvs.!
+theme: roșu
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: ''
 interests: ''
-technologies: html-css-javascript
-site_areas: coderdojo, projects
+technologies: html-css-JavaScript
+site_areas: coderdojo, proiecte
 hardware: ''
-software: html-css-javascript
+software: html-css-JavaScript
 version: 3.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Introducere
   - 
-    title: What you will need
+    title: Ce vei avea nevoie
   - 
-    title: Getting setup
+    title: Noțiuni de bază
   - 
-    title: Clickable cards
+    title: Carduri care pot fi incarcate
   - 
-    title: All in a row
+    title: Totul pe rând
   - 
-    title: Make your menu responsive
+    title: Asigurați-vă că meniul dvs. este receptiv
   - 
-    title: Captions and side notes
+    title: Subtitrări și note
   - 
-    title: Design cool page layouts
+    title: Proiectați machete de pagini răcoroase
   - 
-    title: Photo collage
+    title: colaj foto
   - 
-    title: Special effects
+    title: Efecte speciale
