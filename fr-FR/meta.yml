@@ -1,8 +1,8 @@
 ---
-title: Advanced HTML/CSS Sushi Cards
-hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
-theme: red
+title: Cartes de sushi HTML / CSS avancées
+hero_image: images / banner.png
+description: Ajoutez de belles mises en page et des effets sympas à votre site Web!
+theme: rouge
 duration: 2
 listed: true
 ingredient: false
@@ -10,29 +10,29 @@ copyedit: true
 curriculum: ''
 interests: ''
 technologies: html-css-javascript
-site_areas: coderdojo, projects
+site_areas: coderdojo, projets
 hardware: ''
 software: html-css-javascript
 version: 3.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: introduction
   - 
-    title: What you will need
+    title: Ce dont tu auras besoin
   - 
-    title: Getting setup
+    title: Obtenir l'installation
   - 
-    title: Clickable cards
+    title: Cartes cliquables
   - 
-    title: All in a row
+    title: Tous dans une rangée
   - 
-    title: Make your menu responsive
+    title: Rendez votre menu réactif
   - 
-    title: Captions and side notes
+    title: Légendes et notes de côté
   - 
-    title: Design cool page layouts
+    title: Concevoir des mises en page sympas
   - 
-    title: Photo collage
+    title: collage de photos
   - 
-    title: Special effects
+    title: Effets spéciaux
