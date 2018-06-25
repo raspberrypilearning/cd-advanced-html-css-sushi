@@ -1,107 +1,87 @@
-## Make your menu responsive
+## Haga que su menú responda
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+A **responda** sitio web es uno que se ajusta al tamaño de pantalla por lo que siempre se ve muy bien, ya sea que esté mirando en un ordenador, teléfono móvil o tableta. ¡Hagamos que su menú responda!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Vamos a empezar con los estilos regulares: este será su **por defecto** comportamiento.
 
-## \--- collapse \---
+## \--- colapso \---
 
-## title: What does 'default' mean?
+## title: ¿Qué significa 'default'?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+Los estilos predeterminados son su conjunto normal de reglas de estilo. Se aplican sin importar qué, antes de verificar cualquier condición especial.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+Puede agregar código que luego verifica el tamaño de la pantalla y realiza algunos ajustes si es necesario.
 
-\--- /collapse \---
+\--- /colapso \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
-
-```css
-    nav ul {
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
-```
-
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
-
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
-
-## \--- collapse \---
-
-## title: What does 'mobile-first' mean?
-
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
-
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
-
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
-
-\--- /collapse \---
-
-+ Now add the following code to your style sheet:
++ Agregue las siguientes reglas de CSS a su menú. Probablemente también tenga colores y bordes definidos; ¡Los dejé para ahorrar espacio aquí! Si ya tiene reglas CSS definidas para su menú, solo agregue o cambie las propiedades y los valores que se encuentran debajo de los que falta.
 
 ```css
-    @media all and (min-width: 1000px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
+    nav ul {relleno: 0.5em; pantalla: flexión; flexión: columna; } nav ul li {text-align: center; list-style-type: none; margen-derecha: 0.5em; margen-izquierda: 0.5em; }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+Con el código CSS anterior, su menú será más adecuado para pantallas pequeñas. Esto se llama desarrollo de **primero móvil**.
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![Elementos de menú apilados verticalmente en una pantalla pequeña](images/responsiveMenuMobile.png)
 
-## \--- collapse \---
+## \--- colapso \---
 
-## title: How does it work?
+## title: ¿Qué significa 'mobile-first'?
 
-The block contains new values for only some properties of the `nav ul` menu.
+Muy a menudo, al codificar un sitio web, utilizará una pantalla de computadora, y probablemente definirá sus estilos en función de cómo se ve en esa pantalla.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+Cuando primero codifica para dispositivos móviles, en su lugar elige estilos predeterminados que sean adecuados para pantallas pequeñas como teléfonos inteligentes. A continuación, agrega un código adicional para hacer ajustes para pantallas más grandes.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+Dado que cada vez más personas navegan por Internet en sus teléfonos inteligentes o tabletas en lugar de en una computadora, es una buena práctica desarrollar su sitio web con esto en mente.
 
-\--- /collapse \---
+\--- /colapso \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
-
-\--- challenge \---
-
-## Challenge: make your menu adjust itself for big screens
-
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
-
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
-
-\--- hints \---
-
-\--- hint \---
-
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
++ Ahora agregue el siguiente código a su hoja de estilo:
 
 ```css
-    @media all and (min-width: 1600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }  
+    @media all y (min-width: 1000px) {nav ul {flex-direction: row; justify-content: space-around; }}
 ```
 
-\--- /hint \---
+La primera línea del código anterior comprueba qué tamaño tiene la ventana del navegador. Si la ventana tiene **1000 píxeles** ancho o más, aplicará todas las reglas de estilo dentro del bloque.
 
-\--- /hints \---
+![Elementos del menú espaciados uniformemente en una línea en una pantalla más ancha](images/responsiveMenuMedium.png)
 
-\--- /challenge \---
+## \--- colapso \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+## título: ¿Cómo funciona?
+
+El bloque contiene nuevos valores para solo algunas propiedades del menú `nav ul`.
+
+Siempre que la ventana tenga más de 1000 píxeles, se aplicarán estos nuevos valores en lugar de los que ya definió para `nav ul`.
+
+El resto de las propiedades que definió previamente para `nav ul` se mantendrá igual.
+
+\--- /colapso \---
+
++ Si está utilizando Trinket para escribir código, puede ser útil descargar el proyecto para que pueda probarlo en una pantalla de tamaño completo.
+
+\--- desafío \---
+
+## Desafío: haga que su menú se ajuste solo para pantallas grandes
+
++ ¿Se puede agregar otro bloque para pantallas de más de **1600 píxeles**, con `extremos flexibles` lugar de `espacios -alrededor de`?
+
+![Elementos de menú a la derecha en una pantalla ancha](images/responsiveMenuWide.png)
+
+\--- consejos \---
+
+\--- insinuación \---
+
+El siguiente código define las propiedades flexibles para los elementos del menú cuando la pantalla tiene más de 1600 píxeles:
+
+```css
+    @media all y (min-width: 1600px) {nav ul {flex-direction: row; justify-content: flex-end; }}  
+```
+
+\--- /insinuación \---
+
+\--- / consejos \---
+
+\--- / desafío \---
+
+Puede poner cualquier regla de CSS que desee en bloques como estos para definir diferentes estilos para diferentes tamaños de pantalla. ¡Será especialmente útil cuando hagas diseños de cuadrículas CSS más tarde!
