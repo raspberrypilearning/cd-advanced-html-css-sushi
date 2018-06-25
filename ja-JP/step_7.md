@@ -1,107 +1,93 @@
-## Captions and side notes
+## キャプションとサイドノート
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+このカードでは、2つのタイプの **コンテナ** 要素について学びます：キャプション（タイトルや短い説明のようなテキスト）を画像に追加するために使用できるものと、余分なものがないときのためのもの本当にページの主な情報に属しています。
 
-### Pictures with captions
+### キャプションの付いた写真
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ 画像の上または下にあるテキストを持つ `img` 要素を探します。 私は `index.html`でティトの写真と一緒に働いていますが、あなたはあなたのウェブサイトにあるものと一緒に行くことができます。 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
   <p>
-    Tour guide Tito!
+    ツアーガイドティト！
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `<\figure>`.
++ コードの上の行に、開始タグ `<figure>`追加します。 コードの下に新しい行に、終了タグ置く `<図\>`。
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ 次に、 `p` タグ、またはテキストの周りにあるタグ（ `h <code>`ような見出しであるかもしれません）を削除し、テキストを `<figcaption> <\ figcaption>` タグの間に置きます。 全体がこのように見えるはずです：
 
 ```html
   <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
       <figcaption>
-      Tour guide Tito!
+      ツアーガイドティト！
       </figcaption>
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+`figcaption` 要素はあなたの **キャプションです**。 それは、 `img` 要素の上またはその下に行くことができます。
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![キャプション付きティトの画像](images/figureAndCaption.png)
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: Why is this useful?
+## title：これはなぜ有用ですか？
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+Figure</code> 要素 `は、画像とそのキャプションの <strong>コンテナ</strong> として機能します。 これにより、スタイルを定義するときに1つの単位として扱うことができます。</p>
 
-Grouping them together logically also helps to maintain good structure in your website code.
+<p>それらを論理的にグループ化することで、ウェブサイトのコードの構造を良好に保つことができます。</p>
 
-\--- /collapse \---
+<p>--- /崩壊---</p>
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+<p>あなたは、スタイルにCSSコードを使用することができます <code>図` 及び `figcaption` あなたは、クラス、IDが、または要素のセレクターを使用して、他の要素と同じように。 新しいコンテナによって追加された余分なスペースを削除するために、次のルールを追加します。
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+  figure {margin-top：0px; margin-bottom：0px; margin-left：0px; margin-right：0px; }
 ```
 
-### Side notes
+### サイドノート
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+私のウェブサイトのアトラクションページは訪問する場所のリストです。 私は天気と回避方法に関するノートを追加したいと思います。 この情報は実際には属していません `記事` 、すべての観光スポットを持つ要素。 これは、 `脇に` 要素を使用する場合の例です。
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ 持っているあなたのウェブサイトのページに移動します `記事` 私が使用している-それは上の要素 `attractions.html`。
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **外** の `品` 要素の1組以上の追加 `<aside> <\さておき>` あなたの余分なものを含むタグを。
 
 ```html
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h2>近寄り</h2>
+      <h3>列車とバス</h3>
+      <p>ダブリンから電車で大都市のほとんどに行くことができます。 人気のある場所や観光スポットへのツアーを行っている多くのバスがあります。</p>
+      <h3>車</h3>
+      <p>都市の外を回る最も簡単な方法は車で行なわれます。</p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+      <h2>天気</h2>
+      <p>アイルランドの天気は、 <span class="specialText">非常に予測不可能！</span> それはするのがベストです <span class="specialText">調製することが</span> 、それは素敵な日だ場合でも、天候のあらゆる種類のために！</p>
   </aside>
 ```
 
-## \--- collapse \---
+## \---崩壊\---
 
-## title: Why is this useful?
+## title：これはなぜ有用ですか？
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+`さておき`、 `物品`、及び他の容器は全て同様です。 唯一の本当の違いはである **の意味**あなたがのためにそれらを使用するもの、です。
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+可能な限り、意味のあるHTML要素を使用することが重要です。 それはあなたのウェブサイトをより良い構造にし、 **スクリーンリーダー**を使用する人々に特に役立ちます。
 
-\--- /collapse \---
+\--- /崩壊\---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+そこに他の要素、 `スパン`を見つけましたか？ これは余分なCSSコードを追加するためだけに使用できる特別なタグです！ `スパン` タグのペアの間に何かを置くことができます。 これは、スタイリングなどで便利なのです **パート** 段落内のテキストを。
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ スタイルシートに次のCSSコードを追加して、上記のHTMLコードのスタイルを完成させます。
 
 ```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+  。sideNoteStyle {border：ドット付き1px紫;背景色：＃c1ebec;パディング：0.5em;マージン：0.5em; } .specialText {color：＃FF4500;} font-size：大きい; }
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![独自のスタイリングの追加ノート](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+次のカードでは、ウェブサイトのレイアウトをより面白くする方法を学びます。
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ 準備ができて取得するには、1ページがある作る `記事` と2つの `さておき` 内の要素 `<main> </main>` タグを。 または、好きな場合は、私のウェブサイトのアトラクションページで作業できます。
