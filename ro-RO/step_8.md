@@ -1,152 +1,115 @@
-## Design cool page layouts
+## Proiectați machete de pagini răcoroase
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ Pentru acest card ar trebui să lucreze cu o pagină care conține un `principal` element de trei elemente de interior: un `articol` și două `deoparte`s. Continuați și creați-le mai întâi dacă aveți nevoie. Dacă doriți să lucrați cu site-ul meu, adăugați codul `` din cardul Sushi anterior la pagina Atracții. 
 
-Here are three different page layouts you'll be applying:
+Iată trei machete de pagini diferite pe care le veți aplica:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ Adăugați noi clase CSS la `principal` și fiecare din cele trei elemente din interiorul acestuia.
 
 ```html
     <main class="attPageLayoutGrid">
         <article class="attGridArticle">
-            <!--other stuff here-->
+            <- alte lucruri aici ->
         </article>
         <aside class="attGridAside1">
-            <!--other stuff here-->
+            <- alte lucruri aici ->
         </aside>
         <aside class="attGridAside2">
-            <!--other stuff here-->
+            <- alte lucruri aici ->
         </aside>
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+Containerul va schimba aspectul este `principal`, dar ai putea face acest lucru cu orice fel de container, cum ar fi un `div` sau `articol`, sau chiar întreaga pagina `corpul`. Tehnica vei folosi este numit **grila CSS**.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+În acest exemplu, `antet` și `subsol` va fi lăsat în afara designului, dar este destul de comună pentru a le include în grila de asemenea.
 
-+ Set the `display` property to `grid` on the overall container:
-
-```css
-    .attPageLayoutGrid {
-        display: grid;
-        grid-column-gap: 0.5em;
-        grid-row-gap: 1em;
-    }
-```
-
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
-
-+ Next, you name a `grid-area` for each element: 
++ Setați proprietatea `afișare` la `grilă` pe containerul general:
 
 ```css
-    .attGridArticle {
-        grid-area: agArticle;
-    }
-    .attGridAside1 {
-        grid-area: agAside1;
-    }
-    .attGridAside2 {
-        grid-area: agAside2;
-    }
+    .attPageLayoutGrid {afișare: grilă; grilă-grilă: 0,5 mm; grilă-decalaj: 1em; }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+Ce credeți că fac proprietățile `grid-column-gap` și `grid-row-gap`?
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Apoi, numiți o zonă `rețea` pentru fiecare element: 
 
 ```css
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "agArticle agArticle"
-        "agAside1 agAside2";
+    .attGridArticle {grid-area: agArticle; } .attGridAside1 {zona grid-ului: agAside1; } .attGridAside2 {zona grid-ului: agAside2; }
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+Apoi, proiectați aspectul dvs.! Să pună două `deoparte` parte elemente de partea în partea de jos a paginii. Pentru aceasta aveți nevoie de două **coloane** de lățime egală. Puteți păstra **rândul** înălțimea automată.
 
-## \--- collapse \---
-
-## title: Help! I got errors and warnings!
-
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
-
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
-
-\--- /collapse \---
-
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
-
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
-
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ Introduceți următorul cod în regulile CSS `.attPageLayoutGrid`:
 
 ```css
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2";
+    grilă-șablon-rânduri: auto; grilă-șablon-coloane: 1fr 1fr; grilă-șablon-zone: "agArticle agArticle" "agAside1 agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+`fr` reprezintă **fracție**. Observați cum a face `articolul` ia tot spațiul de deasupra celor două coloane.
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
+## \--- colaps \---
+
+## titlu: Ajutor! Am erori și avertismente!
+
+Dacă utilizați Trinket, este posibil să observați unele erori și avertismente, chiar dacă ați introdus exact codul de mai sus. Acest lucru se datorează faptului că Trinket nu recunoaște încă proprietățile rețelei CSS. Cu toate acestea, codul va funcționa în continuare.
+
+În cazul în care codul de rețea CSS vă oferă avertismente privind "proprietatea necunoscută" sau o eroare cum ar fi "simbolul neașteptat 1fr", puteți pur și simplu ignora aceste.
+
+\--- / colaps \---
+
+![Asidiurile sunt alăturate în partea de jos](images/cssGridAsidesAtBottom.png)
+
+Să punem `deoparte` elemente peste pe dreapta și a le face jumătate din lățimea de `articolul`.
+
++ Modifica valorile `grid-șablon coloanele` și `grid-matriță domenii` până la:
 
 ```css
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2"
-        "agArticle . ";
+    grilă-șablon-coloane: 2fr 1fr; grilă-șablon-zone: "agArticle agAside1" "agArticle agAside2";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![În partea de sus se află partea dreaptă](images/cssGridAsidesOnRight.png)
 
-\--- challenge \---
++ Dacă nu doriți `deoparte` elemente pentru a întinde tot drumul spre partea de jos, puteți adăuga un spațiu liber , utilizând un punct: 
 
-## Challenge: make different layouts for different screen sizes
+```css
+    grilă-șablon-zone: "agArticle agAside1" "agArticle agAside2" "agArticle. „;
+```
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
+![Dincolo de dreapta și fără întindere](images/cssGridAsidesTopRight.png)
 
-\--- hints \---
+\--- provocare \---
+
+## Provocare: realizați diferite machete pentru diferite dimensiuni ale ecranului
+
++ Puteți utiliza verificările dimensiunii ecranului pe care le-ați adăugat mai devreme pentru a modifica aspectul în funcție de cât de mare este ecranul? Notă: dacă ați creat deja blocuri CSS pentru fiecare dimensiune a ecranului, puteți adăuga noul cod CSS la acele blocuri în loc să creați altele noi.
+
+\--- sugestii \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+Următorul cod definește un aspect pentru clasa CSS de mai sus atunci când ecranul este mai mare de 1000 de pixeli:
 
 ```css
-    @media all and (min-width: 1000px) {
-        .attPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "agArticle agArticle"
-                "agAside1 agAside2";
-        }
-    }  
+    @media toate și (min-width: 1000px) {.attPageLayoutGrid {grid-template-coloane: 1fr 1fr; grilă-șablon-zone: "agArticle agArticle" "agAside1 agAside2"; }}  
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+Următorul cod definește un aspect pentru clasa CSS de mai sus atunci când ecranul este mai mare de 1600 de pixeli:
 
 ```css
-    @media all and (min-width: 1600px) {
-        .attPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "agArticle agAside1"
-                "agArticle agAside2"
-                "agArticle .";
-        }
-    }  
+    @media all și (min-width: 1600px) {.attPageLayoutGrid {grid-template-coloane: 1fr 1fr; grilă-șablon-zone: "agArticle agAside1" "agArticle agAside2" "agArticle."; }}  
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
-\--- /hints \---
+\--- / sugestii \---
 
-\--- /challenge \---
+\--- /provocare \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+Cu **grilă CSS**, puteți face aproape orice aspect care vă place. Dacă doriți să aflați mai multe, accesați [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){: target = "_ blank"}
