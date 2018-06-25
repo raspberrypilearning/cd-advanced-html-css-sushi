@@ -1,107 +1,93 @@
-## Captions and side notes
+## Subtitrări și note
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+Pe acest card veți afla mai multe despre încă două tipuri de element **container** : unul pe care îl puteți utiliza pentru a adăuga o imagine (oarecum text ca titlu sau scurtă descriere) unei imagini și altul pentru că aveți alte lucruri care nu într-adevăr, aparțin informațiilor principale de pe o pagină.
 
-### Pictures with captions
+### Imagini cu legende
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Găsiți un element `img` în care aveți text deasupra sau dedesubt care se referă la imagine. Sunt de lucru cu imaginea lui Tito la `index.html`, dar poti sa te duci cu tot ce este pe site - ul dumneavoastră. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
   <p>
-    Tour guide Tito!
+    Ghid turistic Tito!
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `<\figure>`.
++ Pe linia de deasupra codului, adăugați eticheta de deschidere `<figure>`. Pe o linie nouă sub cod, plasați eticheta de închidere `<\ figura>`.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> <\figcaption>` tags instead. The whole thing should look something like this:
++ Apoi, eliminați etichetele `p` sau orice etichete pe care le aveți în jurul textului (poate că este o rubrică, ca `h2`?) Și plasați textul între `<figcaption> <\ figcaption>` în schimb. Totul ar trebui să pară așa:
 
 ```html
   <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
       <figcaption>
-      Tour guide Tito!
+      Ghid turistic Tito!
       </figcaption>
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+Elementul `figcaption` este **legendă**. Se poate trece deasupra elementului `img` sau sub el.
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![Imagine a lui Tito cu o legendă](images/figureAndCaption.png)
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: Why is this useful?
+## titlu: De ce este util acest lucru?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+`figura` elementul acționează ca un fel de **container** pentru imaginea și legenda sa. Acest lucru vă permite să le tratați ca o unitate la definirea stilurilor.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+Gruperea acestora împreună logic ajută la menținerea unei structuri bune în codul site-ului dvs. web.
 
-\--- /collapse \---
+\--- / colaps \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+Puteți utiliza codul CSS la stil `figura` și `figcaption` ca și orice alt element care utilizează clase, ID-uri sau selectori de elemente. Adăug următoarele reguli pentru a elimina spațiul suplimentar adăugat de noul container:
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+  figura {margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; }
 ```
 
-### Side notes
+### Notele laterale
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+Pagina Atracții de pe site-ul meu este o listă cu locurile de vizitat. Vreau să adaug câteva note despre vreme și despre cum să ajung. Aceste informații nu aparține cu adevărat în `articolul` elementul cu toate atracțiile. Acesta este un exemplu în care puteți folosi elementul `lângă`.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ Du - te la o pagină de pe site - ul care are un `articol` element de pe ea - Sunt folosind `attractions.html`.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **În afara** din `articolul` element, se adaugă unul sau mai multe perechi de `<aside> <\ deoparte>` etichetele care conțin lucrurile suplimentare.
 
 ```html
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h2>Noțiuni de bază</h2>
+      <h3>Tren și autobuz</h3>
+      <p>Puteți ajunge în majoritatea orașelor importante cu trenul de la Dublin. Există multe autobuze care fac excursii la locații populare și atracții turistice.</p>
+      <h3>Mașină</h3>
+      <p>Cea mai ușoară modalitate de a ajunge în afara orașelor este cu mașina.</p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+      <h2>Vremea</h2>
+      <p>Vremea în Irlanda este de <span class="specialText">foarte imprevizibile!</span> Este cel mai bine să <span class="specialText">fie pregătite</span> pentru orice fel de vreme, chiar dacă este o zi bună!</p>
   </aside>
 ```
 
-## \--- collapse \---
+## \--- colaps \---
 
-## title: Why is this useful?
+## titlu: De ce este util acest lucru?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+Articolele `,`, `,`și alte recipiente sunt similare. Singura diferență reală este în **sensul**, adică, ceea ce le utilizați pentru.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+Este important să utilizați elemente HTML relevante ori de câte ori puteți. Acesta oferă site - ul mai bine dvs. structura și este util mai ales pentru persoanele care folosesc **cititoare de ecran**.
 
-\--- /collapse \---
+\--- / colaps \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+Ați văzut celălalt element acolo, `span`? Aceasta este o etichetă specială pe care o puteți folosi doar pentru adăugarea unui cod suplimentar CSS! Puteți pune ceva între o pereche de taguri `span`. Este util pentru lucruri precum styling-ul **parte** a textului într-un paragraf.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ Adăugați următorul cod CSS în foaia de stil pentru a finaliza stilul pentru codul HTML de mai sus.
 
 ```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+  .sideNoteStyle {margine: punctată 1px violet; fundal-culoare: # c1ebec; umplutură: 0,5 mm; margine: 0,5; } .specialText {culoare: # FF4500; font-size: mai mare; }
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![Note suplimentare cu stilul lor propriu](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+Pe următoarea carte, veți învăța cum să faceți aspectul site-ului dvs. mai interesant!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Pentru a fi gata, să facă o pagină care are un `articolul` și două `deoparte` elemente din interiorul `<main> </main>` tag - uri. Sau, dacă preferați, puteți lucra cu pagina Atracții de pe site-ul meu.
