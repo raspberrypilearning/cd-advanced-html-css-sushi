@@ -1,66 +1,59 @@
-## All in a row
+## Tutto di fila
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Su questa carta imparerai alcuni trucchi per sistemare le cose **orizzontalmente** su una pagina. In primo luogo, vedrai come ottenere le cose centrate. Quindi sistemerai gli elementi fianco a fianco in fila.
 
-+ Add the following CSS properties to the `.card` class:
++ Aggiungere le seguenti proprietà CSS al `.card` classe:
 
 ```css
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Dovresti vedere le carte spostarsi al centro della pagina. Impostando i margini sinistro e destro su `auto`, è possibile impostare qualsiasi elemento al centro anziché a sinistra.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Le carte appaiono al centro anziché a sinistra](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Trascina il bordo della finestra del browser per rendere la pagina più stretta e più ampia - nota che le carte rimangono centrate.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Metti tutti i link delle carte che hai appena creato in un nuovo elemento contenitore. Non sarà uno `articolo` o `sezione`, ma uno chiamato `div`. Questo è un contenitore per tutti gli usi che puoi usare per raggruppare le cose e fare dei bei layout.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Aggiungi il seguente codice CSS nel tuo foglio di stile:
 
 ```css
-    .cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-    }
+    .cardContainer {display: flex; flex-wrap: wrap; justify-content: space-around; imbottitura: 10px; }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Ecco! Grazie a **Flex**, le tue carte ora vengono visualizzate una accanto all'altra!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Trascina il bordo della finestra per allargare e restringere il sito web e osserva come le carte si muovono per adattarsi alle dimensioni della finestra, a volte spostando la linea successiva.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Le carte sono disposte in due file distanziate in modo uniforme per adattarsi alla larghezza del browser](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Prova a eliminare la `larghezza` e `altezza` proprietà dal `.card` classe e vedere cosa succede: `flex` adatta abilmente le carte insieme come un puzzle, mantenendo un'altezza anche attraverso tutto ciò che è nella stessa riga.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Carte affiancate con larghezza automatica](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Se hai un menu di navigazione nella parte superiore della pagina, questo è un altro posto dove puoi usare questo trucco. Il tuo menu deve essere composto da elementi della lista ((`li`) per questo prossimo bit. Se preferisci, puoi provarlo con il mio sito web.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Trova le regole CSS per il menu. Nel mio sito web, sono i blocchi `nav ul`, `nav ul li`e `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Elimina la proprietà `display: inline;` dalle voci dell'elenco. Quindi, nella lista `nav ul`, aggiungere:
 
 ```css
-    display: flex;
-    justify-content: flex-start;
+    display: flex; justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Menu con elementi allineati a sinistra](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Finisci praticamente nello stesso menu, giusto? La cosa interessante di `flex` è che puoi controllare il layout con la proprietà `justify-content`.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Cambia il valore di `justify-content` a `flex-end` e vedi cosa succede. Oppure cambialo a `spazio-intorno a` per rendere le voci del menu uniformemente distanziate, proprio come hai fatto per le carte.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Menu con voci uniformemente distanziate](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Menu con elementi allineati a destra](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** è uno strumento di layout piuttosto potente che può riempire un'intera serie di schede di Sushi proprie - puoi saperne di più a proposito di [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
