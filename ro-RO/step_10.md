@@ -1,95 +1,80 @@
-## Special effects
+## Efecte speciale
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+Pe acest card veti invata cateva efecte benefice pe care le puteti obtine cu ajutorul CSS.
 
-### Shadows and movement
+### Umbre și mișcare
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+Să adăugăm o mică mișcare atunci când plasați cursorul pe cărțile pe care le-ați făcut mai devreme.
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
-
-```css
-    .card:hover {
-        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
-        transform: translateY(-2px);
-    }
-```
-
-+ Try out different values in the `translate` function!
-
-## \--- collapse \---
-
-## title: The `transform` property
-
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
-
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
-
-\--- /collapse \---
-
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
-
-## \--- collapse \---
-
-## title: What's `rgba`?
-
-`rgba(0,0,0,0.2)` is another way of defining a colour.
-
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
-
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
-
-\--- /collapse \---
-
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ Găsiți cartea `: mutați` clasă CSS de mai devreme și schimbați-o la următoarea:
 
 ```css
-    transition: all 0.2s ease-out;
+    .card: hover {box-shadow: 0px 2px 2px rgba (0,0,0,0,2); transformare: translateY (-2px); }
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
++ Încercați valori diferite în `traduce` funcție!
 
-### Lightbox
+## \--- colaps \---
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+## titlu: Proprietatea `transformă`
 
-![Lightbox effect in action](images/lightboxLemur.png)
+Dacă ați finalizat cartelele Intermediate HTML / CSS Sushi, este posibil să vă amintiți folosirea proprietății `transform` în unele animații `cheie` cadre. Aici veți vedea că puteți utiliza proprietatea pe cont propriu într-un bloc CSS obișnuit.
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+Un fel de valoare pe care o puteți seta este `rotiți`, pentru a face un element de întoarcere. Altele sunt `translateY`, care mișcă ceva în sus sau în jos, și `translateX`, pentru mișcarea dintr-o parte în alta.
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
+\--- / colaps \---
+
++ Redați-le cu valori ale pixelilor diferite în proprietatea `box-shadow` pentru a vedea ce fac. 
+
+## \--- colaps \---
+
+## titlu: Ce este `rgba`?
+
+`rgba (0,0,0,0,2)` este un alt mod de definire a unei culori.
+
+Are cele trei numere obișnuite (de la `0` până la `255`) pentru roșu, verde și albastru.
+
+Al patrulea număr, numit valoarea **alfa** , definește modul în care este **transparent** (sau vizibil). Este un număr zecimal între `0` și `1`, cu `1` nefiind deloc vizibile, iar `0` fiind complet invizibil. Aceasta inseamna ca valoarea alfa a unui element este mai mica, cu atat mai mult este aceasta.
+
+\--- / colaps \---
+
++ În cele din urmă, faceți mișcarea netedă prin adăugarea următoarei proprietăți la clasa `.card` de mai devreme: 
+
+```css
+    tranziție: toate 0,2 secunde;
+```
+
+O durată de `0.2S` înseamnă `tranziția` durează 0,2 secunde.
+
+### Caseta de lumina
+
+Un alt efect pe care l-ați văzut probabil pe o mulțime de site-uri web este **lightbox**: faceți clic pe ceva și site-ul se estompează, în timp ce altceva, ca o imagine mai mare sau o fereastră pop-up, apare în fața a tot.
+
+![Efectul efectului lightbox în acțiune](images/lightboxLemur.png)
+
+Pentru a obține acest efect, veți face două linkuri: una pentru caseta de lumină reală (bitul care apare) și una pentru lucrul pe care faceți clic pentru a face să apară caseta de lumină. O să fac a mea pe pagina Atracții a site-ului meu. Te duci cu orice pagina pe care ai poze!
+
++ Decideți ce doriți să apară când faceți clic și adăugați-le pe toate în pagină între un set de taguri `` pentru a crea un link. Asigurați-vă că dați link-ul `id`. Codul poate merge oriunde pe pagină: veți face elementele invizibile în pasul următor!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
-        <h3>Lemur!!</h3>
+        <h3>Lemur !!</h3>
         <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+        <p>Un lemur care se bucură de o mică gustare</p>
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+Puteți pune tot ce vă place între etichetele de legătură. Am o imagine mare, o rubrică și un text. Poate vrei doar o poză și nici un text!
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ Adăugați următorul cod CSS pentru caseta de lumină. Puteți să aflați ce fac unele dintre ele?
 
 ```css
-    .lightbox{
-        background: rgba(0,0,0,0.8);
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        visibility: hidden;
-        z-index: 999;
-    }
+    .lightbox {fundal: rgba (0,0,0,0,8); culoare: #ffffff; text-align: centru; text-decoration: nici unul; lățime: 100%; înălțime: 100%; top: 0; stânga: 0; poziție: fixă; vizibilitate: ascuns; z-index: 999; }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+Notă: Setarea proprietății `poziția` la `fixe` înseamnă că poziția pe care o setați va fi relativă la fereastra browserului, astfel încât aceasta va rămâne pusă când derulați.
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ Apoi, decideți ce doriți să faceți pentru a crea caseta de lumină și adăugați o pereche de taguri `` jurul acelui element (în cazul meu este o imagine mai mică a unui lemur). **Ținta** din link - ul va fi lightbox, pe care ați setat folosind `id`. S-ar putea să recunoașteți această tehnică mai devreme!
 
 ```html
     <a href="#boxLemur">
@@ -97,16 +82,14 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ În final, adăugați următorul cod CSS. Rețineți că aceasta este o **pseudo-clasa**; ar trebui să meargă după codul pentru clasa `.lightbox` și nu înăuntru!
 
 ```css
-    .lightbox:target {
-        visibility: visible;
-    }
+    .lightbox: vizibilitate {vizibilitate: vizibil; }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+Pseudo-clasa `: țintă` se aplică ori de câte ori caseta lightbox a fost ținta ultimului clic pe link. Deci , atunci când faceți clic oriunde, `vizibilitate` va fi restabilite la `ascunse`.
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ Încercați să faceți clic pe noul dvs. link pentru a vedea caseta de lumină care apare! Pentru ao face să dispară, faceți clic pe oriunde pe pagină.
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+Puteți adăuga cât mai multe casete luminoase pe care le doriți unei pagini. Toate acestea se pot folosi aceeași clasă CSS - doar asigurați - vă că fiecare are un alt `id`! Pentru fiecare, trebuie să faceți ceva pe pagina dvs. de Web într-un link pe care puteți face clic pentru a face să apară caseta de lumină și apoi utilizați `id` ca valoare `href` în acel link, așa cum ați făcut mai sus!
