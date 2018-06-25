@@ -1,66 +1,59 @@
-## All in a row
+## 全行
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+このカードでは、あなたは物事配置するためのいくつかのトリックを学ぶことができます **水平に** ページ。 まず、物事を中心にする方法がわかります。 次に、要素を並べて並べます。
 
-+ Add the following CSS properties to the `.card` class:
++ 次のCSSプロパティを `.card` クラスに追加します。
 
 ```css
-    margin-left: auto;
-    margin-right: auto;
+    margin-left：auto; margin-right：auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+カードがページの中央に移動するのを確認する必要があります。 左右のマージンを `auto`に設定すると、左に上書きするのではなく、中央に任意の要素を置くことができます。
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![カードは左にではなく中央に表示されます](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ ブラウザーウィンドウの端をドラッグして、ページの幅を広げ、幅を広げます。カードが中央に留まることに注意してください。
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ 作成したすべてのカードリンクを新しいコンテナ要素に置きます。 これは `品目` または `セクション`はなりませんが、 `div`と呼ばれます。 これは、グループ化や素敵なレイアウトの作成に使用できる汎用のコンテナです。
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ あなたのスタイルシートに次のCSSコードを追加します：
 
 ```css
-    .cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
-    }
+    .cardContainer {display：flex;フレックスラップ：ラップ; justify-content：スペースアラウンド;パディング：10px; }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà！ **Flex**おかげで、あなたのカードが並んで表示されるようになりました！
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ ウィンドウの端をドラッグしてウェブサイトをより幅広く狭くし、カードがウィンドウサイズに合わせてどのように移動し、次の行に折り返すかを監視します。
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![ブラウザの幅に合わせて2つの行に均等に配置されたカード](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ `.card` クラスから `幅` と `高さ` プロパティを削除して、何が起こるかを見てみましょう： `フレックス` はジグソーパズルのようにカードを巧みに合わせ、同じ行にあるすべてのものにわたって均一な高さを保ちます。
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![自動的に横に並べられたカード](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+あなたのページの上部にナビゲーションメニューがある場合、それは別の場所で、このトリックを使用することができます。 あなたのメニューは、この次のビットのためにリスト要素（（`li`）で構成されている必要があります。 あなたが好きなら、あなたは私のウェブサイトでそれを試すことができます。
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ メニューのCSSルールを見つけます。 私のウェブサイトでは、それはブロックです `NAV UL`、 `NAV UL李`、および `のnav ulの李`。
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ プロパティを削除する `display：inline;` をリスト項目から削除します。 次に、リスト `nav ul`、次を追加します。
 
 ```css
-    display: flex;
-    justify-content: flex-start;
+    ディスプレイ：フレックス; justify-content：フレックススタート。
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![項目が左揃えのメニュー](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+あなたはほとんど同じメニューで終わるのですよね？ `フレックス` のクールなことは、プロパティ `justify-content`レイアウトを制御できることです。
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ `justify-content` の値を `flex-end` 変更し、何が起こるかを確認します。 またはそれを変更する `スペースの周りに` あなたはカードのためにやったように、等間隔のメニュー項目を作成します。
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![アイテムが均等に配置されたメニュー](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![項目が右揃えのメニュー](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** は非常に強力なレイアウトツールで、独自の寿司カードシリーズをいっぱいにすることができます。詳しくは、 [dojo.soy/html3-flex](http://dojo.soy/html3-flex)ご覧ください。
