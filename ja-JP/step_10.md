@@ -1,95 +1,80 @@
-## Special effects
+## 特殊効果
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+このカードでは、CSSで達成できるいくつかの素晴らしい効果を学びます。
 
-### Shadows and movement
+### 影と動き
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+あなたが前に作ったカードの上にカーソルを置いたときに少し動きを加えましょう。
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
-
-```css
-    .card:hover {
-        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
-        transform: translateY(-2px);
-    }
-```
-
-+ Try out different values in the `translate` function!
-
-## \--- collapse \---
-
-## title: The `transform` property
-
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
-
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
-
-\--- /collapse \---
-
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
-
-## \--- collapse \---
-
-## title: What's `rgba`?
-
-`rgba(0,0,0,0.2)` is another way of defining a colour.
-
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
-
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
-
-\--- /collapse \---
-
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ 以前の `.card：hover` CSSクラスを見つけて、次のように変更します。
 
 ```css
-    transition: all 0.2s ease-out;
+    .card：hover {box-shadow：0px 2px rgba（0,0,0,0.2）; transform：translateY（-2px）; }
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
++ `translate` 関数で異なる値を試してみてください！
 
-### Lightbox
+## \---崩壊\---
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+## タイトル： `変換` プロパティ
 
-![Lightbox effect in action](images/lightboxLemur.png)
+中級のHTML / CSS寿司カードを完成した場合、 `@keyframes` アニメーションで `トランスフォーム` プロパティを使用することを覚えているかもしれません。 ここでは、通常のCSSブロック内でプロパティを単独で使用することもできます。
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+あなたがあるためにそれを設定することができます値の一種 `回転`要素のターンを作るために、。 その他は `移動Y`上下何かを移動し、そして `移動X`左右に移動するため、。
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
+\--- /崩壊\---
+
++ 異なる画素値を用いて約プレイ `ボックスシャドウ` 彼らが何を参照してくださいプロパティ。 
+
+## \---崩壊\---
+
+## タイトル： `rgba`とは何ですか？
+
+`rgba（0,0,0,0.2）` は色を定義する別の方法です。
+
+赤、緑、青の3つの数字（ `0` から `255`）があります。
+
+**アルファ** 値と呼ばれる4番目の数字は、 **透明な** （またはシースルー）がどのようにあるかを定義します。 それは `0` と `1`間の10進数であり、 `1` はシースルーではなく、 `0` は完全に不可視である。 これは、要素のアルファ値が低いほど、シースルーが多くなることを意味します。
+
+\--- /崩壊\---
+
++ 最後に、以前の `.card` クラスに次のプロパティを追加して、動きを円滑にします。 
+
+```css
+    移行：すべて0.2秒の緩和。
+```
+
+`0.2秒` 持続時間は、 `秒` が0.2秒間続くことを意味する。
+
+### ライトボックス
+
+あなたがたぶん多くのウェブサイトで見た別の効果は、ライトボックス **ライトボックス**：何かをクリックするとウェブサイトが暗くなり、大きな写真やポップアップボックスのようなものがすべての目の前に現れます。
+
+![ライトボックス効果の実際の効果](images/lightboxLemur.png)
+
+この効果を得るには、実際のライトボックス（ポップアップするビット）とライトボックスを表示するためにクリックしたものの2つのリンクを作成します。 私は私のウェブサイトのアトラクションページで私のことをするつもりです。 あなたはあなたが写真を持っているどのページでも一緒に行く！
+
++ クリックしたときに表示するものを決め、リンクを作成するために</code> タグ `セットの間にすべてをページに追加します。 リンクに <code>ID`。 コードはページのどこにでも置くことができます。次のステップで要素を非表示にします！
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
-        <h3>Lemur!!</h3>
+        <h3>レムル！</h3>
         <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+        <p>少しの軽食を楽しむキュウリ</p>
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+リンクタグの間に好きなものを置くことができます。 私は大きな絵、見出し、テキストを持っています。 たぶんあなたはただの写真とテキストがほしいと思うかもしれません！
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ ライトボックスに次のCSSコードを追加します。 あなたはそれのいくつかを解決することができますか？
 
 ```css
-    .lightbox{
-        background: rgba(0,0,0,0.8);
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        visibility: hidden;
-        z-index: 999;
-    }
+    .lightbox {背景：rgba（0,0,0,0.8）;色：#ffffff; text-align：center;テキスト装飾：なし;幅：100％;高さ：100％;トップ：0;左：0;位置：固定;可視性：非表示; z-インデックス：999; }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+注： `position` プロパティを `fixed` 設定すると、設定した位置はブラウザウィンドウとの相対的なものになるため、スクロールするときはそのまま残ります。
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ 次に、ライトボックスを表示させるために何をクリックするかを決め、その要素の周りに `の` タグのペアを追加します（私の場合、それはキツネの小さな絵です）。 リンクの **ターゲット** はライトボックスになり、 `id`を使用して設定します。 早くからこのテクニックを認識するかもしれません！
 
 ```html
     <a href="#boxLemur">
@@ -97,16 +82,14 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ 最後に、次のCSSコードを追加します。 これは **疑似クラス**あることに注意してください。 `.lightbox` クラスのコードの後に​​置かなければなりません。
 
 ```css
-    .lightbox:target {
-        visibility: visible;
-    }
+    .lightbox：target {visibility：visible; }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+`：ターゲット` 擬似クラスは、ライトボックスがクリックされた最後のリンクのターゲットであった場合に適用されます。 だから、どこかをクリックすると、 `可視性` は `隠された`戻ります。
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ 新しいリンクをクリックして、ライトボックスが表示されることを確認してください！ 遠ざけるには、ページのどこかをクリックしてください。
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+ライトボックスは、ページに必要なだけ追加できます。 彼らはすべて同じCSSクラスを使うことができます - それぞれが異なる `id`持っていることを確認してください！ それぞれについては、ウェブページ上の何かをクリックしてライトボックスを表示させるリンクにしてから、上記のように `id` を `href` 値として使用する必要があります。
