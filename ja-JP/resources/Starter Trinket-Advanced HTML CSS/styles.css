@@ -1,0 +1,161 @@
+body {
+  background-color: #9f80ff;
+  font-family: "Lato", sans-serif;
+  color: Purple;
+}
+h1 {
+  color: CornSilk;
+}
+
+nav ul {
+  background-color: tomato;
+  border-style: solid;
+  border-color: MediumVioletRed;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: PapayaWhip;
+}
+nav ul li a {
+  text-decoration: none;
+  color: Brown;
+}
+
+section {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F5FFFA;
+  padding-bottom: 10px;
+}
+
+
+article {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.mediumPics {
+  width: 200px;
+  border-radius: 10px;
+}
+        
+#frontPage {
+  background: #c1ebec;
+  background: linear-gradient(to right, #87CEFA, #c1ebec);
+}
+
+#welcomeText {
+  animation-name: green-pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+#imgTito {
+  border-radius: 100%;
+  width: 100px;
+}
+#imgTito:hover {
+  animation-name: rollOver;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.sectionSpacing {
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.purpleBackground {
+  background-color: #9f80ff;
+}
+
+.greenBackground {
+  background-color: #48D1CC;
+}
+
+.yellowBackground {
+  background-color: #FFFFCC;
+  color: #A52A2A;
+}
+
+.solidRoundBorders {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F5FFFA;
+  border-radius: 10px;
+}
+
+.sectionSpacing {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.purpleBackground {
+  background-color: #9f80ff;
+}
+
+.greenBackground {
+  background-color: #48D1CC;
+}
+
+.niceLinks {
+  text-decoration: none;
+  color: #A52A2A;
+}
+.niceLinks:hover {
+  color: PapayaWhip;
+}
+
+
+@keyframes green-pulse {
+  0% {
+    color: CornSilk;
+  }
+  50% {
+    color: lightgreen;
+  }
+  100% {
+    color: CornSilk;
+  }
+}
+
+
+
+@keyframes rollOver {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: purple;
+}
+td {
+  color: purple;
+}
+/********************************/
