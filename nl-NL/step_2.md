@@ -6,4 +6,4 @@
 
 ### Software
 
-This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+Dit project kan in een webbrowser worden voltooid met behulp van [trinket.io](https://trinket.io) {:target="_blank"} of offline door gebruik te maken van een teksteditor.
