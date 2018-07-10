@@ -1,20 +1,20 @@
 ## Pas je menu automatisch aan
 
-Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Let's make your menu responsive!
+Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Laten je menu zich automatisch aanpassen!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Je begint met de reguliere stijlen: dit is je **default** (standaard) gedrag.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: Wat betekent 'default'?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+De default (standaard) stijlen zijn je normale set stijlregels. Ze worden, voordat er speciale voorwaarden worden gecontroleerd, altijd toegepast,.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+Je kunt code toevoegen die vervolgens de grootte van het scherm controleert en indien nodig enkele aanpassingen aanbrengt.
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ Voeg de volgende CSS-regels toe aan je menu. Je hebt waarschijnlijk ook kleuren en randen gedefinieerd; Ik heb ze weggelaten om hier ruimte te sparen! Als je al CSS-regels hebt gedefinieerd voor jouw menu, hoef je alleen maar de eigenschappen en waarden die je mist hieronder toe te voegen of te wijzigen.
 
 ```css
     nav ul {
@@ -30,15 +30,15 @@ You can add code that then checks the size of the screen and makes some adjustme
     }
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+Met de bovenstaande CSS-code is je menu het meest geschikt voor kleine schermen. Dit wordt **mobile-first** (mobiel-eerst) genoemd.
 
 ![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## title: Wat betekent 'mobile-first'?
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+Heel vaak gebruikt je bij het coderen van een website een computerscherm en je zult waarschijnlijk jouw stijlen definiëren op basis van hoe het eruit ziet op dat scherm.
 
 When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
 
