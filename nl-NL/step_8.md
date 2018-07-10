@@ -52,9 +52,9 @@ Wat denk je dat de `grid-column-gap` en `grid-row-gap` eigenschappen doen?
     }
 ```
 
-Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onderaan de pagina zetten. Hiervoor heb je twee **colums** (kolommen) van gelijke breedte nodig. You can keep the **row** height automatic.
+Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onderaan de pagina zetten. Hiervoor heb je twee **colums** (kolommen) van gelijke breedte nodig. Je kunt de **rij** hoogte automatisch laten.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Plaats de volgende code binnenin de `.attPageLayoutGrid` CSS regels:
 
 ```css
     grid-template-rows: auto;
@@ -64,21 +64,21 @@ Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onde
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` staat voor **fraction** (deel). Let op hoe je het `article` alle ruimte over de twee kolommen in beslag laat nemen.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: Help! Ik kreeg fouten en waarschuwingen!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+Als je Trinket gebruikt, kunnen er enkele fouten (errors) en waarschuwingen (warnings) verschijnen, zelfs als je de code precies zo hebt getypt als hierboven. Dit komt omdat Trinket de CSS raster eigenschappen nog niet herkent. Echter, de code werkt wel.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+Als de CSS raster code jou 'unknown property'-waarschuwingen geeft of een fout als 'unexpected token 1fr' geeft, kun je deze eenvoudigweg negeren.
 
 \--- /collapse \---
 
 ![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte van het `article` maken.
 
 + Change the values of `grid-template-columns` and `grid-template-areas` to:
 
