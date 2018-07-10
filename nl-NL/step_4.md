@@ -72,9 +72,9 @@ Zie je hoe de waarde van `href` in mijn link eindigt op `#scFota`? Dit is een ha
 
 ## title: stijlen opnieuw instellen
 
-Now that the whole preview card is a link, the text font may have changed.
+Nu de hele voorbeeldkaart een koppeling is, is het lettertype mogelijk gewijzigd.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Als dat het geval is, kun je dit oplossen door een **CSS klasse** aan de link toe te voegen: `class="cardLink"`. Hier is de CSS-code die je in je stylesheet kunt zetten:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Het instellen van de waarde van een eigenschap op `inherit` (erven) zorgt ervoor dat het de waarde van het **parent** element krijgt. In dit geval komt de tekstkleur overeen met de rest van de tekst op de startpagina.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Maak minimaal vier of vijf van deze kaarten. Als je werkt vanuit mijn voorbeeld website, kun je er een doen voor elk van de secties op de pagina Attracties. Met de volgende Sushi Card leer je hoe je de kaarten kunt rangschikken met een coole truc!
