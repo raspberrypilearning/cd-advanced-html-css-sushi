@@ -22,11 +22,11 @@ Hier zijn drie verschillende pagina layouts die je gaat toepassen:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+De container waarvan je de indeling wijzigt is `main`, maar je zou dit kunnen doen met elke soort container, zoals een `div` of `article`, of zelfs voor de hele pagina `body`. De techniek die je gaat gebruiken, wordt het ** CSS-grid** genoemd.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+In dit voorbeeld worden de `header` (kop) en `footer` (voettekst) weggelaten uit het ontwerp, maar het is vrij normaal om ze ook in het raster op te nemen.
 
-+ Set the `display` property to `grid` on the overall container:
++ Stel de `display` eigenschap voor de gehele container in op `grid`:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+Wat denk je dat de `grid-column-gap` en `grid-row-gap` eigenschappen doen?
 
-+ Next, you name a `grid-area` for each element: 
++ Vervolgens benoem je een `grid-area` (rastergebied) voor elk element: 
 
 ```css
     .attGridArticle {
@@ -52,7 +52,7 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onderaan de pagina zetten. Hiervoor heb je twee **colums** (kolommen) van gelijke breedte nodig. You can keep the **row** height automatic.
 
 + Put the following code inside the `.attPageLayoutGrid` CSS rules:
 
