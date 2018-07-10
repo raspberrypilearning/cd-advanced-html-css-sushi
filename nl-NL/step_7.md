@@ -36,11 +36,11 @@ Het `figcaption` element is je **bijschrift**. Het kan boven of onder het `img` 
 
 Het element `figure` fungeert als een soort **container** voor je afbeelding en bijschrift. Hiermee kun je ze als één geheel behandelen bij het definiëren van stijlen.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+Door ze logisch samen te voegen, helpt het je ook om een ​​goede structuur in je website-code te behouden.
 
 \--- /collapse \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+Je kunt, zoals elk ander element dat klassen, ID's of element selectors gebruikt, CSS-code gebruiken om `figure` en `figcaption` te stijlen. Ik voeg de volgende regels toe om de extra spatiëring te verwijderen die door de nieuwe container is toegevoegd:
 
 ```css
   figure { 
@@ -51,13 +51,13 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
   }
 ```
 
-### Side notes
+### Kantlijnnotities
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. Ik wil wat aantekeningen toevoegen over het weer en hoe ik de weg kan vinden. Die informatie hoort niet echt thuis in het `article` element met alle attracties. Dit is een voorbeeld van wanneer je het `aside` element zou kunnen gebruiken.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> <\aside>` tags containing your extra stuff.
++ **Buiten** van het `article` element, voeg je een of meer paren `<aside> <\aside>` tags met je extra inhoud toe.
 
 ```html
   <aside class="sideNoteStyle">
