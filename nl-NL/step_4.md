@@ -42,7 +42,7 @@ Hier is een techniek die je kunt gebruiken om een ​​fotogalerij te maken of 
 
 Laten we de hele voorbeeldkaart in een link veranderen zodat mensen kunnen klikken om meer informatie te zien.
 
-+ Plaats het hele `article` element binnen een link element. Zorg ervoor dat de `</a>` tag na het `</article>` label komt! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Plaats het hele `article` element binnen een link element. Zorg ervoor dat de `</a>` tag na het `</article>` label komt! Je kunt de **URL** link veranderen naar wat je maar wilt linken. Dat zou een andere pagina op je website kunnen zijn, of het zou helemaal een andere website kunnen zijn.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -58,19 +58,19 @@ Laten we de hele voorbeeldkaart in een link veranderen zodat mensen kunnen klikk
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: koppelen aan een specifiek gedeelte van een pagina
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Zie je hoe de waarde van `href` in mijn link eindigt op `#scFota`? Dit is een handige truc die je kunt gebruiken om naar een bepaald deel van een pagina te gaan.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Typ eerst de URL van de pagina waarnaar je wilt linken, gevolgd door `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ Vind in de code voor de pagina waarnaar je koppelt het deel waarnaar je wilt springen en geef dat element een `id`, bijvoorbeeld `<sectieid="scFota"`. De waarde van de `id` is wat je typt na de `#` in je link.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: stijlen opnieuw instellen
 
 Now that the whole preview card is a link, the text font may have changed.
 
