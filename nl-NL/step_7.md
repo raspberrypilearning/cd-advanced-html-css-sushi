@@ -1,15 +1,15 @@
-## Captions and side notes
+## Onderschriften en kanttekeningen
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+Op deze kaart leer je meer over twee soorten **container** elementen: een element dat je kunt gebruiken om een ​​bijschrift toe te voegen (een tekst als een titel of een korte beschrijving) aan een foto, en een ander voor wanneer je extra dingen hebt die niet echt bij de hoofdinformatie op een pagina horen.
 
-### Pictures with captions
+### Afbeeldingen met bijschriften
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Zoek een `img` element waar je tekst boven of onder hebt die bij de afbeelding hoort. Ik werk met de Tito-afbeelding op `index.html`, maar je kunt kiezen uit wat er op je website staat. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
   <p>
-    Tour guide Tito!
+    Tour gids Tito!
   </p>
 ```
 
