@@ -57,35 +57,35 @@ De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. I
 
 + Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
 
-+ **Buiten** van het `article` element, voeg je een of meer paren `<aside> <\aside>` tags met je extra inhoud toe.
++ **Buiten** het `article` element, voeg je een of meer paren `<aside> <\aside>` tags met je extra inhoud toe.
 
 ```html
   <aside class="sideNoteStyle">
       <h2>Hoe er te komen</h2>
       <h3>Trein en bus</h3>
-      <p>je kunt de meeste grote steden vanaf Dublin per trein bereiken. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
+      <p>Je kunt de meeste grote steden vanuit Dublin bereiken met de trein. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
      <h3>Auto</h3> 
-     <p> De makkelijkste manier om buiten de steden rond te reizen, is met de auto. </p>
+     <p> De gemakkelijkste manier om je buiten de steden te verplaatsen, is met de auto. </p>
     </aside>
     <aside class="sideNoteStyle">
        <h2>Weer</h2>
-       <p>Het weer in Ierland is <span class="specialText">zeer onvoorspelbaar!</span> Het is het beste om <span class="specialText">voorbereid te zijn</span> op elk weertype, zelfs als het een mooie dag is!</p>
+       <p>Het weer in Ierland is <span class="specialText">zeer onvoorspelbaar!</span> Het is het beste om op elk weertype <span class="specialText">voorbereid te zijn</span>, zelfs als het een mooie dag is!</p>
 </aside>
 ```
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: Waarom is dit handig?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+De `aside`, `article` en andere containers zijn allemaal vergelijkbaar. Het enige echte verschil is de **betekenis**, dat wil zeggen, waarvoor je ze gebruikt.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+Het is belangrijk om zinvolle HTML-elementen te gebruiken wanneer je maar kunt. Het geeft je website een betere structuur en is vooral handig voor mensen die **schermlezers** gebruiken.
 
 \--- /collapse \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je kunt gebruiken om extra CSS-code toe te voegen! Je kunt van alles tussen een een paar `span` tags plaatsen. Het is handig voor dingen zoals het stylen van een **gedeelte** van de tekst in een alinea.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ Voeg de volgende CSS-code toe aan uw style sheet om de stijl voor de bovenstaande HTML-code te voltooien.
 
 ```css
   .sideNoteStyle {
@@ -102,6 +102,6 @@ Did you spot the other element in there, `span`? This is a special tag you can u
 
 ![Additional notes with their own styling](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+Op de volgende kaart leer je hoe je de layout van je website interessanter kunt maken!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Bereid een pagina voor met één `article` en twee `aside` elementen binnen de `<main></main>` tags. Or if you prefer, you can work with the Attractions page on my website.
