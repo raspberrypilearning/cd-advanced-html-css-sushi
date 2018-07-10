@@ -1,7 +1,7 @@
 ---
-title: Advanced HTML/CSS Sushi Cards
+title: Geavanceerde HTML/CSS-sushikaarten
 hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
+description: Voeg leuke lay-outs en coole effecten toe aan je website!
 theme: red
 duration: 2
 listed: true
@@ -17,13 +17,13 @@ version: 3.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: What you will need
+    title: Wat je nodig hebt
   - 
-    title: Getting setup
+    title: Opstarten
   - 
-    title: Clickable cards
+    title: Klikbare kaarten
   - 
     title: All in a row
   - 
