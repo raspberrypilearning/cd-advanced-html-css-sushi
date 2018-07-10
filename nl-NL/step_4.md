@@ -1,10 +1,10 @@
-## Clickable cards
+## Klikbare kaarten
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Hier is een techniek die je kunt gebruiken om een ​​fotogalerij te maken of een portfolio-pagina die je projecten laat zien: kleine **voorbeeldkaarten**.
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Voeg de volgende HTML-code waar je maar wilt aan je website toe. Ik doe het in `index.html`. Je kunt de afbeelding en tekst aanpassen aan je eigen voorbeeldkaarten. Ik ga een aantal hoogtepunten van de toeristische attracties in Ierland doen.
 
 ```html
     <article class="card">
@@ -16,7 +16,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text before styles are applied](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Voeg de volgende CSS-code toe om de klassen `card` en `tinyPicture` te maken:
 
 ```css
     .tinyPicture {
@@ -40,9 +40,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text with styling to create a small card effect](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Laten we de hele voorbeeldkaart in een link veranderen zodat mensen kunnen klikken om meer informatie te zien.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Plaats het hele `article` element binnen een link element. Zorg ervoor dat de `</a>` tag na het `</article>` label komt! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
 
 ```html
     <a href="attractions.html#scFota">  
