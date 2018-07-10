@@ -1,8 +1,8 @@
-## What you will need
+## Wat je nodig hebt
 
 ### Hardware
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Een computer die toegang heeft tot de [trinket.io](https://trinket.io) {:target="_blank"} website
 
 ### Software
 
