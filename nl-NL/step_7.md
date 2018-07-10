@@ -104,4 +104,4 @@ Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je
 
 Op de volgende kaart leer je hoe je de layout van je website interessanter kunt maken!
 
-+ Bereid een pagina voor met één `article` en twee `aside` elementen binnen de `<main></main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Bereid een pagina voor met één `article` en twee `aside` elementen binnen de `<main></main>` tags. Of, als je wilt, kunt je werken met de Attracties pagina op mijn website.
