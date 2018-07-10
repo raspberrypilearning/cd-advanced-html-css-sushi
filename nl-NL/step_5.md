@@ -32,9 +32,9 @@ Je zou moeten zien dat de kaarten naar het midden van de pagina gaan. Door de li
     }
 ```
 
-Voila! Thanks to **Flex**, your cards are now displayed side by side!
+Voila! Met dank aan **Flex**, je kaarten worden nu naast elkaar weergegeven!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Versleep de rand van je venster om de website breder en smaller te maken en kijk hoe de kaarten zich verplaatsen om in de venstergrootte te passen, soms omslaand naar de volgende regel.
 
 ![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
 
