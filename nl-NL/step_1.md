@@ -1,10 +1,10 @@
-## Introduction
+## Inleiding
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+Deze Sushi-kaarten laten je zien hoe je een website er gelikt en professioneel uit laat zien met coole effecten en layouts.
 
-### What you will make
+### Wat ga je maken
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+Beweeg je muiscursor in het onderstaande venster om enkele effecten uit te proberen die je op je website zult leren gebruiken:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -12,11 +12,11 @@ Move your mouse cursor around in the window below to try out some of the effects
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### What you will learn
+### Wat ga je leren
 
-In these Sushi Cards, you will find out how to:
+Met deze Sushi Cards leer je hoe je:
 
-* Create any website layout you want
-* Make your layout adjust itself automatically to different screen sizes
-* Make a collage of overlapping pictures and text
-* Apply some neat hover and click effects that you might have seen on other websites
+* Maak een website-indeling zoals jij wilt
+* Laat je layout zichzelf automatisch aan verschillende schermformaten aanpassen
+* Maak een collage van overlappende foto's en tekst
+* Gebruik een paar leuke hover en click-effecten die je op andere websites hebt gezien
