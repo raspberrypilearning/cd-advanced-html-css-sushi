@@ -61,16 +61,16 @@ De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. I
 
 ```html
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h2>Hoe er te komen</h2>
+      <h3>Trein en bus</h3>
+      <p>je kunt de meeste grote steden vanaf Dublin per trein bereiken. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
+     <h3>Auto</h3> 
+     <p> De makkelijkste manier om buiten de steden rond te reizen, is met de auto. </p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
-  </aside>
+       <h2>Weer</h2>
+       <p>Het weer in Ierland is <span class="specialText">zeer onvoorspelbaar!</span> Het is het beste om <span class="specialText">voorbereid te zijn</span> op elk weertype, zelfs als het een mooie dag is!</p>
+</aside>
 ```
 
 ## \--- collapse \---
