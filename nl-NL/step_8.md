@@ -1,23 +1,23 @@
-## Design cool page layouts
+## Ontwerp coole pagina-layouts
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ Voor deze kaart zou je moeten werken met een pagina die een `main` element bevat met daarbinnen drie elementen: één `article` en twee `aside` elementen. Ga je gang en maak deze eerst als dat nodig is. Als je met mijn website wilt werken, voeg je de `aside` code van de vorige Sushi Card toe aan de Attracties pagina. 
 
-Here are three different page layouts you'll be applying:
+Hier zijn drie verschillende pagina layouts die je gaat toepassen:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ Voeg nieuwe CSS klassen toe aan `main` en elk van de drie elementen daarbinnen.
 
 ```html
     <main class="attPageLayoutGrid">
         <article class="attGridArticle">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </article>
         <aside class="attGridAside1">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </aside>
         <aside class="attGridAside2">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </aside>
     </main>
 ```
