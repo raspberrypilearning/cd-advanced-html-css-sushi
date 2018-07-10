@@ -1,6 +1,6 @@
-## Make your menu responsive
+## Pas je menu automatisch aan
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Let's make your menu responsive!
 
 You'll start with the regular styles: this will be your **default** behaviour.
 
