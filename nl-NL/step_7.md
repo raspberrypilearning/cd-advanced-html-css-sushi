@@ -57,7 +57,7 @@ De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. I
 
 + Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
 
-+ **Buiten** het `article` element, voeg je een of meer paren `<aside> <\aside>` tags met je extra inhoud toe.
++ **Buiten** het `article` element, voeg je een of meer paren `<aside> </aside>` tags met je extra inhoud toe.
 
 ```html
   <aside class="sideNoteStyle">
@@ -65,7 +65,7 @@ De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. I
       <h3>Trein en bus</h3>
       <p>Je kunt de meeste grote steden vanuit Dublin bereiken met de trein. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
      <h3>Auto</h3> 
-     <p> De gemakkelijkste manier om je buiten de steden te verplaatsen, is met de auto. </p>
+     <p>De gemakkelijkste manier om je buiten de steden te verplaatsen, is met de auto.</p>
     </aside>
     <aside class="sideNoteStyle">
        <h2>Weer</h2>
