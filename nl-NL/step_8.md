@@ -80,7 +80,7 @@ Als de CSS raster code jou 'unknown property'-waarschuwingen geeft of een fout a
 
 Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte van het `article` maken.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ Wijzig de waarden van `grid-template-columns` en `grid-template-areas`naar:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -91,7 +91,7 @@ Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte v
 
 ![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ Als je de `aside` elementen niet helemaal naar beneden wilt uittrekken, kun je een lege ruimte toevoegen met behulp van een punt: 
 
 ```css
     grid-template-areas: 
@@ -104,7 +104,7 @@ Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte v
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Uitdaging: maak verschillende layouts voor verschillende schermformaten
 
 + Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
 
