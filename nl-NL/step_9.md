@@ -23,7 +23,7 @@ De foto's verschijnen één na één op de webpagina, in de volgorde waarin ze i
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ Vervolgens moet je de eigenschap `position: relative;` aan de container zelf toevoegen en definieer daar een grootte voor. Dit maakt het zo dat de posities van de andere elementen **relatief tot** (dat wil zeggen, binnenin) de container worden gedefinieerd.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ De foto's verschijnen één na één op de webpagina, in de volgorde waarin ze i
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ Maak vervolgens een set stijl regels voor elk van de elementen met behulp van **id-selectors** om hun maten (`width` en/of `height` eigenschappen) en hun exacte posities in te stellen.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+Om de positie van een element te bepalen, zijn er vier eigenschappen die je kunt gebruiken: `left`, `right`, `top` en `bottom`. Zij geven aan hoe ver elk van de randen van de rand van het parent element af moet liggen. Gebruik `top` of `bottom` voor de verticale positie en `left` of `right` voor de horizontale positie.
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ Kies de exacte posities voor elk van je afbeeldingen en gebruik een van de eigenschappen `left`, `right`, `top` en `bottom` om die posities in je CSS-regels te definiëren. Bijvoorbeeld plaatst deze code de kat foto 100 pixels vanaf de bovenkant en 60 pixels van links:
 
 ```css
     #imgTeaCat {
@@ -52,13 +52,13 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+Opmerking: de positie waarden kunnen ook negatief zijn! Als je een negatieve waarde gebruikt, wordt het element buiten de container geduwd, over de rand die je hebt opgegeven.
 
-### Making things overlap
+### Dingen laten overlappen
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+Je wilt misschien sommige afbeeldingen overlappen. Maar hoe kies je welke er bovenop komt?
 
-+ Choose two images and give them positions that cause them to overlap.
++ Kies twee afbeeldingen en geef ze posities waardoor ze elkaar overlappen.
 
 + Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
 
