@@ -80,11 +80,11 @@ Het element met het **hoogste** nummer eindigt **bovenaan** de stapel, met ander
 
 \--- /collapse \---
 
-Je kunt niet alleen afbeeldingen op deze manier positioneren, maar alle HTML-elementen. For example, you could use a `p` element to add some text over a photo.
+Je kunt niet alleen afbeeldingen op deze manier positioneren, maar alle HTML-elementen. Je kunt bijvoorbeeld een `p` element gebruiken om tekst over een foto toe te voegen.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Uitdaging: maak een fotocollage
 
 + Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
 
