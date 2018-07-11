@@ -106,13 +106,13 @@ Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte v
 
 ## Uitdaging: maak verschillende layouts voor verschillende schermformaten
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ Kun je de schermgrootte controles die je eerder hebt toegevoegd gebruiken om afhankelijk van hoe breed het scherm is de layout te veranderen? Opmerking: als je al CSS blokken hebt gemaakt voor elk schermformaat, kun je de nieuwe CSS code toevoegen aan die blokken in plaats van nieuwe te maken.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1000 pixels:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1600 pixels:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+Met **CSS grid**, kun je bijna elke gewenste layout maken. Als je meer wilt weten, ga je naar [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:Target="_blank"}
