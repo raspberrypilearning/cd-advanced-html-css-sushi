@@ -86,13 +86,13 @@ Je kunt niet alleen afbeeldingen op deze manier positioneren, maar alle HTML-ele
 
 ## Uitdaging: maak een fotocollage
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Probeer je eigen fotocollage zoals hieronder getoond, samen te stellen! Gebruik exacte positionering samen met verschillende `z-index` waarden om het overlappende effect te krijgen zoals jij het wilt.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+Hieronder staat de HTML-code voor de fotocollage op mijn Ierland-website. Er zijn zes foto's en een stuk tekst allemaal binnen een `div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+Hier zijn de CSS-regels die de posities instellen voor elk van mijn afbeeldingen in de collage:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+Dit zijn de CSS-klassen die ik heb gebruikt:
 
 ```css
     .collagePhoto {
