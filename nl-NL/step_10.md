@@ -1,12 +1,12 @@
-## Special effects
+## Speciale effecten
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+Op deze kaart leer je een paar leuke effecten die je met CSS kunt bereiken.
 
-### Shadows and movement
+### Schaduwen en beweging
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+Laten we een kleine beweging toevoegen als je jouw muisaanwijzer over de kaarten, die je eerder hebt gemaakt, laat gaan.
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ Vind de `.card:hover` CSS klasse van eerder en verander het naar het volgende:
 
 ```css
     .card:hover {
@@ -15,11 +15,11 @@ Let's add a little movement when you hover your cursor over the cards you made e
     }
 ```
 
-+ Try out different values in the `translate` function!
++ Probeer verschillende waarden uit in de `translate` functie!
 
 ## \--- collapse \---
 
-## title: The `transform` property
+## title: de `tyransform` eigenschap
 
 If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
 
