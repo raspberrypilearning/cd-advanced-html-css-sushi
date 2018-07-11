@@ -67,9 +67,9 @@ Om dit effect te krijgen, maak je twee links: één voor de daadwerkelijke light
     </a>
 ```
 
-Je kunt alles wat je wilt tussen de link tags plaatsen. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+Je kunt alles wat je wilt tussen de link tags plaatsen. Ik heb een grote foto, een titel en wat tekst. Misschien wil je gewoon een foto en geen tekst!
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ Voeg de volgende CSS-code toe voor de lightbox. Kun jij uitvinden wat een deel ervan doet?
 
 ```css
     .lightbox{
@@ -87,9 +87,9 @@ Je kunt alles wat je wilt tussen de link tags plaatsen. I've got a big picture, 
     }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+Opmerking: de positie `position` eigenschap op `fixed` zetten betekent dat de positie die je instelt relatief is ten opzichte van het browservenster, zodat deze blijft staan ​​wanneer je scrollt.
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ Bepaal vervolgens welk ding je wilt aanklikken om de lightbox te laten verschijnen en voeg een paar `a` tags rond dat element toe (in mijn geval is het een kleinere afbeelding van een maki). Het **target** (doel) van de link wordt de lightbox, die je instelt met behulp van de `id`. Je herkent deze techniek misschien van eerder!
 
 ```html
     <a href="#boxLemur">
@@ -97,7 +97,7 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ Voeg ten slotte de volgende CSS-code toe. Merk op dat dit een **pseudo-class** is; het zou achter de code voor de `.lightbox` class moeten komen en niet erin!
 
 ```css
     .lightbox:target {
@@ -105,8 +105,8 @@ Note: Setting the `position` property to `fixed` means the position you set will
     }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+De `:target` pseudo-klasse wordt toegepast als de lightbox het doelwit was van de laatste geklikte koppeling. Dus wanneer je ergens klikt, wordt de `visibility` teruggezet naar `hidden` (verborgen).
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ Klik op je nieuwe link om de lightbox te zien verschijnen! Klik ergens op de pagina om het te laten verdwijnen.
 
 You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
