@@ -33,31 +33,31 @@ Een waarde die je kunt gebruiken is `rotate` (draaien), om een ​​element te 
 
 ## title: Wat is `rgba`?
 
-`rgba(0,0,0,0.2)` is another way of defining a colour.
+`rgba(0,0,0,0.2)` is een andere manier om een ​​kleur te definiëren.
 
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+Het heeft de gebruikelijke drie nummers (van `0` tot `255`) voor rood, groen en blauw.
 
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+Het vierde nummer, de **alpha** waarde, definieert hoe **transparant** (of doorzichtig) iets is. Het is een decimaal getal tussen `0` en `1`, met `1` geheel ondoorzichtig, en `0` volledig doorzichtig. Dit betekent dat hoe lager de alpha waarde van een element, hoe doorzichtiger het is.
 
 \--- /collapse \---
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ Maak tenslotte de beweging vloeiend door de volgende eigenschap aan de `.card` class van eerder toe te voegen: 
 
 ```css
     transition: all 0.2s ease-out;
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+Een tijd van `0,2s` betekent de `transition` (overgang) duurt 0,2 seconden.
 
 ### Lightbox
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+Een ander effect dat je waarschijnlijk op veel websites hebt gezien, is **lightbox**: je klikt ergens op en de website dimt terwijl iets anders, zoals een grotere afbeelding of een pop-up venster ervoor verschijnt.
 
 ![Lightbox effect in action](images/lightboxLemur.png)
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+Om dit effect te krijgen, maak je twee links: één voor de daadwerkelijke lightbox (het ding dat verschijnt) en één voor het ding dat je klikt om de lightbox te laten verschijnen. Ik ga de mijne op de pagina Attracties van mijn website doen. Ga naar een pagina waarop je foto's hebt staan!
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ Bepaal welke dingen je wilt weergeven wanneer je klikt en voeg ze allemaal toe aan jouw pagina tussen een set van `a` tags om een ​​link te maken. Zorg ervoor dat je de link een `id` geeft. De code kan overal op de pagina verschijnen: je zult de elementen in de volgende stap onzichtbaar maken!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -67,7 +67,7 @@ To get this effect you will make two links: one for the actual lightbox (the bit
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+Je kunt alles wat je wilt tussen de link tags plaatsen. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
 
 + Add the following CSS code for the lightbox. Can you work out what some of it does?
 
