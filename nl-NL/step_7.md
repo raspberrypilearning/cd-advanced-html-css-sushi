@@ -13,9 +13,9 @@ Op deze kaart leer je meer over twee soorten **container** elementen: een elemen
   </p>
 ```
 
-+ Op de regel boven de code, voeg de openings tag `<figure>` toe. Voeg op een nieuwe regel onder de code de sluit tag `<\figuur>` toe.
++ Op de regel boven de code, voeg de openings tag `<figure>` toe. Voeg op een nieuwe regel onder de code de sluit tag `</figuur>` toe.
 
-+ Verwijder vervolgens de `p` tags, of welke tags je ook hebt gebruikt rond de tekst (misschien is het een kop, zoals `h2`) en plaats de tekst tussen de `<figcaption><\figcaption>` tags. Het geheel zou er ongeveer zo uit moeten zien:
++ Verwijder vervolgens de `p` tags, of welke tags je ook hebt gebruikt rond de tekst (misschien is het een kop, zoals `h2`) en plaats de tekst tussen de `<figcaption></figcaption>` tags. Het geheel zou er ongeveer zo uit moeten zien:
 
 ```html
   <figure>
