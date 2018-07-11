@@ -1,10 +1,10 @@
-## Photo collage
+## Foto collage
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+Op deze kaart leer je CSS te gebruiken om HTML-elementen precies te positioneren en een fotocollage te maken.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ Voeg een `div` toe aan je pagina en plaats er zoveel afbeeldingen in als je maar wilt. Geef de `div` en `img` elementen `id` waarden.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+De foto's verschijnen één na één op de webpagina, in de volgorde waarin ze in je code voorkomen.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ Voeg in je CSS bestand de volgende CSS klasse toe voor de elementen binnen de `div`: 
 
 ```css
     .absPos {
