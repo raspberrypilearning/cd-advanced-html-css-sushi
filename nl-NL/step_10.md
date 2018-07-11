@@ -21,17 +21,17 @@ Laten we een kleine beweging toevoegen als je jouw muisaanwijzer over de kaarten
 
 ## title: de `tyransform` eigenschap
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+Als je de Intermediate HTML/CSS Sushi kaarten hebt voltooid, weet je wellicht nog dat je de `transform` eigenschap in sommige `@keyframes` animaties hebt gebruikt. Hier zie je dat je de eigenschap ook kunt gebruiken in een standaard CSS-blok.
 
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+Een waarde die je kunt gebruiken is `rotate` (draaien), om een ​​element te laten draaien. Andere zijn `translateY`, dat iets naar boven of naar onder verplaatst, en `translateX`, voor beweging van links naar rechts.
 
 \--- /collapse \---
 
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
++ Speel met verschillende pixelwaarden in de `box-shadow` eigendom om te zien wat ze doen. 
 
 ## \--- collapse \---
 
-## title: What's `rgba`?
+## title: Wat is `rgba`?
 
 `rgba(0,0,0,0.2)` is another way of defining a colour.
 
