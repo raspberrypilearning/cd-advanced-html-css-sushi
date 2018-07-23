@@ -1,0 +1,38 @@
+---
+title: Erweiterte HTML / CSS Sushi Karten
+hero_image: Bilder / Banner.png
+description: Fügen Sie Ihrer Website schöne Layouts und coole Effekte hinzu!
+theme: rot
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: HTML-CSS-Javascript
+site_areas: Coderdojo, Projekte
+hardware: ''
+software: HTML-CSS-Javascript
+version: 3.0.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Einführung
+  - 
+    title: Was wirst du brauchen
+  - 
+    title: Einrichtung erhalten
+  - 
+    title: Anklickbare Karten
+  - 
+    title: Alle in einer Reihe
+  - 
+    title: Machen Sie Ihr Menü ansprechend
+  - 
+    title: Bildunterschriften und Randnotizen
+  - 
+    title: Entwerfen Sie coole Seitenlayouts
+  - 
+    title: Fotocollage
+  - 
+    title: Spezialeffekte

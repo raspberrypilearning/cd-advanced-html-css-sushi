@@ -1,0 +1,38 @@
+---
+title: 高度なHTML / CSS寿司カード
+hero_image: images / banner.png
+description: 素敵なレイアウトとあなたのウェブサイトにクールな効果を追加！
+theme: 赤
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: html-css-javascript
+site_areas: コーダー堂、プロジェクト
+hardware: ''
+software: html-css-javascript
+version: 3.0.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 前書き
+  - 
+    title: あなたが必要とするもの
+  - 
+    title: セットアップの取得
+  - 
+    title: クリック可能なカード
+  - 
+    title: 全行
+  - 
+    title: メニューを反応させる
+  - 
+    title: キャプションとサイドノート
+  - 
+    title: クールなページレイアウトをデザインする
+  - 
+    title: フォトコラージュ
+  - 
+    title: 特殊効果

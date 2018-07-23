@@ -1,0 +1,38 @@
+---
+title: Carte di sushi HTML / CSS avanzate
+hero_image: images / banner.png
+description: Aggiungi bei layout e fantastici effetti al tuo sito web!
+theme: rosso
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: html-css-javascript
+site_areas: coderdojo, progetti
+hardware: ''
+software: html-css-javascript
+version: 3.0.0
+last_tested: 2017/01/01
+steps:
+  - 
+    title: introduzione
+  - 
+    title: Di cosa avrai bisogno
+  - 
+    title: Ottenere l'installazione
+  - 
+    title: Carte cliccabili
+  - 
+    title: Tutto di fila
+  - 
+    title: Rendi il tuo menu reattivo
+  - 
+    title: Didascalie e note a margine
+  - 
+    title: Progettare layout di pagina interessanti
+  - 
+    title: collage di foto
+  - 
+    title: Effetti speciali

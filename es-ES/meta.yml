@@ -1,0 +1,38 @@
+---
+title: Tarjetas de sushi HTML / CSS avanzadas
+hero_image: images / banner.png
+description: '¡Agregue diseños agradables y efectos geniales a su sitio web!'
+theme: rojo
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: html-css-javascript
+site_areas: coderdojo, proyectos
+hardware: ''
+software: html-css-javascript
+version: 3.0.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Introducción
+  - 
+    title: Que necesitarás
+  - 
+    title: Conseguir la configuración
+  - 
+    title: Tarjetas clicables
+  - 
+    title: Todo en una fila
+  - 
+    title: Haga que su menú responda
+  - 
+    title: Leyendas y notas secundarias
+  - 
+    title: Diseño de diseños de página geniales
+  - 
+    title: collage de fotos
+  - 
+    title: Efectos especiales
