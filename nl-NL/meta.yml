@@ -1,5 +1,5 @@
 ---
-title: Geavanceerde HTML/CSS-sushikaarten
+title: Geavanceerde HTML/CSS Sushi Kaarten
 hero_image: images/banner.png
 description: Voeg leuke lay-outs en coole effecten toe aan je website!
 theme: red
@@ -7,13 +7,10 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: ''
-interests: ''
 technologies: html-css-javascript
 site_areas: coderdojo, projects
-hardware: ''
 software: html-css-javascript
-version: 3.0.0
+version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
