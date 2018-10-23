@@ -1,6 +1,6 @@
 ## Inleiding
 
-Deze Sushi-kaarten laten je zien hoe je een website er gelikt en professioneel uit laat zien met coole effecten en layouts.
+Deze Sushi Kaarten laten je zien hoe je een website er gelikt en professioneel uit kan laten zien met coole effecten en layouts.
 
 ### Wat ga je maken
 
@@ -14,7 +14,7 @@ Beweeg je muiscursor in het onderstaande venster om enkele effecten uit te probe
 
 ### Wat ga je leren
 
-Met deze Sushi Cards leer je hoe je:
+Met deze Sushi Kaarten leer je hoe je:
 
 * Maak een website-indeling zoals jij wilt
 * Laat je layout zichzelf automatisch aan verschillende schermformaten aanpassen
