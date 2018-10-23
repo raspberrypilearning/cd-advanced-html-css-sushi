@@ -13,9 +13,9 @@ Op deze kaart leer je meer over twee soorten **container** elementen: een elemen
   </p>
 ```
 
-+ Op de regel boven de code, voeg de openings tag `<figure>` toe. Voeg op een nieuwe regel onder de code de sluit tag `</figuur>` toe.
++ Op de regel boven de code, voeg de openings tag `<figure>` toe. On a new line below the code, place the closing tag `</figure>`.
 
-+ Verwijder vervolgens de `p` tags, of welke tags je ook hebt gebruikt rond de tekst (misschien is het een kop, zoals `h2`) en plaats de tekst tussen de `<figcaption></figcaption>` tags. Het geheel zou er ongeveer zo uit moeten zien:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Het geheel zou er ongeveer zo uit moeten zien:
 
 ```html
   <figure>
@@ -51,13 +51,13 @@ Je kunt, zoals elk ander element dat klassen, ID's of element selectors gebruikt
   }
 ```
 
-### Kantlijnnotities
+### Kanttekeningen
 
 De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. Ik wil wat aantekeningen toevoegen over het weer en hoe ik de weg kan vinden. Die informatie hoort niet echt thuis in het `article` element met alle attracties. Dit is een voorbeeld van wanneer je het `aside` element zou kunnen gebruiken.
 
 + Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
 
-+ **Buiten** het `article` element, voeg je een of meer paren `<aside> </aside>` tags met je extra inhoud toe.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
@@ -83,9 +83,9 @@ Het is belangrijk om zinvolle HTML-elementen te gebruiken wanneer je maar kunt. 
 
 \--- /collapse \---
 
-Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je kunt gebruiken om extra CSS-code toe te voegen! Je kunt van alles tussen een een paar `span` tags plaatsen. Het is handig voor dingen zoals het stylen van een **gedeelte** van de tekst in een alinea.
+Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je kunt gebruiken om extra CSS-code toe te voegen! Je kunt van alles tussen een paar `span` tags plaatsen. Het is handig voor dingen zoals het stylen van een **gedeelte** van de tekst in een alinea.
 
-+ Voeg de volgende CSS-code toe aan uw style sheet om de stijl voor de bovenstaande HTML-code te voltooien.
++ Voeg de volgende CSS-code toe aan je style sheet om de stijl voor de bovenstaande HTML-code te voltooien.
 
 ```css
   .sideNoteStyle {
