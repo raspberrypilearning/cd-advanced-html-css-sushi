@@ -13,9 +13,9 @@ En esta tarjeta aprenderá sobre dos tipos más de elementos **contenedor** : un
   </p>
 ```
 
-+ En la línea arriba del código, agregue la etiqueta de apertura `<figure>`. En una nueva línea debajo del código, coloque la etiqueta de cierre `<\ figure>`.
++ En la línea arriba del código, agregue la etiqueta de apertura `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-+ Luego, quite las etiquetas `p` , o las etiquetas que tenga alrededor del texto (tal vez sea un encabezado, como `h2`?), Y coloque el texto entre `<figcaption> <\ figcaption>` etiquetas en su lugar. Todo debe verse más o menos así:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Todo debe verse más o menos así:
 
 ```html
   <figure>
@@ -52,7 +52,7 @@ La página de Atracciones en mi sitio web es una lista de lugares para visitar. 
 
 + Vaya a una página de su sitio web que tiene un elemento de `artículo` en él: estoy usando `atracciones.html`.
 
-+ **Fuera** del `del artículo` elemento, añadir uno o más pares de `<aside> <\ aparte>` etiquetas que contienen el material extra.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
