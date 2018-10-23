@@ -13,9 +13,9 @@ Sur cette carte, vous découvrirez deux autres types d'élément **container** :
   </p>
 ```
 
-+ Sur la ligne au-dessus du code, ajoutez la balise d'ouverture `<figure>`. Sur une nouvelle ligne sous le code, placez la balise de fermeture `<\ figure>`.
++ Sur la ligne au-dessus du code, ajoutez la balise d'ouverture `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-+ Ensuite, supprimez les balises `p` , ou les balises que vous avez autour du texte (c'est peut-être un en-tête, comme `h2`?), Et placez le texte entre `<figcaption> <\ figcaption>` balises à la place. Le tout devrait ressembler à ceci:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Le tout devrait ressembler à ceci:
 
 ```html
   <figure>
@@ -52,7 +52,7 @@ La page des attractions sur mon site Web est une liste de lieux à visiter. Je v
 
 + Aller à une page de votre site Web qui a un élément `article` dessus - J'utilise `attractions.html`.
 
-+ **Outside** du `article` éléments, ajouter une ou plusieurs paires de `<aside> <\ de côté>` étiquettes contenant votre substance supplémentaire.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
