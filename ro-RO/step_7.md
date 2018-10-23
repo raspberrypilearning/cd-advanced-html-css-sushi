@@ -13,9 +13,9 @@ Pe acest card veți afla mai multe despre încă două tipuri de element **conta
   </p>
 ```
 
-+ Pe linia de deasupra codului, adăugați eticheta de deschidere `<figure>`. Pe o linie nouă sub cod, plasați eticheta de închidere `<\ figura>`.
++ Pe linia de deasupra codului, adăugați eticheta de deschidere `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-+ Apoi, eliminați etichetele `p` sau orice etichete pe care le aveți în jurul textului (poate că este o rubrică, ca `h2`?) Și plasați textul între `<figcaption> <\ figcaption>` în schimb. Totul ar trebui să pară așa:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Totul ar trebui să pară așa:
 
 ```html
   <figure>
@@ -52,7 +52,7 @@ Pagina Atracții de pe site-ul meu este o listă cu locurile de vizitat. Vreau s
 
 + Du - te la o pagină de pe site - ul care are un `articol` element de pe ea - Sunt folosind `attractions.html`.
 
-+ **În afara** din `articolul` element, se adaugă unul sau mai multe perechi de `<aside> <\ deoparte>` etichetele care conțin lucrurile suplimentare.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
