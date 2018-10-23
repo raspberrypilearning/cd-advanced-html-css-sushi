@@ -19,15 +19,15 @@ Laten we een kleine beweging toevoegen als je jouw muisaanwijzer over de kaarten
 
 ## \--- collapse \---
 
-## title: de `tyransform` eigenschap
+## title: de `transform` eigenschap
 
-Als je de Intermediate HTML/CSS Sushi kaarten hebt voltooid, weet je wellicht nog dat je de `transform` eigenschap in sommige `@keyframes` animaties hebt gebruikt. Hier zie je dat je de eigenschap ook kunt gebruiken in een standaard CSS-blok.
+Als je de Intermediate HTML/CSS Sushi Kaarten hebt voltooid, weet je wellicht nog dat je de `transform` eigenschap in sommige `@keyframes` animaties hebt gebruikt. Hier zie je dat je de eigenschap ook kunt gebruiken in een standaard CSS-blok.
 
 Een waarde die je kunt gebruiken is `rotate` (draaien), om een ​​element te laten draaien. Andere zijn `translateY`, dat iets naar boven of naar onder verplaatst, en `translateX`, voor beweging van links naar rechts.
 
 \--- /collapse \---
 
-+ Speel met verschillende pixelwaarden in de `box-shadow` eigendom om te zien wat ze doen. 
++ Speel met verschillende pixelwaarden in de `box-shadow` eigenschap om te zien wat ze doen. 
 
 ## \--- collapse \---
 
@@ -47,7 +47,7 @@ Het vierde nummer, de **alpha** waarde, definieert hoe **transparant** (of doorz
     transition: all 0.2s ease-out;
 ```
 
-Een tijd van `0,2s` betekent de `transition` (overgang) duurt 0,2 seconden.
+Een tijd van `0,2s` betekent dat de `transition` (overgang) 0,2 seconden duurt.
 
 ### Lightbox
 
@@ -55,7 +55,7 @@ Een ander effect dat je waarschijnlijk op veel websites hebt gezien, is **lightb
 
 ![Lightbox effect in action](images/lightboxLemur.png)
 
-Om dit effect te krijgen, maak je twee links: één voor de daadwerkelijke lightbox (het ding dat verschijnt) en één voor het ding dat je klikt om de lightbox te laten verschijnen. Ik ga de mijne op de pagina Attracties van mijn website doen. Ga naar een pagina waarop je foto's hebt staan!
+Om dit effect te krijgen, maak je twee links: één voor de daadwerkelijke lightbox (het ding dat verschijnt) en één voor het ding dat je klikt om de lightbox te laten verschijnen. Ik ga de mijne op de pagina Attracties van mijn website zetten. Ga naar een pagina waarop je foto's hebt staan!
 
 + Bepaal welke dingen je wilt weergeven wanneer je klikt en voeg ze allemaal toe aan jouw pagina tussen een set van `a` tags om een ​​link te maken. Zorg ervoor dat je de link een `id` geeft. De code kan overal op de pagina verschijnen: je zult de elementen in de volgende stap onzichtbaar maken!
 
@@ -63,7 +63,7 @@ Om dit effect te krijgen, maak je twee links: één voor de daadwerkelijke light
     <a href="#_" class="lightbox" id="boxLemur">
         <h3>Lemur!!</h3>
         <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+        <p>Een maki die van een kleine snack geniet</p>
     </a>
 ```
 
