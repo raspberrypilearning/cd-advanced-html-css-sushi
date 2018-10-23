@@ -4,7 +4,7 @@ Hier is een techniek die je kunt gebruiken om een ​​fotogalerij te maken of 
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Voeg de volgende HTML-code waar je maar wilt aan je website toe. Ik doe het in `index.html`. Je kunt de afbeelding en tekst aanpassen aan je eigen voorbeeldkaarten. Ik ga een aantal hoogtepunten van de toeristische attracties in Ierland doen.
++ Voeg de volgende HTML-code waar je maar wilt aan je website toe. Ik doe het in `index.html`. Je kunt de afbeelding en tekst aanpassen aan je eigen voorbeeldkaarten. Ik ga een aantal hoogtepunten van de toeristische attracties in Ierland aanpassen.
 
 ```html
     <article class="card">
@@ -58,7 +58,7 @@ Laten we de hele voorbeeldkaart in een link veranderen zodat mensen kunnen klikk
 
 ## \--- collapse \---
 
-## title: koppelen aan een specifiek gedeelte van een pagina
+## title: Koppelen aan een specifiek gedeelte van een pagina
 
 Zie je hoe de waarde van `href` in mijn link eindigt op `#scFota`? Dit is een handige truc die je kunt gebruiken om naar een bepaald deel van een pagina te gaan.
 
@@ -70,7 +70,7 @@ Zie je hoe de waarde van `href` in mijn link eindigt op `#scFota`? Dit is een ha
 
 ## \--- collapse \---
 
-## title: stijlen opnieuw instellen
+## title: Stijlen opnieuw instellen
 
 Nu de hele voorbeeldkaart een koppeling is, is het lettertype mogelijk gewijzigd.
 
@@ -87,4 +87,4 @@ Het instellen van de waarde van een eigenschap op `inherit` (erven) zorgt ervoor
 
 \--- /collapse \---
 
-+ Maak minimaal vier of vijf van deze kaarten. Als je werkt vanuit mijn voorbeeld website, kun je er een doen voor elk van de secties op de pagina Attracties. Met de volgende Sushi Card leer je hoe je de kaarten kunt rangschikken met een coole truc!
++ Maak minimaal vier of vijf van deze kaarten. Als je werkt vanuit mijn voorbeeld website, kun je er een doen voor elk van de secties op de pagina Attracties. Met de volgende Sushi Kaart leer je hoe je de kaarten kunt rangschikken met een coole truc!
