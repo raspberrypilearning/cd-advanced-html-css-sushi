@@ -7,13 +7,10 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: ''
-interests: ''
 technologies: HTML-CSS-Javascript
 site_areas: Coderdojo, Projekte
-hardware: ''
 software: HTML-CSS-Javascript
-version: 3.0.0
+version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
