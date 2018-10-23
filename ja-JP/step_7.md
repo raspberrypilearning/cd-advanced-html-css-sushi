@@ -13,9 +13,9 @@
   </p>
 ```
 
-+ コードの上の行に、開始タグ `<figure>`追加します。 コードの下に新しい行に、終了タグ置く `<図\>`。
++ コードの上の行に、開始タグ `<figure>`追加します。 On a new line below the code, place the closing tag `</figure>`.
 
-+ 次に、 `p` タグ、またはテキストの周りにあるタグ（ `h <code>`ような見出しであるかもしれません）を削除し、テキストを `<figcaption> <\ figcaption>` タグの間に置きます。 全体がこのように見えるはずです：
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. 全体がこのように見えるはずです：
 
 ```html
   <figure>
@@ -52,7 +52,7 @@ Figure</code> 要素 `は、画像とそのキャプションの <strong>コン�
 
 + 持っているあなたのウェブサイトのページに移動します `記事` 私が使用している-それは上の要素 `attractions.html`。
 
-+ **外** の `品` 要素の1組以上の追加 `<aside> <\さておき>` あなたの余分なものを含むタグを。
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
