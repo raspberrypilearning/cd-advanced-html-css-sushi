@@ -1,6 +1,6 @@
 ## Foto collage
 
-Op deze kaart leer je CSS te gebruiken om HTML-elementen precies te positioneren en een fotocollage te maken.
+Op deze kaart leer je CSS te gebruiken om HTML-elementen precies te plaatsen en een fotocollage te maken.
 
 ![](images/photoCollageWithText_wide.png)
 
@@ -13,7 +13,7 @@ Op deze kaart leer je CSS te gebruiken om HTML-elementen precies te positioneren
     </div>
 ```
 
-De foto's verschijnen één na één op de webpagina, in de volgorde waarin ze in je code voorkomen.
+De foto's verschijnen één voor één op de webpagina, in de volgorde waarin ze in je code voorkomen.
 
 + Voeg in je CSS bestand de volgende CSS klasse toe voor de elementen binnen de `div`: 
 
@@ -23,7 +23,7 @@ De foto's verschijnen één na één op de webpagina, in de volgorde waarin ze i
     }
 ```
 
-+ Vervolgens moet je de eigenschap `position: relative;` aan de container zelf toevoegen en definieer daar een grootte voor. Dit maakt het zo dat de posities van de andere elementen **relatief tot** (dat wil zeggen, binnenin) de container worden gedefinieerd.
++ Vervolgens moet je de eigenschap `position: relative;` aan de container zelf toevoegen en daar een grootte voor definiëren. Dit maakt het zo dat de posities van de andere elementen **relatief tot** (dat wil zeggen, binnenin) de container worden gedefinieerd.
 
 ```css
     .relPos {
@@ -42,7 +42,7 @@ Om de positie van een element te bepalen, zijn er vier eigenschappen die je kunt
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Kies de exacte posities voor elk van je afbeeldingen en gebruik een van de eigenschappen `left`, `right`, `top` en `bottom` om die posities in je CSS-regels te definiëren. Bijvoorbeeld plaatst deze code de kat foto 100 pixels vanaf de bovenkant en 60 pixels van links:
++ Kies de exacte posities voor elk van je afbeeldingen en gebruik een van de eigenschappen `left`, `right`, `top` en `bottom` om die posities in je CSS-regels te definiëren. Bijvoorbeeld deze code plaatst de katfoto 100 pixels vanaf de bovenkant en 60 pixels van links:
 
 ```css
     #imgTeaCat {
@@ -56,7 +56,7 @@ Opmerking: de positie waarden kunnen ook negatief zijn! Als je een negatieve waa
 
 ### Dingen laten overlappen
 
-Je wilt misschien sommige afbeeldingen overlappen. Maar hoe kies je welke er bovenop komt?
+Je wilt misschien sommige afbeeldingen laten overlappen. Maar hoe kies je welke er bovenop komt?
 
 + Kies twee afbeeldingen en geef ze posities waardoor ze elkaar overlappen.
 
