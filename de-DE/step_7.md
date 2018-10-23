@@ -13,9 +13,9 @@ Auf dieser Karte lernst du zwei weitere Arten von **Container-** Elementen kenne
   </p>
 ```
 
-+ Fügen Sie in der Zeile über dem Code das öffnende Tag `<figure>`. Platzieren Sie in einer neuen Zeile unter dem Code das schließende Tag `<\ figure>`.
++ Fügen Sie in der Zeile über dem Code das öffnende Tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-+ Als nächstes entfernen Sie die `p` Tags oder welche Tags Sie haben um den Text (vielleicht ist es eine Überschrift, wie `h2`?), Und setzen Sie den Text stattdessen zwischen `<figcaption> <\ figcaption>` Tags. Das Ganze sollte ungefähr so ​​aussehen:
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Das Ganze sollte ungefähr so ​​aussehen:
 
 ```html
   <figure>
@@ -52,7 +52,7 @@ Die Seite "Sehenswürdigkeiten" auf meiner Website enthält eine Liste mit Orten
 
 + Gehe zu einer Seite deiner Webseite, die ein `Artikel` Element enthält - ich benutze `attractions.html`.
 
-+ **Draußen** der `Artikel` Element, fügen Sie ein oder mehrere Paare von `<aside> <beiseite>` Tags mit Ihren zusätzlichen Sachen.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
 
 ```html
   <aside class="sideNoteStyle">
