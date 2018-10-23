@@ -1,6 +1,6 @@
 ## Pas je menu automatisch aan
 
-Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Laten je menu zich automatisch aanpassen!
+Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Laat je menu zich automatisch aanpassen!
 
 Je begint met de reguliere stijlen: dit is je **default** (standaard) gedrag.
 
@@ -38,7 +38,7 @@ Met de bovenstaande CSS-code is je menu het meest geschikt voor kleine schermen.
 
 ## title: Wat betekent 'mobile-first'?
 
-Heel vaak gebruikt je bij het coderen van een website een computerscherm en je zult waarschijnlijk jouw stijlen definiëren op basis van hoe het eruit ziet op dat scherm.
+Heel vaak gebruik je bij het coderen van een website een computerscherm en je zult waarschijnlijk jouw stijlen definiëren op basis van hoe het eruit ziet op dat scherm.
 
 Wanneer je codeert voor mobile first, kies je in plaats daarvan standaard stijlen die geschikt zijn voor kleine schermen zoals smartphones. Je voegt vervolgens extra code toe om aanpassingen aan te brengen voor grotere schermen.
 
