@@ -38,7 +38,7 @@ Voila! Met dank aan **Flex**, je kaarten worden nu naast elkaar weergegeven!
 
 ![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
 
-+ Probeer de `with` en de `height` eigenschappen te verwijderen van de `.card` klasse en zie wat er gebeurt: `flex` past de kaarten als een legpuzzel slim aan elkaar en houdt een gelijkmatige hoogte aan voor alles dat zich in dezelfde rij bevindt.
++ Probeer de `width` en de `height` eigenschappen te verwijderen van de `.card` klasse en zie wat er gebeurt: `flex` past de kaarten als een legpuzzel slim aan elkaar en houdt een gelijkmatige hoogte aan voor alles dat zich in dezelfde rij bevindt.
 
 ![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
 
@@ -63,4 +63,4 @@ Je krijgt uiteindelijk vrijwel hetzelfde menu, toch? Het leuke van `flex` is dat
 
 ![Menu with items aligned to the right](images/flexMenuEnd.png)
 
-**`flex`** is een behoorlijk krachtige lay-out gereedschap die een hele Sushi Card-serie zou kunnen vullen \--- je kunt er meer over leren op [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** is een behoorlijk krachtige lay-out gereedschap die een hele Sushi Kaart-serie zou kunnen vullen \--- je kunt er meer over leren op [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
