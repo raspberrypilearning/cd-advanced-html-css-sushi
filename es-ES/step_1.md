@@ -12,11 +12,29 @@ Mueva el cursor de su mouse por la ventana a continuación para probar algunos d
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### Lo que vas a aprender
+## \--- collapse \---
+
+## title: What you will learn
 
 En estas tarjetas de sushi, descubrirás cómo:
 
-* Cree cualquier diseño de sitio web que desee
-* Haga que su diseño se ajuste automáticamente a diferentes tamaños de pantalla
-* Haz un collage de imágenes y texto superpuestos
-* Aplica algunos efectos limpios y de clic que podrías haber visto en otros sitios web
++ Cree cualquier diseño de sitio web que desee
++ Haga que su diseño se ajuste automáticamente a diferentes tamaños de pantalla
++ Haz un collage de imágenes y texto superpuestos
++ Aplica algunos efectos limpios y de clic que podrías haber visto en otros sitios web
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
+
+### Software
+
++ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+
+\--- /collapse \---
