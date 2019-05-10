@@ -1,87 +1,107 @@
-## Machen Sie Ihr Menü ansprechend
+## Captions and side notes
 
-Eine **responsive** Website ist eine, die sich an die Bildschirmgröße anpasst, so dass sie immer gut aussieht, egal, ob Sie sie auf einem Computer, Mobiltelefon oder Tablet betrachten. Lassen Sie uns Ihre Speisekarte ansprechen!
+On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
 
-Sie beginnen mit den regulären Stilen: Dies ist Ihr **Standard** Verhalten.
+### Pictures with captions
 
-## \--- Einsturz \---
++ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
 
-## Titel: Was bedeutet 'Standard'?
-
-Die Standardstile sind Ihre normalen Stilregeln. Sie werden angewendet, egal was passiert, bevor Sie besondere Bedingungen überprüfen.
-
-Sie können Code hinzufügen, der dann die Größe des Bildschirms überprüft und bei Bedarf einige Anpassungen vornimmt.
-
-\--- / einklappen \---
-
-+ Fügen Sie Ihrem Menü die folgenden CSS-Regeln hinzu. Sie haben wahrscheinlich auch Farben und Grenzen definiert; Ich habe sie hier gelassen, um Platz zu sparen! Wenn Sie für Ihr Menü bereits CSS-Regeln definiert haben, fügen Sie einfach die Eigenschaften und Werte hinzu, die Ihnen fehlen.
-
-```css
-    Nav ul {Auffüllen: 0.5em; Anzeige: flex; Flex-Richtung: Spalte; } nav ul li {Textausrichtung: Mitte; Listenart-Typ: keine; Rand rechts: 0.5em; Rand links: 0.5em; }
+```html
+  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
+  <p>
+    Tour guide Tito!
+  </p>
 ```
 
-Mit dem obigen CSS-Code eignet sich Ihr Menü am besten für kleine Bildschirme. Dies wird **Mobile-First-** Entwicklung genannt.
++ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
 
-![Menüelemente vertikal auf einem kleinen Bildschirm gestapelt](images/responsiveMenuMobile.png)
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
 
-## \--- Einsturz \---
-
-## titel: Was bedeutet "zuerst mobil"?
-
-Wenn Sie eine Website programmieren, verwenden Sie häufig einen Computerbildschirm, und Sie werden wahrscheinlich Ihre Stile basierend darauf definieren, wie sie auf diesem Bildschirm aussehen.
-
-Wenn Sie zuerst für Mobilgeräte codieren, wählen Sie stattdessen Standardstile aus, die für kleine Bildschirme wie Smartphones geeignet sind. Sie fügen dann zusätzlichen Code hinzu, um Anpassungen für größere Bildschirme vorzunehmen.
-
-Da immer mehr Menschen im Internet auf ihren Smartphones oder Tablets surfen anstatt auf einem Computer, ist es eine gute Übung, Ihre Website in diesem Sinne zu entwickeln.
-
-\--- / einklappen \---
-
-+ Fügen Sie Ihrem Stylesheet jetzt den folgenden Code hinzu:
-
-```css
-    @media all and (Mindestbreite: 1000px) {nav ul {flex-direction: row; justify-content: räumlicher Raum; }}
+```html
+  <figure>
+      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
+      <figcaption>
+      Tour guide Tito!
+      </figcaption>
+  </figure>
 ```
 
-Die erste Zeile des obigen Codes überprüft, wie groß das Browserfenster ist. Wenn das Fenster **1000 Pixel** breit oder mehr, wird es alle Stilregeln innerhalb des Blocks gelten.
+The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
 
-![Menüelemente gleichmäßig über eine Zeile auf einem größeren Bildschirm verteilt](images/responsiveMenuMedium.png)
+![Picture of Tito with a caption](images/figureAndCaption.png)
 
-## \--- Einsturz \---
+## \--- collapse \---
 
-## Titel: Wie funktioniert es?
+## title: Why is this useful?
 
-Der Block enthält nur für einige Eigenschaften des Menüs `nav ul` neue Werte.
+The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
 
-Wenn das Fenster breiter als 1000 Pixel ist, werden diese neuen Werte anstelle der Werte verwendet, die Sie bereits für `nav ul`.
+Grouping them together logically also helps to maintain good structure in your website code.
 
-Der Rest der Eigenschaften, die Sie zuvor für `nav ul` bleibt unverändert.
+\--- /collapse \---
 
-\--- / einklappen \---
-
-+ Wenn Sie Schmuck zum Schreiben von Code verwenden, kann es hilfreich sein, das Projekt herunterzuladen, damit Sie es auf einem Bildschirm in voller Größe testen können.
-
-\--- Herausforderung \---
-
-## Herausforderung: Stellen Sie Ihr Menü auf große Bildschirme ein
-
-+ Können Sie einen weiteren Block für Bildschirme hinzufügen, die größer als **1600 Pixel**, mit `Flex-End` anstelle von `Space-Around`?
-
-![Menüpunkte auf der rechten Seite auf einem großen Bildschirm](images/responsiveMenuWide.png)
-
-\--- Hinweise \---
-
-\--- Hinweis \---
-
-Der folgende Code definiert Flex-Eigenschaften für Menüelemente, wenn der Bildschirm größer als 1600 Pixel ist:
+You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
 
 ```css
-    @media all und (min-width: 1600px) {nav ul {Flex-Richtung: Zeile; justify-content: Flex-Ende; }}  
+  figure { 
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
 ```
 
-\--- /Hinweis \---
+### Side notes
 
-\--- / Hinweise \---
+The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
 
-\--- /Herausforderung \---
++ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
 
-Sie können beliebige CSS-Regeln in Blöcke wie diese einfügen, um verschiedene Stile für verschiedene Bildschirmgrößen zu definieren. Dies ist besonders nützlich, wenn Sie später CSS-Rasterlayouts erstellen.
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
+
+```html
+  <aside class="sideNoteStyle">
+      <h2>Getting around</h2>
+      <h3>Train and bus</h3>
+      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
+      <h3>Car</h3>
+      <p>The easiest way to get around outside of the cities is by car.</p>
+    </aside>
+    <aside class="sideNoteStyle">
+      <h2>Weather</h2>
+      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+  </aside>
+```
+
+## \--- collapse \---
+
+## title: Why is this useful?
+
+The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+
+It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+
+\--- /collapse \---
+
+Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+
++ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
+
+```css
+  .sideNoteStyle {
+    border: dotted 1px purple;
+    background-color: #c1ebec;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  .specialText {
+      color: #FF4500;
+      font-size: larger;
+  }
+```
+
+![Additional notes with their own styling](images/asidesStyled.png)
+
+On the next card, you're going to learn how to make your website's layout more interesting!
+
++ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
