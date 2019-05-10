@@ -1,59 +1,107 @@
-## Tous dans une rangée
+## Make your menu responsive
 
-Sur cette carte, vous apprendrez quelques astuces pour organiser les choses **horizontalement** sur une page. D'abord, vous verrez comment centrer les choses. Ensuite, vous organiserez les éléments côte à côte dans une rangée.
+A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
 
-+ Ajoutez les propriétés CSS suivantes à la classe `.card`:
+You'll start with the regular styles: this will be your **default** behaviour.
 
-```css
-    marge-gauche: auto; marge-droite: auto;
-```
+## \--- collapse \---
 
-Vous devriez voir les cartes se déplacer au centre de la page. En définissant les marges gauche et droite sur `auto`, vous pouvez faire en sorte que n'importe quel élément soit au milieu plutôt qu'à gauche.
+## title: What does 'default' mean?
 
-![Les cartes apparaissent au milieu plutôt qu'à gauche](images/marginAuto.png)
+The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
 
-+ Faites glisser le bord de la fenêtre du navigateur pour rendre la page plus étroite et plus large. Notez que les cartes restent centrées.
+You can add code that then checks the size of the screen and makes some adjustments if necessary.
 
-+ Mettez tous les liens de carte que vous venez de créer dans un nouvel élément de conteneur. Ce ne sera pas un `article` ou un `section`, mais un appelé `div`. Ceci est un conteneur polyvalent que vous pouvez utiliser pour regrouper des choses et faire de belles mises en page.
+\--- /collapse \---
 
-```html
-    <div class="cardContainer">
-```
-
-+ Ajoutez le code CSS suivant dans votre feuille de style:
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
 
 ```css
-    .cardContainer {display: flex; flex-wrap: envelopper justify-content: espace-autour; rembourrage: 10px; }
+    nav ul {
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center; 
+        list-style-type: none;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
 ```
 
-Voilà! Grâce à **Flex**, vos cartes sont maintenant affichées côte à côte!
+With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
 
-+ Faites glisser le bord de votre fenêtre pour rendre le site Web plus large et plus étroit, et observez comment les cartes se déplacent pour s'adapter à la taille de la fenêtre, parfois jusqu'à la ligne suivante.
+![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
 
-![Cartes disposées en deux rangées espacées régulièrement pour s'adapter à la largeur du navigateur](images/flexSideBySide.png)
+## \--- collapse \---
 
-+ Essayez de supprimer les propriétés `largeur` et `hauteur` de la classe `.card` et voyez ce qui se passe: `flex` assemble intelligemment les cartes comme un puzzle, gardant une hauteur uniforme sur tout ce qui est dans la même rangée.
+## title: What does 'mobile-first' mean?
 
-![Cartes disposées côte à côte avec largeur automatique](images/flexAutoWidths.png)
+Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
 
-Si vous avez un menu de navigation en haut de votre page, c'est un autre endroit où vous pouvez utiliser cette astuce. Votre menu doit être composé d'éléments de liste ((`li`) pour ce bit suivant. Si vous préférez, vous pouvez l'essayer avec mon site Web.
+When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
 
-+ Trouvez les règles CSS pour le menu. Dans mon site Web, ce sont les blocs `nav ul`, `nav ul li`et `nav ul li a`.
+Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
 
-+ Supprimer l'affichage de la propriété `: inline;` parmi les éléments de la liste. Ensuite, dans la liste `nav ul`, ajoutez:
+\--- /collapse \---
+
++ Now add the following code to your style sheet:
 
 ```css
-    affichage: flex; justify-content: flex-start;
+    @media all and (min-width: 1000px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 ```
 
-![Menu avec éléments alignés à gauche](images/flexMenuStart.png)
+The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
 
-Vous vous retrouvez avec à peu près le même menu, non? La chose cool à propos de `flex` est que vous pouvez contrôler la mise en page avec la propriété `justify-content`.
+![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
 
-+ Changez la valeur de `justify-content` en `flex-end` et voyez ce qui se passe. Ou modifiez-le à `espace autour de` pour que les éléments du menu soient espacés régulièrement, comme vous l'avez fait pour les cartes.
+## \--- collapse \---
 
-![Menu avec des éléments espacés uniformément](images/flexMenuSpace.png)
+## title: How does it work?
 
-![Menu avec les éléments alignés sur la droite](images/flexMenuEnd.png)
+The block contains new values for only some properties of the `nav ul` menu.
 
-**`flex`** est un outil de mise en page assez puissant qui pourrait remplir toute une série de cartes Sushi - vous pouvez en apprendre plus à ce sujet au [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+
+The rest of the properties you defined previously for `nav ul` will stay the same.
+
+\--- /collapse \---
+
++ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
+
+\--- challenge \---
+
+## Challenge: make your menu adjust itself for big screens
+
++ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
+
+![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+
+\--- hints \---
+
+\--- hint \---
+
+The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- /hints \---
+
+\--- /challenge \---
+
+You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
