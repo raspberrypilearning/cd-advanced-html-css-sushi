@@ -12,11 +12,29 @@ Mutați cursorul mouse-ului în fereastra de mai jos pentru a încerca câteva d
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### Ce veți învăța
+## \--- collapse \---
+
+## title: What you will learn
 
 În aceste cărți Sushi, veți afla cum să:
 
-* Creați orice aspect al site-ului dorit
-* Asigurați-vă că aspectul dvs. se ajustează automat la diferite dimensiuni ale ecranului
-* Faceți un colaj de imagini și text suprapuse
-* Aplicați niște hover și faceți clic pe efecte pe care le-ați văzut pe alte site-uri web
++ Creați orice aspect al site-ului dorit
++ Asigurați-vă că aspectul dvs. se ajustează automat la diferite dimensiuni ale ecranului
++ Faceți un colaj de imagini și text suprapuse
++ Aplicați niște hover și faceți clic pe efecte pe care le-ați văzut pe alte site-uri web
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
+
+### Software
+
++ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+
+\--- /collapse \---
