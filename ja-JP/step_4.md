@@ -1,71 +1,66 @@
-## クリック可能なカード
+## All in a row
 
-少し：ここでは、フォトギャラリーを作るために使用できる技術、またはプロジェクトを披露し、ポートフォリオのページの **プレビューカード**。
+On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
 
-![画像のサムネイルとテキストを表示するプレビューカード](images/cardsPreview.png)
-
-+ あなたの好きな場所であなたのウェブサイトに次のHTMLコードを追加します。 私は上の鉱山をやってる `index.htmlを`。 自分のプレビューカードに合わせて画像やテキストを変更することができます。 私はアイルランドで観光スポットのハイライトの束を行うつもりです。
-
-```html
-    <article class="card">
-        <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>フォタワイルドライフパーク</h3>
-        <p>フォタ島、コーク州</p>
-    </article>
-```
-
-![スタイルが適用される前のイメージとテキスト](images/cardUnstyled.png)
-
-+ 次のCSSコードを追加して、クラス `カード` と `を作成します。tinyPicture`：
++ Add the following CSS properties to the `.card` class:
 
 ```css
-    .tinyPicture {height：60px; border-radius：10px; } .card {width：200px;}。高さ：200px; border：2px solid＃F0FFFF; border-radius：10px;ボックスサイズ：border-box;パディング：10px; margin-top：10px; font-family： "Trebuchet MS"、サンセリフ; } .card：ホバー{ボーダーカラー：＃1E90FF; }
+    margin-left: auto;
+    margin-right: auto;
 ```
 
-![小さなカードエフェクトを作成するスタイリングによるイメージとテキスト](images/cardStyled.png)
+You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
 
-プレビューカード全体をリンクにして、人々がクリックして詳細を表示できるようにしましょう。
+![The cards appear in the middle instead of over to the left](images/marginAuto.png)
 
-+ リンク要素内に `記事` 要素全体を配置します。 閉じている `</a>` タグが閉じた `</article>` タグの後ろにあることを確認してください！ リンク **URL** を自由にリンクしたいものに変更してください。 それはあなたのウェブサイト上の別のページでも、別のウェブサイトでもかまいません。
++ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
+
++ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
 
 ```html
-    <a href="attractions.html#scFota">  
-        <article class="card ">
-            <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>フォタ・ワイルドライフ・パーク</h3>
-            <p>フォタ島、コーク州</p>
-        </article>
-    </a>
+    <div class="cardContainer">
 ```
 
-![リンクに変換されたテキストと画像](images/cardLink.png)
-
-## \---崩壊\---
-
-## title：ページの特定の部分にリンクする
-
-私のリンクの `href` 値が `#scFota`終わっていることに注目してください。 これは、ページの特定の部分にジャンプするために使用できるきちんとしたトリックです。
-
-+ まず、リンクするページのURLを入力し、 `＃`ます。
-
-+ あなたがリンクしているページのコードファイルで、ジャンプしたい部分を見つけ、その要素に `id`を与えます。例えば、 `<section id = "scFota"`。 `id` の値は、リンクの `＃` 後に入力する値です。
-
-\--- /崩壊\---
-
-## \---崩壊\---
-
-## title：スタイルをリセットする
-
-プレビューカード全体がリンクであるため、テキストフォントが変更されている可能性があります。
-
-+ そうであれば、リンクに **CSSクラス** を追加することで修正できます： `class = "cardLink"`。 あなたのスタイルシートに入れるCSSコードは次のとおりです：
++ Add the following CSS code in your style sheet:
 
 ```css
-    .cardLink {color：inherit;テキスト装飾：なし; }
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
 ```
 
-任意のプロパティの値を設定 `継承` それがその値を使用します **親** 要素があります。 この場合、テキストの色はホームページ上のテキストの残りの部分と一致します。
+Voilà! Thanks to **Flex**, your cards are now displayed side by side!
 
-\--- /崩壊\---
++ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
 
-+ これらのカードの少なくとも4つまたは5つを作ってください。 私のウェブサイトの例から作業している場合は、「アトラクション」ページのセクションごとに1つずつ行うことができます。 次の寿司カードでは、すばらしいトリックでカードを手配する方法を学びます！
+![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+
++ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
+
+![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+
+If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+
++ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
+
++ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
+
+```css
+    display: flex;
+    justify-content: flex-start;
+```
+
+![Menu with items aligned to the left](images/flexMenuStart.png)
+
+You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+
++ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
+
+![Menu with items evenly spaced](images/flexMenuSpace.png)
+
+![Menu with items aligned to the right](images/flexMenuEnd.png)
+
+**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
