@@ -1,0 +1,33 @@
+---
+title: بطاقات HTML / CSS السوشي المتقدمة
+hero_image: images/banner.png
+description: أضف تخطيطات رائعة وتأثيرات رائعة على موقع الويب الخاص بك!
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo ، المشاريع
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: المقدمة
+  - 
+    title: Getting setup
+  - 
+    title: Clickable cards
+  - 
+    title: All in a row
+  - 
+    title: Make your menu responsive
+  - 
+    title: Captions and side notes
+  - 
+    title: Design cool page layouts
+  - 
+    title: Photo collage
+  - 
+    title: Special effects
