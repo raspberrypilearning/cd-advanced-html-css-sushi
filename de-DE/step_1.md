@@ -1,8 +1,8 @@
-## Einführung
+## Einleitung
 
 Diese Sushi-Karten zeigen Ihnen, wie Sie eine Website mit coolen Effekten und Layouts elegant und professionell aussehen lassen.
 
-### Was wirst du machen?
+### Was du machen wirst
 
 Bewegen Sie den Mauszeiger im folgenden Fenster, um einige der Effekte zu testen, die Sie auf Ihrer Website lernen werden:
 
@@ -12,11 +12,29 @@ Bewegen Sie den Mauszeiger im folgenden Fenster, um einige der Effekte zu testen
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### Was du lernen wirst
+## \--- collapse \---
+
+## title: What you will learn
 
 In diesen Sushi-Karten erfahren Sie, wie Sie:
 
-* Erstellen Sie ein beliebiges Website-Layout
-* Passen Sie Ihr Layout automatisch an verschiedene Bildschirmgrößen an
-* Mache eine Collage aus überlappenden Bildern und Texten
-* Verwende einige nette Hover- und Klick-Effekte, die du vielleicht auf anderen Webseiten gesehen hast
++ Erstellen Sie ein beliebiges Website-Layout
++ Passen Sie Ihr Layout automatisch an verschiedene Bildschirmgrößen an
++ Mache eine Collage aus überlappenden Bildern und Texten
++ Verwende einige nette Hover- und Klick-Effekte, die du vielleicht auf anderen Webseiten gesehen hast
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
+
+### Software
+
++ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+
+\--- /collapse \---
