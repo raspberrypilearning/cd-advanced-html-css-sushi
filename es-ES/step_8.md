@@ -1,115 +1,186 @@
-## Diseño de diseños de página geniales
+## Photo collage
 
-+ Para esta tarjeta, debe trabajar con una página que contiene un `elemento principal` con tres elementos en su interior: uno `artículo` y dos `aparte`s. Adelante, cree estos primero si lo necesita. Si desea trabajar con mi sitio web, agregue el código de `un lado` de la Tarjeta de Sushi anterior a la página de Atracciones. 
+On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
 
-Aquí hay tres diseños de página diferentes que aplicará:
+![](images/photoCollageWithText_wide.png)
 
-![](images/cssGridLayouts.png)
-
-+ Agregue nuevas clases de CSS a `principales` y a cada uno de los tres elementos que contiene.
++ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
 
 ```html
-    <main class="attPageLayoutGrid">
-        <article class="attGridArticle">
-            <! - otras cosas aquí-->
-        </article>
-        <aside class="attGridAside1">
-            <! - otras cosas aquí-->
-        </aside>
-        <aside class="attGridAside2">
-            <! - otras cosas aquí-->
-        </aside>
-    </main>
+    <div id="photoBox" class="relPos">
+        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+    </div>
 ```
 
-El contenedor en el que cambiarás el diseño es `principal`, pero puedes hacer esto con cualquier tipo de contenedor, como un `div` o `artículo`, o incluso toda la página `cuerpo`. La técnica que vas a utilizar se llama **CSS grid**.
+The photos will appear one after the other on the web page, in the order they appear in your code.
 
-En este ejemplo, el encabezado `` y `pie` página </code> quedarán fuera del diseño, pero es bastante común incluirlos también en la cuadrícula.
-
-+ Establezca la propiedad `display` en `grid` en el contenedor general:
++ In your CSS file, add the following CSS class for the elements inside the `div`: 
 
 ```css
-    .attPageLayoutGrid {display: grid; grid-column-gap: 0.5em; grid-row-gap: 1em; }
+    .absPos {
+        position: absolute;
+    }
 ```
 
-¿Qué crees que tienen las propiedades `grid-column-gap` y `grid-row-gap`?
-
-+ A continuación, nombre un área de cuadrícula `` para cada elemento: 
++ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
 
 ```css
-    .attGridArticle {grid-area: agArticle; } .attGridAside1 {grid-area: agAside1; } .attGridAside2 {grid-area: agAside2; }
+    .relPos {
+        position: relative;
+    }
+
+    #photoBox {
+        width: 800px;
+        height: 400px;
+    }
 ```
 
-¡Entonces diseñas tu diseño! Pongamos los dos `aparte` elementos uno al lado del otro en la parte inferior de la página. Para esto necesitas dos **columnas** de igual ancho. Puede mantener la altura de **fila** automática.
++ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
 
-+ Coloque el siguiente código dentro de las reglas de `.attPageLayoutGrid` CSS:
+To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+
+![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+
++ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
 
 ```css
-    grid-template-rows: auto; grid-template-columns: 1fr 1fr; grid-template-areas: "agArticle agArticle" "agAside1 agAside2";
+    #imgTeaCat {
+        width: 250px;
+        top: 100px;
+        left: 60px;
+    }
 ```
 
-`fr` representa **fracciones**. Observe cómo se hace el `artículo` , ocupan todo el espacio sobre las dos columnas.
+Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
 
-## \--- colapso \---
+### Making things overlap
 
-## título: ¡Ayuda! ¡Tengo errores y advertencias!
+You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
 
-Si está utilizando Trinket, es posible que observe algunos errores y advertencias, incluso si escribió el código exactamente como se indicó anteriormente. Esto se debe a que Trinket aún no reconoce las propiedades de la cuadrícula CSS. Sin embargo, el código seguirá funcionando.
++ Choose two images and give them positions that cause them to overlap.
 
-Si el código de cuadrícula CSS le da advertencias de 'propiedad desconocida' o un error como 'token inesperado 1fr', simplemente puede ignorarlos.
++ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
 
-\--- /colapso \---
++ Take a look at the result on your webpage.
 
-![Los lados están uno al lado del otro en la parte inferior](images/cssGridAsidesAtBottom.png)
+![](images/horse10Cat7.png)
 
-Vamos a poner los `a un lado` elementos más a la derecha y hacer que la mitad de la anchura de la `del artículo`.
++ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
 
-+ Cambie los valores de `grid-template-columns` y `grid-template-areas` a:
+![](images/horse7Cat10.png)
+
+## \--- collapse \---
+
+## title: How does z-index work?
+
+The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+
+The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+
+\--- /collapse \---
+
+You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+
+\--- challenge \---
+
+## Challenge: make a photo collage
+
++ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
+
+\--- hints \---
+
+\--- hint \---
+
+Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+
+```html
+    <div id="photoBox" class="relPos">
+        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
+        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
+        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
+        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
+        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+        <p id="photoText" class="absPos">Ireland</p>
+    </div>
+```
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the CSS rules that set the positions for each of my pictures in the collage:
 
 ```css
-    grid-template-columns: 2fr 1fr; grid-template-areas: "agArticle agAside1" "agArticle agAside2";
+    #imgHorse {
+        width: 120px;
+        top: 200px;
+        left: 390px;
+        z-index: 10;
+    }
+    #imgSheep {
+        width: 200px;
+        top: 100px;
+        left: 20px;
+        z-index: 8;
+    }
+    #imgCoast {
+        width: 150px;
+        top: 250px;
+        left: 10px;
+        z-index: 5;
+    }
+    #imgTrees {
+        width: 110px;
+        top: 65px;
+        left: 205px;
+        z-index: 9;
+    }
+    #imgTeaCat {
+        width: 250px;
+        top: 210px;
+        left: 160px;
+        z-index: 7;
+    }
+    #imgStreet {
+        width: 180px;
+        top: 90px;
+        left: 310px;
+        z-index: 6;
+    }
+    #photoText {
+        font-family: "brush script MT";
+        color: lightgreen;
+        font-size: 4em;
+        left: 35px;
+        top: 15px;
+        z-index: 20;
+    }
 ```
 
-![Los lados están en el lado derecho](images/cssGridAsidesOnRight.png)
+\--- /hint \---
 
-+ Si no desea que los elementos `lado` extiendan hasta el final, puede agregar un espacio en blanco con un punto: 
+\--- hint \---
+
+Here are the CSS classes I've used:
 
 ```css
-    grid-template-areas: "agArticle agAside1" "agArticle agAside2" "agArticle. ";
+    .collagePhoto {
+        border: 1px solid white;
+    }
+    .relPos {
+        position: relative;
+    }
+    .absPos {
+        position: absolute;
+    }
 ```
 
-![Aparte a la derecha y no estirado](images/cssGridAsidesTopRight.png)
+\--- /hint \---
 
-\--- desafío \---
+\--- /hints \---
 
-## Desafío: hacer diferentes diseños para diferentes tamaños de pantalla
+![Photo collage with text over the top](images/photoCollageExample.png)
 
-+ ¿Puede usar las comprobaciones de tamaño de pantalla que agregó anteriormente para hacer que el diseño cambie dependiendo de qué tan ancha es la pantalla? Nota: si ya ha creado bloques CSS para cada tamaño de pantalla, puede agregar el nuevo código CSS a esos bloques en lugar de crear bloques nuevos.
-
-\--- consejos \---
-
-\--- insinuación \---
-
-El siguiente código define un diseño para la clase CSS anterior cuando la pantalla tiene más de 1000 píxeles:
-
-```css
-    @media all y (min-width: 1000px) {.attPageLayoutGrid {grid-template-columns: 1fr 1fr; grid-template-areas: "agArticle agArticle" "agAside1 agAside2"; }}  
-```
-
-\--- /insinuación \---
-
-\--- insinuación \---
-
-El siguiente código define un diseño para la clase CSS anterior cuando la pantalla es más grande que 1600 píxeles:
-
-```css
-    @media all y (min-width: 1600px) {.attPageLayoutGrid {grid-template-columns: 1fr 1fr; grid-template-areas: "agArticle agAside1" "agArticle agAside2" "agArticle."; }}  
-```
-
-\--- /insinuación \---
-
-\--- / consejos \---
-
-\--- / desafío \---
-
-Con **CSS grid**, puedes hacer casi cualquier diseño que te guste. Si desea obtener más información, vaya a [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){: target = "_ blank"}
+\--- /challenge \---
