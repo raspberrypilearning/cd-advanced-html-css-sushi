@@ -1,59 +1,107 @@
-## 全行
+## Make your menu responsive
 
-このカードでは、あなたは物事配置するためのいくつかのトリックを学ぶことができます **水平に** ページ。 まず、物事を中心にする方法がわかります。 次に、要素を並べて並べます。
+A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
 
-+ 次のCSSプロパティを `.card` クラスに追加します。
+You'll start with the regular styles: this will be your **default** behaviour.
 
-```css
-    margin-left：auto; margin-right：auto;
-```
+## \--- collapse \---
 
-カードがページの中央に移動するのを確認する必要があります。 左右のマージンを `auto`に設定すると、左に上書きするのではなく、中央に任意の要素を置くことができます。
+## title: What does 'default' mean?
 
-![カードは左にではなく中央に表示されます](images/marginAuto.png)
+The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
 
-+ ブラウザーウィンドウの端をドラッグして、ページの幅を広げ、幅を広げます。カードが中央に留まることに注意してください。
+You can add code that then checks the size of the screen and makes some adjustments if necessary.
 
-+ 作成したすべてのカードリンクを新しいコンテナ要素に置きます。 これは `品目` または `セクション`はなりませんが、 `div`と呼ばれます。 これは、グループ化や素敵なレイアウトの作成に使用できる汎用のコンテナです。
+\--- /collapse \---
 
-```html
-    <div class="cardContainer">
-```
-
-+ あなたのスタイルシートに次のCSSコードを追加します：
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
 
 ```css
-    .cardContainer {display：flex;フレックスラップ：ラップ; justify-content：スペースアラウンド;パディング：10px; }
+    nav ul {
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center; 
+        list-style-type: none;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
 ```
 
-Voilà！ **Flex**おかげで、あなたのカードが並んで表示されるようになりました！
+With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
 
-+ ウィンドウの端をドラッグしてウェブサイトをより幅広く狭くし、カードがウィンドウサイズに合わせてどのように移動し、次の行に折り返すかを監視します。
+![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
 
-![ブラウザの幅に合わせて2つの行に均等に配置されたカード](images/flexSideBySide.png)
+## \--- collapse \---
 
-+ `.card` クラスから `幅` と `高さ` プロパティを削除して、何が起こるかを見てみましょう： `フレックス` はジグソーパズルのようにカードを巧みに合わせ、同じ行にあるすべてのものにわたって均一な高さを保ちます。
+## title: What does 'mobile-first' mean?
 
-![自動的に横に並べられたカード](images/flexAutoWidths.png)
+Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
 
-あなたのページの上部にナビゲーションメニューがある場合、それは別の場所で、このトリックを使用することができます。 あなたのメニューは、この次のビットのためにリスト要素（（`li`）で構成されている必要があります。 あなたが好きなら、あなたは私のウェブサイトでそれを試すことができます。
+When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
 
-+ メニューのCSSルールを見つけます。 私のウェブサイトでは、それはブロックです `NAV UL`、 `NAV UL李`、および `のnav ulの李`。
+Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
 
-+ プロパティを削除する `display：inline;` をリスト項目から削除します。 次に、リスト `nav ul`、次を追加します。
+\--- /collapse \---
+
++ Now add the following code to your style sheet:
 
 ```css
-    ディスプレイ：フレックス; justify-content：フレックススタート。
+    @media all and (min-width: 1000px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 ```
 
-![項目が左揃えのメニュー](images/flexMenuStart.png)
+The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
 
-あなたはほとんど同じメニューで終わるのですよね？ `フレックス` のクールなことは、プロパティ `justify-content`レイアウトを制御できることです。
+![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
 
-+ `justify-content` の値を `flex-end` 変更し、何が起こるかを確認します。 またはそれを変更する `スペースの周りに` あなたはカードのためにやったように、等間隔のメニュー項目を作成します。
+## \--- collapse \---
 
-![アイテムが均等に配置されたメニュー](images/flexMenuSpace.png)
+## title: How does it work?
 
-![項目が右揃えのメニュー](images/flexMenuEnd.png)
+The block contains new values for only some properties of the `nav ul` menu.
 
-**`flex`** は非常に強力なレイアウトツールで、独自の寿司カードシリーズをいっぱいにすることができます。詳しくは、 [dojo.soy/html3-flex](http://dojo.soy/html3-flex)ご覧ください。
+Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+
+The rest of the properties you defined previously for `nav ul` will stay the same.
+
+\--- /collapse \---
+
++ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
+
+\--- challenge \---
+
+## Challenge: make your menu adjust itself for big screens
+
++ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
+
+![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+
+\--- hints \---
+
+\--- hint \---
+
+The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- /hints \---
+
+\--- /challenge \---
+
+You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
