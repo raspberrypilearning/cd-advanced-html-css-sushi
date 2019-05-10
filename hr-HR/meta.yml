@@ -1,0 +1,33 @@
+---
+title: Napredne HTML / CSS Sushi kartice
+hero_image: images/banner.png
+description: Dodajte lijepe izglede i kul efekte na svoju web-lokaciju!
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projekti
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Sretan rođendan
+  - 
+    title: Getting setup
+  - 
+    title: Clickable cards
+  - 
+    title: All in a row
+  - 
+    title: Make your menu responsive
+  - 
+    title: Captions and side notes
+  - 
+    title: Design cool page layouts
+  - 
+    title: Photo collage
+  - 
+    title: Special effects
