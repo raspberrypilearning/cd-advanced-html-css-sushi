@@ -1,122 +1,112 @@
-## フォトコラージュ
+## Special effects
 
-このカードでは、CSSを使ってHTML要素を正確に配置し、写真のコラージュを作成する方法を学びます。
+On this card you'll learn a few more nice effects that you can achieve with CSS.
 
-![](images/photoCollageWithText_wide.png)
+### Shadows and movement
 
-+ あなたのページに `div` を追加し、好きなだけ多くの画像を入れてください。 `div` と `img` 要素 `id` 値を与えます。
+Let's add a little movement when you hover your cursor over the cards you made earlier.
 
-```html
-    <div id="photoBox" class="relPos">
-        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-    </div>
-```
-
-写真は、コードに表示されている順序でWebページ上に順に表示されます。
-
-+ CSSファイルで、 `div`内の要素に次のCSSクラスを追加します。 
++ Find the `.card:hover` CSS class from earlier and change it to the following:
 
 ```css
-    .absPos {位置：絶対; }
+    .card:hover {
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
+        transform: translateY(-2px);
+    }
 ```
 
-+ 次に、プロパティ `位置を追加する必要があります。` をコンテナ自体に追加し、そのサイズを定義します。 これにより、他の要素の位置が、容器に対して</strong> に対して（すなわち、容器内で） **ようにする。</li> </ul> 
-    
-    ```css
-        .relPos {位置：相対; } #photoBox {width：800px;高さ：400px; }
-    ```
-    
-    + 次に、 **idセレクタ** を使って各要素のスタイルルールのセットを作成し、サイズ（`幅` および/または `高さ` プロパティ）とその正確な位置を設定します。
-    
-    要素の位置を定義するには、使用できる4つの特性がある： `左`、 `右`、 `トップ`、及び `底`。 それらは、エッジのそれぞれが親のエッジからどれくらい離れているかを表します。 いずれかの使用 `トップ` 又は `ボトム` 垂直位置のために、いずれか `左` 又は `右` 水平位置のため。
-    
-    ![上、左、下、右のプロパティが親コンテナにどのように関連しているかを示すダイアグラム](images/cssPositionProperties.png)
-    
-    + あなたの写真の各々の正確な位置を選択し、プロパティのいずれかを使用 `左に`、 `右`、 `トップ`、及び `底部` あなたのCSSルールでそれらの位置を定義します。 たとえば、このコードでは、catピクチャを上から100ピクセル、左から60ピクセル配置します。
-    
-    ```css
-        #imgTeaCat {width：250px;上：100ピクセル。左：60ピクセル。 }
-    ```
-    
-    注：位置の値は負の値にすることもできます。 負の値を使用すると、指定したエッジのいずれかで、コンテナの外に要素が移動します。
-    
-    ### 物事を重ねる
-    
-    画像の一部が重なっていることがあります。 しかし、あなたはどのように上に行くのを選ぶのですか？
-    
-    + 2つの画像を選択し、それらの画像が重なる位置を与えます。
-    
-    + 余分なプロパティを追加する、 `z-index：10;` をそれらの1つに追加し、 `z-インデックス：7を追加します。` を他方に接続する。
-    
-    + あなたのウェブページ上の結果を見てください。
-    
-    ![](images/horse10Cat7.png)
-    
-    + 今度は `z-index` 値を入れ替えて、 `7` と `10` が逆の方向になるようにします。 あなたのウェブページに違いはありますか？
-    
-    ![](images/horse7Cat10.png)
-    
-    ## \---崩壊\---
-    
-    ## title：z-indexはどのように機能しますか？
-    
-    `z-index` プロパティを使用すると、2つ以上の要素がどのように重なるかを決めることができます。 値には任意の整数を指定できます。
-    
-    **数字が** の要素は、パイルの **上** に、言い換えれば **正面**終わります。 次に高い数字の要素は、それより後ろにあり、他の要素の前にあります。他のすべての要素の背後にある最も低い番号の要素に到達するまで続きます。
-    
-    \--- /崩壊\---
-    
-    イメージだけでなく、この方法でHTML要素を配置することができます。 たとえば、 `p` 要素を使用して写真にテキストを追加することができます。
-    
-    \---挑戦\---
-    
-    ## 課題：写真コラージュを作る
-    
-    + 下に示すような独自のコラージュを作成してみてください！ 異なる `z-インデックス` 値と一緒に正確な位置合わせを使用して、オーバーラップ効果を望むように得ることができます。
-    
-    - - ヒント - -
-    
-    \---ヒント\---
-    
-    以下は、私のアイルランドのウェブサイトの写真コラージュのHTMLコードです。 `div`中に6枚の写真と1つのテキストがあります。
-    
-    ```html
-        <div id="photoBox" class="relPos">
-            <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-            <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-            <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-            <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-            <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-            <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-            <p id="photoText" class="absPos">アイルランド</p>
-        </div>
-    ```
-    
-    \--- /ヒント\---
-    
-    \---ヒント\---
-    
-    コラージュ内の各写真の位置を設定するCSSルールは次のとおりです。
-    
-    ```css
-        #imgHorse {width：120px; top：200px;左：390ピクセル。 z-インデックス：10; } #imgSheep {width：200px;}上：100ピクセル。左：20ピクセル。 z-インデックス：8; } #imgCoast {width：150px; top：250px;左：10ピクセル。 z-インデックス：5; } #imgTrees {width：110px;} top：65px;左：205ピクセル。 Z-インデックス：9; } #imgTeaCat {width：250px;}上：210ピクセル;左：160ピクセル。 z-インデックス：7; } #imgStreet {width：180px; top：90px;左：310px; z-インデックス：6; } #photoText {font-family： "ブラシスクリプトMT";色：ライトグリーン; font-size：4em;左：35ピクセル。上：15ピクセル。 z-インデックス：20; }
-    ```
-    
-    \--- /ヒント\---
-    
-    \---ヒント\---
-    
-    私が使ったCSSクラスは次のとおりです：
-    
-    ```css
-        。collagePhoto {border：1px solid white; } .relPos {位置：相対; } .absPos {位置：絶対; }
-    ```
-    
-    \--- /ヒント\---
-    
-    - - /ヒント - -
-    
-    ![テキストの上に写真のコラージュ](images/photoCollageExample.png)
-    
-    \--- /チャレンジ\---
++ Try out different values in the `translate` function!
+
+## \--- collapse \---
+
+## title: The `transform` property
+
+If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+
+One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+
+\--- /collapse \---
+
++ Play about with different pixel values in the `box-shadow` property to see what they do. 
+
+## \--- collapse \---
+
+## title: What's `rgba`?
+
+`rgba(0,0,0,0.2)` is another way of defining a colour.
+
+It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+
+The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+
+\--- /collapse \---
+
++ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
+
+```css
+    transition: all 0.2s ease-out;
+```
+
+A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+
+### Lightbox
+
+Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+
+![Lightbox effect in action](images/lightboxLemur.png)
+
+To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+
++ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
+
+```html
+    <a href="#_" class="lightbox" id="boxLemur">
+        <h3>Lemur!!</h3>
+        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
+        <p>A lemur enjoying a little snack</p>
+    </a>
+```
+
+You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+
++ Add the following CSS code for the lightbox. Can you work out what some of it does?
+
+```css
+    .lightbox{
+        background: rgba(0,0,0,0.8);
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        visibility: hidden;
+        z-index: 999;
+    }
+```
+
+Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+
++ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
+
+```html
+    <a href="#boxLemur">
+        <img src="monkey-2223271_640.jpg" class="mediumPics">
+    </a>
+```
+
++ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
+
+```css
+    .lightbox:target {
+        visibility: visible;
+    }
+```
+
+The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+
++ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
+
+You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
