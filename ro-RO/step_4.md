@@ -1,71 +1,66 @@
-## Carduri care pot fi incarcate
+## All in a row
 
-Iată o tehnică pe care ar putea folosi pentru a face o galerie foto, sau o pagină de portofoliu care arată off proiectele tale: mici **carduri de previzualizare**.
+On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
 
-![Examinați o carte care prezintă o miniatură de imagine și un anumit text](images/cardsPreview.png)
-
-+ Adăugați următorul cod HTML pe site-ul dvs. Web, oriunde doriți. Fac pe a mea `index.html`. Puteți schimba imaginea și textul pentru a se potrivi propriilor carduri de previzualizare. Voi face o grămadă de atracții turistice din Irlanda.
-
-```html
-    <article class="card">
-        <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, Cork</p>
-    </article>
-```
-
-![Imaginea și textul înainte de aplicarea stilurilor](images/cardUnstyled.png)
-
-+ Adăugați următorul cod CSS pentru a crea clasele `card` și `tinyPicture`:
++ Add the following CSS properties to the `.card` class:
 
 ```css
-    .tinyPicture {height: 60px; raza de graniță: 10 pixeli; } .card {lățime: 200px; înălțime: 200px; frontieră: 2px solid # F0FFFF; raza de graniță: 10 pixeli; box-size: caseta de margine; padding: 10px; margin-top: 10px; font-familie: "Trebuchet MS", sans-serif; } .card: hover {border-color: # 1E90FF; }
+    margin-left: auto;
+    margin-right: auto;
 ```
 
-![Imagine și text cu stil pentru a crea un efect de carte mică](images/cardStyled.png)
+You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
 
-Să transformăm întreaga carte de previzualizare într-un link, astfel încât oamenii să poată da clic pentru a vedea mai multe informații.
+![The cards appear in the middle instead of over to the left](images/marginAuto.png)
 
-+ Se pune tot `articolul` în interiorul unui element de legătură. Asigurați-vă că eticheta de închidere `</a>` este după eticheta de închidere `</article>`! Simțiți-vă liber să schimbați linkul **URL** la orice doriți să vă conectați. Aceasta ar putea fi o altă pagină de pe site-ul dvs. sau ar putea fi altul în întregime.
++ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
+
++ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
 
 ```html
-    <a href="attractions.html#scFota">  
-        <article class="card ">
-            <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, Județul Cork</p>
-        </article>
-    </a>
+    <div class="cardContainer">
 ```
 
-![Text și imagine care au fost transformate într-un link](images/cardLink.png)
-
-## \--- colaps \---
-
-## title: Legarea la o anumită parte a unei pagini
-
-Observați cum valoarea `href` din linkul meu se termină în `#scFota`? Acesta este un truc elegant pe care îl puteți utiliza pentru a sări la o anumită parte a paginii.
-
-+ Mai întâi, tastați adresa URL a paginii de conectat, urmată de `#`.
-
-+ În fișierul de cod pentru pagina cu care vă conectați, găsiți partea în care doriți să faceți salt și dați elementul respectiv `id`, de exemplu `<secțiunea id = "scFota"`. Valoarea lui `id` este cea pe care o introduceți după `#` în link-ul dvs.
-
-\--- / colaps \---
-
-## \--- colaps \---
-
-## title: Resetarea stilurilor
-
-Acum că întreaga carte de previzualizare este un link, fontul textului s-ar putea să fi schimbat.
-
-+ Dacă da, puteți remedia problema prin adaugarea unei **clasa CSS** la link - ul: `class = "cardLink"`. Iată codul CSS pentru a pune în foaia dvs. de stil:
++ Add the following CSS code in your style sheet:
 
 ```css
-    .cardLink {culoare: inherit; text-decoration: nici unul; }
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
 ```
 
-Stabilirea valorii oricărei proprietăți la `moștenesc` face utilizați valoarea pe care **- mamă** elementul are. Deci, în acest caz, culoarea textului se va potrivi cu restul textului de pe pagina de pornire.
+Voilà! Thanks to **Flex**, your cards are now displayed side by side!
 
-\--- / colaps \---
++ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
 
-+ Faceți cel puțin patru sau cinci dintre aceste cărți. Dacă lucrați de pe site-ul meu de exemplu, puteți face una pentru fiecare dintre secțiunile de pe pagina Atracții. Pe următorul card Sushi, veți învăța cum să aranjați cărțile cu un truc grozav!
+![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+
++ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
+
+![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+
+If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+
++ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
+
++ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
+
+```css
+    display: flex;
+    justify-content: flex-start;
+```
+
+![Menu with items aligned to the left](images/flexMenuStart.png)
+
+You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+
++ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
+
+![Menu with items evenly spaced](images/flexMenuSpace.png)
+
+![Menu with items aligned to the right](images/flexMenuEnd.png)
+
+**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
