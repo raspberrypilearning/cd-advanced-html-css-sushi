@@ -12,11 +12,29 @@ Beweeg je muiscursor in het onderstaande venster om enkele effecten uit te probe
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-### Wat ga je leren
+## \--- collapse \---
+
+## title: What you will learn
 
 Met deze Sushi Kaarten leer je hoe je:
 
-* Maak een website-indeling zoals jij wilt
-* Laat je layout zichzelf automatisch aan verschillende schermformaten aanpassen
-* Maak een collage van overlappende foto's en tekst
-* Gebruik een paar leuke hover en click-effecten die je op andere websites hebt gezien
++ Maak een website-indeling zoals jij wilt
++ Laat je layout zichzelf automatisch aan verschillende schermformaten aanpassen
++ Maak een collage van overlappende foto's en tekst
++ Gebruik een paar leuke hover en click-effecten die je op andere websites hebt gezien
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
+
+### Software
+
++ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+
+\--- /collapse \---
