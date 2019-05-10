@@ -1,152 +1,186 @@
-## Ontwerp coole pagina layouts
+## Photo collage
 
-+ Voor deze kaart zou je moeten werken met een pagina die een `main` element bevat met daarbinnen drie elementen: één `article` en twee `aside` elementen. Ga je gang en maak deze eerst als dat nodig is. Als je met mijn website wilt werken, voeg je de `aside` code van de vorige Sushi Kaart toe aan de Attracties pagina. 
+On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
 
-Hier zijn drie verschillende pagina layouts die je gaat toepassen:
+![](images/photoCollageWithText_wide.png)
 
-![](images/cssGridLayouts.png)
-
-+ Voeg nieuwe CSS klassen toe aan `main` en elk van de drie elementen daarbinnen.
++ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
 
 ```html
-    <main class="attPageLayoutGrid">
-        <article class="attGridArticle">
-            <!--andere dingen hier-->
-        </article>
-        <aside class="attGridAside1">
-            <!--andere dingen hier-->
-        </aside>
-        <aside class="attGridAside2">
-            <!--andere dingen hier-->
-        </aside>
-    </main>
+    <div id="photoBox" class="relPos">
+        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+    </div>
 ```
 
-De container waarvan je de indeling wijzigt is `main`, maar je zou dit kunnen doen met elke soort container, zoals een `div` of `article`, of zelfs voor de hele `body` van de pagina. De techniek die je gaat gebruiken, wordt het ** CSS-grid** genoemd.
+The photos will appear one after the other on the web page, in the order they appear in your code.
 
-In dit voorbeeld worden de `header` (kop) en `footer` (voettekst) weggelaten uit het ontwerp, maar het is vrij normaal om ze ook in het raster op te nemen.
-
-+ Stel de `display` eigenschap voor de gehele container in op `grid`:
++ In your CSS file, add the following CSS class for the elements inside the `div`: 
 
 ```css
-    .attPageLayoutGrid {
-        display: grid;
-        grid-column-gap: 0.5em;
-        grid-row-gap: 1em;
+    .absPos {
+        position: absolute;
     }
 ```
 
-Wat denk je dat de `grid-column-gap` en `grid-row-gap` eigenschappen doen?
-
-+ Vervolgens benoem je een `grid-area` (rastergebied) voor elk element: 
++ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
 
 ```css
-    .attGridArticle {
-        grid-area: agArticle;
+    .relPos {
+        position: relative;
     }
-    .attGridAside1 {
-        grid-area: agAside1;
-    }
-    .attGridAside2 {
-        grid-area: agAside2;
+
+    #photoBox {
+        width: 800px;
+        height: 400px;
     }
 ```
 
-Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onderaan de pagina zetten. Hiervoor heb je twee **colums** (kolommen) van gelijke breedte nodig. Je kunt de **rij** hoogte automatisch laten.
++ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
 
-+ Plaats de volgende code binnenin de `.attPageLayoutGrid` CSS regels:
+To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+
+![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+
++ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
 
 ```css
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "agArticle agArticle"
-        "agAside1 agAside2";
+    #imgTeaCat {
+        width: 250px;
+        top: 100px;
+        left: 60px;
+    }
 ```
 
-`fr` staat voor **fraction** (deel). Let op hoe je het `article` alle ruimte over de twee kolommen in beslag laat nemen.
+Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+
+### Making things overlap
+
+You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+
++ Choose two images and give them positions that cause them to overlap.
+
++ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
+
++ Take a look at the result on your webpage.
+
+![](images/horse10Cat7.png)
+
++ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
+
+![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: Help! Ik kreeg fouten en waarschuwingen!
+## title: How does z-index work?
 
-Als je Trinket gebruikt, kunnen er enkele fouten (errors) en waarschuwingen (warnings) verschijnen, zelfs als je de code precies zo hebt getypt als hierboven. Dit komt omdat Trinket de CSS raster eigenschappen nog niet herkent. Echter, de code werkt wel.
+The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
 
-Als de CSS raster code jou 'unknown property'-waarschuwingen geeft of een fout als 'unexpected token 1fr' geeft, kun je deze eenvoudigweg negeren.
+The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
-
-Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte van het `article` maken.
-
-+ Wijzig de waarden van `grid-template-columns` en `grid-template-areas`naar:
-
-```css
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2";
-```
-
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
-
-+ Als je de `aside` elementen niet helemaal naar beneden wilt uittrekken, kun je een lege ruimte toevoegen met behulp van een punt: 
-
-```css
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2"
-        "agArticle . ";
-```
-
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
 
 \--- challenge \---
 
-## Uitdaging: maak verschillende layouts voor verschillende schermformaten
+## Challenge: make a photo collage
 
-+ Kun je de schermgrootte controles die je eerder hebt toegevoegd gebruiken om afhankelijk van hoe breed het scherm is de layout te veranderen? Opmerking: als je al CSS blokken hebt gemaakt voor elk schermformaat, kun je de nieuwe CSS code toevoegen aan die blokken in plaats van nieuwe te maken.
++ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
 
 \--- hints \---
 
 \--- hint \---
 
-De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1000 pixels:
+Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
 
-```css
-    @media all and (min-width: 1000px) {
-        .attPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "agArticle agArticle"
-                "agAside1 agAside2";
-        }
-    }  
+```html
+    <div id="photoBox" class="relPos">
+        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
+        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
+        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
+        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
+        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
+        <p id="photoText" class="absPos">Ireland</p>
+    </div>
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1600 pixels:
+Here are the CSS rules that set the positions for each of my pictures in the collage:
 
 ```css
-    @media all and (min-width: 1600px) {
-        .attPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "agArticle agAside1"
-                "agArticle agAside2"
-                "agArticle .";
-        }
-    }  
+    #imgHorse {
+        width: 120px;
+        top: 200px;
+        left: 390px;
+        z-index: 10;
+    }
+    #imgSheep {
+        width: 200px;
+        top: 100px;
+        left: 20px;
+        z-index: 8;
+    }
+    #imgCoast {
+        width: 150px;
+        top: 250px;
+        left: 10px;
+        z-index: 5;
+    }
+    #imgTrees {
+        width: 110px;
+        top: 65px;
+        left: 205px;
+        z-index: 9;
+    }
+    #imgTeaCat {
+        width: 250px;
+        top: 210px;
+        left: 160px;
+        z-index: 7;
+    }
+    #imgStreet {
+        width: 180px;
+        top: 90px;
+        left: 310px;
+        z-index: 6;
+    }
+    #photoText {
+        font-family: "brush script MT";
+        color: lightgreen;
+        font-size: 4em;
+        left: 35px;
+        top: 15px;
+        z-index: 20;
+    }
+```
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the CSS classes I've used:
+
+```css
+    .collagePhoto {
+        border: 1px solid white;
+    }
+    .relPos {
+        position: relative;
+    }
+    .absPos {
+        position: absolute;
+    }
 ```
 
 \--- /hint \---
 
 \--- /hints \---
 
-\--- /challenge \---
+![Photo collage with text over the top](images/photoCollageExample.png)
 
-Met **CSS grid**, kun je bijna elke gewenste layout maken. Als je meer wilt weten, ga je naar [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:Target="_blank"}
+\--- /challenge \---
