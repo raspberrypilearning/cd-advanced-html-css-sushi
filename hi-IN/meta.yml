@@ -1,0 +1,33 @@
+---
+title: उन्नत HTML / सीएसएस सुशी कार्ड
+hero_image: images/banner.png
+description: अपनी वेबसाइट पर अच्छा लेआउट और शांत प्रभाव जोड़ें!
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html/css
+site_areas: कोडरडोज़ो, प्रोजेक्ट्स
+software: htmp-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: भूमिका
+  - 
+    title: Getting setup
+  - 
+    title: Clickable cards
+  - 
+    title: All in a row
+  - 
+    title: Make your menu responsive
+  - 
+    title: Captions and side notes
+  - 
+    title: Design cool page layouts
+  - 
+    title: Photo collage
+  - 
+    title: Special effects
