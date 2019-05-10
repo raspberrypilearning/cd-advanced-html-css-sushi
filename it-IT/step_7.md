@@ -1,93 +1,152 @@
-## Didascalie e note a margine
+## Design cool page layouts
 
-Su questa scheda imparerai altri due tipi di elementi **container** : uno che puoi usare per aggiungere una didascalia (un testo come un titolo o una breve descrizione) ad un'immagine, e un'altra per quando hai roba extra che non in realtà appartengono alle informazioni principali su una pagina.
++ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
 
-### Immagini con didascalie
+Here are three different page layouts you'll be applying:
 
-+ Trova un elemento `img` cui hai testo sopra o sotto che va con l'immagine. Sto lavorando con l'immagine di Tito su `index.html`, ma puoi andare con qualunque cosa si trovi sul tuo sito web. 
+![](images/cssGridLayouts.png)
 
-```html
-  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
-  <p>
-    Guida turistica Tito!
-  </p>
-```
-
-+ Sulla riga sopra il codice, aggiungi il tag di apertura `<figure>`. On a new line below the code, place the closing tag `</figure>`.
-
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Il tutto dovrebbe assomigliare a questo:
++ Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
-  <figure>
-      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
-      <figcaption>
-      Guida turistica Tito!
-      </figcaption>
-  </figure>
+    <main class="attPageLayoutGrid">
+        <article class="attGridArticle">
+            <!--other stuff here-->
+        </article>
+        <aside class="attGridAside1">
+            <!--other stuff here-->
+        </aside>
+        <aside class="attGridAside2">
+            <!--other stuff here-->
+        </aside>
+    </main>
 ```
 
-L'elemento `figcaption` è il tuo **caption**. Può andare sopra l'elemento `img` o sotto di esso.
+The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
-![Immagine di Tito con didascalia](images/figureAndCaption.png)
+In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
 
-## \--- chiudi \---
-
-## titolo: Perché è utile?
-
-L'elemento `figura` agisce come una sorta di **contenitore** per la tua immagine e la sua didascalia. Questo ti permette di trattarli come una sola unità quando definisci gli stili.
-
-Raggrupparli insieme logicamente aiuta anche a mantenere una buona struttura nel codice del tuo sito web.
-
-\--- / chiudi \---
-
-Puoi usare il codice CSS per disegnare `figure` e `figcaption` come faresti con qualsiasi altro elemento usando classi, ID o selettori di elementi. Sto aggiungendo le seguenti regole per rimuovere la spaziatura aggiuntiva che è stata aggiunta dal nuovo contenitore:
++ Set the `display` property to `grid` on the overall container:
 
 ```css
-  figura {margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; }
+    .attPageLayoutGrid {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 1em;
+    }
 ```
 
-### Note a margine
+What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 
-La pagina delle attrazioni sul mio sito Web è un elenco di luoghi da visitare. Voglio aggiungere alcune note sul tempo e su come spostarsi. Quell'informazione non appartiene veramente all'elemento `articolo` con tutte le attrazioni. Questo è un esempio di quando puoi usare l'elemento `parte`.
-
-+ Vai a una pagina del tuo sito web che contiene un elemento articolo `` - Sto utilizzando `attrazioni.html`.
-
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
-
-```html
-  <aside class="sideNoteStyle">
-      <h2>Come muoversi</h2>
-      <h3>Treno e autobus</h3>
-      <p>È possibile raggiungere la maggior parte delle città principali in treno da Dublino. Ci sono molti autobus che effettuano visite a luoghi popolari e attrazioni turistiche.</p>
-      <h3>Car</h3>
-      <p>Il modo più semplice per spostarsi fuori città è in auto.</p>
-    </aside>
-    <aside class="sideNoteStyle">
-      <h2>Meteo</h2>
-      <p>Il tempo in Irlanda è <span class="specialText">molto imprevedibile!</span> E 'meglio <span class="specialText">essere pronti</span> per qualsiasi tipo di tempo, anche se è una bella giornata!</p>
-  </aside>
-```
-
-## \--- chiudi \---
-
-## titolo: Perché è utile?
-
-Il `parte`, `articolo`, e altri contenitori sono tutti simili. L'unica vera differenza è nello **significa**, cioè, per cosa li usi.
-
-È importante utilizzare elementi HTML significativi ogni volta che puoi. Dà al tuo sito una migliore struttura ed è particolarmente utile per chi usa **screen reader**.
-
-\--- / chiudi \---
-
-Hai notato l'altro elemento, `span`? Questo è un tag speciale che puoi usare solo per aggiungere un ulteriore codice CSS! Puoi inserire qualsiasi cosa tra una coppia di tag `span`. È utile per cose come lo styling di una **parte** del testo in un paragrafo.
-
-+ Aggiungi il seguente codice CSS al tuo foglio di stile per completare lo stile per il codice HTML sopra.
++ Next, you name a `grid-area` for each element: 
 
 ```css
-  .sideNoteStyle {border: punteggiato 1px purple; colore di sfondo: # c1ebec; imbottitura: 0,5em; margine: 0,5em; } .specialText {color: # FF4500; dimensione del carattere: più grande; }
+    .attGridArticle {
+        grid-area: agArticle;
+    }
+    .attGridAside1 {
+        grid-area: agAside1;
+    }
+    .attGridAside2 {
+        grid-area: agAside2;
+    }
 ```
 
-![Note aggiuntive con il proprio stile](images/asidesStyled.png)
+Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
 
-Sulla prossima carta, imparerai come rendere più interessante il layout del tuo sito web!
++ Put the following code inside the `.attPageLayoutGrid` CSS rules:
 
-+ Per essere pronti, crea una pagina che contenga uno `articolo` e due `lato` elementi all'interno dei tag `<main> </main>`. O se preferisci, puoi lavorare con la pagina Attrazioni sul mio sito web.
+```css
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "agArticle agArticle"
+        "agAside1 agAside2";
+```
+
+`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+
+## \--- collapse \---
+
+## title: Help! I got errors and warnings!
+
+If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+
+If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+
+\--- /collapse \---
+
+![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+
+Let's put the `aside` elements over on the right and make them half the width of the `article`.
+
++ Change the values of `grid-template-columns` and `grid-template-areas` to:
+
+```css
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2";
+```
+
+![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+
++ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
+
+```css
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2"
+        "agArticle . ";
+```
+
+![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+
+\--- challenge \---
+
+## Challenge: make different layouts for different screen sizes
+
++ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
+
+\--- hints \---
+
+\--- hint \---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+
+```css
+    @media all and (min-width: 1000px) {
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agArticle"
+                "agAside1 agAside2";
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- hint \---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agAside1"
+                "agArticle agAside2"
+                "agArticle .";
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- /hints \---
+
+\--- /challenge \---
+
+With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
