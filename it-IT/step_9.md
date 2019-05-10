@@ -1,122 +1,112 @@
-## collage di foto
+## Special effects
 
-Su questa scheda imparerai a usare i CSS per posizionare esattamente gli elementi HTML e creare un collage fotografico.
+On this card you'll learn a few more nice effects that you can achieve with CSS.
 
-![](images/photoCollageWithText_wide.png)
+### Shadows and movement
 
-+ Aggiungi un `div` alla tua pagina e inserisci tutte le immagini che desideri. Assegna i valori `div` e `img` elementi `id`.
+Let's add a little movement when you hover your cursor over the cards you made earlier.
+
++ Find the `.card:hover` CSS class from earlier and change it to the following:
+
+```css
+    .card:hover {
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
+        transform: translateY(-2px);
+    }
+```
+
++ Try out different values in the `translate` function!
+
+## \--- collapse \---
+
+## title: The `transform` property
+
+If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+
+One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+
+\--- /collapse \---
+
++ Play about with different pixel values in the `box-shadow` property to see what they do. 
+
+## \--- collapse \---
+
+## title: What's `rgba`?
+
+`rgba(0,0,0,0.2)` is another way of defining a colour.
+
+It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+
+The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+
+\--- /collapse \---
+
++ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
+
+```css
+    transition: all 0.2s ease-out;
+```
+
+A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+
+### Lightbox
+
+Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+
+![Lightbox effect in action](images/lightboxLemur.png)
+
+To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+
++ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
 ```html
-    <div id="photoBox" class="relPos">
-        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-    </div>
+    <a href="#_" class="lightbox" id="boxLemur">
+        <h3>Lemur!!</h3>
+        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
+        <p>A lemur enjoying a little snack</p>
+    </a>
 ```
 
-Le foto verranno visualizzate una dopo l'altra nella pagina Web, nell'ordine in cui appaiono nel codice.
+You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
 
-+ Nel tuo file CSS, aggiungi la seguente classe CSS per gli elementi all'interno di `div`: 
++ Add the following CSS code for the lightbox. Can you work out what some of it does?
 
 ```css
-    .absPos {position: absolute; }
+    .lightbox{
+        background: rgba(0,0,0,0.8);
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        visibility: hidden;
+        z-index: 999;
+    }
 ```
 
-+ Successivamente, è necessario aggiungere la posizione `della proprietà: relativa;` al contenitore stesso e definire una dimensione per esso. Questo fa sì che le posizioni degli altri elementi siano definite **rispetto a** (cioè, all'interno) del contenitore.
+Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
 
-```css
-    .relPos {position: relativo; } #photoBox {width: 800px; altezza: 400 px; }
-```
-
-+ Quindi crea una serie di regole di stile per ciascuno degli elementi usando **selettori id** per impostare le loro dimensioni (`larghezza` e / o `altezza` proprietà) e le loro posizioni esatte.
-
-Per definire la posizione di un elemento, sono disponibili quattro proprietà: `sinistra`, `destra`, `superiore`e `inferiore`. Rappresentano quanto devono essere lontani i bordi dal margine del genitore. Utilizzare `superiore` o `inferiore` per la posizione verticale e `sinistra` o `` destra per la posizione orizzontale.
-
-![Diagramma che mostra come le proprietà superiore, sinistra, inferiore e destra si riferiscono al contenitore genitore](images/cssPositionProperties.png)
-
-+ Scegli le posizioni esatte per ciascuna delle tue immagini e usa una delle proprietà `sinistra`, `destra`, `top`e `basso` per definire quelle posizioni nelle tue regole CSS. Ad esempio, questo codice posiziona l'immagine del gatto 100 pixel dall'alto e 60 pixel da sinistra:
-
-```css
-    #imgTeaCat {width: 250px; in alto: 100 px; a sinistra: 60 px; }
-```
-
-Nota: i valori di posizione possono anche essere negativi! Se si utilizza un valore negativo, si spinge l'elemento fuori dal contenitore, su qualsiasi bordo specificato.
-
-### Fare le cose si sovrappongono
-
-Potresti voler sovrapporre alcune delle immagini. Ma come si sceglie quale va avanti?
-
-+ Scegli due immagini e dai loro posizioni che le facciano sovrapporre.
-
-+ Aggiungi una proprietà extra, `z-index: 10;` a uno di essi, quindi aggiungi `z-index: 7;` all'altra.
-
-+ Dai un'occhiata al risultato sulla tua pagina web.
-
-![](images/horse10Cat7.png)
-
-+ Ora scambia i valori di `z-index` , in modo che il `7` e il `10` siano il contrario. Vedi qualche differenza sulla tua pagina web?
-
-![](images/horse7Cat10.png)
-
-## \--- chiudi \---
-
-## titolo: come funziona z-index?
-
-La proprietà `z-index` ti consente di decidere come sovrapporre due o più elementi. Il valore può essere qualsiasi numero intero.
-
-L'elemento con il **più alto** numero finisce in **superiore** della pila, o in altre parole molto **anteriore**. L'elemento con il numero più alto successivo è dietro quello, e davanti agli altri, e così via, finché non si arriva all'elemento con il numero più basso, che appare dietro a tutti gli altri elementi.
-
-\--- / chiudi \---
-
-Puoi posizionare qualsiasi elemento HTML in questo modo, non solo le immagini. Ad esempio, puoi usare un elemento `p` per aggiungere del testo sopra una foto.
-
-\--- sfida \---
-
-## Sfida: crea un collage fotografico
-
-+ Prova a creare il tuo collage di foto come quello mostrato di seguito! Usa il posizionamento esatto insieme a diversi valori di `z-index` per ottenere l'effetto di sovrapposizione nel modo desiderato.
-
-\--- suggerimenti \---
-
-\--- suggerimento \---
-
-Di seguito è riportato il codice HTML per il collage di foto sul mio sito Web in Irlanda. Ci sono sei foto e una parte di testo all'interno di uno `div`.
++ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
 ```html
-    <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Irlanda</p>
-    </div>
+    <a href="#boxLemur">
+        <img src="monkey-2223271_640.jpg" class="mediumPics">
+    </a>
 ```
 
-\--- / suggerimento \---
-
-\--- suggerimento \---
-
-Ecco le regole CSS che definiscono le posizioni per ciascuna delle mie immagini nel collage:
++ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
 
 ```css
-    #imgHorse {width: 120px; superiore: 200 px; a sinistra: 390 px; z-index: 10; } #imgSheep {width: 200px; in alto: 100 px; a sinistra: 20px; z-index: 8; } #imgCoast {width: 150px; In alto: 250 px; a sinistra: 10px; z-index: 5; } #imgTrees {width: 110px; superiore: 65 px; a sinistra: 205 px; z-index: 9; } #imgTeaCat {width: 250px; superiore: 210 px; a sinistra: 160 px; z-index: 7; } #imgStreet {width: 180px; superiore: 90 px; a sinistra: 310 px; z-index: 6; } #photoText {font-family: "brush script MT"; colore: verde chiaro; font-size: 4em; a sinistra: 35 px; inizio: 15px; z-index: 20; }
+    .lightbox:target {
+        visibility: visible;
+    }
 ```
 
-\--- / suggerimento \---
+The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
 
-\--- suggerimento \---
++ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
 
-Ecco le classi CSS che ho usato:
-
-```css
-    .collagePhoto {border: 1px solido bianco; } .relPos {position: relativo; } .absPos {position: absolute; }
-```
-
-\--- / suggerimento \---
-
-\--- / suggerimenti \---
-
-![Foto collage con testo sopra](images/photoCollageExample.png)
-
-\--- / challenge \---
+You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
