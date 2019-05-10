@@ -1,0 +1,33 @@
+---
+title: Advanced HTML/CSS Sushi Cards
+hero_image: images/banner.png
+description: Add nice layouts and cool effects to your website!
+theme: vermell
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Introducció
+  - 
+    title: Getting setup
+  - 
+    title: Clickable cards
+  - 
+    title: All in a row
+  - 
+    title: Make your menu responsive
+  - 
+    title: Captions and side notes
+  - 
+    title: Design cool page layouts
+  - 
+    title: Photo collage
+  - 
+    title: Special effects
