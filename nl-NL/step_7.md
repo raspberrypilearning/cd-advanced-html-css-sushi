@@ -1,107 +1,152 @@
-## Onderschriften en kanttekeningen
+## Design cool page layouts
 
-Op deze kaart leer je meer over twee soorten **container** elementen: een element dat je kunt gebruiken om een ​​bijschrift toe te voegen (een tekst als een titel of een korte beschrijving) aan een foto, en een ander voor wanneer je extra dingen hebt die niet echt bij de hoofdinformatie op een pagina horen.
++ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
 
-### Afbeeldingen met bijschriften
+Here are three different page layouts you'll be applying:
 
-+ Zoek een `img` element waar je tekst boven of onder hebt die bij de afbeelding hoort. Ik werk met de Tito-afbeelding op `index.html`, maar je kunt kiezen uit wat er op je website staat. 
+![](images/cssGridLayouts.png)
 
-```html
-  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
-  <p>
-    Tour gids Tito!
-  </p>
-```
-
-+ Op de regel boven de code, voeg de openings tag `<figure>` toe. On a new line below the code, place the closing tag `</figure>`.
-
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. Het geheel zou er ongeveer zo uit moeten zien:
++ Add new CSS classes to `main` and each of three elements inside it.
 
 ```html
-  <figure>
-      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
-      <figcaption>
-      Tour gids Tito!
-      </figcaption>
-  </figure>
+    <main class="attPageLayoutGrid">
+        <article class="attGridArticle">
+            <!--other stuff here-->
+        </article>
+        <aside class="attGridAside1">
+            <!--other stuff here-->
+        </aside>
+        <aside class="attGridAside2">
+            <!--other stuff here-->
+        </aside>
+    </main>
 ```
 
-Het `figcaption` element is je **bijschrift**. Het kan boven of onder het `img` element komen.
+The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+
++ Set the `display` property to `grid` on the overall container:
+
+```css
+    .attPageLayoutGrid {
+        display: grid;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 1em;
+    }
+```
+
+What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+
++ Next, you name a `grid-area` for each element: 
+
+```css
+    .attGridArticle {
+        grid-area: agArticle;
+    }
+    .attGridAside1 {
+        grid-area: agAside1;
+    }
+    .attGridAside2 {
+        grid-area: agAside2;
+    }
+```
+
+Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+
++ Put the following code inside the `.attPageLayoutGrid` CSS rules:
+
+```css
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "agArticle agArticle"
+        "agAside1 agAside2";
+```
+
+`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
 
 ## \--- collapse \---
 
-## title: Waarom is dit handig?
+## title: Help! I got errors and warnings!
 
-Het element `figure` fungeert als een soort **container** voor je afbeelding en bijschrift. Hiermee kun je ze als één geheel behandelen bij het definiëren van stijlen.
+If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
 
-Door ze logisch samen te voegen, helpt het je ook om een ​​goede structuur in je website-code te behouden.
-
-\--- /collapse \---
-
-Je kunt, zoals elk ander element dat klassen, ID's of element selectors gebruikt, CSS-code gebruiken om `figure` en `figcaption` te stijlen. Ik voeg de volgende regels toe om de extra spatiëring te verwijderen die door de nieuwe container is toegevoegd:
-
-```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
-```
-
-### Kanttekeningen
-
-De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. Ik wil wat aantekeningen toevoegen over het weer en hoe ik de weg kan vinden. Die informatie hoort niet echt thuis in het `article` element met alle attracties. Dit is een voorbeeld van wanneer je het `aside` element zou kunnen gebruiken.
-
-+ Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
-
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
-
-```html
-  <aside class="sideNoteStyle">
-      <h2>Hoe er te komen</h2>
-      <h3>Trein en bus</h3>
-      <p>Je kunt de meeste grote steden vanuit Dublin bereiken met de trein. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
-     <h3>Auto</h3> 
-     <p>De gemakkelijkste manier om je buiten de steden te verplaatsen, is met de auto.</p>
-    </aside>
-    <aside class="sideNoteStyle">
-       <h2>Weer</h2>
-       <p>Het weer in Ierland is <span class="specialText">zeer onvoorspelbaar!</span> Het is het beste om op elk weertype <span class="specialText">voorbereid te zijn</span>, zelfs als het een mooie dag is!</p>
-</aside>
-```
-
-## \--- collapse \---
-
-## title: Waarom is dit handig?
-
-De `aside`, `article` en andere containers zijn allemaal vergelijkbaar. Het enige echte verschil is de **betekenis**, dat wil zeggen, waarvoor je ze gebruikt.
-
-Het is belangrijk om zinvolle HTML-elementen te gebruiken wanneer je maar kunt. Het geeft je website een betere structuur en is vooral handig voor mensen die **schermlezers** gebruiken.
+If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
 
 \--- /collapse \---
 
-Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je kunt gebruiken om extra CSS-code toe te voegen! Je kunt van alles tussen een paar `span` tags plaatsen. Het is handig voor dingen zoals het stylen van een **gedeelte** van de tekst in een alinea.
+![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-+ Voeg de volgende CSS-code toe aan je style sheet om de stijl voor de bovenstaande HTML-code te voltooien.
+Let's put the `aside` elements over on the right and make them half the width of the `article`.
+
++ Change the values of `grid-template-columns` and `grid-template-areas` to:
 
 ```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2";
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-Op de volgende kaart leer je hoe je de layout van je website interessanter kunt maken!
++ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
 
-+ Bereid een pagina voor met één `article` en twee `aside` elementen binnen de `<main></main>` tags. Of, als je wilt, kunt je werken met de Attracties pagina op mijn website.
+```css
+    grid-template-areas: 
+        "agArticle agAside1"
+        "agArticle agAside2"
+        "agArticle . ";
+```
+
+![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+
+\--- challenge \---
+
+## Challenge: make different layouts for different screen sizes
+
++ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
+
+\--- hints \---
+
+\--- hint \---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+
+```css
+    @media all and (min-width: 1000px) {
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agArticle"
+                "agAside1 agAside2";
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- hint \---
+
+The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+
+```css
+    @media all and (min-width: 1600px) {
+        .attPageLayoutGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "agArticle agAside1"
+                "agArticle agAside2"
+                "agArticle .";
+        }
+    }  
+```
+
+\--- /hint \---
+
+\--- /hints \---
+
+\--- /challenge \---
+
+With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
