@@ -1,107 +1,107 @@
-## Pas je menu automatisch aan
+## Captions and side notes
 
-Een **responsive** website is er een die zich aanpast aan de schermgrootte zodat het er altijd fantastisch uitziet, of je het nu bekijkt op een computer, mobiele telefoon of tablet. Laat je menu zich automatisch aanpassen!
+On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
 
-Je begint met de reguliere stijlen: dit is je **default** (standaard) gedrag.
+### Pictures with captions
+
++ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
+
+```html
+  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
+  <p>
+    Tour guide Tito!
+  </p>
+```
+
++ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
+
++ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
+
+```html
+  <figure>
+      <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
+      <figcaption>
+      Tour guide Tito!
+      </figcaption>
+  </figure>
+```
+
+The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+
+![Picture of Tito with a caption](images/figureAndCaption.png)
 
 ## \--- collapse \---
 
-## title: Wat betekent 'default'?
+## title: Why is this useful?
 
-De default (standaard) stijlen zijn je normale set stijlregels. Ze worden, voordat er speciale voorwaarden worden gecontroleerd, altijd toegepast,.
+The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
 
-Je kunt code toevoegen die vervolgens de grootte van het scherm controleert en indien nodig enkele aanpassingen aanbrengt.
+Grouping them together logically also helps to maintain good structure in your website code.
 
 \--- /collapse \---
 
-+ Voeg de volgende CSS-regels toe aan je menu. Je hebt waarschijnlijk ook kleuren en randen gedefinieerd; Ik heb ze weggelaten om hier ruimte te sparen! Als je al CSS-regels hebt gedefinieerd voor jouw menu, hoef je alleen maar de eigenschappen en waarden die je mist hieronder toe te voegen of te wijzigen.
+You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
 
 ```css
-    nav ul {
-        padding: 0.5em;
-        display: flex;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
+  figure { 
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
 ```
 
-Met de bovenstaande CSS-code is je menu het meest geschikt voor kleine schermen. Dit wordt **mobile-first** (mobiel-eerst) genoemd.
+### Side notes
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+
++ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
+
++ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
+
+```html
+  <aside class="sideNoteStyle">
+      <h2>Getting around</h2>
+      <h3>Train and bus</h3>
+      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
+      <h3>Car</h3>
+      <p>The easiest way to get around outside of the cities is by car.</p>
+    </aside>
+    <aside class="sideNoteStyle">
+      <h2>Weather</h2>
+      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+  </aside>
+```
 
 ## \--- collapse \---
 
-## title: Wat betekent 'mobile-first'?
+## title: Why is this useful?
 
-Heel vaak gebruik je bij het coderen van een website een computerscherm en je zult waarschijnlijk jouw stijlen definiëren op basis van hoe het eruit ziet op dat scherm.
+The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
 
-Wanneer je codeert voor mobile first, kies je in plaats daarvan standaard stijlen die geschikt zijn voor kleine schermen zoals smartphones. Je voegt vervolgens extra code toe om aanpassingen aan te brengen voor grotere schermen.
-
-Aangezien steeds meer mensen op hun smartphone of tablet op het internet browsen in plaats van op een computer, is het een goede gewoonte om je website met dit in gedachten te ontwikkelen.
+It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
 
 \--- /collapse \---
 
-+ Voeg nu de volgende code aan je style sheet toe:
+Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+
++ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
 
 ```css
-    @media all and (min-width: 1000px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
+  .sideNoteStyle {
+    border: dotted 1px purple;
+    background-color: #c1ebec;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  .specialText {
+      color: #FF4500;
+      font-size: larger;
+  }
 ```
 
-De eerste regel code hierboven controleert welke grootte het browservenster heeft. Als het venster **1000 pixels** of meer breed is, worden alle stijlregels binnen het blok toegepast.
+![Additional notes with their own styling](images/asidesStyled.png)
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+On the next card, you're going to learn how to make your website's layout more interesting!
 
-## \--- collapse \---
-
-## title: Hoe werkt het?
-
-Het blok bevat nieuwe waarden voor slechts enkele eigenschappen van het `nav ul` menu.
-
-Telkens wanneer het venster breder is dan 1000 pixels, worden deze nieuwe waarden toegepast in plaats van degene die je al hebt gedefinieerd voor `nav ul`.
-
-De rest van de eigenschappen die je eerder hebt gedefinieerd voor `nav ul` zullen hetzelfde blijven.
-
-\--- /collapse \---
-
-+ Als je Trinket gebruikt om code te schrijven, kan het handig zijn om het project te downloaden, zodat je het kunt uitproberen op een volledig scherm.
-
-\--- challenge \---
-
-## Uitdaging: laat je menu zich aanpassen voor grote schermen
-
-+ Kun je nog een blok toevoegen voor schermen die groter zijn dan **1600 pixels**, met `flex-end` in plaats van `space-around`?
-
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
-
-\--- hints \---
-
-\--- hint \---
-
-De volgende code definieert flex-eigenschappen voor menu items wanneer het scherm groter is dan 1600 pixels:
-
-```css
-    @media all and (min-width: 1600px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }  
-```
-
-\--- /hint \---
-
-\--- /hints \---
-
-\--- /challenge \---
-
-Je kunt CSS-regels die je leuk vindt in dergelijke blokken plaatsen om verschillende stijlen voor verschillende schermformaten te definiëren. Het is vooral handig wanneer je later CSS raster layouts doet!
++ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
