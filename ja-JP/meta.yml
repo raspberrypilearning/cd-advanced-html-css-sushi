@@ -1,8 +1,8 @@
 ---
 title: 高度なHTML / CSS寿司カード
-hero_image: images / banner.png
+hero_image: images/banner.png
 description: 素敵なレイアウトとあなたのウェブサイトにクールな効果を追加！
-theme: 赤
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -16,20 +16,18 @@ steps:
   - 
     title: 前書き
   - 
-    title: あなたが必要とするもの
+    title: Getting setup
   - 
-    title: セットアップの取得
+    title: Clickable cards
   - 
-    title: クリック可能なカード
+    title: All in a row
   - 
-    title: 全行
+    title: Make your menu responsive
   - 
-    title: メニューを反応させる
+    title: Captions and side notes
   - 
-    title: キャプションとサイドノート
+    title: Design cool page layouts
   - 
-    title: クールなページレイアウトをデザインする
+    title: Photo collage
   - 
-    title: フォトコラージュ
-  - 
-    title: 特殊効果
+    title: Special effects
