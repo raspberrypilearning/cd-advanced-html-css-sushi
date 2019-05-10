@@ -1,0 +1,33 @@
+---
+title: 고급 HTML / CSS 초밥 카드
+hero_image: images / banner.png
+description: 웹 사이트에 멋진 레이아웃과 멋진 효과를 추가하십시오!
+theme: 빨간
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: 코도 도조 프로젝트
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 소개
+  - 
+    title: Getting setup
+  - 
+    title: Clickable cards
+  - 
+    title: All in a row
+  - 
+    title: Make your menu responsive
+  - 
+    title: Captions and side notes
+  - 
+    title: Design cool page layouts
+  - 
+    title: Photo collage
+  - 
+    title: Special effects
