@@ -1,32 +1,32 @@
-## Design cool page layouts
+## Ontwerp coole pagina layouts
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ Voor deze kaart zou je moeten werken met een pagina die een `main` element bevat met daarbinnen drie elementen: één `article` en twee `aside` elementen. Ga je gang en maak deze eerst als dat nodig is. Als je met mijn website wilt werken, voeg je de `aside` code van de vorige Sushi Kaart toe aan de Attracties pagina. 
 
-Here are three different page layouts you'll be applying:
+Hier zijn drie verschillende pagina layouts die je gaat toepassen:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ Voeg nieuwe CSS klassen toe aan `main` en elk van de drie elementen daarbinnen.
 
 ```html
     <main class="attPageLayoutGrid">
         <article class="attGridArticle">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </article>
         <aside class="attGridAside1">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </aside>
         <aside class="attGridAside2">
-            <!--other stuff here-->
+            <!--andere dingen hier-->
         </aside>
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+De container waarvan je de indeling wijzigt is `main`, maar je zou dit kunnen doen met elke soort container, zoals een `div` of `article`, of zelfs voor de hele `body` van de pagina. De techniek die je gaat gebruiken, wordt het ** CSS-grid** genoemd.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+In dit voorbeeld worden de `header` (kop) en `footer` (voettekst) weggelaten uit het ontwerp, maar het is vrij normaal om ze ook in het raster op te nemen.
 
-+ Set the `display` property to `grid` on the overall container:
++ Stel de `display` eigenschap voor de gehele container in op `grid`:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+Wat denk je dat de `grid-column-gap` en `grid-row-gap` eigenschappen doen?
 
-+ Next, you name a `grid-area` for each element: 
++ Vervolgens benoem je een `grid-area` (rastergebied) voor elk element: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+Dan ontwerp je jouw layout! Laten we de twee `aside` elementen naast elkaar onderaan de pagina zetten. Hiervoor heb je twee **colums** (kolommen) van gelijke breedte nodig. Je kunt de **rij** hoogte automatisch laten.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Plaats de volgende code binnenin de `.attPageLayoutGrid` CSS regels:
 
 ```css
     grid-template-rows: auto;
@@ -64,23 +64,23 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` staat voor **fraction** (deel). Let op hoe je het `article` alle ruimte over de twee kolommen in beslag laat nemen.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: Help! Ik kreeg fouten en waarschuwingen!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+Als je Trinket gebruikt, kunnen er enkele fouten (errors) en waarschuwingen (warnings) verschijnen, zelfs als je de code precies zo hebt getypt als hierboven. Dit komt omdat Trinket de CSS raster eigenschappen nog niet herkent. Echter, de code werkt wel.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+Als de CSS raster code jou 'unknown property'-waarschuwingen geeft of een fout als 'unexpected token 1fr' geeft, kun je deze eenvoudigweg negeren.
 
 \--- /collapse \---
 
 ![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+Laten we de `aside` elementen aan de rechterkant zetten en ze de halve breedte van het `article` maken.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ Wijzig de waarden van `grid-template-columns` en `grid-template-areas`naar:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -91,7 +91,7 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 ![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ Als je de `aside` elementen niet helemaal naar beneden wilt uittrekken, kun je een lege ruimte toevoegen met behulp van een punt: 
 
 ```css
     grid-template-areas: 
@@ -104,15 +104,15 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Uitdaging: maak verschillende layouts voor verschillende schermformaten
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ Kun je de schermgrootte controles die je eerder hebt toegevoegd gebruiken om afhankelijk van hoe breed het scherm is de layout te veranderen? Opmerking: als je al CSS blokken hebt gemaakt voor elk schermformaat, kun je de nieuwe CSS code toevoegen aan die blokken in plaats van nieuwe te maken.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1000 pixels:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+De volgende code definieert een layout voor de bovenstaande CSS klasse wanneer het scherm groter is dan 1600 pixels:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+Met **CSS grid**, kun je bijna elke gewenste layout maken. Als je meer wilt weten, ga je naar [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:Target="_blank"}
