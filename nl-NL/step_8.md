@@ -1,10 +1,10 @@
-## Photo collage
+## Foto collage
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+Op deze kaart leer je CSS te gebruiken om HTML-elementen precies te plaatsen en een fotocollage te maken.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ Voeg een `div` toe aan je pagina en plaats er zoveel afbeeldingen in als je maar wilt. Geef de `div` en `img` elementen `id` waarden.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+De foto's verschijnen één voor één op de webpagina, in de volgorde waarin ze in je code voorkomen.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ Voeg in je CSS bestand de volgende CSS klasse toe voor de elementen binnen de `div`: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ Vervolgens moet je de eigenschap `position: relative;` aan de container zelf toevoegen en daar een grootte voor definiëren. Dit maakt het zo dat de posities van de andere elementen **relatief tot** (dat wil zeggen, binnenin) de container worden gedefinieerd.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ Maak vervolgens een set stijl regels voor elk van de elementen met behulp van **id-selectors** om hun maten (`width` en/of `height` eigenschappen) en hun exacte posities in te stellen.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+Om de positie van een element te bepalen, zijn er vier eigenschappen die je kunt gebruiken: `left`, `right`, `top` en `bottom`. Zij geven aan hoe ver elk van de randen van de rand van het parent element af moet liggen. Gebruik `top` of `bottom` voor de verticale positie en `left` of `right` voor de horizontale positie.
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ Kies de exacte posities voor elk van je afbeeldingen en gebruik een van de eigenschappen `left`, `right`, `top` en `bottom` om die posities in je CSS-regels te definiëren. Bijvoorbeeld deze code plaatst de katfoto 100 pixels vanaf de bovenkant en 60 pixels van links:
 
 ```css
     #imgTeaCat {
@@ -52,47 +52,47 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+Opmerking: de positie waarden kunnen ook negatief zijn! Als je een negatieve waarde gebruikt, wordt het element buiten de container geduwd, over de rand die je hebt opgegeven.
 
-### Making things overlap
+### Dingen laten overlappen
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+Je wilt misschien sommige afbeeldingen laten overlappen. Maar hoe kies je welke er bovenop komt?
 
-+ Choose two images and give them positions that cause them to overlap.
++ Kies twee afbeeldingen en geef ze posities waardoor ze elkaar overlappen.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ Voeg een extra eigenschap toe, `z-index: 10;` aan een van hen en voeg vervolgens `z-index: 7;` aan de andere toe.
 
-+ Take a look at the result on your webpage.
++ Bekijk het resultaat op je webpagina.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ Wissel nu de `z-index` waarden om, zodat de `7` en de `10` omgewisseld zijn. Zie je enig verschil op je webpagina?
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: Hoe werkt het?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+De `z-index` eigenschap laat je bepalen hoe twee of meer elementen elkaar moeten overlappen. De waarde kan elk geheel getal zijn.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+Het element met het **hoogste** nummer eindigt **bovenaan** de stapel, met andere woorden helemaal **bovenop**. Het element met het volgende hoogste getal ligt daaronder en bovenop de anderen, enzovoort, totdat je bij het element met het laagste getal komt, dat onderaan alle andere elementen verschijnt.
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+Je kunt niet alleen afbeeldingen op deze manier positioneren, maar alle HTML-elementen. Je kunt bijvoorbeeld een `p` element gebruiken om tekst over een foto toe te voegen.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Uitdaging: maak een fotocollage
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Probeer je eigen fotocollage zoals hieronder getoond, samen te stellen! Gebruik exacte positionering samen met verschillende `z-index` waarden om het overlappende effect te krijgen zoals jij het wilt.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+Hieronder staat de HTML-code voor de fotocollage op mijn Ierland-website. Er zijn zes foto's en een stuk tekst allemaal binnen een `div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+Hier zijn de CSS-regels die de posities instellen voor elk van mijn afbeeldingen in de collage:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+Dit zijn de CSS-klassen die ik heb gebruikt:
 
 ```css
     .collagePhoto {
