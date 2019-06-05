@@ -14,7 +14,7 @@ Beweeg je muiscursor in het onderstaande venster om enkele effecten uit te probe
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Wat ga je leren
 
 Met deze Sushi Kaarten leer je hoe je:
 
@@ -27,14 +27,14 @@ Met deze Sushi Kaarten leer je hoe je:
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Wat je nodig hebt
 
 ### Hardware
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Een computer die toegang heeft tot de [ trinket.io ](https://trinket.io) {: target = "_ blank"} website
 
 ### Software
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Dit project kan in een webbrowser worden voltooid met behulp van [trinket.io](https://trinket.io) {:target="_blank"} of offline door gebruik te maken van een teksteditor.
 
 \--- /collapse \---
