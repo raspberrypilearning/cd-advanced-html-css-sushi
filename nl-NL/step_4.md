@@ -1,27 +1,27 @@
-## All in a row
+## Alles op één rij
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Met deze kaart leer je wat trucs om dingen **horizontaal** op een pagina te ordenen. Eerst zul je zien hoe je dingen gecentreerd kunt krijgen. Vervolgens rangschik je elementen naast elkaar.
 
-+ Add the following CSS properties to the `.card` class:
++ Voeg de volgende CSS-eigenschap toe aan je `.card` class:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Je zou moeten zien dat de kaarten naar het midden van de pagina gaan. Door de linker- en rechtermarge in te stellen op `auto` (automatisch), kun je elk element in het midden plaatsen in plaats van aan de linkerkant.
 
 ![The cards appear in the middle instead of over to the left](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Versleep de rand van het browservenster om de pagina smaller en breder te maken - zie je dat de kaarten gecentreerd blijven.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Zet alle kaart links die je zojuist hebt gemaakt in een nieuw containerelement. Het wordt geen `article` of een `section`, maar eentje met de naam `div`. Dit is een container voor algemene doeleinden die je kunt gebruiken om dingen te groeperen en mooie layouts te maken.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Voeg de volgende code aan je style sheet toe:
 
 ```css
     .cardContainer {
@@ -32,21 +32,21 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voila! Met dank aan **Flex**, je kaarten worden nu naast elkaar weergegeven!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Versleep de rand van je venster om de website breder en smaller te maken en kijk hoe de kaarten zich verplaatsen om in de venstergrootte te passen, soms omslaand naar de volgende regel.
 
 ![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Probeer de `width` en de `height` eigenschappen te verwijderen van de `.card` klasse en zie wat er gebeurt: `flex` past de kaarten als een legpuzzel slim aan elkaar en houdt een gelijkmatige hoogte aan voor alles dat zich in dezelfde rij bevindt.
 
 ![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Als je een navigatiemenu boven aan je pagina hebt, kun je dit trucje ook gebruiken. Je menu moet samengesteld zijn uit lijstelementen( (`li`) voor dit volgende stukje. Als je wilt, kun je het uitproberen met mijn website.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Zoek de CSS-regels voor het menu. In mijn website zijn dat de blokken `nav ul`, `nav ul li` en `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Verwijder de eigenschap `display:inline;` uit de lijst items. Vervolgens, in de lijst `nav ul`, toevoegen:
 
 ```css
     display: flex;
@@ -55,12 +55,12 @@ If you have a navigation menu at the top of your page, that's another place you 
 
 ![Menu with items aligned to the left](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Je krijgt uiteindelijk vrijwel hetzelfde menu, toch? Het leuke van `flex` is dat je de lay-out met de eigenschap `justify-content` kunt regelen.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Wijzig de waarde van `justify-content` naar `flex-end` en kijk wat er gebeurt. Of verander het naar `space-around` om de menu-items gelijkmatig uit elkaar te plaatsen, net als voor de kaarten.
 
 ![Menu with items evenly spaced](images/flexMenuSpace.png)
 
 ![Menu with items aligned to the right](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** is een behoorlijk krachtige lay-out gereedschap die een hele Sushi Kaart-serie zou kunnen vullen \--- je kunt er meer over leren op [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
