@@ -1,10 +1,10 @@
-## Clickable cards
+## Klikbare kaarten
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Hier is een techniek die je kunt gebruiken om een ​​fotogalerij te maken of een portfolio-pagina die je projecten laat zien: kleine **voorbeeldkaarten**.
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Voeg de volgende HTML-code waar je maar wilt aan je website toe. Ik doe het in `index.html`. Je kunt de afbeelding en tekst aanpassen aan je eigen voorbeeldkaarten. Ik ga een aantal hoogtepunten van de toeristische attracties in Ierland aanpassen.
 
 ```html
     <article class="card">
@@ -16,7 +16,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text before styles are applied](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Voeg de volgende CSS-code toe om de klassen `card` en `tinyPicture` te maken:
 
 ```css
     .tinyPicture {
@@ -40,9 +40,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text with styling to create a small card effect](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Laten we de hele voorbeeldkaart in een link veranderen zodat mensen kunnen klikken om meer informatie te zien.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Plaats het hele `article` element binnen een link element. Zorg ervoor dat de `</a>` tag na het `</article>` label komt! Je kunt de **URL** link veranderen naar wat je maar wilt linken. Dat zou een andere pagina op je website kunnen zijn, of het zou helemaal een andere website kunnen zijn.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -58,23 +58,23 @@ Let's turn the whole preview card into a link so people can click to see more in
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: Koppelen aan een specifiek gedeelte van een pagina
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Zie je hoe de waarde van `href` in mijn link eindigt op `#scFota`? Dit is een handige truc die je kunt gebruiken om naar een bepaald deel van een pagina te gaan.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Typ eerst de URL van de pagina waarnaar je wilt linken, gevolgd door `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ Vind in de code voor de pagina waarnaar je koppelt het deel waarnaar je wilt springen en geef dat element een `id`, bijvoorbeeld `<sectieid="scFota"`. De waarde van de `id` is wat je typt na de `#` in je link.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: Stijlen opnieuw instellen
 
-Now that the whole preview card is a link, the text font may have changed.
+Nu de hele voorbeeldkaart een koppeling is, is het lettertype mogelijk gewijzigd.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Als dat het geval is, kun je dit oplossen door een **CSS klasse** aan de link toe te voegen: `class="cardLink"`. Hier is de CSS-code die je in je stylesheet kunt zetten:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Het instellen van de waarde van een eigenschap op `inherit` (erven) zorgt ervoor dat het de waarde van het **parent** element krijgt. In dit geval komt de tekstkleur overeen met de rest van de tekst op de startpagina.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Maak minimaal vier of vijf van deze kaarten. Als je werkt vanuit mijn voorbeeld website, kun je er een doen voor elk van de secties op de pagina Attracties. Met de volgende Sushi Kaart leer je hoe je de kaarten kunt rangschikken met een coole truc!
