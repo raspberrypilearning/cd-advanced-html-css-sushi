@@ -1,46 +1,46 @@
-## Captions and side notes
+## Onderschriften en kanttekeningen
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+Op deze kaart leer je meer over twee soorten **container** elementen: een element dat je kunt gebruiken om een ​​bijschrift toe te voegen (een tekst als een titel of een korte beschrijving) aan een foto, en een ander voor wanneer je extra dingen hebt die niet echt bij de hoofdinformatie op een pagina horen.
 
-### Pictures with captions
+### Afbeeldingen met bijschriften
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Zoek een `img` element waar je tekst boven of onder hebt die bij de afbeelding hoort. Ik werk met de Tito-afbeelding op `index.html`, maar je kunt kiezen uit wat er op je website staat. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
   <p>
-    Tour guide Tito!
+    Tour gids Tito!
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ Op de regel boven de code, voeg de openings tag `<figure>` toe. Voeg op een nieuwe regel onder de code de sluit tag `</figure>` toe.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ Verwijder vervolgens de `p` tags, of welke tags je ook hebt gebruikt rond de tekst (misschien is het een kop, zoals `h2`) en plaats de tekst tussen de `<figcaption></figcaption>` tags. Het geheel zou er ongeveer zo uit moeten zien:
 
 ```html
   <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
       <figcaption>
-      Tour guide Tito!
+      Tour gids Tito!
       </figcaption>
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+Het `figcaption` element is je **bijschrift**. Het kan boven of onder het `img` element komen.
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: Waarom is dit handig?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+Het element `figure` fungeert als een soort **container** voor je afbeelding en bijschrift. Hiermee kun je ze als één geheel behandelen bij het definiëren van stijlen.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+Door ze logisch samen te voegen, helpt het je ook om een ​​goede structuur in je website-code te behouden.
 
 \--- /collapse \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+Je kunt, zoals elk ander element dat klassen, ID's of element selectors gebruikt, CSS-code gebruiken om `figure` en `figcaption` te stijlen. Ik voeg de volgende regels toe om de extra spatiëring te verwijderen die door de nieuwe container is toegevoegd:
 
 ```css
   figure { 
@@ -51,41 +51,41 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
   }
 ```
 
-### Side notes
+### Kanttekeningen
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+De pagina Attracties op mijn website is een lijst met plaatsen om te bezoeken. Ik wil wat aantekeningen toevoegen over het weer en hoe ik de weg kan vinden. Die informatie hoort niet echt thuis in het `article` element met alle attracties. Dit is een voorbeeld van wanneer je het `aside` element zou kunnen gebruiken.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ Ga naar een pagina van je website met een `article` element erop - Ik gebruik `attractions.html`.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
++ **Buiten** het `article` element, voeg je een of meer paren `<aside></aside>` tags met je extra inhoud toe.
 
 ```html
   <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <h2>Hoe er te komen</h2>
+      <h3>Trein en bus</h3>
+      <p>Je kunt de meeste grote steden vanuit Dublin bereiken met de trein. Er zijn veel tourbussen die je naar populaire locaties en toeristische attracties kunnen brengen. </p>
+     <h3>Auto</h3> 
+     <p>De gemakkelijkste manier om je buiten de steden te verplaatsen, is met de auto.</p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
-  </aside>
+       <h2>Weer</h2>
+       <p>Het weer in Ierland is <span class="specialText">zeer onvoorspelbaar!</span> Het is het beste om op elk weertype <span class="specialText">voorbereid te zijn</span>, zelfs als het een mooie dag is!</p>
+</aside>
 ```
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: Waarom is dit handig?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+De `aside`, `article` en andere containers zijn allemaal vergelijkbaar. Het enige echte verschil is de **betekenis**, dat wil zeggen, waarvoor je ze gebruikt.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+Het is belangrijk om zinvolle HTML-elementen te gebruiken wanneer je maar kunt. Het geeft je website een betere structuur en is vooral handig voor mensen die **schermlezers** gebruiken.
 
 \--- /collapse \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+Hebt je het andere element daarin gezien, `span`? Dit is een speciale tag die je kunt gebruiken om extra CSS-code toe te voegen! Je kunt van alles tussen een paar `span` tags plaatsen. Het is handig voor dingen zoals het stylen van een **gedeelte** van de tekst in een alinea.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ Voeg de volgende CSS-code toe aan je style sheet om de stijl voor de bovenstaande HTML-code te voltooien.
 
 ```css
   .sideNoteStyle {
@@ -102,6 +102,6 @@ Did you spot the other element in there, `span`? This is a special tag you can u
 
 ![Additional notes with their own styling](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+Op de volgende kaart leer je hoe je de layout van je website interessanter kunt maken!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ Bereid een pagina voor met één `article` en twee `aside` elementen binnen de `<main></main>` tags. Of, als je wilt, kunt je werken met de Attracties pagina op mijn website.
