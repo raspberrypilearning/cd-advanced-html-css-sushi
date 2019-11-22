@@ -1,14 +1,14 @@
 ---
-title: Guide to my country 3.0
+title: Tour durch mein Land 3.0
 hero_image: images/banner.png
-description: Fügen Sie Ihrer Website schöne Layouts und coole Effekte hinzu!
-theme: red
+description: Füge Deiner Website schöne Layouts und coole Effekte hinzu!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 technologies: html-css-javascript
-site_areas: Coderdojo, Projekte
+site_areas: coderdojo, projects
 software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
@@ -16,18 +16,18 @@ steps:
   - 
     title: Einleitung
   - 
-    title: Getting setup
+    title: Vorbereitungen
   - 
-    title: Clickable cards
+    title: Klickbare Karten
   - 
-    title: All in a row
+    title: Alles in einer Reihe
   - 
-    title: Make your menu responsive
+    title: Lass dein Menu reagieren
   - 
-    title: Captions and side notes
+    title: Bildunterschriften und Randnotizen
   - 
-    title: Design cool page layouts
+    title: Gestalte coole Seitenlayouts
   - 
-    title: Photo collage
+    title: Fotocollage
   - 
-    title: Special effects
+    title: Spezialeffekte
