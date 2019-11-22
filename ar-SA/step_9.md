@@ -1,12 +1,12 @@
-## Special effects
+## مؤثرات خاصة
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+في هذه البطاقة ، ستتعرف على بعض التأثيرات اللطيفة التي يمكنك انجازها باستخدام CSS.
 
-### Shadows and movement
+### الظلال والحركة
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+دعنا نضيف حركة صغيرة عندما تمرر مؤشر الماوس فوق البطاقات التي قمت بإنشائها مسبقًا.
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ ابحث عن `.card: hover ` فئة CSS من ماسبق وقم بتغييرها إلى ما يلي:
 
 ```css
     .card:hover {
@@ -15,11 +15,11 @@ Let's add a little movement when you hover your cursor over the cards you made e
     }
 ```
 
-+ Try out different values in the `translate` function!
++ جرب قيمًا مختلفة في ` دالة ` الترجمة!
 
 ## \--- collapse \---
 
-## title: The `transform` property
+## title: `خاصية` التحويل
 
 If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
 
