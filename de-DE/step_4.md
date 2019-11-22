@@ -1,27 +1,27 @@
-## All in a row
+## Alles in einer Reihe
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Auf dieser Karte lernst Du einige Tricks, um Dinge **horizontal** auf einer Seite anzuordnen. Zuerst wirst du sehen, wie man Dinge zentriert. Dann wirst Du Elemente nebeneinander in einer Zeile anordnen.
 
-+ Add the following CSS properties to the `.card` class:
++ Füge die folgenden CSS Eigenschaften zur `.card` Klasse hinzu:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Du solltest sehen, wie die Karten sich in die Mitte der Seite bewegen. Durch Setzen der linken und rechten Abstände (engl.: margins) auf `auto`, kannst Du jedes Element in die Mitte setzen, statt ganz links.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Die Karten werden in der Mitte anstatt ganz links angezeigt](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Ziehe den Rand des Browserfensters, um die Seite schmaler und breiter zu machen. Beachte dass die Karten zentriert bleiben.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Setze alle Karten-Links die Du gerade erstellt hast in ein neues "Container-Element". Es wird kein `article` oder ein `section` sein, sondern etwas das `div` genannt wird. Das ist ein universeller Container, mit dem Du Dinge gruppieren und schöne Layouts erstellen kannst.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Füge folgenden CSS-Code in dein Sylesheet ein:
 
 ```css
     .cardContainer {
@@ -32,35 +32,35 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! Dank **Flex** werden Deine Karten jetzt nebeneinander angezeigt!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Ziehe den Rand Deines Fensters, um die Website breiter und schmaler zu machen, und beobachte, wie sich die Karten bewegen, um sich der Fenstergröße anzupassen und manchmal in die nächste Zeile übergehen.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Karten angeordnet in zwei Reihen, die gleichmäßig verteilt sind um auf die Browserbreite zu passen](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Versuche, die `width` und `height` Eigenschaften aus der `.card`-Klasse zu löschen und beobachte was passiert: `flex` fügt die Karten auf clevere Weise wie ein Puzzle zusammen und behält dabei eine gleichmäßige Höhe für alle Elemente in derselben Reihe bei.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Karten nebeneinander angeordnet mit automatischer Breite](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Falls Du ein Navigations-Menu oben auf Deiner Seite hast, kannst du diesen Trick auch da anwenden. Für den nächsten Teil muss dein Menu aus Listen-Elementen ( `li` ) bestehen. Wenn Du willst, kannst Du es mit meiner Website ausprobieren.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Finde die CSS-Regeln für das Menu. Auf meiner Website sind das die Blöcke `nav ul`, `nav ul li` und `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Lösche die Eigenschaft `display: inline;` aus den Listenelementen. Füge dann, in der Liste `nav ul`, Folgendes hinzu:
 
 ```css
     display: flex;
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Menü mit links ausgerichteten Elementen](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Am Ende hast du ziemlich genau das gleiche Menu wie vorher, oder? Das Coole an `flex` ist, dass Du das Layout mit der Eigenschaft `justify-content` steuern kannst.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Ändere den Wert von `justify-content` zu `flex-end` und sieh was passiert. Oder ändere ihn zu `space-around`, um die Menüpunkte gleichmäßig zu verteilen, genau wie Du es für die Karten getan hast.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Menü mit gleichmäßig verteilten Elementen](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Menü mit rechts ausgerichteten Elementen](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** ist ein ziemlich leistungsfähiges Layout-Werkzeug, das alleine eine ganze Sushi-Karten Serie füllen könnte. Auf [dojo.soy/html3-flex](http://dojo.soy/html3-flex) kannst Du mehr darüber erfahren.
