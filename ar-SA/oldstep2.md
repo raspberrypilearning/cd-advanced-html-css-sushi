@@ -1,9 +1,9 @@
-## What you will need
+## ما سوف تحتاجه
 
-### Hardware
+### الأجهزة
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ حاسوب قادر على الوصول إلى [trinket.io](https://trinket.io){:target="_blank"}
 
-### Software
+### البرمجيات
 
-This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
+يُمكن إكمال هذا المشروع من متصفح ويب باستخدام تطبيق [trinket.io](https://trinket.io){:target="_blank"} أو بدون انترنت باستخدام محرر نصي.
