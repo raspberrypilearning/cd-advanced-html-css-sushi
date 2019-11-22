@@ -1,10 +1,10 @@
-## Clickable cards
+## 클릭 할 수 있는 카드
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+사진 갤러리를 만들거나 프로젝트들을 보여주는 포트폴리오 페이지를 만드는데 사용할 수 있는 기술입니다. 작은 **미리보기 카드**.
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ 다음의 HTML 코드를 웹사이트 또는 원하는 어디에든 추가 하세요. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. 나는 많은 아일랜드의 관광 명소를 볼 것입니다.
 
 ```html
     <article class="card">
