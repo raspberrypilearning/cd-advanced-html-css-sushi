@@ -1,8 +1,8 @@
 ---
-title: Guide to my country 3.0
+title: Guida al mio paese 3.0
 hero_image: images / banner.png
 description: Aggiungi bei layout e fantastici effetti al tuo sito web!
-theme: rosso
+theme: rosso #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
@@ -14,20 +14,20 @@ version: 4.1.0
 last_tested: 2017/01/01
 steps:
   - 
-    title: introduzione
+    title: Introduzione
   - 
-    title: Getting setup
+    title: Prepararsi
   - 
-    title: Clickable cards
+    title: Schede selezionabili
   - 
-    title: All in a row
+    title: Tutto di fila
   - 
-    title: Make your menu responsive
+    title: Rendi il tuo menu reattivo
   - 
-    title: Captions and side notes
+    title: Didascalie e note a margine
   - 
-    title: Design cool page layouts
+    title: Progettare layout di pagina interessanti
   - 
-    title: Photo collage
+    title: Collage di foto
   - 
-    title: Special effects
+    title: Effetti speciali
