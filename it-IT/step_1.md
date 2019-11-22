@@ -14,7 +14,7 @@ Sposta il cursore del mouse sulla finestra qui sotto per provare alcuni degli ef
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Cosa imparerai
 
 Con queste Sushi Cards scoprirai come:
 
@@ -27,14 +27,14 @@ Con queste Sushi Cards scoprirai come:
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Di cosa avrai bisogno
 
 ### Hardware
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Un computer in grado di accedere al sito [trinket.io](https://trinket.io){:target="_blank"}
 
 ### Software
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Questo progetto può essere completato in un browser web utilizzando [trinket.io](https://trinket.io){:target="_blank"}, oppure offline utilizzando un normale editor di testo.
 
 \--- /collapse \---
