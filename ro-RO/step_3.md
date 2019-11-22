@@ -1,10 +1,10 @@
-## Clickable cards
+## Cartonașe de accesat
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Iată o metodă pe care o poți folosi pentru a creea un album foto, sau o pagina de portofoliu care să arate proiectele tale: little **preview cards**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Previzulalizează cartonașul afișând o imagine în miniatura si ceva text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Adaugă următoarea comanda site-ului tău, unde dorești. O voi face pe `index.html`. Poți modifica poza și textul în funcție de cartonașele tale precedente. Am de gând să adaug o serie de atracții turistice din Irlanda.
 
 ```html
     <article class="card">
@@ -14,9 +14,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Imaginea si textul inaintea aplicării modelelor](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Adauga urmatoarea comanda CSS pentru a creea grupele `card` și `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -38,11 +38,11 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Imaginea si textul modelate pentru a da un efect de cartonaș](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Hai să transformăm cartonașul într-ul link, pentru ca ceilalți să-l poată accesa, pentru mai multe informații.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Pune toate elementele `article` în interiorul unui compoziției link-ului. Asigură-te că eticheta de sfârșit `</a>` se afla înaintea etichetei `</article>` tag! Poți să schimbi adresa **URL** cu orice adresa vrei tu. Poate să fie o altă pagina din site-ul tău, sau poate să fie, în totalitate, un alt site.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -54,27 +54,27 @@ Let's turn the whole preview card into a link so people can click to see more in
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Textul si imaginea transformate intr-o adresa](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## titlu: Legaturile spre o parte anume a paginii
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Ai observat cum se termină valoarea `href` din adresa mea, în `#scFota`? Este un truc mic, pe care-l poți folosi, pentru a sări la o anumită parte a paginii.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Mai întâi, introdu adresa URL a paginii în link, urmat de `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ În codul paginii, pentru pagina catre care faci legătura, caută porțiunea la care vrei să sari, și dăi acelui element un `id`, spre exemplu, `<section id="scFota"`. Valoarea `id` este aceea pe care o tastezi dupa `#` din adresa ta.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## titlu: Resetarea tipurilor
 
-Now that the whole preview card is a link, the text font may have changed.
+Acum întregul cartonaș este o adresă, iar fontul textului apare modificat.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Dacă e așa, atunci îl poti corecta adăugând **CSS class** adresei: `class="cardLink"`. Aici e codul CSS pe care trebuie să o adaugi modelului tău:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Setarea valorii unei proprietăți la `inherit` ajunge să utilizeze valoarea pe care o are elementul **parent**. Deci in acest caz, culoarea textului va fi identica cu cea a textului din pagina principala.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Creează cel puțin patru sau cinci astfel de cartonașe. Dacă lucrezi de pe exemplu meu de site, poți face câte un cartonaș pentru fiecare sectiune din pagina Atracții. În cartonașul următor, vei învăța cum să aranjezi cartonașele folosind un truc atractiv!
