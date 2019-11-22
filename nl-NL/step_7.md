@@ -1,4 +1,4 @@
-## Ontwerp coole pagina layouts
+## Ontwerp coole pagina-layouts
 
 + Voor deze kaart zou je moeten werken met een pagina die een `main` element bevat met daarbinnen drie elementen: één `article` en twee `aside` elementen. Ga je gang en maak deze eerst als dat nodig is. Als je met mijn website wilt werken, voeg je de `aside` code van de vorige Sushi Kaart toe aan de Attracties pagina. 
 
@@ -22,7 +22,7 @@ Hier zijn drie verschillende pagina layouts die je gaat toepassen:
     </main>
 ```
 
-De container waarvan je de indeling wijzigt is `main`, maar je zou dit kunnen doen met elke soort container, zoals een `div` of `article`, of zelfs voor de hele `body` van de pagina. De techniek die je gaat gebruiken, wordt het ** CSS-grid** genoemd.
+De container waarvan je de indeling wijzigt is `main`, maar je zou dit kunnen doen met elke soort container, zoals een `div` of `article`, of zelfs voor de hele `body` van de pagina. De techniek die je gaat gebruiken, wordt het **CSS-grid** genoemd.
 
 In dit voorbeeld worden de `header` (kop) en `footer` (voettekst) weggelaten uit het ontwerp, maar het is vrij normaal om ze ook in het raster op te nemen.
 

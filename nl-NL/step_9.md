@@ -112,3 +112,11 @@ De `:target` pseudo-klasse wordt toegepast als de lightbox het doelwit was van d
 + Klik op je nieuwe link om de lightbox te zien verschijnen! Klik ergens op de pagina om het te laten verdwijnen.
 
 Je kunt zoveel lightboxen aan een pagina toevoegen als je wilt. Ze kunnen allemaal dezelfde CSS-klasse gebruiken - zorg er alleen voor dat elke code een andere `id` heeft! Voor elke pagina moet je iets op je webpagina maken in een koppeling waarop je kunt klikken om de lightbox weer te geven en vervolgens de `id` als de `href` waarde in die link gebruiken, net zoals je hierboven hebt gedaan!
+
+***
+
+## Door de community geleverde vertaling 
+
+Dit project werd vertaald door **Coen Warrier** en gecontroleerd door **Robert-Jan Kempenaar**. 
+
+Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translate](https://rpf.io/translate).
