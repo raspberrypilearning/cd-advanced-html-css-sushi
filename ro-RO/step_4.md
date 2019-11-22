@@ -1,27 +1,27 @@
-## All in a row
+## Toate pe un rând
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+În acest cartonaș vei învăța câteva trucuri pentru aranjarea lucrurilor pe **horizontally**, într-o pagina. Prima data, vei vedea cum se pot așeza lucrurile pe centru. Apoi vei aranja elementele unul lângă altul pe un rând.
 
-+ Add the following CSS properties to the `.card` class:
++ Adaugă următoarele proprietăți clasei `.card`:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Ar trebui sa vezi cartonașele mutându-se în centrul paginii. Prin setarea marginilor, stânga și dreapta pe `auto`, poți face ca fiecare element să fie în partea din mijloc, nu în partea cea mai din stânga.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Cartonașe ce apar în mijloc în loc să apară mai la stânga](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Trage de margine ferestrei pentru a face pagina mai îngustă sau mai largă - observă cum cartonașul rămâne centrat.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Pune toate adresele care le-ai creat intr-o nouă casetă de elemente. Nu va fi una `article` sau o `section`, ci una numită `div`. Aceasta este o casetă de uz general pe care o vei putea folosi atunci cand ordonezi lucrurile si când creezi suprafete draguțe.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Adaugă următorul cod CSS in fila de modelare:
 
 ```css
     .cardContainer {
@@ -32,35 +32,35 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! Mulțumită lui **Flex**, cartonașele tale sunt acum afișate unul lângă altul!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Trage de marginea ferestrei pentru a o face mai lată sau mai îngustă, și observă cum cartonașele se mișcă în jur pentru a se putea potrivi cu mărimea selectată a ferestrei, câteodata înfășurându-se la linia următoare.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Catonașe aranjate în două rânduri depărtate egal pentru a se putea potrivi cu lățimea ecranului](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Încearcă să ștergi proprietățile de `width` și `height` din clasa de cartonașe `.card` și vezi ce se întâmplă: `flex` va aranja ingenios cartonașele exact ca un puzzle tăiat, menținând înălțimea egală peste toate lucrurile de pe același rând.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Cartonașe aranjate unul lângă altul cu lățime automată](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Dacă există un meniu de bare în partea de sus a paginii, atunci acolo este un alt loc unde vei putea folosi acest truc. Meniul tău trebuie să fie alcătuit din losta de elemente( (`li`) pentru părticica următoare. Dacă vrei, poți testa site-ul meu.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Găsește regulile CSS pentru meniu. În aite-ul meu, acesta e blocul `nav ul`, `nav ul li`, și `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Șterge proprietățile `display: inline;` din lista de obiecte. Mai apoi, în lista `nav ul`, adaugă:
 
 ```css
     display: flex;
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Meniu cu elemente aliniate la stânga](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Vei ajunge la exact aproape același meniu, așa-i? Partea tare a `flex` e că tu controlezi suprafața prin proprietatea `justify-content`.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Schimbă valaoarea `justify-content` în `flex-end` și veI ce se întamplă. Sau schimb-o în `space-around` pentru a face obiectele din meniu și mai departate, exact cum ai procedat și cu cartonașele.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Meniu cu elemente departate egal](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Meniu cu elemente aliniate la dreapta](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** este un sculă de aranjare destul de puternică capabilă să umple toată seria de cartonașe Sushi, independent - poți învăța mai multe despre asta la [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
