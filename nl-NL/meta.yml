@@ -1,8 +1,8 @@
 ---
-title: Guide to my country 3.0
+title: Gids voor mijn land 3.0
 hero_image: images/banner.png
 description: Voeg leuke lay-outs en coole effecten toe aan je website!
-theme: red
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
