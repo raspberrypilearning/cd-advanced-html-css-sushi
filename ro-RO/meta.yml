@@ -1,33 +1,33 @@
 ---
-title: Guide to my country 3.0
+title: Ghid pentru țara mea 3.0
 hero_image: images/banner.png
-description: Adăugați machete frumoase și efecte interesante pe site-ul dvs.!
-theme: red
+description: Adaugă modele drăguțe si efecte atractive site-ului tău!
+theme: roșu #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
-technologies: html-css-JavaScript
-site_areas: coderdojo, proiecte
-software: html-css-JavaScript
-version: 4.0.1
-last_tested: 01-01-2017
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
 steps:
   - 
     title: Introducere
   - 
-    title: Getting setup
+    title: De pregătit
   - 
-    title: Clickable cards
+    title: Cartonașe de accesat
   - 
-    title: All in a row
+    title: Toate pe rând
   - 
-    title: Make your menu responsive
+    title: Creează un meniu receptiv
   - 
-    title: Captions and side notes
+    title: Legende si notițe
   - 
-    title: Design cool page layouts
+    title: Creează modele de pagini atractive
   - 
-    title: Photo collage
+    title: Album foto
   - 
-    title: Special effects
+    title: Efecte speciale
