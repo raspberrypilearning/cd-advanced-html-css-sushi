@@ -1,27 +1,27 @@
-## All in a row
+## Tout à la suite
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Sur cette carte, tu apprendras quelques astuces pour organiser des choses **horizontalement** sur une page. Tout d'abord, tu verras comment centrer les choses. Ensuite, tu disposeras des éléments côte à côte dans une rangée.
 
-+ Add the following CSS properties to the `.card` class:
++ Ajoute la propriété CSS suivante à ta classe `.card`:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Tu devrais voir les cartes se déplacer au centre de la page. En définissant les marges gauche et droite sur `auto`, tu peux placer n'importe quel élément au milieu plutôt que vers la gauche.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Les cartes apparaissent au milieu au lieu de dépasser à gauche](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Fais glisser le bord de la fenêtre du navigateur pour rendre la page plus étroite et plus large - remarque que les cartes restent centrées.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Mets tous les liens de carte que tu viens de créer dans un nouvel élément conteneur. Ça ne va pas être un `article` ou une `section`, mais un appelé `div`. Il s’agit d’un conteneur polyvalent que tu peux utiliser pour regrouper des éléments et réaliser de belles présentations.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Ajoute le code CSS suivant à ta feuille de style:
 
 ```css
     .cardContainer {
@@ -32,35 +32,35 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà ! Grâce à **Flex**, tes cartes sont maintenant affichées côte à côte !
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Fais glisser le bord de ta fenêtre pour agrandir ou réduire le site Web, et observe le mouvement des cartes pour s’adapter à la taille de la fenêtre, en passant parfois à la ligne suivante.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Cartes disposées sur deux rangées régulièrement espacées pour s'adapter à la largeur du navigateur](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Essaie de supprimer les propriétés `width` et `height` de la classe `.card` et vois ce qui se passe: `flex` adapte intelligemment les cartes comme un puzzle en gardant une hauteur uniforme sur tout ce qui se trouve dans la même rangée.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Cartes disposées côte à côte avec largeur automatique](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Si tu as un menu de navigation en haut de ta page, c'est un autre endroit où tu peux utiliser cette astuce. Ton menu doit être composé d’éléments de liste ((`li`) pour ce prochain morceau. Si tu préfères, tu peux l'essayer avec mon site web.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Trouve les règles CSS pour le menu. Sur mon site, c’est les blocs `nav ul`, `nav ul li` et `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Supprime la propriété `display: inline;` de la liste des éléments. Ensuite, dans la liste `nav ul`, ajoutes-y :
 
 ```css
     display: flex;
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Menu avec des éléments alignés à gauche](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Tu te retrouves à peu près avec le même menu, n'est-ce pas ? La chose cool à propos de `flex` c'est que tu peux contrôler la mise en page avec la propriété `justify-content`.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Change la valeur de `justify-content` en `flex-end` et vois ce qui se passe. Ou change-le en `space-around` pour que les éléments du menu soient régulièrement espacés, comme tu l'as fait pour les cartes.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Menu avec des éléments uniformément espacés](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Menu avec des éléments alignés à droite](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** est un outil de mise en page assez puissant qui pourrait remplir toute une série de cartes Sushi tout seul - tu peux en apprendre plus à ce sujet sur [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
