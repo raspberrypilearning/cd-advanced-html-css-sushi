@@ -1,21 +1,21 @@
-## Photo collage
+## Fotocollage
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+Auf dieser Karte lernst Du, wie Du CSS verwenden kannst um HTML-Elemente genau zu positionieren und eine Fotocollage zu erstellen.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ Füge ein `div` zu Deiner Seite hinzu und packe so viele Bilder hinein wie du möchtest. Gib dem `div`- und den `img`-Elementen `id` Werte.
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara Pony" />
+        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Sogar Katzen trinken Tee in Irland!" />
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+Die Fotos werden nacheinander auf der Webseite angeziegt, in der Reihenfolge, in der sie in Deinem Code auftauchen.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ Füge in Deiner CSS-Datei die folgende CSS-Klasse für die Elemente im `div` hinzu: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ Als nächstes musst Du die Eigenschaft `position: relative;` zum Container selbst hinzufügen und eine Größe für ihn definieren. Das bewirkt, dass die Positionen der anderen Elemente **relativ zum** (d. h. innerhalb des) Container definiert werden.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ Erstelle dann eine Reihe von Stilregeln für jedes der Elemente, indem Du **ID-Selektoren** verwendest, um deren Größe (`width`- (Breite) und/oder `height`- (Höhe) Eigenschaften) sowie deren genaue Position festzulegen.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+Um die Position eines Elements zu definieren, kannst Du vier Eigenschaften verwenden: `left` (links), `right` (rechts), `top` (oben) und `bottom` (unten). Sie geben an, wie weit die Kanten vom Rand des übergeordneten Elements entfernt sein sollen. Verwende entweder `top` oder `bottom` für die vertikale Position und entweder `left` oder `right` für die horizontale Position.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![Diagramm, das zeigt, wie sich die Eigenschaften oben, links, unten und rechts auf den übergeordneten Container beziehen](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ Wähle genaue Positionen für jedes Deiner Bilder aus und definiere diese Positionen in Deinen CSS-Regeln mithilfe der Eigenschaften `left`, `right`, `top` und `bottom`. Zum Beispiel platziert dieser Code das Katzenbild 100 Pixel von oben und 60 Pixel von links:
 
 ```css
     #imgTeaCat {
@@ -52,65 +52,65 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+Hinweis: Die Positionswerte können auch negativ sein! Wenn Du einen negativen Wert verwendest, wird das Element außerhalb des Containers, über die angegebene Kante hinaus, verschoben.
 
-### Making things overlap
+### Dinge überlappen lassen
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+Vielleicht möchtest Du einige der Bilder überlappen lassen. Aber wie kannst du auswählen welches oben drauf liegt?
 
-+ Choose two images and give them positions that cause them to overlap.
++ Wähle zwei Bilder aus und weise ihnen Positionen zu, die zu einer Überlappung führen.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ Füge eine zusätzliche Eigenschaft, `z-index: 10;` zu einem von ihnen hinzu, und füge dann `z-index: 7;` zum anderen hinzu.
 
-+ Take a look at the result on your webpage.
++ Wirf einen Blick auf das Ergebnis auf Deiner Webseite.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ Tausche jetzt die `z-Index` Werte, sodass `7` und `10` genau umgekehrt sind. Siehst Du einen Unterschied auf Deiner Webseite?
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: Wie funktioniert z-Index?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+Mit der `z-index` Eigenschaft kannst Du festlegen, wie sich zwei oder mehr Elemente überlappen sollen. Der Wert kann jede beliebige ganze Zahl sein.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+Das Element mit der **höchsten** Nummer landet ganz **oben**auf dem Stapel oder, mit anderen Worten, ganz **vorne**. Das Element mit der nächsthöheren Nummer befindet sich dahinter und vor den anderen und so weiter, bis Du zu dem Element mit der niedrigsten Nummer kommst, das hinter allen anderen Elementen angezeigt wird.
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+Du kannst auf diese Weise beliebige HTML-Elemente positionieren, nicht nur Bilder. Zum Beispiel kannst Du ein `p` Element verwenden, um Text über ein Foto zu legen.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Herausforderung: Erstelle eine Fotocollage
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Versuche, Deine eigene Collage mit Fotos, wie die unten gezeigte, zu erstellen! Verwende exakte Positionierung zusammen mit verschiedenen `z-index` Werten, um den Überlappungseffekt so hinzubekommen, wie Du es willst.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+Unten ist der HTML-Code für die Fotocollage auf meiner Irland-Website. Es befinden sich sechs Fotos und ein Stück Text in einem `div` Element.
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irische Stadt" />
+        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Sogar Katzen trinken Tee in Irland!" />
+        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Kühe an der Küste" />
+        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Baumtunnel" />
+        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Schafe auf der Straße" />
+        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara Pony" />
+        <p id="photoText" class="absPos">Irland</p>
     </div>
 ```
 
-\--- /hint \---
+\---/hint\---
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+Hier sind die CSS-Regeln, die die Positionen für jedes meiner Bilder in der Collage festlegen:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+Hier sind die CSS-Klassen, die ich verwendet habe:
 
 ```css
     .collagePhoto {
@@ -179,8 +179,8 @@ Here are the CSS classes I've used:
 
 \--- /hint \---
 
-\--- /hints \---
+\---/hints\---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![Fotocollage mit Text oben](images/photoCollageExample.png)
 
 \--- /challenge \---
