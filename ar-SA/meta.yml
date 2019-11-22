@@ -1,14 +1,14 @@
 ---
-title: Guide to my country 3.0
+title: دليل لبلادي 3.0
 hero_image: images/banner.png
 description: أضف تخطيطات رائعة وتأثيرات رائعة على موقع الويب الخاص بك!
-theme: red
+theme: أحمر #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 technologies: html-css-javascript
-site_areas: coderdojo ، المشاريع
+site_areas: مشاريع كودردوجو (CoderDojo)
 software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
@@ -16,18 +16,18 @@ steps:
   - 
     title: المقدمة
   - 
-    title: Getting setup
+    title: الحصول على الإعدادات
   - 
-    title: Clickable cards
+    title: بطاقات قابلة للنقر
   - 
-    title: All in a row
+    title: جميع مافي الصف
   - 
-    title: Make your menu responsive
+    title: اجعل قائمتك قابلة للاستجابة
   - 
-    title: Captions and side notes
+    title: التسميات التوضيحية والملاحظات الجانبية
   - 
-    title: Design cool page layouts
+    title: تصميم تخطيط صفحة رائع
   - 
-    title: Photo collage
+    title: ملصقات صور
   - 
-    title: Special effects
+    title: مؤثرات خاصة
