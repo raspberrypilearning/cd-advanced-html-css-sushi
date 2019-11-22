@@ -1,0 +1,24 @@
+---
+title: Gids voor mijn land 3.0
+hero_image: images/banner.png
+description: Voeg leuke lay-outs en coole effecten toe aan je website!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - title: Inleiding
+  - title: Opstarten
+  - title: Klikbare kaarten
+  - title: Alles op één rij
+  - title: Pas je menu automatisch aan
+  - title: Onderschriften en kanttekeningen
+  - title: Ontwerp coole pagina-layouts
+  - title: Foto collage
+  - title: Speciale effecten
