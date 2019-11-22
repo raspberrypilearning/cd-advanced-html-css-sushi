@@ -1,22 +1,22 @@
-## Clickable cards
+## Cartes cliquables
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Voici une technique que tu peux utiliser pour créer une galerie de photos ou une page portfolio présentant tes projets: petites **cartes de prévisualisation**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Carte d'aperçu montrant une vignette d'image et du texte](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Ajoute le code HTML suivant à ton site Web, là où tu souhaites. Je fais le mien sur `index.html`. Tu peux modifier l’image et le texte en fonction de tes propres cartes de prévisualisation. Je vais faire un tas de points forts des attractions touristiques en Irlande.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
         <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <p>île Fota, comté de Cork </p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Image et texte avant l'application des styles](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Ajoute le code CSS suivant pour créer les classes `card` et `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -38,43 +38,43 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Image et texte stylisés pour créer un petit effet de carte](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Transformons l'intégralité de la carte de prévisualisation en un lien afin que les gens puissent cliquer pour voir plus d'informations.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Place l'intégralité de l'élément `article` à l'intérieur d'un élément de lien. Assure-toi que la balise de fermeture `</a>` est après la balise de fermeture `</article>` ! N'hésite pas à changer le lien **URL** à tout ce que tu veux lier. Cela pourrait être une autre page de ton site Web, ou ça pourrait être tout à fait un autre site Web.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
             <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <p>île Fota, comté de Cork</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Texte et image qui a été transformé en lien](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: Lier vers une partie spécifique d'une page
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Remarque comment la valeur de `href` dans mon lien se termine par `#scFota` ? C'est une astuce que tu peux utiliser pour aller directement à une partie particulière d'une page.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ En premier, tape l'URL de la page à lier, suivi de `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ Dans le fichier de code de la page vers laquelle tu crées un lien, recherche la partie à laquelle tu veux aller et attribue à cet élément un `id`, par exemple, `<section id = "scFota"`. La valeur de l'`id` est ce que tu tapes après le `#` dans ton lien.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: Réinitialisation des styles
 
-Now that the whole preview card is a link, the text font may have changed.
+Maintenant que la carte de prévisualisation entière est un lien, la police du texte pourrait avoir changé.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Si c'est le cas, tu peux y remédier en ajoutant une **classe CSS** vers le lien: `class="cardLink"`. Voici le code CSS à mettre dans ta feuille de style:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Définir la valeur de toute propriété à `hériter` le fait utiliser la valeur que l'élément **parent** a. Donc, dans ce cas, la couleur du texte correspondra au reste du texte sur la page d'accueil.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Crée au moins quatre ou cinq de ces cartes. Si tu travailles à partir de mon exemple de site Web, tu peux en créer une pour chacune des sections de la page Attractions. Sur la prochaine carte Sushi, tu apprendras à organiser les cartes avec une astuce géniale!
