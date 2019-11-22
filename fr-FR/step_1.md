@@ -14,27 +14,27 @@ Déplacez le curseur de votre souris dans la fenêtre ci-dessous pour essayer qu
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Ce que tu vas apprendre
 
-Dans ces cartes de sushi, vous découvrirez comment:
+Dans ces cartes Sushi, tu découvriras comment:
 
-+ Créer une mise en page de site Web que vous voulez
-+ Faites en sorte que votre mise en page s'adapte automatiquement à différentes tailles d'écran
++ Créer une mise en page de site Web que tu veux
++ Faire en sorte que ta mise en page s'adapte automatiquement à différentes tailles d'écran
 + Faire un collage de photos et de texte qui se chevauchent
-+ Appliquez des effets de survol et de clic nets que vous avez peut-être vus sur d'autres sites Web
++ Appliquer de beaux effets de survol et de clic que tu pourrais avoir vu sur d'autres sites Web
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Ce que tu auras besoin
 
-### Hardware
+### Matériel informatique
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Un ordinateur capable d'accéder à [trinket.io](https://trinket.io){:target="_blank"}
 
-### Software
+### Logiciel
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Ce projet peut être réalisé dans un navigateur web en utilisant [trinket.io](https://trinket.io){:target="_blank"} ou hors-ligne en utilisant un éditeur de texte brut.
 
 \--- /collapse \---
