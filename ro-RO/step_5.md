@@ -1,20 +1,20 @@
-## Make your menu responsive
+## Creează un meniu adaptiv
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+Un site **responsive** este un site care se aranjează automat pe dimensiunea ecranului astfel încât întotdeauna va arată minunay, chiar dacă te uiți de pe un calculator, mobil sau tableta. Hai să facem meniul inteligent!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Vei începe cu modele obișnuite: aceasta va fi înfațișarea **default**.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: Ce înseamnă ‘standard’?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+Modelele standard sunt grupurile tale implicite de modele reguli. Ele se aplică indiferent de orice, înainte selectării altor caracteristici speciale.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+Poți adăuga codul care, mai apoi, poate să verifice dimensiunea ecranului și să-l ajusteze dacă este necesar.
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ Adauga urmatoarea regulă CSS meniului. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
 
 ```css
     nav ul {
