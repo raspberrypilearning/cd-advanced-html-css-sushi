@@ -38,15 +38,15 @@
 
 ## title: ماذا تعني كلمة "الافتراضي"؟
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+في كثير من الأحيان عند برمجة موقع ويب ، سوف تستخدم شاشة كمبيوتر ، وربما ستحدد أنماطك استنادًا إلى كيفية ظهورها على تلك الشاشة.
 
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+عندما البرمجة للجوال أولاً ، فإنك تختار بدلاً من ذلك الأنماط الافتراضية المناسبة للشاشات الصغيرة مثل الهواتف الذكية. ثم تضيف اكواد برمجية إضافية لإجراء تعديلات للشاشات الأكبر حجمًا.
 
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
+نظرًا لأن المزيد والمزيد من الناس يتصفحون الإنترنت على هواتفهم الذكية أو أجهزة الكمبيوتر اللوحية بدلاً من استخدامها على جهاز كمبيوتر ، فمن الممارسات الجيدة تطوير موقع الويب الخاص بك مع وضع ذلك في الاعتبار.
 
 \--- /collapse \---
 
-+ Now add the following code to your style sheet:
++ أضف الكود التالي الى ملف الأنماط الخاص بك:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -57,13 +57,13 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+يتحقق السطر الأول من الشفرة أعلاه من حجم نافذة المتصفح. إذا كانت النافذة بعرض ** 1000 بكسل ** أو أكثر ، سيتم تطبيق جميع قواعد النمط داخل الكتلة.
 
 ![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
-## title: How does it work?
+## title: كيف يعمل؟
 
 The block contains new values for only some properties of the `nav ul` menu.
 
