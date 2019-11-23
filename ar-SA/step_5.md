@@ -1,4 +1,4 @@
-## Make your menu responsive
+## اجعل قائمتك قابلة للاستجابة
 
 A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
 
