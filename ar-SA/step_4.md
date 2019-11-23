@@ -1,4 +1,4 @@
-## جميع مافي الصف
+## وضع الكل في صف
 
 على هذه البطاقة سوف تتعلم بعض الحيل لترتيب الأشياء ** أفقياً ** على الصفحة. أولاً ، سترى كيفية توسيط الأشياء. ثم سترتب العناصر جنباً إلى جنب في صف.
 
@@ -11,7 +11,7 @@
 
 يجب أن تشاهد البطاقات تنتقل إلى وسط الصفحة. عن طريق تعيين الهوامش اليمنى واليسرى على ` auto ` ، يمكنك جعل أي عنصر في المنتصف بدلاً من اليسار.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![تظهر البطاقات في المنتصف بدلاً من اليسار](images/marginAuto.png)
 
 + اسحب حافة نافذة المتصفح لجعل الصفحة أضيق وأوسع نطاقًا - لاحظ أن البطاقات تظل في المركز.
 
@@ -36,11 +36,11 @@
 
 + اسحب حافة نافذتك لتوسيع موقع الويب وتضييقه ، ومشاهدة كيف تتحرك البطاقات لتلائم حجم النافذة ، وأحيانًا تلتف إلى السطر التالي.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![البطاقات مرتبة في صفين متباعدين بالتساوي لتناسب عرض المتصفح](images/flexSideBySide.png)
 
 + حاول حذف خصائص العرض ` width` و الارتفاع ` height` من عنصر `.card ` ونرى ما سيحدث: ` flex ` سيتلاءم مع البطاقات بذكاء مثل اللعبة ، مع الحفاظ على ارتفاع متساو عبر كل شيء في نفس الصف.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![بطاقات مرتبة جنبًا إلى جنب مع عرض تلقائي](images/flexAutoWidths.png)
 
 إذا كان لديك قائمة تنقل في أعلى صفحتك ، فهذا مكان آخر يمكنك استخدامه هذه الخدعة فيه. يجب أن تتكون قائمتك من عناصر القائمة ((` li `)) للجزء المقبل. إذا كنت تحب، يمكنك تجربتها مع موقعي الإلكتروني.
 
@@ -53,14 +53,14 @@
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![القائمة مع عناصر ذات محاذاة إلى اليسار](images/flexMenuStart.png)
 
-سيكون عندك نفس القائمة ، أليس كذلك؟ The cool thing about `flex` is you can control the layout with the property `justify-content`.
+سيكون عندك نفس القائمة ، أليس كذلك؟ الشيء الرائع حول ` flex` هو أنه يمكنك التحكم في التنسيق بخاصية ` justify-content `.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ قم بتغيير قيمة ` justify-content ` إلى ` justify-content ` وانظر ماذا سيحدث. أو قم بتغييره إلى `space-around ` لجعل عناصر القائمة متباعدة بالتساوي ، مثلما فعلت للبطاقات.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![القائمة مع العناصر متباعدة بالتساوي](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![القائمة مع عناصر ذات محاذاة إلى اليسار](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**` flex`** هي أداة تخطيط قوية جدًا يمكن أن تملأ سلسلة كاملة خاصة بكروت سوشي - يمكنك معرفة المزيد عنها في [ dojo.soy/html3-flex ](http://dojo.soy/html3-flex).
