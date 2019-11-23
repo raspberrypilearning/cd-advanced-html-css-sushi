@@ -14,7 +14,7 @@
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ أضف قواعد CSS التالية إلى قائمتك. ربما لديك ألوان وحدود محددة كذلك ؛ لقد تركتهم لتوفير المساحة هنا! إذا كان لديك بالفعل قواعد CSS محددة لقائمتك ، فما عليك سوى إضافة أو تغيير الخصائص والقيم أدناه.
 
 ```css
     nav ul {
@@ -30,13 +30,13 @@
     }
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+مع تعليمات CSS أعلاه ، ستكون قائمتك أكثر ملاءمة للشاشات الصغيرة. وهذا ما يسمى بطريقة ** المحمول أولاً ** في البرمجة.
 
 ![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## title: ماذا تعني كلمة "الافتراضي"؟
 
 Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
 
