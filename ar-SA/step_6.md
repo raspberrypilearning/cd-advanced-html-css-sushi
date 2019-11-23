@@ -1,8 +1,8 @@
-## Captions and side notes
+## التسميات التوضيحية والملاحظات الجانبية
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+في هذه البطاقة ، ستتعرف على نوعين آخرين من **حاوية ** العنصر: عنصر يمكنك استخدامه لإضافة تعليق (نص مثل العنوان أو الوصف المختصر) لصورة ، والآخر عندما يكون لديك أشياء إضافية لا تنتمي حقًا إلى المعلومات الرئيسية في الصفحة.
 
-### Pictures with captions
+### صور مع التعليقات
 
 + Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
 
