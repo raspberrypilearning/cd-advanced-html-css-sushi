@@ -1,16 +1,16 @@
 ## اجعل قائمتك قابلة للاستجابة
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+موقع الويب ** القابل للاستجابة ** هو موقع يتكيف مع حجم الشاشة بحيث يبدو رائعًا دومًا ، سواء كنت تنظر إليه على جهاز كمبيوتر أو هاتف محمول أو جهاز لوحي. دعنا نجعل قائمتك قابلة للاستجابة!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+ستبدأ باستخدام الأنماط العادية: سيكون هذا هو سلوكك ** الافتراضي**.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: ماذا تعني كلمة "الافتراضي"؟
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+الأنماط الافتراضية هي مجموعة القواعد المعتادة الخاصة بك. يتم تطبيقها اولا ، قبل التحقق من أي شروط خاصة.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+يمكنك إضافة كود برمجي يتحقق بعد ذلك من حجم الشاشة وإجراء بعض التعديلات إذا لزم الأمر.
 
 \--- /collapse \---
 
