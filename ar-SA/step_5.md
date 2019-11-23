@@ -32,7 +32,7 @@
 
 مع تعليمات CSS أعلاه ، ستكون قائمتك أكثر ملاءمة للشاشات الصغيرة. وهذا ما يسمى بطريقة ** المحمول أولاً ** في البرمجة.
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![عناصر القائمة مكدسة عموديا على شاشة صغيرة](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
@@ -59,35 +59,35 @@
 
 يتحقق السطر الأول من الشفرة أعلاه من حجم نافذة المتصفح. إذا كانت النافذة بعرض ** 1000 بكسل ** أو أكثر ، سيتم تطبيق جميع قواعد النمط داخل الكتلة.
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![عناصر القائمة متباعدة بالتساوي عبر سطر واحد على شاشة أوسع](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
 ## title: كيف يعمل؟
 
-The block contains new values for only some properties of the `nav ul` menu.
+تحتوي الكتلة على قيم جديدة لبعض خصائص ` nav ul ` قائمة الطعام.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+كلما كانت النافذة أكبر من 1000 بكسل ، سيتم تطبيق هذه القيم الجديدة بدلاً من تلك التي حددتها بالفعل لـ ` nav ul `.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+باقي الخصائص التي حددتها مسبقًا لـ ` nav ul ` سوف تبقى على حالها.
 
 \--- /collapse \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ إذا كنت تستخدم Trinket لكتابة التعليمات البرمجية ، فقد يكون من المفيد تنزيل المشروع حتى تتمكن من اختباره على شاشة كبيرة الحجم.
 
 \--- challenge \---
 
-## Challenge: make your menu adjust itself for big screens
+## Challenge: اجعل قائمتك تضبط نفسها للشاشات الكبيرة
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ يمكنك إضافة كتلة أخرى للشاشات أكبر من ** 1600 بكسل ** ، مع ` flex-end ` بدلا من ` space-around ` ؟
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![عناصر القائمة إلى اليمين على شاشة عريضة](images/responsiveMenuWide.png)
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+تحدد التعليمة البرمجية التالية flex properties لعناصر القائمة عندما تكون الشاشة أكبر من 1600 بكسل:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -98,10 +98,10 @@ The following code defines flex properties for menu items when the screen is big
     }  
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+يمكنك وضع أي قواعد CSS تريدها في كتل مثل هذه لتعريف أنماط مختلفة للأحجام المختلفة للشاشات. سيكون مفيدًا بشكل خاص عند القيام بتخطيطات شبكة CSS لاحقًا!
