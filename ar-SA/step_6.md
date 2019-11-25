@@ -28,7 +28,7 @@
     
     ` figcaption ` للعنصر هو ** caption **. يمكن أن توضع إما فوق العنصر ` img ` أو تحته.
     
-    ![Picture of Tito with a caption](images/figureAndCaption.png)
+    ![صورة تيتو مع تعليق](images/figureAndCaption.png)
     
     ## \--- collapse \---
     
@@ -83,9 +83,9 @@
 
 <p>--- /collapse ---</p>
 
-<p>هل لاحظت ذلك العنصر الآخر هناك ، <code> span ` ؟ This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+<p>هل لاحظت ذلك العنصر الآخر هناك ، <code> span ` ؟ هذه علامة خاصة يمكنك استخدامها فقط لإضافة كود CSS إضافي! يمكنك وضع أي شيء بين زوج من علامات ` span `. إنها مفيدة لأشياء مثل تنسيق ** جزء ** من النص في فقرة.
     
-    + Add the following CSS code to your style sheet to complete the styling for the HTML code above.
+    + أضف كود CSS التالي إلى ملف الأنماط الخاصة بك لإكمال تنسيق كود HTML أعلاه.
     
     ```css
       .sideNoteStyle {
@@ -100,8 +100,9 @@
       }
     ```
     
-    ![Additional notes with their own styling](images/asidesStyled.png)
+    ![ملاحظات إضافية مع تصميمها الخاص](images/asidesStyled.png)
     
-    On the next card, you're going to learn how to make your website's layout more interesting!
+    على البطاقة التالية ، ستتعرف على كيفية جعل تصميم موقع الويب الخاص بك أكثر تشويقًا!
     
-    + To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
+    + للاستعداد ، اصنع صفحة تحتوي على ` article` واثنين من العناصر ` aside ` داخل الوسم &lt;main&gt; <1/>. أو إذا كنت تفضل ذلك ، يمكنك العمل علي صفحة الجذب السياحي على موقع الويب الخاص بي.</li>
+</ul>
