@@ -1,10 +1,10 @@
-## Photo collage
+## ملصقات صور
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+في هذه البطاقة ، ستتعلم استخدام CSS لوضع عناصر HTML بدقة وإنشاء صورة مجمعة.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ أضف ` div` إلى صفحتك وضع فية صور بقدر ما تريد. إعطي الوسم ` div ` و ` img ` ` معرف ` id.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,7 +13,7 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+ستظهر الصور واحدة تلو الأخرى على صفحة الويب ، بالترتيب الذي تظهر به في الكود.
 
 + In your CSS file, add the following CSS class for the elements inside the `div`: 
 
