@@ -1,4 +1,4 @@
-## Design cool page layouts
+## تصميم تخطيط صفحة رائع
 
 + For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
 
