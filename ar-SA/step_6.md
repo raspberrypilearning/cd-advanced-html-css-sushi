@@ -15,7 +15,7 @@
 
 + على السطر أعلى الكود البرمجي ، أضف علامة الفتح `<figure>`. في سطر جديد أسفل الرمز ، ضع علامة الإغلاق ` </figure>`.
 
-+ بعد ذلك ، قم بإزالة العلامات `p <0/> ، أو أي علامات لديك حول النص (ربما يكون عنوانًا ، مثل <code> h2 ` ؟) ، ثم ضع النص بين العلامات `&lt;figcaption&gt; <1/> بدلا من ذلك. The whole thing should look something like this:</p></li>
++ بعد ذلك ، قم بإزالة العلامات `p <0/> ، أو أي علامات لديك حول النص (ربما يكون عنوانًا ، مثل <code> h2 ` ؟) ، ثم ضع النص بين العلامات `&lt;figcaption&gt; <1/> بدلا من ذلك. يجب أن يبدو الكود مشابه لهذا الشكل:</p></li>
 </ul>
 
 <pre><code class="html">  <figure>
@@ -26,21 +26,21 @@
   </figure>
 `</pre> 
     
-    The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+    ` figcaption ` للعنصر هو ** caption **. يمكن أن توضع إما فوق العنصر ` img ` أو تحته.
     
     ![Picture of Tito with a caption](images/figureAndCaption.png)
     
     ## \--- collapse \---
     
-    ## title: Why is this useful?
+    ## title: لماذا هذا مفيد؟
     
-    The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+    ` الوسم ` يعمل كنوع من ** الحاوية ** لصورتك والتعليق عليها. يتيح لك ذلك معاملتهم كوحدة واحدة عند تحديد الأنماط.
     
-    Grouping them together logically also helps to maintain good structure in your website code.
+    تجميعها معًا بطريقة منطقية يساعد أيضًا في الحفاظ على بنية جيدة لكود برمجة موقع الويب الخاص بك.
     
     \--- /collapse \---
     
-    You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+    يمكنك استخدام كود CSS لتنسيق ` figure` و ` figcaption ` كما تفعل بأي وسم آخر باستخدام فئات أو معرفات أو محددات العناصر. انا أقوم بإضافة القواعد التالية لإزالة المسافات الإضافية التي تمت إضافتها بواسطة الحاوية الجديدة:
     
     ```css
       figure { 
@@ -51,25 +51,25 @@
       }
     ```
     
-    ### Side notes
+    ### ملاحظات جانبية
     
-    The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+    صفحة الجذب السياحي على موقع الويب الخاص بي هي قائمة بالأماكن التي يجب زيارتها. أرغب في إضافة بعض الملاحظات حول الطقس وكيفية التجول. تلك المعلومات لا تنتمي حقًا إلى وسم ` article ` مع جميع مناطق الجذب. هذا مثال على متى يمكنك استخدام وسم ` aside `.
     
-    + Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
+    + انتقل إلى صفحة من موقع الويب الخاص بك تحتوي على وسم ` article` - أنا أستخدم ` Attractions.html `.
     
-    + **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
+    + ** خارج ** وسم ` article` ، أضف زوجًا واحدًا أو أكثر من علامات `<aside> </aside>` التي تحتوي على الأشياء الإضافية الخاصة بك.
     
     ```html
       <aside class="sideNoteStyle">
-          <h2>Getting around</h2>
-          <h3>Train and bus</h3>
-          <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-          <h3>Car</h3>
-          <p>The easiest way to get around outside of the cities is by car.</p>
+          <h2> التجول </h2>
+          <h3> القطار والحافلة </h3>
+          <p> يمكنك الوصول إلى معظم المدن الرئيسية بالقطار من دبلن. هناك العديد من الحافلات التي تقوم بجولات إلى المواقع الشعبية ومناطق الجذب السياحي. </p>
+          <h3> سيارة </h3>
+          <p> أسهل طريقة للتجول خارج المدن هي بالسيارة. </p>
         </aside>
         <aside class="sideNoteStyle">
-          <h2>Weather</h2>
-          <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+          <h2> الطقس </h2>
+          <p> الطقس في أيرلندا <span class="specialText"> لا يمكن التنبؤ به للغاية! </span> من الأفضل أن تكون مستعد <span class="specialText"> </span> لأي نوع من الطقس ، حتى لو كان يوما جميلا! </p>
       </aside>
     ```
     
