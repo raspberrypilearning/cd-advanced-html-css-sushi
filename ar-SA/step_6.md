@@ -75,15 +75,15 @@
     
     ## \--- collapse \---
     
-    ## title: Why is this useful?
+    ## title: لماذا هذا مفيد؟
     
-    The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
-    
-    It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
-    
-    \--- /collapse \---
-    
-    Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+    وسم `aside<0/> و <code>article<0/> ، وغيرها من الحاويات كلها متشابهة. الفرق الحقيقي الوحيد هو في المعنى <strong> </strong> الذي إستخدمتها له.</p>
+
+<p>من المهم استخدام عناصر HTML ذات معنى كلما استطعت. إنه يوفر لموقعك بنية أفضل ويكون مفيدًا بشكل خاص للأشخاص الذين يستخدمون<strong> قارئات الشاشة </strong>.</p>
+
+<p>--- /collapse ---</p>
+
+<p>هل لاحظت ذلك العنصر الآخر هناك ، <code> span ` ؟ This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
     
     + Add the following CSS code to your style sheet to complete the styling for the HTML code above.
     
