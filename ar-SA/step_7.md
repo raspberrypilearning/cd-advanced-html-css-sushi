@@ -36,9 +36,9 @@
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+ما الذي تعتقد أن الخصائص `grid-column-gap` و `grid-row-gap` تفعل؟
 
-+ Next, you name a `grid-area` for each element: 
++ بعد ذلك ، يمكنك تسمية ` grid-area` لكل عنصر: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+مرحا لقد قمت بتصميم التصميم الخاص بك! دعنا نضع العناصر الاثنين `aside` جنبًا إلى جنب في أسفل الصفحة. لهذا تحتاج إلى عمودين ** columns** متساويين في العرض. يمكنك الاحتفاظ بارتفاع الصف ** row** التلقائي.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ ضع التعليمات البرمجية التالية داخل قواعد CSS `.attPageLayoutGrid `:
 
 ```css
     grid-template-rows: auto;
