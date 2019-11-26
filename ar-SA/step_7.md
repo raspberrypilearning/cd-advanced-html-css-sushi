@@ -1,12 +1,12 @@
-## تصميم تخطيط صفحة رائع
+## تصميم تخطيط صفحات رائع
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ بالنسبة لهذه البطاقة ، يجب عليك العمل مع صفحة تحتوي على عنصر ` main` مع ثلاثة عناصر في الداخل: واحد `article` واثنين `aside`. قم بعمل هذا أولا إذا كنت بحاجة إليه. إذا كنت ترغب في العمل في موقع الويب الخاص بي ، فقم بإضافة كود ` aside ` من بطاقة سوشي السابقة إلى صفحة الجذب السياحي. 
 
-Here are three different page layouts you'll be applying:
+فيما يلي ثلاثة تخطيطات مختلفة للصفحة التي ستطبقها:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ إضف فئات CSS جديدة إلى ` main ` وكل من العناصر الثلاثة التي ذكرناها بداخله.
 
 ```html
     <main class="attPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+الحاوية التي ستقوم بتغيير تخطيطها هي ` main ` ، ولكن يمكنك القيام بذلك مع أي نوع من الحاويات ، مثل ` div ` أو ` article ` ، أو حتى الصفحة بأكملها ` body `. تسمى التقنية التي ستستخدمها ** CSS grid**.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+في هذا المثال ، العنوان ` header` وتذييل الصفحة ` footer` سيتم تركه خارج التصميم ، ولكن من الشائع جدًا تضمينه في الشبكة أيضًا.
 
-+ Set the `display` property to `grid` on the overall container:
++ اضبط خاصية الشاشة ` display` اضبطها الي ` grid ` على الحاوية الشاملة:
 
 ```css
     .attPageLayoutGrid {
