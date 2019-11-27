@@ -66,7 +66,7 @@ article {
 
 
 /*-------------------------------*/
-/* Added while following Sushi Cards */
+/ * تمت الإضافة أثناء متابعة بطاقات سوشي* /
 
 .smallPics {
         height: 60px;
@@ -222,7 +222,7 @@ article {
     }
 
 /*************************************************************/
-/* From new Intermed styles */
+/ * من الأنماط الجديدة Intermed * /
 
   .topDivider {
     border-top-style: solid;
@@ -363,7 +363,7 @@ article {
 
 
 /**********************************
-This section is for styling tables
+هذا القسم مخصص لتنسيق الجداول
 ***********************************/
 table, th, td {
   border: 1px solid HoneyDew;
