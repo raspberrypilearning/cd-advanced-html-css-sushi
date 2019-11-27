@@ -222,7 +222,7 @@ article {
     }
 
 /*************************************************************/
-/* From new Intermed styles */
+/ * Z nowych stylów Intermed * /
 
   .topDivider {
     border-top-style: solid;
@@ -363,7 +363,7 @@ article {
 
 
 /**********************************
-This section is for styling tables
+Ta sekcja dotyczy stylizacji tabel
 ***********************************/
 table, th, td {
   border: 1px solid HoneyDew;
