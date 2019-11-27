@@ -76,7 +76,7 @@
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![Asides جنبا إلى جنب في الأسفل](images/cssGridAsidesAtBottom.png)
 
 دعنا نضع عناصر ` aside ` على اليمين ونجعلها نصف عرض العنصر `article `.
 
@@ -89,9 +89,9 @@
         "agArticle agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![Asides أسفل الجانب الأيمن](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ إذا كنت لا تريد لعناصر ` aside ` ان تمتد على طول المساحة إلى أسفل ، يمكنك إضافة مساحة فارغة باستخدام نقطة: 
 
 ```css
     grid-template-areas: 
@@ -100,19 +100,19 @@
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![Asides على اليمين ولا تتمدد للاسفل](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Challenge: قم بعمل تخطيطات مختلفة لأحجام مختلفة للشاشة
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ هل يمكنك استخدام اختبارات حجم الشاشة التي قمت بإضافتها سابقًا لإجراء تغيير في التخطيط حسب حجم الشاشة؟ ملاحظة: إذا قمت بالفعل بإنشاء كتل CSS لكل حجم شاشة ، فيمكنك إضافة كود CSS الجديد إلى تلك الكتل بدلاً من إنشاء كتل جديدة.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+يحدد الكود التالي تخطيطًا لفئة CSS أعلاه عندما تكون الشاشة أكبر من 1000 بكسل:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -125,11 +125,11 @@ The following code defines a layout for the CSS class above when the screen is b
     }  
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+يحدد الكود التالي تخطيطًا لفئة CSS أعلاه عندما تكون الشاشة أكبر من 1600 بكسل:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -143,10 +143,10 @@ The following code defines a layout for the CSS class above when the screen is b
     }  
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
-\--- /challenge \---
+\--- challenge/ \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+مع ** شبكة CSS ** ، يمكنك إجراء أي تخطيط تقريبًا. إذا كنت تريد معرفة المزيد، قم بالنقر[ dojo.soy/html3-css-grid ](http://dojo.soy/html3-css-grid) {:target="_blank"}
