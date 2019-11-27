@@ -64,23 +64,23 @@
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+` fr ` تمثل ** fraction ** وهي وحدة قياس. لاحظ كيف جعلت المقال `article ` يشغل كل المساحة على العمودين.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: المساعدة! لقد حصلت على أخطاء وتحذيرات!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+إذا كنت تستخدم Trinket ، فقد تلاحظ ظهور بعض الأخطاء والتحذيرات ، حتى إذا قمت بكتابة الكود كما هو مذكور أعلاه. وذلك لأن Trinket لم يتعرف بعد على خصائص شبكة CSS. ومع ذلك ، فإن الكود لا يزال يعمل.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+إذا كان كود شبكة CSS يمنحك تحذيرات "خاصية غير معروفة" 'unknown property' أو خطأ مثل "الرمز المميز غير متوقع 1fr' " unexpected token 1fr'، يمكنك ببساطة تجاهل هذه التحذيرات.
 
 \--- /collapse \---
 
 ![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+دعنا نضع عناصر ` aside ` على اليمين ونجعلها نصف عرض العنصر `article `.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ قم بتغيير قيم `grid-template-columns` و `grid-template-areas` إلى:
 
 ```css
     grid-template-columns: 2fr 1fr;
