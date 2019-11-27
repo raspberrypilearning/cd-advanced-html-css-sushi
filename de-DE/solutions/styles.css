@@ -66,7 +66,7 @@ article {
 
 
 /*-------------------------------*/
-/* Added while following Sushi Cards */
+/ * Hinzugefügt, während folgenden Sushi-Karten * /
 
 .smallPics {
         height: 60px;
@@ -222,7 +222,7 @@ article {
     }
 
 /*************************************************************/
-/* From new Intermed styles */
+/ * Aus neuen Intermed Styles * /
 
   .topDivider {
     border-top-style: solid;
@@ -363,7 +363,7 @@ article {
 
 
 /**********************************
-This section is for styling tables
+Dieser Bereich beschreibt die Tabellenstile
 ***********************************/
 table, th, td {
   border: 1px solid HoneyDew;
