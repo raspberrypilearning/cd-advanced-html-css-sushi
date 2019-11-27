@@ -66,7 +66,7 @@ article {
 
 
 /*-------------------------------*/
-/* Added while following Sushi Cards */
+/ * 스시 카드를 따를 때 추가 * /
 
 .smallPics {
         height: 60px;
@@ -222,7 +222,7 @@ article {
     }
 
 /*************************************************************/
-/* From new Intermed styles */
+/ * 새로운 통합 스타일에서 * /
 
   .topDivider {
     border-top-style: solid;
@@ -363,7 +363,7 @@ article {
 
 
 /**********************************
-This section is for styling tables
+이 섹션은 스타일링 테이블입니다
 ***********************************/
 table, th, td {
   border: 1px solid HoneyDew;
