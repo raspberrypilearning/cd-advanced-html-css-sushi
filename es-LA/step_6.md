@@ -1,10 +1,10 @@
-## Captions and side notes
+## Leyendas y notas al margen
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+En esta ficha aprenderás dos tipos más de elementos **contenedor**: uno que puedes usar para añadir un título (algún texto como un título o una descripción corta) a una foto, y otro para cuando tienes cosas extra que no pertenecen realmente a la información principal de una página.
 
-### Pictures with captions
+### Imágenes con subtítulos
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Encuentra un elemento `img` que tenga texto encima o debajo de la imagen. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
