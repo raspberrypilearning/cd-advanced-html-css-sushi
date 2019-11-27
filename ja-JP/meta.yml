@@ -2,7 +2,7 @@
 title: Guide to my country 3.0
 hero_image: images/banner.png
 description: 素敵なレイアウトとあなたのウェブサイトにクールな効果を追加！
-theme: red
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
