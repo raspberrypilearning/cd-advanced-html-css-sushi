@@ -58,7 +58,7 @@
 
 قد ترغب في جعل بعض الصور تتداخل. ولكن كيف تختار أي واحد يكون في الأعلي ؟
 
-+ Choose two images and give them positions that cause them to overlap.
++ اختر صورتين وحدد لهما مواقع تجعلهما تتداخلان.
 
 + Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
 
