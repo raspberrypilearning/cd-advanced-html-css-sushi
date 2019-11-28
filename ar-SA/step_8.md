@@ -1,4 +1,4 @@
-## ملصقات صور
+## ملصقات الصور
 
 في هذه البطاقة ، ستتعلم استخدام CSS لوضع عناصر HTML بدقة وإنشاء صورة مجمعة.
 
@@ -15,7 +15,7 @@
 
 ستظهر الصور واحدة تلو الأخرى على صفحة الويب ، بالترتيب الذي تظهر به في الكود.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ في ملف CSS الخاص بك ، أضف فئة CSS التالية للعناصر الموجودة داخل القسم ` div `: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ بعد ذلك ، تحتاج إلى إضافة الخاصية `position: relative;` إلى الحاوية نفسها وتحديد حجمها. هذا يجعل من مواضع العناصر الأخرى محددة ** بالنسبة إلى ** الحاوية ( من الداخل).
 
 ```css
     .relPos {
