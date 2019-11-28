@@ -37,19 +37,19 @@
 
 تحتوي على الأرقام الثلاثة المعتادة (من ` 0 ` حتى ` 255 `) للأحمر والأخضر والأزرق.
 
-الرقم الرابع ، يدعي قيمة الفا ** alpha ** ، وتحدد الشفافية ** transparent ** (أو النظر من خلال) شيء ما. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+الرقم الرابع ، يدعي قيمة الفا ** alpha ** ، وتحدد الشفافية ** transparent ** (أو النظر من خلال) شيء ما. وهو رقم عشري بين ` 0 ` و ` 1 ` ، حيث ` 1 ` تمثل معتم تماما و ` 0 ` شفاف تماما. هذا يعني أنه كلما انخفضت قيمة ألفا لعنصر ما ، زادت درجة شفافيته.
 
 \--- /collapse \---
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ أخيرًا ، اجعل الحركة سلسة عن طريق إضافة الخاصية التالية إلى `.card` من ما سبق: 
 
 ```css
     transition: all 0.2s ease-out;
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+مدة ` 0.2 ثانية ` تعني الانتقال ` transition` يستمر لمدة 0.2 ثانية.
 
-### Lightbox
+### الصندوق المضئ Lightbox
 
 Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
 
