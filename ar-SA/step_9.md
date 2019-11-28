@@ -21,23 +21,23 @@
 
 ## title: `خاصية` التحويل
 
-إذا قمت بإكمال بطاقات سوشي HTML / CSS ، فقد تتذكر استخدام خاصية التحويل ` transform` في بعض الإطارات المفتاحية للرسوم المتحركة ` @keyframes `. Here you see that you can also use the property on its own within a regular CSS block.
+إذا قمت بإكمال بطاقات سوشي HTML / CSS ، فقد تتذكر استخدام خاصية التحويل ` transform` في بعض الإطارات المفتاحية للرسوم المتحركة ` @keyframes `. هنا ترى أنه يمكنك أيضًا استخدام الخاصية وحدها داخل كتلة CSS اعتيادية.
 
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+نوع من القيم التي يمكنك تعيينها هي ` rotate ` ، لجعل عنصر يدور. الخاصية الآخرى ` translate Y ` ، التي تحرك شيئًا ما لأعلى أو لأسفل ، و ` translateX ` ، للحركة من جانب إلى آخر.
 
 \--- /collapse \---
 
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
++ حاول التلاعب بقيم بكسل مختلفة في خاصية ` box-shadow` لمعرفة ماذا تفعل. 
 
 ## \--- collapse \---
 
-## title: What's `rgba`?
+## title: ماهي ` rgba ` ؟
 
-`rgba(0,0,0,0.2)` is another way of defining a colour.
+`rgba(0,0,0,0.2)` هي طريقة أخرى لتحديد اللون.
 
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+تحتوي على الأرقام الثلاثة المعتادة (من ` 0 ` حتى ` 255 `) للأحمر والأخضر والأزرق.
 
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+الرقم الرابع ، يدعي قيمة الفا ** alpha ** ، وتحدد الشفافية ** transparent ** (أو النظر من خلال) شيء ما. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
 
 \--- /collapse \---
 
