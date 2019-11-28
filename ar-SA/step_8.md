@@ -36,13 +36,13 @@
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ ثم قم بإنشاء مجموعة من قواعد الأنماط لكل عنصر من العناصر باستخدام محددات المعرّف ** id ** لتعيين خصائص أحجامها (`) width ` و / أو ` height `) وكذلك مواقعها بالضبط.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+لتحديد موضع عنصر ، هناك أربع خصائص يمكنك استخدامها: ` اليسار left ` ، ` اليمين right ` ، ` أعلى top ` و ` اسفل bottom `. إنها تمثل المدى الذي يجب أن تكون عليه كل حافة من حواف الحاوية الرئيسية. استخدم إما ` top ` أو ` bottom ` للموضع العمودي ، وإما ` left ` أو ` right ` للموضع الأفقي.
 
 ![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ اختر المواضع الدقيقة لكل صورة من صورك ، واستخدم أيًا من الخصائص `left ` ، ` right ` ، ` top ` و ` bottom ` لتحديد تلك المواقع في تعليمات CSS الخاصة بك. على سبيل المثال ، يضع هذا الرمز صورة القط 100 بكسل من الأعلى و 60 بكسل من اليسار:
 
 ```css
     #imgTeaCat {
@@ -52,11 +52,11 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+ملاحظة: يمكن أن تكون قيم الموضع سالبة أيضًا! إذا استخدمت قيمة سالبة ، فستدفع العنصر خارج الحاوية ، بعد الحافة التي حددتها.
 
-### Making things overlap
+### جعل الأشياء تتداخل
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+قد ترغب في جعل بعض الصور تتداخل. ولكن كيف تختار أي واحد يكون في الأعلي ؟
 
 + Choose two images and give them positions that cause them to overlap.
 
