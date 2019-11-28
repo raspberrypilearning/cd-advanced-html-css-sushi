@@ -57,7 +57,7 @@
 
 للحصول على هذا التأثير ، ستقوم بإنشاء رابطين: واحد لصندوق الضوء الفعلي (الشيء الذي ينبثق) ، وواحد للشيء الذي تنقر عليه لإظهار صندوق الضوء. سأقوم بعمل التأثير في صفحة "الجذب السياحي" على موقعي. تستطيع العمل مع أي صفحة لديك فيها صور!
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ حدد الأشياء التي تريد ظهورها عند النقر فوقها وأضفها جميعًا إلى صفحتك بين زوج من علامات `a ` لعمل الرابط. تأكد من إعطاء الرابط معرف ` id`. يمكن أن تضع الكود في أي مكان في الصفحة: ستجعل العناصر غير مرئية في الخطوة التالية!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -67,9 +67,9 @@
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+يمكنك وضع أي شيء تريده بين علامات الارتباط. لدي صورة كبيرة ، عنوان ، ونص قصير. ربما تريد فقط الصورة وليس النص!
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ أضف كود CSS التالي الي lightbox. هل يمكنك معرفة ما يفعله كل جزء من هذا الكود؟
 
 ```css
     .lightbox{
