@@ -60,21 +60,21 @@
 
 + اختر صورتين وحدد لهما مواقع تجعلهما تتداخلان.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ إضف هذه الخاصية الإضافية ، `z-index: 10;` إلى واحد منهما ، ثم قم بإضافة `z-index: 7;` للاخر.
 
-+ Take a look at the result on your webpage.
++ ألق نظرة على النتيجة في صفحة الويب الخاصة بك.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ الآن قم بتبديل قيم z-index < </code> بحيث تبدل ` 7 ` و ` 10 ` بينهما. هل ترى أي فرق على صفحة الويب الخاصة بك؟
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: كيف تعمل خاصية z-index؟
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+تتيح لك خاصية `z-index` تحديد كيفية تداخل عنصرين أو أكثر. يمكن أن تكون القيمة أي عدد صحيح.
 
 The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
 
