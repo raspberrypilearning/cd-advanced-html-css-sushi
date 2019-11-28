@@ -40,7 +40,7 @@
 
 لتحديد موضع عنصر ، هناك أربع خصائص يمكنك استخدامها: ` اليسار left ` ، ` اليمين right ` ، ` أعلى top ` و ` اسفل bottom `. إنها تمثل المدى الذي يجب أن تكون عليه كل حافة من حواف الحاوية الرئيسية. استخدم إما ` top ` أو ` bottom ` للموضع العمودي ، وإما ` left ` أو ` right ` للموضع الأفقي.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![رسم بياني يوضح كيفية ارتباط الخصائص العليا واليسرى والسفلية واليمنى بالحاوية الأصل](images/cssPositionProperties.png)
 
 + اختر المواضع الدقيقة لكل صورة من صورك ، واستخدم أيًا من الخصائص `left ` ، ` right ` ، ` top ` و ` bottom ` لتحديد تلك المواقع في تعليمات CSS الخاصة بك. على سبيل المثال ، يضع هذا الرمز صورة القط 100 بكسل من الأعلى و 60 بكسل من اليسار:
 
@@ -86,13 +86,13 @@
 
 ## Challenge: عمل صور مجمعة
 
-+ حاول إنشاء الصور المجمعة الخاصة بك كما موضح أدناه! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ حاول إنشاء الصور المجمعة الخاصة بك كما موضح أدناه! استخدم الموضع الدقيق مع `z-index` بقيم مختلفة للحصول على تأثير التداخل بالطريقة التي تريدها.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+يوجد أدناه كود HTML لصور مجمّعة على موقع ويب ايرلندا الخاص بي. هناك ست صور و نص كلها داخل قسم ` div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -106,11 +106,11 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
     </div>
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+فيما يلي قواعد CSS التي تحدد المواضع لكل صورة من الصور في المجموعة:
 
 ```css
     #imgHorse {
@@ -159,11 +159,11 @@ Here are the CSS rules that set the positions for each of my pictures in the col
     }
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+فيما يلي فئات CSS التي استخدمتها:
 
 ```css
     .collagePhoto {
@@ -177,10 +177,10 @@ Here are the CSS classes I've used:
     }
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
 ![Photo collage with text over the top](images/photoCollageExample.png)
 
-\--- /challenge \---
+\--- challenge/ \---
