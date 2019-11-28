@@ -76,17 +76,17 @@
 
 تتيح لك خاصية `z-index` تحديد كيفية تداخل عنصرين أو أكثر. يمكن أن تكون القيمة أي عدد صحيح.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+العنصر الذي يحمل ** الرقم الاكبر ** يكون في ** أعلى ** المجموعة ، أو بعبارة أخرى في ** الواجهة **. العنصر الذي يحتوي على الرقم الأعلى التالي يكون خلف ذلك ، وأمام الآخرين ، وهكذا ، حتى تصل إلى العنصر ذي الرقم الأدنى ، والذي يظهر خلف كل العناصر الأخرى.
 
-\--- /collapse \---
+\--- collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+يمكنك وضع أي من عناصر HTML بهذه الطريقة ، وليس فقط الصور. على سبيل المثال ، يمكنك استخدام عنصر ` p ` لإضافة نص على الصورة.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Challenge: عمل صور مجمعة
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ حاول إنشاء الصور المجمعة الخاصة بك كما موضح أدناه! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
 
 \--- hints \---
 
