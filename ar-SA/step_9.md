@@ -21,7 +21,7 @@
 
 ## title: `خاصية` التحويل
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+إذا قمت بإكمال بطاقات سوشي HTML / CSS ، فقد تتذكر استخدام خاصية التحويل ` transform` في بعض الإطارات المفتاحية للرسوم المتحركة ` @keyframes `. Here you see that you can also use the property on its own within a regular CSS block.
 
 One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
 
