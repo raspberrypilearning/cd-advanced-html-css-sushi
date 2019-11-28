@@ -51,11 +51,11 @@
 
 ### الصندوق المضئ Lightbox
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+من التأثيرات الأخرى التي ربما تراها على الكثير من مواقع الويب هو ** lightbox **: حيث تنقر على شيء ما فيظلم موقع الويب بينما يظهر شيء آخر ، مثل صورة أكبر أو مربع منبثق ، يظهر في المقدمة.
 
 ![Lightbox effect in action](images/lightboxLemur.png)
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+للحصول على هذا التأثير ، ستقوم بإنشاء رابطين: واحد لصندوق الضوء الفعلي (الشيء الذي ينبثق) ، وواحد للشيء الذي تنقر عليه لإظهار صندوق الضوء. سأقوم بعمل التأثير في صفحة "الجذب السياحي" على موقعي. تستطيع العمل مع أي صفحة لديك فيها صور!
 
 + Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
