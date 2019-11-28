@@ -181,6 +181,6 @@
 
 \--- hints/ \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![ملصقات صور مع النص في الأعلي](images/photoCollageExample.png)
 
 \--- challenge/ \---
