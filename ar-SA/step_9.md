@@ -87,9 +87,9 @@
     }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+ملاحظة: تغيير خاصية الموضع `position ` إلى ثابت ` fixed` يعني أن الموضع الذي تحدده سيكون ذا صلة بإطار مستعرض الانترنت ، لذلك سيبقى في وضعه ماعدا عند التمرير.
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ بعد ذلك ، حدد الشيء الذي تريد النقر عليه لإظهار مربع الضوء ، وإضف زوج من علامات ` a ` حول هذا العنصر (في حالتي ، إنها صورة أصغر للليمور). الهدف **target ** للرابط سيكون هو lightbox ، الذي تقوم بتعيينه باستخدام المعرف `id `. قد تتعرف على هذه التقنية من ماسبق!
 
 ```html
     <a href="#boxLemur">
@@ -97,7 +97,7 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ أخيرًا أضف كود CSS التالي. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
 
 ```css
     .lightbox:target {
