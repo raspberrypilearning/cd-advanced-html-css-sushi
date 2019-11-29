@@ -97,7 +97,7 @@
     </a>
 ```
 
-+ أخيرًا أضف كود CSS التالي. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ أخيرًا أضف كود CSS التالي. لاحظ أن هذه فئة **pseudo-class**. يجب أن تأتي بعد التعليمات البرمجية لـ `.lightbox ` وليس داخلها!
 
 ```css
     .lightbox:target {
