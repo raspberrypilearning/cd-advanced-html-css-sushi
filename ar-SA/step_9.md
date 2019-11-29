@@ -105,8 +105,8 @@
     }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+يتم تطبيق الطبقة `:target` و pseudo-class كلما كان صندوق الضوء هو الهدف من النقر على الرابط الأخير. لذلك عند النقر فوق أي مكان ، فإن الرؤية `visibility ` سيتم تعيينها مرة أخرى إلى ` hidden `.
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ حاول النقر على الرابط الجديد الخاص بك لرؤية صندوق الضوء يظهر! لجعله يختفي ، فقط انقر في أي مكان على الصفحة.
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+يمكنك إضافة العديد من صناديق الضوء إلى الصفحة كما تشاء. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
