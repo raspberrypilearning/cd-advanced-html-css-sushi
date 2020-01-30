@@ -115,8 +115,10 @@ Je kunt zoveel lightboxen aan een pagina toevoegen als je wilt. Ze kunnen allema
 
 ***
 
-## Door de community geleverde vertaling 
+Dit project werd vertaald door vrijwilligers:
 
-Dit project werd vertaald door **Coen Warrier** en gecontroleerd door **Robert-Jan Kempenaar**. 
+Coen Warrier
 
-Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translate](https://rpf.io/translate).
+Robert-Jan Kempenaar
+
+Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
