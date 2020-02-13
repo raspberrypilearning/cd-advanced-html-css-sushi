@@ -52,7 +52,7 @@ Was glaust Du, was die Eigenschaften `grid-coulmn-gap` (Raster-Spalten-Lücke) u
     }
 ```
 
-Dann gestaltest Du Dein Layout! Lass uns die beiden `aside` Elemente nebeneinander am unteren Rand der Seite platzieren. Dazu benötigst Du zwei Spalten (engl.: **columns**) gleicher Breite. Du kannst die Zeilen-Höhe (engl.: **row**) automatisch belassen.
+Dann gestaltest Du dein Layout! Lass uns die beiden `aside` Elemente nebeneinander am unteren Rand der Seite platzieren. Dazu benötigst Du zwei Spalten (engl.: **columns**) gleicher Breite. Du kannst die Zeilen-Höhe (engl.: **row**) automatisch belassen.
 
 + Füge den folgenden Code innerhalb der `.attPageLayoutGrid` CSS-Regel hinzu:
 
