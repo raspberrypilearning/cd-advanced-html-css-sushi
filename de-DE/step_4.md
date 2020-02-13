@@ -38,7 +38,7 @@ Voilà! Dank **Flex** werden Deine Karten jetzt nebeneinander angezeigt!
 
 ![Karten angeordnet in zwei Reihen, die gleichmäßig verteilt sind um auf die Browserbreite zu passen](images/flexSideBySide.png)
 
-+ Versuche, die `width` und `height` Eigenschaften aus der `.card`-Klasse zu löschen und beobachte was passiert: `flex` fügt die Karten auf clevere Weise wie ein Puzzle zusammen und behält dabei eine gleichmäßige Höhe für alle Elemente in derselben Reihe bei.
++ Versuche, die `width` und `height` Eigenschaften aus der `.card`-Klasse zu löschen und beobachte was passiert: `flex` fügt die Karten auf clevere Weise, wie ein Puzzle zusammen und behält dabei eine gleichmäßige Höhe für alle Elemente in derselben Reihe bei.
 
 ![Karten nebeneinander angeordnet mit automatischer Breite](images/flexAutoWidths.png)
 
