@@ -107,6 +107,6 @@ Hinweis: Das Setzen der `position` Eigenschaft auf `fixed` bedeutet, dass die Po
 
 Die `:target` Pseudoklasse wird angewendet, wann immer die lightbox das Ziel des letzten Links war. Wenn Du also irgendwo klickst, wird die Eigenschaft `visibility` (engl.: Sichtbarkeit) zurück auf `hidden` (engl.: versteckt) gesetzt.
 
-+ Versuch auf deinen neuen Link zu klicken, um zu sehen wie deine Lightbox erscheint! Um sie verschwinden zu lassen klicke einfach irgendwo auf der Seite.
++ Versuch auf deinen neuen Link zu klicken, um zu sehen wie deine Lightbox erscheint! Um sie verschwinden zu lassen, klicke einfach irgendwo auf der Seite.
 
-Du kannst so viele Lightboxen wie du willst zu einer Seite hinzufügen. Sie können alle dieselbe CSS-Klasse verwenden - stelle nur sicher, dass jede eine andere `id` verwendet! Für jede musst Du etwas auf Deiner Webseite zu einem Link machen, den Du anklicken kannst, um die Lightbox erscheinen zu lassen, nutze dann die `id` als `href` Wert in diesem Link, wie Du es oben getan hast!
+Du kannst so viele Lightboxen, wie du willst zu einer Seite hinzufügen. Sie können alle dieselbe CSS-Klasse verwenden - stelle nur sicher, dass jede eine andere `id` verwendet! Für jede musst Du etwas auf Deiner Webseite zu einem Link machen, den Du anklicken kannst, um die Lightbox erscheinen zu lassen, nutze dann die `id` als `href` Wert in diesem Link, wie Du es oben getan hast!
