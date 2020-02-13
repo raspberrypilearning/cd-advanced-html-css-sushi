@@ -1,12 +1,12 @@
-## مؤثرات خاصة
+## Special effects
 
-في هذه البطاقة ، ستتعرف على بعض التأثيرات اللطيفة التي يمكنك انجازها باستخدام CSS.
+On this card you'll learn a few more nice effects that you can achieve with CSS.
 
-### الظلال والحركة
+### Shadows and movement
 
-دعنا نضيف حركة صغيرة عندما تمرر مؤشر الماوس فوق البطاقات التي قمت بإنشائها مسبقًا.
+Let's add a little movement when you hover your cursor over the cards you made earlier.
 
-+ ابحث عن `.card: hover ` فئة CSS من ماسبق وقم بتغييرها إلى ما يلي:
++ Find the `.card:hover` CSS class from earlier and change it to the following:
 
 ```css
     .card:hover {
@@ -15,49 +15,49 @@
     }
 ```
 
-+ جرب قيمًا مختلفة في ` دالة ` الترجمة!
++ Try out different values in the `translate` function!
 
 ## \--- collapse \---
 
-## title: `خاصية` التحويل
+## title: The `transform` property
 
-إذا قمت بإكمال بطاقات سوشي HTML / CSS ، فقد تتذكر استخدام خاصية التحويل ` transform` في بعض الإطارات المفتاحية للرسوم المتحركة ` @keyframes `. هنا ترى أنه يمكنك أيضًا استخدام الخاصية وحدها داخل كتلة CSS اعتيادية.
+If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
 
-نوع من القيم التي يمكنك تعيينها هي ` rotate ` ، لجعل عنصر يدور. الخاصية الآخرى ` translate Y ` ، التي تحرك شيئًا ما لأعلى أو لأسفل ، و ` translateX ` ، للحركة من جانب إلى آخر.
+One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
 
 \--- /collapse \---
 
-+ حاول التلاعب بقيم بكسل مختلفة في خاصية ` box-shadow` لمعرفة ماذا تفعل. 
++ Play about with different pixel values in the `box-shadow` property to see what they do. 
 
 ## \--- collapse \---
 
-## title: ماهي ` rgba ` ؟
+## title: What's `rgba`?
 
-`rgba(0,0,0,0.2)` هي طريقة أخرى لتحديد اللون.
+`rgba(0,0,0,0.2)` is another way of defining a colour.
 
-تحتوي على الأرقام الثلاثة المعتادة (من ` 0 ` حتى ` 255 `) للأحمر والأخضر والأزرق.
+It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
 
-الرقم الرابع ، يدعي قيمة الفا ** alpha ** ، وتحدد الشفافية ** transparent ** (أو النظر من خلال) شيء ما. وهو رقم عشري بين ` 0 ` و ` 1 ` ، حيث ` 1 ` تمثل معتم تماما و ` 0 ` شفاف تماما. هذا يعني أنه كلما انخفضت قيمة ألفا لعنصر ما ، زادت درجة شفافيته.
+The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
 
 \--- /collapse \---
 
-+ أخيرًا ، اجعل الحركة سلسة عن طريق إضافة الخاصية التالية إلى `.card` من ما سبق: 
++ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
 
 ```css
     transition: all 0.2s ease-out;
 ```
 
-مدة ` 0.2 ثانية ` تعني الانتقال ` transition` يستمر لمدة 0.2 ثانية.
+A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
 
-### الصندوق المضئ Lightbox
+### Lightbox
 
-من التأثيرات الأخرى التي ربما تراها على الكثير من مواقع الويب هو ** lightbox **: حيث تنقر على شيء ما فيظلم موقع الويب بينما يظهر شيء آخر ، مثل صورة أكبر أو مربع منبثق ، يظهر في المقدمة.
+Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
 
-![تأثير مربع الضوء في العمل](images/lightboxLemur.png)
+![Lightbox effect in action](images/lightboxLemur.png)
 
-للحصول على هذا التأثير ، ستقوم بإنشاء رابطين: واحد لصندوق الضوء الفعلي (الشيء الذي ينبثق) ، وواحد للشيء الذي تنقر عليه لإظهار صندوق الضوء. سأقوم بعمل التأثير في صفحة "الجذب السياحي" على موقعي. تستطيع العمل مع أي صفحة لديك فيها صور!
+To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
 
-+ حدد الأشياء التي تريد ظهورها عند النقر فوقها وأضفها جميعًا إلى صفحتك بين زوج من علامات `a ` لعمل الرابط. تأكد من إعطاء الرابط معرف ` id`. يمكن أن تضع الكود في أي مكان في الصفحة: ستجعل العناصر غير مرئية في الخطوة التالية!
++ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -67,9 +67,9 @@
     </a>
 ```
 
-يمكنك وضع أي شيء تريده بين علامات الارتباط. لدي صورة كبيرة ، عنوان ، ونص قصير. ربما تريد فقط الصورة وليس النص!
+You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
 
-+ أضف كود CSS التالي الي lightbox. هل يمكنك معرفة ما يفعله كل جزء من هذا الكود؟
++ Add the following CSS code for the lightbox. Can you work out what some of it does?
 
 ```css
     .lightbox{
@@ -87,9 +87,9 @@
     }
 ```
 
-ملاحظة: تغيير خاصية الموضع `position ` إلى ثابت ` fixed` يعني أن الموضع الذي تحدده سيكون ذا صلة بإطار مستعرض الانترنت ، لذلك سيبقى في وضعه ماعدا عند التمرير.
+Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
 
-+ بعد ذلك ، حدد الشيء الذي تريد النقر عليه لإظهار مربع الضوء ، وإضف زوج من علامات ` a ` حول هذا العنصر (في حالتي ، إنها صورة أصغر للليمور). الهدف **target ** للرابط سيكون هو lightbox ، الذي تقوم بتعيينه باستخدام المعرف `id `. قد تتعرف على هذه التقنية من ماسبق!
++ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
 ```html
     <a href="#boxLemur">
@@ -97,7 +97,7 @@
     </a>
 ```
 
-+ أخيرًا أضف كود CSS التالي. لاحظ أن هذه فئة **pseudo-class**. يجب أن تأتي بعد التعليمات البرمجية لـ `.lightbox ` وليس داخلها!
++ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
 
 ```css
     .lightbox:target {
@@ -105,8 +105,8 @@
     }
 ```
 
-يتم تطبيق فئة `:target` و pseudo-class كلما كان صندوق الضوء هو الهدف من النقر على الرابط الأخير. لذلك عند النقر فوق أي مكان ، فإن الرؤية `visibility ` سيتم تعيينها مرة أخرى إلى ` hidden `.
+The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
 
-+ حاول النقر على الرابط الجديد الخاص بك لرؤية صندوق الضوء يظهر! لجعله يختفي ، فقط انقر في أي مكان على الصفحة.
++ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
 
-يمكنك إضافة العديد من صناديق الضوء إلى الصفحة كما تشاء. يمكنهم جميعًا استخدام نفس فئة CSS - فقط تأكد من أن لكل واحد معرف ` id `! لكل واحد ، تحتاج إلى جعل شيء ما على صفحة الويب الخاصة بك في رابط يمكنك النقر فوقه لإظهار مربع الضوء ، ثم استخدام المعرف ` id` كقيمة لــ ` href ` في هذا الرابط ، تمامًا كما فعلت أعلاه!
+You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
