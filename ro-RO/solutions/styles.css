@@ -66,7 +66,7 @@ article {
 
 
 /*-------------------------------*/
-/ * Adăugat în urma cărților Sushi * /
+/* Added while following Sushi Cards */
 
 .smallPics {
         height: 60px;
@@ -222,7 +222,7 @@ article {
     }
 
 /*************************************************************/
-/ * Din noile stiluri Intermed * /
+/* From new Intermed styles */
 
   .topDivider {
     border-top-style: solid;
@@ -363,7 +363,7 @@ article {
 
 
 /**********************************
-Această secțiune este destinată tabelelor de styling
+This section is for styling tables
 ***********************************/
 table, th, td {
   border: 1px solid HoneyDew;
