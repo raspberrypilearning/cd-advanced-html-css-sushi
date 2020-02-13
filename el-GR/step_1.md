@@ -1,8 +1,8 @@
-## Εισαγωγή
+## Introduction
 
 These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
 
-### Τι θα φτιάξεις
+### What you will make
 
 Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
 
