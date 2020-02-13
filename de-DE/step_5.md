@@ -10,11 +10,11 @@ Du wirst mit den regulären Styles starten: Das wird Dein **Standard** Verhalten
 
 Die Standard-Stile sind Deine normalen Stilregeln. Sie werden auf jeden Fall angewendet, bevor irgendwelche besonderen Bedingungen geprüft werden.
 
-Du kannst Code hinzufügen, der dann die Größe des Bildschirms überprüft und gegebenenfalls Anpassungen vornimmt.
+Du kannst einen Code hinzufügen, der dann die Größe des Bildschirms überprüft und gegebenenfalls Anpassungen vornimmt.
 
 \--- /collapse \---
 
-+ FügeDeinem Menu die folgenden CSS-Regeln hinzu. Wahrscheinlich hast Du auch Farben und Ränder definiert. Ich habe sie hier weggelassen, um Platz zu sparen! Falls Du bereits CSS-Regeln für dein Menu definiert hast, füge diese hier einfach hinzu oder ändere die Werte entsprechend.
++ Füge deinem Menu die folgenden CSS-Regeln hinzu. Wahrscheinlich hast Du auch Farben und Ränder definiert. Ich habe sie hier weggelassen, um Platz zu sparen! Falls Du bereits CSS-Regeln für dein Menu definiert hast, füge diese hier einfach hinzu oder ändere die Werte entsprechend.
 
 ```css
     nav ul {
@@ -38,9 +38,9 @@ Mit dem obigen CSS-Code ist Dein Menu bestens für kleine Bildschirme geeignet. 
 
 ## titel: Was bedeutet "Mobile-First"?
 
-Du wirst sehr oft beim Programmieren einer Website einen Computerbildschirm verwenden und wahrscheinlich wirst Du Stile definieren, die darauf basieren wie sie auf diesem Bildschirm aussieht.
+Du wirst sehr oft beim Programmieren einer Website einen Computerbildschirm verwenden und wahrscheinlich wirst Du Stile definieren, die darauf basieren, wie sie auf diesem Bildschirm aussehen.
 
-Wenn Du zuerst (engl.: first) für Mobilgeräte programmierst, wählst Du stattdessen Standardstile, die für kleine Bildschirme wie Smartphones geeignet sind. Du fügst dann Code hinzu um Anpassungen für größere Bildschirme zu machen.
+Wenn Du zuerst (engl.: first) für Mobilgeräte programmierst, wählst Du stattdessen Standardstile, die für kleine Bildschirme, wie Smartphones, geeignet sind. Du fügst dann einen Code hinzu, um Anpassungen für größere Bildschirme zu machen.
 
 Da immer mehr Menschen auf ihren Smartphones oder Tablets im Internet surfen und nicht auf einem Computer, empfiehlt es sich deine Website in diesem Sinne zu entwickeln.
 
@@ -65,19 +65,19 @@ Die erste Zeile des Codes oben überprüft die Größe des Browserfensters. Wenn
 
 ## title: Wie funktioniert das?
 
-Der Block enthält nur für einige Eigenschaften des `nav ul` Menus neue Werte.
+Der Block enthält nur für einige Eigenschaften des `nav ul` Menüs neue Werte.
 
-Immer wenn das Fenster größer als 1000 Pixel ist, werden diese neuen Werte angewendet, anstelle der Werte die Du bereits für `nav ul` definiert hast.
+Immer wenn das Fenster größer als 1000 Pixel ist, werden diese neuen Werte angewendet, anstelle der Werte, die Du bereits für `nav ul` definiert hast.
 
 Die übrigen Eigenschaften, die Du zuvor für `nav ul` definiert hast, bleiben unverändert.
 
 \--- /collapse \---
 
-+ Wenn du Trinket zum Schreiben von Code verwendest, ist es vielleicht hilfreich das Projekt herunterzuladen, damit Du es auf dem gesamten Bildschirm testen kannst.
++ Wenn du Trinket zum Schreiben von Codes verwendest, ist es vielleicht hilfreich das Projekt herunterzuladen, damit Du es auf dem gesamten Bildschirm testen kannst.
 
 \--- challenge \---
 
-## Herausforderung: Lass sich dein Menu selbstständig an große Bildschirme anpassen
+## Herausforderung: Lass dein Menü sich selbstständig an große Bildschirme anpassen
 
 + Kannst du einen weiteren Block, mit `flex-end` anstelle von `space-around`, für Bildschirme, die größer als **1600 Pixel** sind, hinzufügen?
 
@@ -104,4 +104,4 @@ Der folgende Code definiert die Flex-Eigenschaften für Menüelemente, wenn der 
 
 \--- /challenge \---
 
-Du kannst jede beliebige CSS-Regel in solche Blöcke einfügen, um unterschiedliche Stile für verschiedene Bildschirmgrößen zu definieren. Das ist besonders nützlich, wenn Du später CSS-Grid-Layouts (Grid engl. für Raster) erstellest!
+Du kannst jede beliebige CSS-Regel in solche Blöcke einfügen, um unterschiedliche Stile für verschiedene Bildschirmgrößen zu definieren. Das ist besonders nützlich, wenn Du später CSS-Grid-Layouts (Grid engl. für Raster) erstellst!
