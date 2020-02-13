@@ -13,7 +13,7 @@ Auf dieser Karte lernst Du, wie Du CSS verwenden kannst um HTML-Elemente genau z
     </div>
 ```
 
-Die Fotos werden nacheinander auf der Webseite angeziegt, in der Reihenfolge, in der sie in Deinem Code auftauchen.
+Die Fotos werden nacheinander auf der Webseite angezeigt, in der Reihenfolge, in der sie in Deinem Code auftauchen.
 
 + Füge in Deiner CSS-Datei die folgende CSS-Klasse für die Elemente im `div` hinzu: 
 
@@ -36,13 +36,13 @@ Die Fotos werden nacheinander auf der Webseite angeziegt, in der Reihenfolge, in
     }
 ```
 
-+ Erstelle dann eine Reihe von Stilregeln für jedes der Elemente, indem Du **ID-Selektoren** verwendest, um deren Größe (`width`- (Breite) und/oder `height`- (Höhe) Eigenschaften) sowie deren genaue Position festzulegen.
++ Erstelle dann eine Reihe von Stilregeln für jedes der Elemente, indem Du **ID-Selektoren** verwendest, um deren Größeeigenschaften `width`- (Breite) und/oder `height`- (Höhe), sowie deren genaue Position festzulegen.
 
 Um die Position eines Elements zu definieren, kannst Du vier Eigenschaften verwenden: `left` (links), `right` (rechts), `top` (oben) und `bottom` (unten). Sie geben an, wie weit die Kanten vom Rand des übergeordneten Elements entfernt sein sollen. Verwende entweder `top` oder `bottom` für die vertikale Position und entweder `left` oder `right` für die horizontale Position.
 
-![Diagramm, das zeigt, wie sich die Eigenschaften oben, links, unten und rechts auf den übergeordneten Container beziehen](images/cssPositionProperties.png)
+![Das Diagramm zeigt, wie sich die Eigenschaften oben, links, unten und rechts auf den übergeordneten Container beziehen](images/cssPositionProperties.png)
 
-+ Wähle genaue Positionen für jedes Deiner Bilder aus und definiere diese Positionen in Deinen CSS-Regeln mithilfe der Eigenschaften `left`, `right`, `top` und `bottom`. Zum Beispiel platziert dieser Code das Katzenbild 100 Pixel von oben und 60 Pixel von links:
++ Wähle genaue Positionen für jedes deiner Bilder aus und definiere diese Positionen in deinen CSS-Regeln mithilfe der Eigenschaften `left`, `right`, `top` und `bottom`. Zum Beispiel platziert dieser Code das Katzenbild auf 100 Pixel von oben und 60 Pixel von links:
 
 ```css
     #imgTeaCat {
@@ -56,7 +56,7 @@ Hinweis: Die Positionswerte können auch negativ sein! Wenn Du einen negativen W
 
 ### Dinge überlappen lassen
 
-Vielleicht möchtest Du einige der Bilder überlappen lassen. Aber wie kannst du auswählen welches oben drauf liegt?
+Vielleicht möchtest Du einige der Bilder überlappen lassen. Aber wie kannst du auswählen, welches oben drauf liegt?
 
 + Wähle zwei Bilder aus und weise ihnen Positionen zu, die zu einer Überlappung führen.
 
@@ -72,7 +72,7 @@ Vielleicht möchtest Du einige der Bilder überlappen lassen. Aber wie kannst du
 
 ## \--- collapse \---
 
-## title: Wie funktioniert z-Index?
+## title: Wie funktioniert ein z-Index?
 
 Mit der `z-index` Eigenschaft kannst Du festlegen, wie sich zwei oder mehr Elemente überlappen sollen. Der Wert kann jede beliebige ganze Zahl sein.
 
@@ -86,7 +86,7 @@ Du kannst auf diese Weise beliebige HTML-Elemente positionieren, nicht nur Bilde
 
 ## Herausforderung: Erstelle eine Fotocollage
 
-+ Versuche, Deine eigene Collage mit Fotos, wie die unten gezeigte, zu erstellen! Verwende exakte Positionierung zusammen mit verschiedenen `z-index` Werten, um den Überlappungseffekt so hinzubekommen, wie Du es willst.
++ Versuche, Deine eigene Collage mit Fotos, wie die unten abgebildeten, zu erstellen! Verwende exakte Positionierung zusammen mit verschiedenen `z-index` Werten, um den Überlappungseffekt so hinzubekommen, wie Du es willst.
 
 \--- hints \---
 
