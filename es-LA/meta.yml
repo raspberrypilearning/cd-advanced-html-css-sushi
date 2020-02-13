@@ -1,33 +1,33 @@
 ---
-title: Guía de mi país 3.0
+title: Guide to my country 3.0
 hero_image: images/banner.png
-description: '¡Agregue diseños agradables y efectos geniales a su sitio web!'
-theme: rojo #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+description: Add nice layouts and cool effects to your website!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 technologies: html-css-javascript
-site_areas: proyectos de CoderDojo
+site_areas: coderdojo, projects
 software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Robot parlanchín
+    title: Introduction
   - 
-    title: Preparación
+    title: Getting setup
   - 
-    title: Tarjetas interactivas
+    title: Clickable cards
   - 
-    title: Consecutivamente
+    title: All in a row
   - 
-    title: Haz tu menú adaptable
+    title: Make your menu responsive
   - 
-    title: Leyendas y notas al margen
+    title: Captions and side notes
   - 
-    title: Diseña plantillas de página interesantes
+    title: Design cool page layouts
   - 
-    title: Collage de fotos
+    title: Photo collage
   - 
-    title: Efectos especiales
+    title: Special effects
