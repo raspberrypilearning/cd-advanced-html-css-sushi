@@ -1,5 +1,5 @@
-## هيا بنا لنبدأ
+## Getting set up
 
-للعمل من خلال بطاقات السوشي هذه ، ستحتاج إلى البدء بموقع ويب قمت بإنشائه بالفعل. على سبيل المثال ، يمكنك استخدام تلك التي صنعتها في سلسلة [HTML/CSS لكروت السوشي المستوي المتوسط ](https://projects.raspberrypi.org/en/projects/cd-intermediate-html-css-sushi){:target="_blank"}. إذا كنت تفضل ذلك ، فيمكنك العمل مع [ هذا trinket ](http://dojo.soy/html3-website-start) {: target = "_ blank"} ، وهو جاهز للاستخدام.
+To work through these Sushi Cards, you'll need to start with a website that you already made. For example, you can use the one that you made in the [HTML/CSS Intermediate Sushi Card series](https://projects.raspberrypi.org/en/projects/cd-intermediate-html-css-sushi){:target="_blank"}. If you prefer, you can work with [this trinket](http://dojo.soy/html3-website-start){:target="_blank"}, which is ready to use.
 
-أثناء العمل مع الكثير من التعليمات البرمجية ، قد تجد أنه من الأسهل استخدام محرر نص غير متصل بالإنترنت على جهاز الكمبيوتر الخاص بك بدلاً من Trinket. يمكنك تنزيل التعليمات البرمجية من Trinket عن طريق تحديد ** تنزيل ** من ** مشاركة ** في القائمة.
+As you'll be working with lots of code, you may find it easier to use an offline text editor on your computer instead of Trinket. You can download code from Trinket by selecting **Download** from the **Share** menu.
