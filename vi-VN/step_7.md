@@ -66,7 +66,7 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
 
 `fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
 ## title: Help! I got errors and warnings!
 
