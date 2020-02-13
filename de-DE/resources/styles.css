@@ -46,12 +46,12 @@ article {
 }
         
 #frontPage {
-  background: #c1ebec;
+  background: #1DCC;
   background: linear-gradient(to right, #87CEFA, #c1ebec);
 }
 
 #welcomeText {
-  animation-name: green-pulse;
+  animation-name: glowPulse;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
@@ -67,8 +67,8 @@ article {
 }
 
 .sectionSpacing {
-  padding: 1em;
-  margin-top: 2em;
+  padding: 1px;
+  margin-top: 2px;
 }
 
 .purpleBackground {
@@ -141,7 +141,7 @@ article {
 Dieser Bereich beschreibt die Tabellenstile
 ***********************************/
 table, th, td {
-  border: 1px solid HoneyDew;
+  border: 1px solide HoneyDew;
   border-collapse: collapse;
 }
 tr {
@@ -158,4 +158,4 @@ th {
 td {
   color: purple;
 }
-/********************************/
+/*********************************/
