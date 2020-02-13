@@ -2,7 +2,7 @@
 
 Hier ist eine Technik, mit der Du eine Fotogalerie oder eine Portfolio-Seite mit Deinen Projekten erstellen kannst: kleine **Vorschau-Karten**.
 
-![Vorschaukarte die ein Bild als Vorschau und ein bisschen Text zeigt](images/cardsPreview.png)
+![Vorschaukarte, die ein Bild als Vorschau und ein bisschen Text zeigt](images/cardsPreview.png)
 
 + Füge den folgenden HTML-Code an einer beliebigen Stelle deiner Website hinzu. Ich mache das auf `index.html`. Du kannst die Bilder und Texte so ändern, dass sie zu Deinen eigenen Vorschaukarten passen. Ich werde ein paar Höhepunkte der Touristenattraktionen in Irland machen.
 
@@ -14,7 +14,7 @@ Hier ist eine Technik, mit der Du eine Fotogalerie oder eine Portfolio-Seite mit
     </article>
 ```
 
-![Bilder und Text bevor Styles angewendet wurden](images/cardUnstyled.png)
+![Bilder und Text, bevor Styles angewendet wurden](images/cardUnstyled.png)
 
 + Füge den folgenden CSS-Code hinzu, um die Klassen `card` und `tinyPicture` zu erstellen:
 
@@ -38,11 +38,11 @@ Hier ist eine Technik, mit der Du eine Fotogalerie oder eine Portfolio-Seite mit
     }
 ```
 
-![Bild und Text mit styling um einen kleinen Karten-Effekt zu erstellen](images/cardStyled.png)
+![Bild und Text mit Styling, um einen kleinen Karten-Effekt zu erstellen](images/cardStyled.png)
 
 Lass uns die gesamte Vorschau-Karte in einen Link verwandeln, damit Leute mit einem Klick mehr Informationen sehen.
 
-+ Platziere das gesamte `article`-Element in einem Link-Element. Stelle sicher, dass das schließende `</a&gt`-Tag nach dem schließenden `</article>`-Tag steht! Du kannst die link **URL** ändern wie du möchtest. Das könnte eine andere Seite auf Deiner Website sein, oder es könnte eine ganz andere Website sein.
++ Platziere das gesamte `article`-Element in einem Link-Element. Stelle sicher, dass das schließende `</a&gt`-Tag nach dem schließenden `</article>`-Tag steht! Du kannst die link **URL** ändern, wie du möchtest. Das könnte eine andere Seite auf Deiner Website sein, oder es könnte eine ganz andere Website sein.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -54,17 +54,17 @@ Lass uns die gesamte Vorschau-Karte in einen Link verwandeln, damit Leute mit ei
     </a>
 ```
 
-![Text und Bild die in einen Link verwandelt wurden](images/cardLink.png)
+![Text und Bild, die in einen Link verwandelt wurden](images/cardLink.png)
 
 ## \--- collapse \---
 
 ## title: Auf einen bestimmten Teil einer Seite verlinken
 
-Ist Dir aufgefallen wie der Wert von `href` in meinem Link auf `#scFota` endet? Das ist ein toller Trick, den Du nutzen kannst um zu einem bestimmten Teil einer Seite zu springen.
+Ist Dir aufgefallen, wie der Wert von `href` in meinem Link auf `#scFota` endet? Das ist ein toller Trick, den Du nutzen kannst, um zu einem bestimmten Teil einer Seite zu springen.
 
 + Gib zuerst die URL der Seite ein, auf die verlinkt werden soll, gefolgt von `#`.
 
-+ In der Code-Datei für die Seite, auf die Du verlinkst finde den Teil zu dem du springen möchtest und gib diesem Element eine `id`, zum Beispiel `<section id="scFota"`. Der Wert der `id` ist, das was Du nach der `#` in Deinen Link eingibst.
++ In der Code-Datei für die Seite, auf die Du verlinkt, finde den Teil zu dem du springen möchtest und gib diesem Element eine `id`, zum Beispiel `<section id="scFota"`. Der Wert der `id` ist, das was Du nach der `#` in Deinen Link eingibst.
 
 \--- /collapse \---
 
