@@ -1,8 +1,8 @@
 ---
-title: Ghid pentru țara mea 3.0
+title: Guide to my country 3.0
 hero_image: images/banner.png
-description: Adaugă modele drăguțe si efecte atractive site-ului tău!
-theme: roșu #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+description: Add nice layouts and cool effects to your website!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
@@ -14,20 +14,20 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introducere
+    title: Introduction
   - 
-    title: De pregătit
+    title: Getting setup
   - 
-    title: Cartonașe de accesat
+    title: Clickable cards
   - 
-    title: Toate pe rând
+    title: All in a row
   - 
-    title: Creează un meniu receptiv
+    title: Make your menu responsive
   - 
-    title: Legende si notițe
+    title: Captions and side notes
   - 
-    title: Creează modele de pagini atractive
+    title: Design cool page layouts
   - 
-    title: Album foto
+    title: Photo collage
   - 
-    title: Efecte speciale
+    title: Special effects
