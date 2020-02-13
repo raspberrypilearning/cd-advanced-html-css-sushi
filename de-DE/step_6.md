@@ -1,10 +1,10 @@
 ## Bildunterschriften und Randnotizen
 
-Auf dieser Karte wirst du zwei weitere **Container**-Elemente kennen lernen: Eines das Du verwenden kannst um Beschriftungen (also Text, wie eine Überschrift oder eine kurze Beschreibung) zu einem Bild hinzuzufügen und ein Anderes für den Fall dass du zusätzliches Zeug hast, das nicht wirklich zu den Haupt-Informationen auf der Seite gehört.
+Auf dieser Karte wirst du zwei weitere **Container**-Elemente kennen lernen: Eines das Du verwenden kannst, um Beschriftungen (also Text, wie eine Überschrift oder eine kurze Beschreibung) zu einem Bild hinzuzufügen und ein Anderes für den Fall, dass du zusätzliche Dinge hast, das nicht wirklich zu den Haupt-Informationen auf der Seite gehört.
 
 ### Bilder mit Bildunterschriften
 
-+ Finde ein `img` Element, bei dem Du Text, oberhalb oder unterhalb hast, der zum Bild gehört. Ich arbeite mit dem Tito Bild auf `index.html`, aber Du kannst mit allem arbeiten, was Du auf Deiner Website hast. 
++ Finde ein `img` Element, bei dem Du Text oberhalb oder unterhalb hast, welcher zum Bild dazu gehört. Ich arbeite mit dem Tito Bild auf `index.html`, aber Du kannst mit allem arbeiten, was Du auf Deiner Website hast. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito der Hund" />          
@@ -13,7 +13,7 @@ Auf dieser Karte wirst du zwei weitere **Container**-Elemente kennen lernen: Ein
   </p>
 ```
 
-+ In der Zeile über dem Code, füge das öffnende `<figure>`-Tag ein. Platziere das schließende `</figure>`-Tag in einer neuen Zeile unterhalb des Codes.
++ Füge in der Zeile über dem Code das öffnende `<figure>`-Tag ein. Platziere das schließende `</figure>`-Tag in einer neuen Zeile unterhalb des Codes.
 
 + Entferne als Nächstes die `p`-Tags oder welche Tags auch immer du um den Text herum hast (vielleicht ist es auch eine Überschrift wie `h2`?) und packe den Text stattdessen zwischen `<figcaption></figcaption>`-Tags. Das Ganze sollte ungefähr so aussehen:
 
@@ -36,7 +36,7 @@ Das `figcaption` Element ist Deine **Beschriftung**. Es kann entweder über dem 
 
 Das `figure` Element fungiert als eine Art **Container** für das Bild und die Beschriftung. Auf diese Weise kannst Du sie bei der Definition von Stilen als eine Einheit behandeln.
 
-Eine logische Gruppierung hilft auch dabei, eine gute Struktur in Deinem Website-Code beizubehalten.
+Eine logische Gruppierung hilft auch dabei, eine gute Struktur in deinem Website-Code beizubehalten.
 
 \--- /collapse \---
 
@@ -63,13 +63,13 @@ Die Attraktionen-Seite auf meiner Website ist eine Liste von Orten, die einen Be
   <aside class="sideNoteStyle">
       <h2>Fortbewegung</h2>
       <h3>Zug und Bus</h3>
-      <p>Die meisten größeren Städte kannst Du mit dem Zug von Dublin aus erreichen. Es gibt viele Busse, die Touren zu beliebten Orten und Sehenswürdigkeiten anbieten..</p>
+      <p>Die meisten größeren Städte kannst Du mit dem Zug von Dublin aus erreichen. Es gibt viele Busse, die Touren zu beliebten Orten und Sehenswürdigkeiten anbieten.</p>
       <h3>Auto</h3>
       <p>Außerhalb der Städte kannst Du Dich am einfachsten mit dem Auto fortbewegen.</p>
     </aside>
     <aside class="sideNoteStyle">
       <h2>Wetter</h2>
-      <p>Das Wetter in Irland ist <span class="specialText"> sehr unvorhersehbar! </span> Am besten ist es wenn man auf jedes Wetter <span class="specialText">vorbereitet ist</span>, selbst an einem schönen Tag!</p>
+      <p>Das Wetter in Irland ist <span class="specialText"> sehr unvorhersehbar! </span> Am besten ist es, wenn man auf jedes Wetter <span class="specialText">vorbereitet ist</span>, selbst an einem schönen Tag!</p>
   </aside>
 ```
 
