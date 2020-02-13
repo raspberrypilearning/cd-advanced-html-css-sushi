@@ -1,10 +1,10 @@
-## Uvod
+## Introduction
 
-Ove Sushi Cards će vam pokazati kako napraviti web stranicu izgledati polirano i profesionalno koristeći kul efekte i izglede.
+These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
 
-### Što ćete napraviti
+### What you will make
 
-Pomaknite pokazivač miša u prozoru u nastavku da biste isprobali neke od učinaka koje ćete naučiti koristiti na web-lokaciji:
+Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -16,12 +16,12 @@ Pomaknite pokazivač miša u prozoru u nastavku da biste isprobali neke od učin
 
 ## title: What you will learn
 
-U ovim Sushi karticama saznat ćete kako:
+In these Sushi Cards, you will find out how to:
 
-+ Izradite željeni izgled web-lokacije
-+ Učinite da se vaš izgled automatski podesi na različite veličine zaslona
-+ Napravite kolaž slika i teksta koji se preklapaju
-+ Primijenite neke lijepe efekte lebdenja i klikanja koje ste možda vidjeli na drugim web-lokacijama
++ Create any website layout you want
++ Make your layout adjust itself automatically to different screen sizes
++ Make a collage of overlapping pictures and text
++ Apply some neat hover and click effects that you might have seen on other websites
 
 \--- /collapse \---
 
