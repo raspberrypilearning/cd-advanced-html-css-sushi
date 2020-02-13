@@ -70,7 +70,7 @@ You might want to have some of the pictures overlapping. But how do you choose w
 
 ![](images/horse7Cat10.png)
 
-## \--- kollaps \---
+## \--- collapse \---
 
 ## title: How does z-index work?
 
