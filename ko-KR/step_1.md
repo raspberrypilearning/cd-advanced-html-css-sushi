@@ -1,10 +1,10 @@
-## 소개
+## Introduction
 
-이 초밥 카드(스시카드) 는 멋진 효과와 레이아웃을 사용하여 웹 사이트를 세련되고 전문적으로 보이게 만드는 방법을 보여줍니다.
+These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
 
-### 여러분이 만들 작품
+### What you will make
 
-웹사이트에서 사용법을 알려주는 효과를 아래창에서 마우스 커서를 움직여 시도해보세요
+Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -12,29 +12,29 @@
   <!-- <img src="images/magazine-final.png"> -->
 </div>
 
-## \---\---중략\---\----
+## \--- collapse \---
 
-## 제목: 당신이 배우게 될 것
+## title: What you will learn
 
-이 스시 카드들에서 방법을 배우게 됩니다:
+In these Sushi Cards, you will find out how to:
 
-+ 원하는 모든 웹사이트의 레이아웃 만들기
-+ 레이아웃을 다른 화면 크기에 맞게 자동으로 조정합니다.
-+ 그림과 텍스트가 겹치는 콜라주 만들기
-+ 다른 웹 사이트에서 봤을지도 모르는 깔끔한 마우스 오버 및 클릭 효과 적용하기
++ Create any website layout you want
++ Make your layout adjust itself automatically to different screen sizes
++ Make a collage of overlapping pictures and text
++ Apply some neat hover and click effects that you might have seen on other websites
 
-\---/중략\---
+\--- /collapse \---
 
-## \---중략\---
+## \--- collapse \---
 
-## 제목 : 준비물
+## title: What you will need
 
-### Hardware (하드웨어)
+### Hardware
 
-+ [trinket.io](https://trinket.io){:target="_blank"}에 접속 가능한 컴퓨터
++ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
 
-### Software(소프트웨어)
+### Software
 
 + This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
 
-\---/중략\---
+\--- /collapse \---
