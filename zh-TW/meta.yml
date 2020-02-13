@@ -14,7 +14,7 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: 介紹
+    title: Introduction
   - 
     title: Getting setup
   - 
