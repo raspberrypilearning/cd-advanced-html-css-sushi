@@ -2,32 +2,32 @@
 title: Guida al mio paese 3.0
 hero_image: images / banner.png
 description: Aggiungi bei layout e fantastici effetti al tuo sito web!
-theme: rosso #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 technologies: html-css-javascript
-site_areas: coderdojo, progetti
+site_areas: coderdojo, projects
 software: html-css-javascript
 version: 4.1.0
-last_tested: 2017/01/01
+last_tested: 2017-01-01
 steps:
   - 
     title: Introduzione
   - 
-    title: Prepararsi
+    title: Getting setup
   - 
-    title: Schede selezionabili
+    title: Clickable cards
   - 
-    title: Tutto di fila
+    title: All in a row
   - 
-    title: Rendi il tuo menu reattivo
+    title: Make your menu responsive
   - 
-    title: Didascalie e note a margine
+    title: Captions and side notes
   - 
-    title: Progettare layout di pagina interessanti
+    title: Design cool page layouts
   - 
-    title: Collage di foto
+    title: Photo collage
   - 
-    title: Effetti speciali
+    title: Special effects
