@@ -17,7 +17,7 @@ Let's add a little movement when you hover your cursor over the cards you made e
 
 + Try out different values in the `translate` function!
 
-## \--- küçült \---
+## \--- collapse \---
 
 ## title: The `transform` property
 
