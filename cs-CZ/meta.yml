@@ -10,11 +10,11 @@ copyedit: true
 technologies: html-css-javascript
 site_areas: coderdojo, projects
 software: html-css-javascript
-version: 3
+version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Úvod
+    title: Introduction
   - 
     title: Getting setup
   - 
