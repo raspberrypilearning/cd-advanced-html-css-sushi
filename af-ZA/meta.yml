@@ -2,7 +2,7 @@
 title: Guide to my country 3.0
 hero_image: images/banner.png
 description: Add nice layouts and cool effects to your website!
-theme: rooi #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
