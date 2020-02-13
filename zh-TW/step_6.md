@@ -30,7 +30,7 @@ The `figcaption` element is your **caption**. It can go either above the `img` e
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
-## - - 自動隱藏選單 - -
+## \--- collapse \---
 
 ## title: Why is this useful?
 
@@ -81,7 +81,7 @@ The `aside`, `article`, and other containers are all similar. The only real diff
 
 It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
 
-- - 自動隱藏選單 - -
+\--- /collapse \---
 
 Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
 
