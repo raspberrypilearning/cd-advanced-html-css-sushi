@@ -30,7 +30,7 @@ The `figcaption` element is your **caption**. It can go either above the `img` e
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
 ## title: Why is this useful?
 
