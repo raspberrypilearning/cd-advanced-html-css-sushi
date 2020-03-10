@@ -52,7 +52,7 @@ Pour définir la position d'un élément, tu peux utiliser quatre propriétés: 
     }
 ```
 
-Remarque: Les valeurs de position peuvent également être négatives ! Si tu utilises une valeur négative, l'élément sera déplacé hors du conteneur, sur le bord que tu as spécifié.
+Remarque: Les valeurs de position peuvent également être négatives! Si tu utilises une valeur négative, l'élément sera déplacé hors du conteneur, sur le bord que tu as spécifié.
 
 ### Faire chevaucher les choses
 

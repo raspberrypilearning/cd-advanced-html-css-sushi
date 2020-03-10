@@ -19,7 +19,7 @@ Ajoutons un petit mouvement lorsque tu passes ton curseur sur les cartes que tu 
 
 --- collapse ---
 ---
-title: La propriété `Transform`
+title: La propriété `transform`
 ---
 
 Si tu as fait les cartes Sushi Intermediate HTML/CSS, tu te souviendras peut-être de la propriété `transform` dans certaines animations `@keyframes`. Tu vois ici que tu peux également utiliser la propriété seule dans un bloc CSS normal.

@@ -58,10 +58,10 @@ La page Attractions de mon site Web contient une liste de lieux à visiter. Je v
 
 + Accède à une page de ton site Web contenant un élément `article` dessus - J'utilise `attractions.html`.
 
-+ **À l'extérieur** de l'élément `article`, ajoute une ou plusieurs paires de balises `&lt;aside&gt;&lt;/aside&gt</1> contenant tes trucs supplémentaires.</p></li>
-</ul>
++ **À l'extérieur** de l'élément `article`, ajoute une ou plusieurs paires de balises `<aside> </aside>` contenant tes trucs supplémentaires.
 
-<pre><code class="html">  <aside class="sideNoteStyle">
+```html
+  <aside class="sideNoteStyle">
       <h2>Se déplacer</h2>
       <h3>Train et bus</h3>
       <p>Tu peux accéder à la plupart des villes importantes en train à partir de Dublin. Il y a beaucoup de bus qui font des excursions aux endroits populaires et aux attractions touristiques. </p>
@@ -72,7 +72,7 @@ La page Attractions de mon site Web contient une liste de lieux à visiter. Je v
       <h2>Météo</h2>
       <p>La météo en Irlande est <span class="specialText">très imprévisible!</span> Il vaut mieux <span class="specialText">être préparé</span> quelle que soit la météo, même si la journée est belle!</p>
   </aside>
-`</pre> 
+```
     
 --- collapse ---
 ---
