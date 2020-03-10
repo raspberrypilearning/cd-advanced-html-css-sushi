@@ -1,10 +1,10 @@
-## Photo collage
+## Collage di foto
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+Con questa scheda imparerai a usare il CSS per posizionare in modo preciso elementi HTML e creare un collage fotografico.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ Aggiungi un `div` alla tua pagina e inserisci tutte le immagini che desideri. Assegna agli elementi `div` e `img` dei valori `id`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+Le foto verranno visualizzate una dopo l'altra nella pagina web, nell'ordine in cui appaiono nel codice.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ Nel tuo file CSS, aggiungi la seguente classe CSS per gli elementi all'interno di `div`: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ Successivamente, è necessario aggiungere la proprietà `position: relative;` al contenitore stesso e definirne una dimensione. Questo fa sì che le posizioni degli altri elementi siano definite **rispetto a** (cioè, all'interno) del contenitore.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ Quindi, crea una serie di regole di stile per ciascuno degli elementi usando **selettori id** per impostare le loro dimensioni (proprietà `width` e/o `height`) e le loro posizioni esatte.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+Per definire la posizione di un elemento, sono disponibili quattro proprietà: `left`, `right`, `top`, e `bottom`. Rappresentano quanto devono essere lontani i bordi dal margine dell'elemento genitore. Utilizza `top` o `bottom` per la posizione verticale e `left` o `right` per la posizione orizzontale.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![Diagramma che mostra come le proprietà top, left, bottom e right si riferiscono al contenitore genitore](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ Scegli le posizioni precise per ciascuna delle tue immagini e usa una delle proprietà `left`, `right`, `top` e `bottom` per definire quelle posizioni nelle tue regole CSS. Ad esempio, questo codice posiziona l'immagine del gatto a 100 pixel dall'alto e a 60 pixel da sinistra:
 
 ```css
     #imgTeaCat {
@@ -52,47 +52,47 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+Nota: i valori della posizione possono anche essere negativi! Se si utilizza un valore negativo, si spinge l'elemento fuori dal contenitore, oltre qualsiasi bordo specificato.
 
-### Making things overlap
+### Far sovrapporre gli elementi
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+Potresti voler sovrapporre alcune delle immagini. Ma come si sceglie quale va in primo piano?
 
-+ Choose two images and give them positions that cause them to overlap.
++ Scegli due immagini e dai loro posizioni che le facciano sovrapporre.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ Aggiungi una proprietà extra, `z-index: 10;`, a uno di essi, quindi aggiungi `z-index: 7;` all'altra.
 
-+ Take a look at the result on your webpage.
++ Dai un'occhiata al risultato sulla tua pagina web.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ Ora scambia i valori di `z-index`, in modo che il `7` e il `10` siano al contrario. Vedi qualche differenza sulla tua pagina web?
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: Come funziona z-index?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+La proprietà `z-index` ti consente di decidere come sovrapporre due o più elementi. Il valore può essere qualsiasi numero intero.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+L'elemento con il valore **più alto** finisce in **primo piano** sulla pila, o in altre parole decisamente **avanti**. L'elemento con il successivo numero più alto va dietro, e davanti agli altri, e così via, finché non si arriva all'elemento con il numero più basso, che appare dietro a tutti gli altri elementi.
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+Puoi posizionare qualsiasi elemento HTML in questo modo, non solo le immagini. Ad esempio, puoi usare un elemento `p` per aggiungere del testo sopra una foto.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Sfida: crea un collage fotografico
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ Prova a creare il tuo collage di foto come quello mostrato di seguito! Usa il posizionamento esatto insieme a diversi valori di `z-index` per ottenere l'effetto di sovrapposizione nel modo desiderato.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+Di seguito è riportato il codice HTML per il collage di foto sul mio sito web sull'Irlanda. Ci sono sei foto e una parte di testo all'interno di un `div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -102,7 +102,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
         <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
         <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
         <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <p id="photoText" class="absPos">Irlanda</p>
     </div>
 ```
 
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+Ecco le regole CSS che definiscono le posizioni per ciascuna delle mie immagini nel collage:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+Ecco le classi CSS che ho usato:
 
 ```css
     .collagePhoto {
@@ -181,6 +181,6 @@ Here are the CSS classes I've used:
 
 \--- /hints \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![Collage di foto con del testo sopra](images/photoCollageExample.png)
 
 \--- /challenge \---
