@@ -27,7 +27,7 @@ Dans ces cartes Sushi, tu découvriras comment:
 
 ## \--- collapse \---
 
-## title: Ce que tu auras besoin
+## title: Ce dont tu auras besoin
 
 ### Matériel informatique
 
