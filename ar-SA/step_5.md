@@ -1,20 +1,20 @@
-## Make your menu responsive
+## اجعل قائمتك قابلة للاستجابة
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+موقع الويب ** القابل للاستجابة ** هو موقع يتكيف مع حجم الشاشة بحيث يبدو رائعًا دومًا ، سواء كنت تنظر إليه على جهاز كمبيوتر أو هاتف محمول أو جهاز لوحي. دعنا نجعل قائمتك قابلة للاستجابة!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+ستبدأ باستخدام الأنماط العادية: سيكون هذا هو سلوكك ** الافتراضي**.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: ماذا تعني كلمة "الافتراضي"؟
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+الأنماط الافتراضية هي مجموعة القواعد المعتادة الخاصة بك. يتم تطبيقها اولا ، قبل التحقق من أي شروط خاصة.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+يمكنك إضافة كود برمجي يتحقق بعد ذلك من حجم الشاشة وإجراء بعض التعديلات إذا لزم الأمر.
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ أضف قواعد CSS التالية إلى قائمتك. ربما لديك ألوان وحدود محددة كذلك ؛ لقد تركتهم لتوفير المساحة هنا! إذا كان لديك بالفعل قواعد CSS محددة لقائمتك ، فما عليك سوى إضافة أو تغيير الخصائص والقيم أدناه.
 
 ```css
     nav ul {
@@ -30,23 +30,23 @@ You can add code that then checks the size of the screen and makes some adjustme
     }
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+مع تعليمات CSS أعلاه ، ستكون قائمتك أكثر ملاءمة للشاشات الصغيرة. وهذا ما يسمى بطريقة ** المحمول أولاً ** في البرمجة.
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![عناصر القائمة مكدسة عموديا على شاشة صغيرة](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## title: ماذا تعني كلمة "الافتراضي"؟
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+في كثير من الأحيان عند برمجة موقع ويب ، سوف تستخدم شاشة كمبيوتر ، وربما ستحدد أنماطك استنادًا إلى كيفية ظهورها على تلك الشاشة.
 
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+عندما البرمجة للجوال أولاً ، فإنك تختار بدلاً من ذلك الأنماط الافتراضية المناسبة للشاشات الصغيرة مثل الهواتف الذكية. ثم تضيف اكواد برمجية إضافية لإجراء تعديلات للشاشات الأكبر حجمًا.
 
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
+نظرًا لأن المزيد والمزيد من الناس يتصفحون الإنترنت على هواتفهم الذكية أو أجهزة الكمبيوتر اللوحية بدلاً من استخدامها على جهاز كمبيوتر ، فمن الممارسات الجيدة تطوير موقع الويب الخاص بك مع وضع ذلك في الاعتبار.
 
 \--- /collapse \---
 
-+ Now add the following code to your style sheet:
++ أضف الكود التالي الى ملف الأنماط الخاص بك:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -57,37 +57,37 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+يتحقق السطر الأول من الشفرة أعلاه من حجم نافذة المتصفح. إذا كانت النافذة بعرض ** 1000 بكسل ** أو أكثر ، سيتم تطبيق جميع قواعد النمط داخل الكتلة.
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![عناصر القائمة متباعدة بالتساوي عبر سطر واحد على شاشة أوسع](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
-## title: How does it work?
+## title: كيف يعمل؟
 
-The block contains new values for only some properties of the `nav ul` menu.
+تحتوي الكتلة على قيم جديدة لبعض خصائص ` nav ul ` قائمة الطعام.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+كلما كانت النافذة أكبر من 1000 بكسل ، سيتم تطبيق هذه القيم الجديدة بدلاً من تلك التي حددتها بالفعل لـ ` nav ul `.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+باقي الخصائص التي حددتها مسبقًا لـ ` nav ul ` سوف تبقى على حالها.
 
 \--- /collapse \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ إذا كنت تستخدم Trinket لكتابة التعليمات البرمجية ، فقد يكون من المفيد تنزيل المشروع حتى تتمكن من اختباره على شاشة كبيرة الحجم.
 
 \--- challenge \---
 
-## Challenge: make your menu adjust itself for big screens
+## Challenge: اجعل قائمتك تضبط نفسها للشاشات الكبيرة
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ يمكنك إضافة كتلة أخرى للشاشات أكبر من ** 1600 بكسل ** ، مع ` flex-end ` بدلا من ` space-around ` ؟
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![عناصر القائمة إلى اليمين على شاشة عريضة](images/responsiveMenuWide.png)
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+تحدد التعليمة البرمجية التالية flex properties لعناصر القائمة عندما تكون الشاشة أكبر من 1600 بكسل:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -100,8 +100,8 @@ The following code defines flex properties for menu items when the screen is big
 
 \--- /hint \---
 
-\--- /hints \---
+\--- hints/ \---
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+يمكنك وضع أي قواعد CSS تريدها في كتل مثل هذه لتعريف أنماط مختلفة للأحجام المختلفة للشاشات. سيكون مفيدًا بشكل خاص عند القيام بتخطيطات شبكة CSS لاحقًا!
