@@ -1,10 +1,10 @@
-## Captions and side notes
+## कैप्शन और साइड नोट्स
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+इस कार्ड पर आप **container** element के दो और प्रकारों के बारे में जानेंगे : एक जिसे आप किसी तस्वीर में कैप्शन (कुछ पाठ या शीर्षक या संक्षिप्त विवरण जैसे कुछ पाठ) जोड़ने के लिए उपयोग कर सकते हैं, और जब आपके पास कोई अतिरिक्त सामान होता है जो वास्तव में एक page पर मुख्य जानकारी के साथ नहीं होता है।
 
-### Pictures with captions
+### कैप्शन के साथ चित्र
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ एक `img` element ढूंढें </0> जहां आपके पास ऊपर या नीचे text है जो picture के साथ जाता है। मैं ` index.html ` में Tito picture पर काम कर रहा हूँ , लेकिन आप अपनी वेबसाइट पर जो कुछ भी है उसके साथ जा सकते हैं। 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ कोड के ऊपर की रेखा पर, opening टैग `<figure>` जोड़ें। कोड के नीचे एक नई लाइन पर, closing टैग ` </figure>` रखें ।
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ अगला, `p` टैग, या आपके पास text के आसपास जो भी टैग हैं (शायद यह एक शीर्षक है, जैसे ` h2 `?), और text को `<figcaption></figcaption>` के बीच में रखें । पूरी बात कुछ इस तरह दिखनी चाहिए:
 
 ```html
   <figure>
@@ -26,82 +26,82 @@ On this card you'll learn about two more types of **container** element: one tha
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+`figcaption` element आपका **caption** है । यह `img` <0> element के ऊपर भी जा सकता है या उससे नीचे।
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![कैप्शन के साथ टीटो की तस्वीर](छवियों / figureAndCaption.png)
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## शीर्षक: यह क्यों उपयोगी है?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+`figure` element आपकी तस्वीर और उसके कैप्शन के लिए एक प्रकार के **container** के रूप में कार्य करता है। यह आपको शैलियों को परिभाषित करते समय उन्हें एक इकाई के रूप में मानने की अनुमति देता है।
 
-Grouping them together logically also helps to maintain good structure in your website code.
+उन्हें तार्किक रूप से एक साथ समूहित करने से आपके वेबसाइट कोड में अच्छी संरचना को बनाए रखने में मदद मिलती है।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+आप CSS कोड का उपयोग शैली `figure` और `figcaption`<0> के लिए कर सकते हैं जैसा कि आप classes,IDs, या element selectors का उपयोग करके कोई अन्य के लिए तत्व करेंगे। नए कंटेनर द्वारा जोड़े गए अतिरिक्त रिक्ति को हटाने के लिए मैं निम्नलिखित नियम जोड़ रहा हूं:
 
 ```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
+  फिगर { 
+      मार्जिन-टॉप: 0px;
+      मार्जिन-नीचे: 0px;
+      मार्जिन-वाम: 0px;
+      मार्जिन-सही: 0px;
+}
 ```
 
-### Side notes
+### साइड नोट्स
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+मेरी वेबसाइट पर आकर्षण पृष्ठ पर जाने के लिए स्थानों की एक सूची है। मैं मौसम के बारे में कुछ नोट्स जोड़ना चाहता हूं और आसपास कैसे पहुंचूं। वह जानकारी वास्तव में सभी आकर्षण के साथ `article` element में नहीं है। यह एक उदाहरण है जब आप एक तरफ `aside` element का उपयोग कर सकते है |
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ अपनी वेबसाइट के उस पृष्ठ पर जाएं, जिसमें `article` element है | मैं `attractions.html` का उपयोग कर रहा हूं।
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
++ एक या अधिक जोड़े `<aside> </aside>` आपके अतिरिक्त सामान वाले टैग `article` element में **Outside** जोड़ें ।
 
 ```html
   <aside class="sideNoteStyle">
       <h2>Getting around</h2>
       <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
+      <p>You can get to most of the major towns by train from Dublin. कई बसें हैं जो लोकप्रिय स्थानों और पर्यटकों के आकर्षण के लिए पर्यटन करती हैं। </p>
+      <h3> कार </h3>
+      <p> शहरों के बाहर घूमने का सबसे आसान तरीका कार से है। </p>
     </aside>
     <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
+      <h2> मौसम </h2>
+      <p> आयरलैंड में मौसम <span class="specialText"> बहुत अप्रत्याशित है! </span> यह सबसे अच्छा है <span class="specialText"> तैयार रहें </span> किसी भी तरह के मौसम के लिए, भले ही यह एक अच्छा दिन हो! </p>
   </aside>
 ```
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## शीर्षक: यह क्यों उपयोगी है?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+`aside`, `article`, और अन्य कंटेनर सभी समान हैं। केवल वास्तविक अंतर **meaning**, वह यह है कि आप उनके लिए क्या उपयोग करते हैं।
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+जब भी आप कर सकते हैं सार्थक HTML तत्वों का उपयोग करना महत्वपूर्ण है। यह आपकी वेबसाइट को बेहतर संरचना देता है और विशेष रूप से **screen readers** का उपयोग करने वाले लोगों के लिए उपयोगी है |
 
 \--- /collapse \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+क्या आपने अन्य तत्व को वहां रखा था, `span`? यह एक विशेष टैग है जिसे आप अतिरिक्त CSS कोड जोड़ने के लिए उपयोग कर सकते हैं! आप `span` टैग की एक जोड़ी के बीच में कुछ भी रख सकते हैं । यह एक **part** स्टाइल जैसी चीजों के लिए उपयोगी है , एक पैराग्राफ में text का।
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ ऊपर दिए गए HTML कोड की स्टाइल को पूरा करने के लिए अपनी स्टाइल शीट में निम्नलिखित CSS कोड जोड़ें।
 
 ```css
   .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
+    बॉर्डर: बिंदीदार 1px बैंगनी;
+    पृष्ठभूमि-रंग: # c1ebec;
+    गद्दी: 0.5em;
+    मार्जिन: 0.5em;
   }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
+  स्पेशल स्पेशल {
+      रंग: # एफएफ 4500;
+      फ़ॉन्ट-आकार: बड़ा;
+}
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![अपने स्टाइल के साथ अतिरिक्त नोट्स](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+अगले कार्ड पर, आप अपनी वेबसाइट के लेआउट को और अधिक रोचक बनाने का तरीका जानने जा रहे हैं!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ तैयार होने के लिए, एक पृष्ठ बनाएं जिसमें एक`article` और दो `aside` elements एक तरफ हों `<main> </main>` tags के अंदर। या यदि आप चाहें, तो आप मेरी वेबसाइट पर आकर्षण पृष्ठ के साथ काम कर सकते हैं।
