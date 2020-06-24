@@ -1,12 +1,12 @@
-## Special effects
+## विशेष प्रभाव
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+इस कार्ड पर आप सीएसएस के साथ कुछ और अच्छे प्रभाव सीखेंगे।
 
-### Shadows and movement
+### छाया और हिलना 
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+जब आप पहले किए गए कार्डों पर अपने कर्सर को घुमाते हैं तो थोड़ा हिलना डाले।
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ ` .कार्ड: होवर ढूंढें ` सीएसएस वर्ग पहले से और निम्न में परिवर्तित करें:
 
 ```css
     .card:hover {
@@ -15,49 +15,49 @@ Let's add a little movement when you hover your cursor over the cards you made e
     }
 ```
 
-+ Try out different values in the `translate` function!
++ ` अनुवाद में विभिन्न मान आज़माएँ ` समारोह!
 
-## \--- collapse \---
+## \--- ढहने \---
 
-## title: The `transform` property
+## शीर्षक: ` रूपांतर ` संपत्ति
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+यदि आपने इंटरमीडिएट HTML / CSS सुशी कार्ड पूरा कर लिया है, तो आप ` रूपांतरण का उपयोग करना याद रख सकते हैं ` कुछ में संपत्ति ` @keyframes ` एनिमेशन। यहां आप देखते हैं कि आप नियमित सीएसएस ब्लॉक के भीतर भी संपत्ति का उपयोग कर सकते हैं।
 
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+एक प्रकार का मान आप इसे सेट कर सकते हैं ` घुमाएँ ` , एक तत्व को मोड़ने के लिए। अन्य हैं ` अनुवाद ` , जो कुछ ऊपर या नीचे जाता है, और ` अनुवाद ` , ओर से आंदोलन के लिए।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
++ ` बॉक्स-छाया में विभिन्न पिक्सेल मानों के बारे में चलाएं ` वे क्या करते हैं देखने के लिए संपत्ति। 
 
-## \--- collapse \---
+## \--- ढहने \---
 
-## title: What's `rgba`?
+## शीर्षक: क्या है ` rgba ` ?
 
-`rgba(0,0,0,0.2)` is another way of defining a colour.
+` RGBA (0,0,0,0.2) ` एक रंग को परिभाषित करने का एक और तरीका है।
 
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+इसे सामान्य तीन नंबर मिले (` 0 से ` ` 255 तक ` ) लाल, हरे और नीले रंग के लिए।
 
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+चौथा नंबर, जिसे ** अल्फा कहा जाता है ** मूल्य, परिभाषित करता है कि कैसे ** पारदर्शी ** (या देखें-के माध्यम से) कुछ है। यह ` 0 के बीच एक दशमलव संख्या है ` और ` 1 ` , ` 1 के साथ ` बिल्कुल नहीं देखा जा रहा है, और ` 0 ` पूरी तरह से अदृश्य। इसका अर्थ है किसी तत्व का अल्फा मूल्य जितना कम होगा, वह उतना ही अधिक देखने वाला होगा।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ अंत में, ` .card में निम्नलिखित संपत्ति जोड़कर  हिलना  को सुचारू बनाएं ` पहले से कक्षा: 
 
 ```css
-    transition: all 0.2s ease-out;
+    संक्रमण: सभी 0.2s आसानी से बाहर;
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+` 0.2s की अवधि ` का अर्थ है ` संक्रमण ` 0.2 सेकंड तक रहता है।
 
-### Lightbox
+### प्रकाश बॉक्स
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+एक और प्रभाव जो आपने शायद वेबसाइटों के भार पर देखा है, वह है ** लाइटबॉक्स ** : आप किसी चीज़ पर क्लिक करते हैं और वेबसाइट कुछ और करते हैं, जबकि बड़ी तस्वीर या पॉपअप बॉक्स की तरह कुछ और सामने आता है।
 
-![Lightbox effect in action](images/lightboxLemur.png)
+![कार्रवाई में लाइटबॉक्स प्रभाव](छवियों / lightboxLemur.png)
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+इस आशय को प्राप्त करने के लिए आप दो लिंक बनाएंगे: एक वास्तविक लाइटबॉक्स के लिए (थोड़ा जो पॉप अप होता है), और एक उस चीज के लिए जिसे आप लाइटबॉक्स बनाने के लिए क्लिक करते हैं। मैं अपनी वेबसाइट के आकर्षण पृष्ठ पर मेरा काम करने जा रहा हूँ। आप जिस भी पेज पर चित्र हैं, उसके साथ जाओ!
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ यह तय करें कि आप क्लिक करते समय किन चीजों को दिखाना चाहते हैं, और ` a के सेट के बीच अपने पेज पर उन सभी को जोड़ें ` एक लिंक बनाने के लिए टैग। सुनिश्चित करें कि आपने फ़ाइल को `` के नाम से सेव किया है। कोड पृष्ठ पर कहीं भी जा सकता है: आप तत्वों को अगले चरण में अदृश्य कर देंगे!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -67,29 +67,29 @@ To get this effect you will make two links: one for the actual lightbox (the bit
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+आप लिंक टैग के बीच में अपनी पसंद का कुछ भी डाल सकते हैं। मुझे एक बड़ी तस्वीर, एक शीर्षक और कुछ पाठ मिला है। शायद तुम सिर्फ एक तस्वीर चाहते हैं और कोई पाठ नहीं!
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ लाइटबॉक्स के लिए निम्न सीएसएस कोड जोड़ें। क्या आप इसमें से कुछ काम कर सकते हैं?
 
 ```css
-    .lightbox{
-        background: rgba(0,0,0,0.8);
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        visibility: hidden;
-        z-index: 999;
-    }
+    .lightbox {
+        पृष्ठभूमि: rgba (0,0,0,0.8);
+        रंग: #ffffff;
+        पाठ-संरेखित करें: केंद्र;
+        पाठ-सजावट: कोई नहीं;
+        चौड़ाई: 100%;
+        ऊंचाई: 100%;
+        शीर्ष: 0;
+        बायां: 0;
+        स्थिति: निश्चित;
+        दृश्यता: छिपी;
+        जेड-इंडेक्स: 999;
+}
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+नोट: ` स्थिति सेट करना ` संपत्ति ` तय की ` इसका मतलब है कि आपके द्वारा सेट की गई स्थिति ब्राउज़र विंडो के सापेक्ष होगी, इसलिए जब आप स्क्रॉल करेंगे तो यह रखा जाएगा।
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ इसके बाद, तय करें कि आप लाइटबॉक्स को प्रदर्शित करने के लिए किस चीज़ पर क्लिक करना चाहते हैं और ` a की जोड़ी जोड़ें ` उस तत्व के आसपास टैग (मेरे मामले में यह एक लेमूर की एक छोटी तस्वीर है)। ** लक्ष्य ** लिंक लाइटबॉक्स होगा, जिसे आपने ` आईडी का उपयोग करके सेट किया है ` । आप इस तकनीक को पहले से पहचान सकते हैं!
 
 ```html
     <a href="#boxLemur">
@@ -97,16 +97,16 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ अंत में निम्नलिखित सीएसएस कोड जोड़ें। ध्यान दें कि यह एक ** छद्म वर्ग है ** ; इसे ` .lightbox के कोड के बाद जाना चाहिए ` वर्ग और इसके अंदर नहीं!
 
 ```css
-    .lightbox:target {
-        visibility: visible;
-    }
+    .lightbox: लक्ष्य {
+        दृश्यता: दृश्यमान;
+}
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+`: लक्ष्य ` जब भी लाइटबॉक्स अंतिम लिंक के लक्ष्य पर क्लिक किया गया था तब छद्म वर्ग लागू हो जाता है। इसलिए जब आप कहीं भी क्लिक करते हैं, तो ` दृश्यता ` छिपा हुआ ` पर वापस सेट किया जाएगा ` ।
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ लाइटबॉक्स को देखने के लिए अपने नए लिंक पर क्लिक करके देखें! इसे दूर करने के लिए, पृष्ठ पर कहीं भी क्लिक करें।
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+आप जितने चाहें उतने लाइटबॉक्स जोड़ सकते हैं। वे सभी एक ही सीएसएस वर्ग का उपयोग कर सकते हैं - बस सुनिश्चित करें कि प्रत्येक के पास एक अलग ` आईडी है ` ! हर एक के लिए, आपको अपने वेबपेज पर एक लिंक बनाने के लिए कुछ करना होगा जिसे आप लाइटबॉक्स दिखने के लिए क्लिक कर सकते हैं और फिर ` आईडी का उपयोग कर सकते हैं। ` ` href के रूप में ` उस लिंक में मूल्य, जैसा आपने ऊपर किया है!
