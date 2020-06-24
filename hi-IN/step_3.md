@@ -1,10 +1,10 @@
-## Clickable cards
+## क्लिक करने योग्य कार्ड
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+यहां एक तकनीक है जिसका उपयोग आप फोटो गैलरी या अपनी projects को दिखाने वाला एक portfolio page बनाने के लिए कर सकते हैं: little **preview cards**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Image thumbnail और कुछ text दिखाते हुए Preview card](छवियों / cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ अपनी पसंद के अनुसार, अपनी वेबसाइट में निम्न HTML कोड जोड़ें। मैं ` index.html ` पर अपना काम कर रहा हूँ | आप अपने preview card के अनुरूप picture & text को बदल सकते हैं। मैं आयरलैंड में पर्यटकों के आकर्षण का एक समूह बनाने जा रहा हूँ।
 
 ```html
     <article class="card">
@@ -14,35 +14,36 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![शैलियों को लागू करने से पहले Image और text](छवियों / cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Classes बनाने के लिए निम्न CSS code जोड़ें : `card` and `tinyPicture`
 
 ```css
     .tinyPicture {
-        height: 60px;
-        border-radius: 10px;
+        ऊंचाई: 60px;
+        सीमा-त्रिज्या: 10 पीएक्स;
     }
-    .card {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #F0FFFF;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        margin-top: 10px;
-        font-family: "Trebuchet MS", sans-serif;
+    .कार्ड {
+        चौड़ाई: 200 पीएक्स;
+        ऊंचाई: 200 पीएक्स;
+        सीमा: 2px ठोस # F0FFFF;
+        सीमा-त्रिज्या: 10 पीएक्स;
+        बॉक्स-आकार: सीमा-बॉक्स;
+        पैडिंग: 10 पीएक्स;
+        मार्जिन-टॉप: 
+ पीएक्स;
+        फ़ॉन्ट-परिवार: "ट्रेबुचेट एमएस", सेन्स-सेरिफ़;
     }
-    .card:hover {
-        border-color: #1E90FF;
-    }
+    .कार्ड: होवर {
+        सीमा-रंग: # 1E90FF;
+}
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![एक छोटे कार्ड प्रभाव बनाने के लिए स्टाइल के साथ Image और text.](छवियों / cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+चलिए पूरे preview card को लिंक में बदलते हैं ताकि लोग अधिक जानकारी देखने के लिए क्लिक कर सकें।
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ पूरे `article` element को एक link element के अंदर रखें। बंद करना सुनिश्चित करें ` </a>` टैग बंद होने के बाद ` है </article>` टैग! लिंक ** URL** बदलने के लिए स्वतंत्र महसूस करें , जो भी आप करना चाहते हैं। यह आपकी वेबसाइट पर एक और पेज हो सकता है, या यह पूरी तरह से एक और वेबसाइट हो सकता है।
 
 ```html
     <a href="attractions.html#scFota">  
@@ -54,37 +55,37 @@ Let's turn the whole preview card into a link so people can click to see more in
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Text और picture जिसे लिंक में बदल दिया गया है](छवियों / cardLink.png)
 
-## \--- collapse \---
+## \--- ढहने \---
 
-## title: Linking to a specific part of a page
+## शीर्षक: किसी page के विशिष्ट भाग से जोड़ना
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+ध्यान दें कि `href` का मान मेरे लिंक `#scFota` में कैसे समाप्त होता है ? यह एक साफ सुथरी trick है जिसका उपयोग करके आप किसी page के किसी विशेष भाग में जा सकते हैं।
 
-+ First, type the URL of the page to link to, followed by `#`.
++ सबसे पहले, लिंक करने के लिए पेज का URL टाइप करें, उसके बाद `#` ।
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ जिस पेज को आप लिंक कर रहे हैं, उसके लिए कोड फ़ाइल में, उस भाग को ढूंढें जिसे आप कूदना चाहते हैं और उस element को आईडी दें `id` , उदाहरण के लिए, `<section id="scFota"`. `id` आईडी का मान = आपके लिंक में `#` के बाद आप क्या लिखते हैं |
 
-\--- /collapse \---
+\--- /ढहने \---
 
-## \--- collapse \---
+## \--- ढहने \---
 
-## title: Resetting styles
+## शीर्षक: शैलियों को रीसेट करना
 
-Now that the whole preview card is a link, the text font may have changed.
+अब जबकि पूरा preview card कड़ी है, text font बदल गया हो सकता है।
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ यदि हां, तो आप इसे **CSS class** क्लास जोड़कर ठीक कर सकते हैं लिंक के लिए: `class="cardLink"`| अपनी स्टाइल शीट में डालने के लिए यहां CSS कोड दिया गया है:
 
 ```css
-    .cardLink {
-        color: inherit;
-        text-decoration: none;
-    }
+    .कार्डलिंक {
+        रंग: विरासत;
+        पाठ-सजावट: कोई नहीं;
+}
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+किसी भी property का value `inherit` निर्धारित करना यह मान का उपयोग करता है कि **parent** element का value क्या है। तो इस मामले में, पाठ का रंग मुखपृष्ठ के बाकी पाठ से मेल खाएगा।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ इनमें से कम से कम चार या पांच कार्ड बनाएं। यदि आप मेरी उदाहरण वेबसाइट से काम कर रहे हैं, तो आप आकर्षण पृष्ठ पर प्रत्येक अनुभाग के लिए एक कर सकते हैं। अगले सुशी कार्ड पर, आप सीखेंगे कि कार्ड को शांत चाल से कैसे व्यवस्थित किया जाए!
