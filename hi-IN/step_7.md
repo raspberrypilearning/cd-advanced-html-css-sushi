@@ -1,135 +1,139 @@
-## Design cool page layouts
+## डिजाइन शांत पृष्ठ लेआउट
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ इस कार्ड के लिए आपको एक ऐसे page के साथ काम करना चाहिए जिसमें `main` element हो तीन तत्वों के साथ : एक `article`और दो `aside`। आगे बढ़ो और अगर आप की जरूरत है तो ये पहले बनाएं। यदि आप मेरी वेबसाइट के साथ काम करना चाहते हैं, तो ` को एक तरफ जोड़ दें ` पिछले सुशी कार्ड से आकर्षण पृष्ठ पर कोड। 
 
-Here are three different page layouts you'll be applying:
+यहां तीन अलग-अलग पृष्ठ लेआउट हैं जिन्हें आप लागू कर रहे हैं:
 
-![](images/cssGridLayouts.png)
+![](छवियों / cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ ` मुख्य में नई सीएसएस कक्षाएं जोड़ें ` और उसके अंदर तीन तत्वों में से प्रत्येक।
 
 ```html
     <main class="attPageLayoutGrid">
         <article class="attGridArticle">
-            <!--other stuff here-->
+            <! - अन्य सामान यहाँ-->
         </article>
         <aside class="attGridAside1">
-            <!--other stuff here-->
+            <- अन्य here-- सामान>
         </aside>
         <aside class="attGridAside2">
-            <!--other stuff here-->
+            <! - अन्य सामान यहाँ ->
         </aside>
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+आप जिस कंटेनर को बदलेंगे उसका लेआउट `main` है , लेकिन आप इसे किसी भी प्रकार के कंटेनर के साथ कर सकते हैं, जैसे ` div ` या ` article ` , या यहां तक कि पूरे page ` body `। जिस तकनीक का आप उपयोग करने जा रहे हैं उसे **CSS grid** कहा जाता है ।
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+इस उदाहरण में, `header` और `footer` डिजाइन से बाहर छोड़ दिया जाएगा, लेकिन उन्हें ग्रिड में भी शामिल करना काफी आम है।
 
-+ Set the `display` property to `grid` on the overall container:
++ `display` property सेट करें `grid` समग्र कंटेनर पर:
 
 ```css
     .attPageLayoutGrid {
-        display: grid;
-        grid-column-gap: 0.5em;
-        grid-row-gap: 1em;
-    }
+        प्रदर्शन: ग्रिड;
+        ग्रिड-स्तंभ-अंतराल: 0.5em;
+        ग्रिड-पंक्ति-अंतराल: 1em;
+}
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+आपको क्या लगता है `grid-column-gap` और `grid-row-gap` properties क्या करते हैं?
 
-+ Next, you name a `grid-area` for each element: 
++ अगला, आप एक `grid-area` का नाम देते हैं प्रत्येक element के लिए: 
 
 ```css
     .attGridArticle {
-        grid-area: agArticle;
+        ग्रिड-क्षेत्र: agArticle;
     }
     .attGridAside1 {
-        grid-area: agAside1;
+        ग्रिड-क्षेत्र: agAside1;
     }
     .attGridAside2 {
-        grid-area: agAside2;
-    }
+        ग्रिड-क्षेत्र: agAside2;
+}
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+फिर आप अपना लेआउट डिजाइन करते हैं! चलो दोनों `aside` elements को एक तरफ रख दें page के निचले भाग में। इसके लिए आपको दो ** कॉलम की आवश्यकता है ** समान चौड़ाई का। आप ** पंक्ति रख सकते हैं ** ऊंचाई स्वचालित।
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ ` .attPageLayoutGrid के अंदर निम्न कोड डालें ` सीएसएस नियम:
 
 ```css
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "agArticle agArticle"
-        "agAside1 agAside2";
+    ग्रिड-टेम्प्लेट-पंक्तियाँ: ऑटो;
+    ग्रिड-टेम्प्लेट-कॉलम: 1 आर 1 एफआर;
+    ग्रिड-टेम्प्लेट-क्षेत्र: 
+        "एग्रीआर्टिकल एग्रीआर्टिकल"
+        "एगसाइड 
+ एगसाइड 2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` stands for **fraction**. ध्यान दें कि आप `article` कैसे बनाते हैं ,दो स्तंभों के ऊपर सभी स्थान लें।
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## शीर्षक: मदद! मुझे त्रुटियाँ और चेतावनी मिली!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+यदि आप ट्रिंकेट का उपयोग कर रहे हैं, तो आप कुछ त्रुटियों और चेतावनियों को देख सकते हैं, भले ही आपने कोड ऊपर जैसा लिखा हो। ऐसा इसलिए है क्योंकि ट्रिंकेट अभी तक सीएसएस ग्रिड गुणों को नहीं पहचानता है। हालांकि, कोड अभी भी काम करेगा।
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+यदि सीएसएस ग्रिड कोड आपको 'अज्ञात संपत्ति' चेतावनी देता है या 'अप्रत्याशित टोकन 1fr' जैसी कोई त्रुटि देता है, तो आप बस इन पर ध्यान नहीं दे सकते।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![नीचे की तरफ असाइड्स साइड हैं](छवियों / cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+आइए डालते हैं ` एक तरफ ` तत्व दाईं ओर और उन्हें ` लेख की आधी चौड़ाई बनाते हैं ` ।
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ ` ग्रिड-टेम्प्लेट-कॉलम के मान बदलें ` और ` ग्रिड-टेम्पलेट-क्षेत्र ` सेवा:
 
 ```css
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "agArticle agAside1"
-        "agArticle agAside2";
+    ग्रिड-टेम्प्लेट-कॉलम: 2 एफ 1 एफआर;
+    ग्रिड-टेम्प्लेट-क्षेत्र: 
+        "एग्रार्टिकल एज़साइड 
+ "
+        "एग्रार्टिकल एज़साइड 
+ ";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![नीचे दाहिने हाथ की ओर नीचे की ओर आसन हैं](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ यदि आप ` को एक तरफ नहीं चाहते हैं ` नीचे तक सभी तरह से फैलाने वाले तत्व, आप एक डॉट का उपयोग करके एक रिक्त स्थान जोड़ सकते हैं: 
 
 ```css
-    grid-template-areas: 
+    ग्रिड-टेम्पलेट-क्षेत्र: 
         "agArticle agAside1"
         "agArticle agAside2"
-        "agArticle . ";
+        "agArticle। ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![दाईं ओर ऐसिड और नीचे नहीं फैला है](छवियों / cssGridAsidesTopRight.png)
 
-\--- challenge \---
+\--- चुनौती \---
 
-## Challenge: make different layouts for different screen sizes
+## चुनौती: विभिन्न स्क्रीन आकार के लिए अलग-अलग लेआउट बनाएं
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ क्या आप स्क्रीन आकार जांच का उपयोग कर सकते हैं जो आपने पहले जोड़ा था कि स्क्रीन कितनी चौड़ी है, इसके आधार पर लेआउट में बदलाव करें? नोट: यदि आपने प्रत्येक स्क्रीन साइज के लिए पहले से ही CSS ब्लॉक बनाए हैं, तो आप नए ब्लॉक बनाने के बजाय उन ब्लॉकों में नया CSS कोड जोड़ सकते हैं।
 
-\--- hints \---
+\--- संकेत \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+निम्न कोड सीएसएस वर्ग के लिए एक लेआउट को परिभाषित करता है जब स्क्रीन 1000 पिक्सल से बड़ा होता है:
 
 ```css
-    @media all and (min-width: 1000px) {
+    @मीडिया सभी और (न्यूनतम-चौड़ाई: 1000px) {
         .attPageLayoutGrid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "agArticle agArticle"
-                "agAside1 agAside2";
+            ग्रिड-टेम्प्लेट-कॉलम: 1fr 1fr;
+            ग्रिड-टेम्प्लेट-क्षेत्र: 
+                "एग्रीआर्टिकल एग्रीआर्टिकल"
+                "एगसाइड 
+ एगसाइड 2";
         }
-    }  
+}  
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+निम्नलिखित कोड सीएसएस वर्ग के लिए एक लेआउट को परिभाषित करता है जब स्क्रीन 1600 पिक्सेल से बड़ा होता है:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +153,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+**CSS grid**,आप अपनी पसंद का लगभग कोई भी लेआउट बना सकते हैं। यदि आप और अधिक सीखना चाहते हैं, तो [ dojo.soy/html3-css-grid पर जाएं ](http://dojo.soy/html3-css-grid) {: लक्ष्य = "_ blank"}
