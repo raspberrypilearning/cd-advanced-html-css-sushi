@@ -1,12 +1,12 @@
-## Design cool page layouts
+## تصميم تخطيط صفحة رائع
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ بالنسبة لهذه البطاقة ، يجب عليك العمل مع صفحة تحتوي على عنصر ` main` مع ثلاثة عناصر في الداخل: واحد `article` واثنين `aside`. Go ahead and create these first if you need to. إذا كنت ترغب في العمل في موقع الويب الخاص بي ، فقم بإضافة كود ` aside ` من بطاقة سوشي السابقة إلى صفحة الجذب السياحي. 
 
-Here are three different page layouts you'll be applying:
+فيما يلي ثلاثة تخطيطات مختلفة للصفحة التي ستطبقها:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ إضف فئات CSS جديدة إلى ` main ` وكل من العناصر الثلاثة التي ذكرناها بداخله.
 
 ```html
     <main class="attPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+الحاوية التي ستقوم بتغيير تخطيطها هي ` main ` ، ولكن يمكنك القيام بذلك مع أي نوع من الحاويات ، مثل ` div ` أو ` article ` ، أو حتى الصفحة بأكملها ` body `. تسمى التقنية التي ستستخدمها ** CSS grid**.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+في هذا المثال ، العنوان ` header` وتذييل الصفحة ` footer` سيتم تركه خارج التصميم ، ولكن من الشائع جدًا تضمينه في الشبكة أيضًا.
 
-+ Set the `display` property to `grid` on the overall container:
++ اضبط خاصية الشاشة ` display` اضبطها الي ` grid ` على الحاوية الشاملة:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+ما الذي تعتقد أن الخصائص `grid-column-gap` و `grid-row-gap` تفعل؟
 
-+ Next, you name a `grid-area` for each element: 
++ بعد ذلك ، يمكنك تسمية ` grid-area` لكل عنصر: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+Then you design your layout! دعنا نضع العناصر الاثنين `aside` جنبًا إلى جنب في أسفل الصفحة. لهذا تحتاج إلى عمودين ** columns** متساويين في العرض. يمكنك الاحتفاظ بارتفاع الصف ** row** التلقائي.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ ضع التعليمات البرمجية التالية داخل قواعد CSS `.attPageLayoutGrid `:
 
 ```css
     grid-template-rows: auto;
@@ -64,23 +64,23 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` stands for **fraction**. لاحظ كيف جعلت المقال `article ` يشغل كل المساحة على العمودين.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: المساعدة! لقد حصلت على أخطاء وتحذيرات!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+إذا كنت تستخدم Trinket ، فقد تلاحظ ظهور بعض الأخطاء والتحذيرات ، حتى إذا قمت بكتابة الكود كما هو مذكور أعلاه. وذلك لأن Trinket لم يتعرف بعد على خصائص شبكة CSS. ومع ذلك ، فإن الكود لا يزال يعمل.
 
 If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![Asides جنبا إلى جنب في الأسفل](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+دعنا نضع عناصر ` aside ` على اليمين ونجعلها نصف عرض العنصر `article `.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ قم بتغيير قيم `grid-template-columns` و `grid-template-areas` إلى:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -89,7 +89,7 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![Asides أسفل الجانب الأيمن](images/cssGridAsidesOnRight.png)
 
 + If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
 
@@ -100,19 +100,19 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![Asides على اليمين ولا تتمدد للاسفل](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Challenge: قم بعمل تخطيطات مختلفة لأحجام مختلفة للشاشة
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ هل يمكنك استخدام اختبارات حجم الشاشة التي قمت بإضافتها سابقًا لإجراء تغيير في التخطيط حسب حجم الشاشة؟ ملاحظة: إذا قمت بالفعل بإنشاء كتل CSS لكل حجم شاشة ، فيمكنك إضافة كود CSS الجديد إلى تلك الكتل بدلاً من إنشاء كتل جديدة.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+يحدد الكود التالي تخطيطًا لفئة CSS أعلاه عندما تكون الشاشة أكبر من 1000 بكسل:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -125,11 +125,11 @@ The following code defines a layout for the CSS class above when the screen is b
     }  
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+يحدد الكود التالي تخطيطًا لفئة CSS أعلاه عندما تكون الشاشة أكبر من 1600 بكسل:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -143,10 +143,10 @@ The following code defines a layout for the CSS class above when the screen is b
     }  
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
-\--- /challenge \---
+\--- challenge/ \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+مع ** شبكة CSS ** ، يمكنك إجراء أي تخطيط تقريبًا. إذا كنت تريد معرفة المزيد، قم بالنقر[ dojo.soy/html3-css-grid ](http://dojo.soy/html3-css-grid) {:target="_blank"}
