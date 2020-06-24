@@ -1,33 +1,33 @@
 ---
-title: Guide to my country 3.0
+title: मेरे देश के लिए गाइड 3.0
 hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
+description: अपनी वेबसाइट पर अच्छा लेआउट और आकर्षित प्रभाव जोड़ें!
 theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
-technologies: html-css-javascript
-site_areas: coderdojo, projects
-software: html-css-javascript
+technologies: html/css
+site_areas: कोडरडोज़ो, प्रोजेक्ट्स
+software: htmp-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: परिचय
   - 
-    title: Getting setup
+    title: स्थापित हो रही है
   - 
-    title: Clickable cards
+    title: क्लिक करने योग्य कार्ड
   - 
-    title: All in a row
+    title: सभी एक पंक्ति में
   - 
-    title: Make your menu responsive
+    title: अपने मेनू को उत्तरदायी बनाएं
   - 
-    title: Captions and side notes
+    title: कैप्शन और साइड नोट्स
   - 
-    title: Design cool page layouts
+    title: डिजाइन आकर्षित पृष्ठ लेआउट
   - 
-    title: Photo collage
+    title: फोटो कोलाज़
   - 
-    title: Special effects
+    title: विशेष प्रभाव
