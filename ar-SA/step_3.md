@@ -1,20 +1,20 @@
-## Clickable cards
+## بطاقات قابلة للنقر
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+إليك طريقة يمكنك استخدامها لإنشاء معرض صور ، أو صفحة معرض تعرض مشاريعك: ** بطاقات المعاينة ** مختصرة.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![بطاقة معاينة تظهر صورة مصغرة وبعض النص](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ أضف كود HTML التالي إلى موقع الويب الخاص بك ، في أي مكان تريد. أنا أضفت ` index.html `. يمكنك تغيير الصورة والنص لتناسب بطاقات المعاينة الخاصة بك. سأقوم بابراز مجموعة من المعالم السياحية في أيرلندا.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <h3> الحياة البرية في فوتا </h3>
+        <p> جزيرة فوتا ، مقاطعة كورك </p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![الصورة والنص قبل تطبيق الأنماط](images/cardUnstyled.png)
 
 + Add the following CSS code to create the classes `card` and `tinyPicture`:
 
@@ -38,43 +38,43 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![صورة ونص مع التصميم لإنشاء تأثير بطاقة صغيرة](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+دعنا نحول بطاقة المعاينة بأكملها إلى رابط حتى يتمكن الناس من النقر لرؤية المزيد من المعلومات.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ ضع عنصر ` المقالة ` بأكمله داخل عنصر الرابط. تأكد من وضع وسم الإغلاق ` </a>` بعد وسم الإغلاق ` </article>`! لا تتردد في تغيير الرابط ** URL ** إلى كل ما تريد الارتباط به. قد تكون صفحة أخرى على موقع الويب الخاص بك ، أو قد تكون موقعًا آخر بالكامل.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>الحياة البرية في فوتا</h3>
+            <p> جزيرة فوتا، مقاطعة كورك</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![النص والصورة التي تحولت إلى رابط](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: الارتباط بجزء معين من الصفحة
 
 Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ أولاً ، اكتب عنوان URL للصفحة المراد الارتباط بها ، متبوعًا ` # `.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ في ملف التعليمات البرمجية للصفحة التي تتصل بها ، ابحث عن الجزء الذي تريد الانتقال إليه وإعطي هذا العنصر `معرف`, مثال, `<section id="scFota"`. قيمة ` المعرف ` هو ما تكتبه بعد ` # ` في الرابط الخاص بك.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: إعادة تعيين الأنماط
 
-Now that the whole preview card is a link, the text font may have changed.
+الآن بعد أن أصبحت بطاقة المعاينة بأكملها رابطًا ، فقد يكون خط النص قد تغير.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ إذا كان كذلك ، يمكنك إصلاحه عن طريق إضافة فئة ** CSS ** إلى الرابط: ` class = "cardLink" `. إليك رمز CSS الذي سيتم وضعه في ملف الأنماط الخاص بك:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+تعيين قيمة أي خاصية إلى ` inherit ` يجعلها تستخدم القيمة التي يستخدمها عنصر ** parent**. لذلك في هذه الحالة ، سوف يتطابق لون النص مع بقية النص على الصفحة الرئيسية.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ اصنع على الأقل أربع أو خمس من هذه البطاقات. If you are working from my example website, you could do one for each of the sections on the Attractions page. في بطاقة سوشي التالية ، ستتعرف على كيفية ترتيب البطاقات بخدعة رائعة!
