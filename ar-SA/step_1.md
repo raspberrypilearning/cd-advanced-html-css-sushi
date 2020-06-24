@@ -1,10 +1,10 @@
-## Introduction
+## المقدمة
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+سوف توضح لك بطاقات سوشي هذه كيفية جعل موقع الويب يبدو مصقولًا واحترافياً باستخدام تأثيرات وتخطيطات رائعة.
 
-### What you will make
+### ما سوف تصنعه
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+حرك مؤشر الماوس في النافذة أدناه لتجربة بعض التأثيرات التي ستتعلمها على موقع الويب الخاص بك:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,27 +14,27 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: ما الذي ستتعلمه
 
-In these Sushi Cards, you will find out how to:
+في هذه البطاقات ، سوف تتعرف على كيفية:
 
-+ Create any website layout you want
-+ Make your layout adjust itself automatically to different screen sizes
-+ Make a collage of overlapping pictures and text
-+ Apply some neat hover and click effects that you might have seen on other websites
++ إنشاء أي تخطيط موقع تريد
++ جعل تخطيطك يضبط نفسه تلقائيًا حسب أحجام الشاشات المختلفة
++ عمل ملصقات من الصور المتداخلة والنصوص
++ قم بتطبيق بعض تأثيرات تمرير الفارة الانيقة والنقر التي قد تراها على مواقع الويب الأخرى
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: ماذا ستحتاج
 
-### Hardware
+### الأجهزة
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ حاسوب قادر على الوصول إلى [trinket.io](https://trinket.io){:target="_blank"}
 
-### Software
+### البرمجيات
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ يُمكن إكمال هذا المشروع من متصفح ويب باستخدام تطبيق [trinket.io](https://trinket.io){:target="_blank"} أو بدون انترنت باستخدام محرر نصي.
 
 \--- /collapse \---
