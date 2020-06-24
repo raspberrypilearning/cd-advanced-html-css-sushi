@@ -1,10 +1,10 @@
-## Captions and side notes
+## التسميات التوضيحية والملاحظات الجانبية
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+في هذه البطاقة ، ستتعرف على نوعين آخرين من عناصر الحاويات **container**: هو عنصر يمكنك استخدامه لإضافة تعليق (نص مثل العنوان أو الوصف المختصر) لصورة ، والآخر عندما يكون لديك أشياء إضافية لا تنتمي حقًا إلى المعلومات الرئيسية في الصفحة.
 
-### Pictures with captions
+### صور مع التعليقات
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ اعثر علي عنصر ` img ` حيث يكون لديك نص أعلى أو أسفل الصورة. أنا أعمل علي صورة Tito في ملف ` index.html ` ، ولكن يمكنك العمل علي ما يتوفر على موقع الويب الخاص بك. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
@@ -13,95 +13,96 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ على السطر أعلى الكود البرمجي ، أضف علامة الفتح `<figure>`. في سطر جديد أسفل الرمز ، ضع علامة الإغلاق ` </figure>`.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ بعد ذلك ، قم بإزالة العلامات `p <0/> ، أو أي علامات لديك حول النص (ربما يكون عنوانًا ، مثل <code> h2 ` ؟) ، ثم ضع النص بين العلامات `&lt;figcaption&gt; <1/> بدلا من ذلك. يجب أن يبدو الكود مشابه لهذا الشكل:</p></li>
+</ul>
 
-```html
-  <figure>
+<pre><code class="html">  <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
       <figcaption>
       Tour guide Tito!
       </figcaption>
   </figure>
-```
+`</pre> 
+    
+    ` figcaption ` للعنصر هو ** caption **. يمكن أن توضع إما فوق العنصر ` img ` أو تحته.
+    
+    ![صورة تيتو مع تعليق](images/figureAndCaption.png)
+    
+    ## \--- collapse \---
+    
+    ## title: لماذا هذا مفيد؟
+    
+    الوسم ` figure` يعمل كنوع من الحاوية ** container ** لصورتك والتعليق عليها. يتيح لك ذلك معاملتهم كوحدة واحدة عند تحديد الأنماط.
+    
+    تجميعها معًا بطريقة منطقية يساعد أيضًا في الحفاظ على بنية جيدة لكود برمجة موقع الويب الخاص بك.
+    
+    \--- /collapse \---
+    
+    يمكنك استخدام كود CSS لتنسيق ` figure` و ` figcaption ` كما تفعل بأي وسم آخر باستخدام فئات أو معرفات أو محددات العناصر. انا أقوم بإضافة القواعد التالية لإزالة المسافات الإضافية التي تمت إضافتها بواسطة الحاوية الجديدة:
+    
+    ```css
+      figure { 
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+    ```
+    
+    ### ملاحظات جانبية
+    
+    صفحة الجذب السياحي على موقع الويب الخاص بي هي قائمة بالأماكن التي يجب زيارتها. أرغب في إضافة بعض الملاحظات حول الطقس وكيفية التجول. تلك المعلومات لا تنتمي حقًا إلى وسم ` article ` مع جميع مناطق الجذب. هذا مثال على متى يمكنك استخدام وسم ` aside `.
+    
+    + انتقل إلى صفحة من موقع الويب الخاص بك تحتوي على وسم ` article` - أنا أستخدم ` Attractions.html `.
+    
+    + ** خارج ** وسم ` article` ، أضف زوجًا واحدًا أو أكثر من علامات `<aside> </aside>` التي تحتوي على الأشياء الإضافية الخاصة بك.
+    
+    ```html
+      <aside class="sideNoteStyle">
+          <h2> التجول </h2>
+          <h3> القطار والحافلة </h3>
+          <p> يمكنك الوصول إلى معظم المدن الرئيسية بالقطار من دبلن. هناك العديد من الحافلات التي تقوم بجولات إلى المواقع الشعبية ومناطق الجذب السياحي. </p>
+          <h3> سيارة </h3>
+          <p> أسهل طريقة للتجول خارج المدن هي بالسيارة. </p>
+        </aside>
+        <aside class="sideNoteStyle">
+          <h2> الطقس </h2>
+          <p> الطقس في أيرلندا <span class="specialText"> لا يمكن التنبؤ به للغاية! </span> من الأفضل أن تكون مستعد <span class="specialText"> </span> لأي نوع من الطقس ، حتى لو كان يوما جميلا! </p>
+      </aside>
+    ```
+    
+    ## \--- collapse \---
+    
+    ## title: لماذا هذا مفيد؟
+    
+    وسم `aside<0/> و <code>article<0/> ، وغيرها من الحاويات كلها متشابهة. الفرق الحقيقي الوحيد هو في المعنى <strong> </strong> الذي إستخدمتها له.</p>
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+<p>من المهم استخدام عناصر HTML ذات معنى كلما استطعت. إنه يوفر لموقعك بنية أفضل ويكون مفيدًا بشكل خاص للأشخاص الذين يستخدمون<strong> قارئات الشاشة </strong>.</p>
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+<p>--- /collapse ---</p>
 
-## \--- collapse \---
-
-## title: Why is this useful?
-
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
-
-Grouping them together logically also helps to maintain good structure in your website code.
-
-\--- /collapse \---
-
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
-
-```css
-  figure { 
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
-```
-
-### Side notes
-
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
-
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
-
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
-
-```html
-  <aside class="sideNoteStyle">
-      <h2>Getting around</h2>
-      <h3>Train and bus</h3>
-      <p>You can get to most of the major towns by train from Dublin. There are many buses that do tours to popular locations and tourist attractions.</p>
-      <h3>Car</h3>
-      <p>The easiest way to get around outside of the cities is by car.</p>
-    </aside>
-    <aside class="sideNoteStyle">
-      <h2>Weather</h2>
-      <p>The weather in Ireland is <span class="specialText">very unpredictable!</span> It's best to <span class="specialText">be prepared</span> for any kind of weather, even if it's a nice day!</p>
-  </aside>
-```
-
-## \--- collapse \---
-
-## title: Why is this useful?
-
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
-
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
-
-\--- /collapse \---
-
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
-
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
-
-```css
-  .sideNoteStyle {
-    border: dotted 1px purple;
-    background-color: #c1ebec;
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  .specialText {
-      color: #FF4500;
-      font-size: larger;
-  }
-```
-
-![Additional notes with their own styling](images/asidesStyled.png)
-
-On the next card, you're going to learn how to make your website's layout more interesting!
-
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
+<p>هل لاحظت ذلك العنصر الآخر هناك ، <code> span ` ؟ هذه علامة خاصة يمكنك استخدامها فقط لإضافة كود CSS إضافي! يمكنك وضع أي شيء بين زوج من علامات ` span `. إنها مفيدة لأشياء مثل تنسيق ** جزء ** من النص في فقرة.
+    
+    + أضف كود CSS التالي إلى ملف الأنماط الخاصة بك لإكمال تنسيق كود HTML أعلاه.
+    
+    ```css
+      .sideNoteStyle {
+        border: dotted 1px purple;
+        background-color: #c1ebec;
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+      .specialText {
+          color: #FF4500;
+          font-size: larger;
+      }
+    ```
+    
+    ![ملاحظات إضافية مع تصميمها الخاص](images/asidesStyled.png)
+    
+    على البطاقة التالية ، ستتعرف على كيفية جعل تصميم موقع الويب الخاص بك أكثر تشويقًا!
+    
+    + للاستعداد ، اصنع صفحة تحتوي على ` article` واثنين من العناصر ` aside ` داخل الوسم &lt;main&gt; <1/>. أو إذا كنت تفضل ذلك ، يمكنك العمل علي صفحة الجذب السياحي على موقع الويب الخاص بي.</li>
+</ul>
