@@ -1,186 +1,186 @@
-## Photo collage
+## फोटो कोलाज़
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+इस कार्ड पर आप सीएसएस का उपयोग एचटीएमएल तत्वों को ठीक से करने और फोटो कोलाज बनाने के लिए करना सीखेंगे।
 
-![](images/photoCollageWithText_wide.png)
+![](छवियों / photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ <<> Div जोड़ें </code> अपने पृष्ठ के लिए और आप की तरह के रूप में कई छवियों में डाल दिया। दे ० <०> दीव </code> और ` img ` तत्वों ` आईडी ` मान।
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgHorse" class="absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <img id="imgTeaCat" class="absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
+        <1 />
+        <2 />
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+तस्वीरें वेब पेज पर एक के बाद एक दिखाई देंगी, इसी क्रम में वे आपके कोड में दिखाई देंगी।
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ अपनी CSS फ़ाइल में, ` div के अंदर के तत्वों के लिए निम्न CSS वर्ग जोड़ें ` : 
 
 ```css
     .absPos {
-        position: absolute;
-    }
+        स्थिति: निरपेक्ष;
+}
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ अगला, आपको संपत्ति जोड़ने की आवश्यकता है ` स्थिति: रिश्तेदार; ` कंटेनर में ही और इसके लिए एक आकार को परिभाषित करें। यह ऐसा करता है ताकि अन्य तत्वों के पदों को ** के सापेक्ष परिभाषित किया जाए ** (वह है, भीतर) कंटेनर।
 
 ```css
     .relPos {
-        position: relative;
+        स्थिति: रिश्तेदार;
     }
 
     #photoBox {
-        width: 800px;
-        height: 400px;
-    }
+        चौड़ाई: 800px;
+        ऊंचाई: 400 पीएक्स;
+}
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ फिर ** आईडी चयनकर्ताओं का उपयोग करके प्रत्येक तत्वों के लिए शैली नियमों का एक सेट बनाएं ** उनके आकार निर्धारित करने के लिए (` चौड़ाई ` और / या ` ऊंचाई ` गुण) और साथ ही उनके सटीक स्थान।
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+किसी तत्व की स्थिति को परिभाषित करने के लिए, चार गुण हैं जिनका आप उपयोग कर सकते हैं: ` बाएं ` , ` सही है ` , ` शीर्ष ` , और ` नीचे ` । वे यह दर्शाते हैं कि प्रत्येक किनारा मुख्य के किनारे से कितना दूर होना चाहिए। या तो उपयोग करें ` शीर्ष ` या ` नीचे ` ऊर्ध्वाधर स्थिति के लिए, और या तो ` छोड़ दिया ` या ` सही है ` क्षैतिज स्थिति के लिए।
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![आरेख दिखा रहा है कि कैसे शीर्ष, बाएं, नीचे और दाएं गुण मूल कंटेनर से संबंधित हैं](छवियों / cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ अपनी प्रत्येक तस्वीर के लिए सटीक स्थिति चुनें, और किसी भी गुण का उपयोग करें ` बाएं ` , ` सही है ` , ` शीर्ष ` , और ` नीचे ` अपने सीएसएस नियमों में उन पदों को परिभाषित करने के लिए। उदाहरण के लिए, यह कोड बिल्ली के चित्र को शीर्ष से 100 पिक्सेल और बाईं ओर से 60 पिक्सेल रखता है:
 
 ```css
     #imgTeaCat {
-        width: 250px;
-        top: 100px;
-        left: 60px;
-    }
+        चौड़ाई: 250px;
+        शीर्ष: 100 पीएक्स;
+        बाएं: 60 पीएक्स;
+}
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+नोट: स्थिति मान नकारात्मक भी हो सकते हैं! यदि आप एक नकारात्मक मूल्य का उपयोग करते हैं, तो यह कंटेनर के बाहर तत्व को कर देगा, जो भी आपके द्वारा निर्दिष्ट किया गया है।
 
-### Making things overlap
+### चीजों को ओवरलैप करना
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+आप कुछ चित्रों को ओवरलैप करना चाहते हैं। लेकिन आप कैसे चुनते हैं जो सबसे ऊपर चला जाता है?
 
-+ Choose two images and give them positions that cause them to overlap.
++ दो छवियों को चुनें और उन्हें ऐसे स्थान दें जो उन्हें ओवरलैप करने का कारण बनते हैं।
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ एक अतिरिक्त संपत्ति जोड़ें, ` z-index: 10; ` उनमें से एक के लिए, और फिर ` z-index: 7 जोड़ें; ` दूसरे को।
 
-+ Take a look at the result on your webpage.
++ अपने वेबपेज पर परिणाम पर एक नज़र डालें।
 
-![](images/horse10Cat7.png)
+![](छवियों / horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ अब ` z- इंडेक्स को स्वैप करें ` मान, ताकि ` 7 ` और ` 10 ` चारों ओर दूसरे रास्ते हैं। क्या आपको अपने वेब पेज पर कोई अंतर दिखाई देता है?
 
-![](images/horse7Cat10.png)
+![](छवियों / horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## शीर्षक: z- इंडेक्स कैसे काम करता है?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+` z- इंडेक्स ` संपत्ति आपको यह तय करने देती है कि दो या अधिक तत्वों को कैसे ओवरलैप करना चाहिए। मान किसी भी पूर्ण संख्या में हो सकता है।
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+** उच्चतम के साथ तत्व ** नंबर ** शीर्ष पर समाप्त होता है ** ढेर के, या दूसरे शब्दों में बहुत ** सामने ** । अगली उच्चतम संख्या वाला तत्व उसके पीछे है, और दूसरों के सामने, और इसी तरह, जब तक आप सबसे कम संख्या वाले तत्व को प्राप्त नहीं करते हैं, जो अन्य सभी तत्वों के पीछे पीछे दिखाई देता है।
 
-\--- /collapse \---
+\--- /ढहने \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+आप किसी भी HTML एलिमेंट्स को इस तरह से पोजिशन कर सकते हैं, न कि सिर्फ इमेज के लिए। उदाहरण के लिए, आप ` p का उपयोग कर सकते हैं ` तत्व एक तस्वीर पर कुछ पाठ जोड़ने के लिए।
 
-\--- challenge \---
+\--- चुनौती \---
 
-## Challenge: make a photo collage
+## चुनौती: एक तस्वीर महाविद्यालय बनाओ
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ नीचे दिखाए गए जैसे फ़ोटो का अपना कोलाज बनाने का प्रयास करें! अलग-अलग ` z- इंडेक्स के साथ सटीक स्थिति का उपयोग करें ` ओवरलैप प्रभाव पाने के लिए मान जिस तरह से आप चाहते हैं।
 
-\--- hints \---
+\--- संकेत \---
 
-\--- hint \---
+\--- संकेत \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+नीचे मेरी आयरलैंड वेबसाइट पर फोटो कोलाज के लिए HTML कोड है। एक ` div के अंदर सभी छह तस्वीरें और पाठ का एक टुकड़ा है ` ।
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <1 />
+        <2 />
+        <3 />
+        <4 />
+        <5 />
+        <6 />
+        <p id="photoText" class="absPos"> आयरलैंड </p>
     </div>
 ```
 
-\--- /hint \---
+\--- / संकेत \---
 
-\--- hint \---
+\--- संकेत \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+यहां सीएसएस नियम हैं जो कोलाज में मेरे प्रत्येक चित्र के लिए स्थान निर्धारित करते हैं:
 
 ```css
-    #imgHorse {
-        width: 120px;
-        top: 200px;
-        left: 390px;
-        z-index: 10;
+    # जिमघोर {
+        चौड़ाई: 120 पीएक्स;
+        शीर्ष: 200 पीएक्स;
+        बाएं: 390 पीएक्स;
+        जेड-इंडेक्स: 10;
     }
     #imgSheep {
-        width: 200px;
-        top: 100px;
-        left: 20px;
-        z-index: 8;
+        चौड़ाई: 200px;
+        शीर्ष: 100 पीएक्स;
+        बाएं: 20 पीएक्स;
+        जेड-इंडेक्स: 8;
     }
     #imgCoast {
-        width: 150px;
-        top: 250px;
-        left: 10px;
-        z-index: 5;
+        चौड़ाई: 150px;
+        शीर्ष: 250 पीएक्स;
+        बायां: 10 पीएक्स;
+        जेड-इंडेक्स: 5;
     }
     #imgTrees {
-        width: 110px;
-        top: 65px;
-        left: 205px;
-        z-index: 9;
+        चौड़ाई: 110px;
+        शीर्ष: 65 पीएक्स;
+        बाएं: 205 पीएक्स;
+        जेड-इंडेक्स: 9;
     }
     #imgTeaCat {
-        width: 250px;
-        top: 210px;
-        left: 160px;
-        z-index: 7;
+        चौड़ाई: 250px;
+        शीर्ष: 210 पीएक्स;
+        बाएं: 160 पीएक्स;
+        जेड-इंडेक्स: 7;
     }
     #imgStreet {
-        width: 180px;
-        top: 90px;
-        left: 310px;
-        z-index: 6;
+        चौड़ाई: 180px;
+        शीर्ष: 90 पीएक्स;
+        बायां: 310 पीएक्स;
+        जेड-इंडेक्स: 6;
     }
     #photoText {
-        font-family: "brush script MT";
-        color: lightgreen;
-        font-size: 4em;
-        left: 35px;
-        top: 15px;
-        z-index: 20;
-    }
+        फ़ॉन्ट-परिवार: "ब्रश स्क्रिप्ट एमटी";
+        रंग: लाइटग्रीन;
+        फ़ॉन्ट-आकार: 4em;
+        बाएं: 35 पीएक्स;
+        शीर्ष: 15 पीएक्स;
+        जेड-इंडेक्स: 20;
+}
 ```
 
-\--- /hint \---
+\--- / संकेत \---
 
-\--- hint \---
+\--- संकेत \---
 
-Here are the CSS classes I've used:
+यहां सीएसएस कक्षाएं हैं जिनका मैंने उपयोग किया है:
 
 ```css
     .collagePhoto {
-        border: 1px solid white;
+        सीमा: 1px ठोस सफेद;
     }
     .relPos {
-        position: relative;
+        स्थिति: रिश्तेदार;
     }
-    .absPos {
-        position: absolute;
-    }
+    .ABPos {
+        स्थिति: निरपेक्ष;
+}
 ```
 
-\--- /hint \---
+\--- / संकेत \---
 
-\--- /hints \---
+\--- / संकेत \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![शीर्ष पर पाठ के साथ फोटो कोलाज](छवियों / photoCollageExample.png)
 
-\--- /challenge \---
+\--- /चुनौती \---
