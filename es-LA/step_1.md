@@ -1,6 +1,6 @@
 ## Introduction
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+Estas tarjetas de sushi te mostrarán cómo hacer que un sitio web tenga un aspecto pulido y profesional utilizando efectos y diseños increíbles.
 
 ### What you will make
 
