@@ -1,10 +1,10 @@
-## Photo collage
+## ملصقات الصور
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+في هذه البطاقة ، ستتعلم استخدام CSS لوضع عناصر HTML بدقة وإنشاء صورة مجمعة.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ أضف ` div` إلى صفحتك وضع فية صور بقدر ما تريد. Give the `div` and the `img` elements `id` values.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,7 +13,7 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+ستظهر الصور واحدة تلو الأخرى على صفحة الويب ، بالترتيب الذي تظهر به في الكود.
 
 + In your CSS file, add the following CSS class for the elements inside the `div`: 
 
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ بعد ذلك ، تحتاج إلى إضافة الخاصية `position: relative;` إلى الحاوية نفسها وتحديد حجمها. هذا يجعل من مواضع العناصر الأخرى محددة ** بالنسبة إلى ** الحاوية ( من الداخل).
 
 ```css
     .relPos {
@@ -38,11 +38,11 @@ The photos will appear one after the other on the web page, in the order they ap
 
 + Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+لتحديد موضع عنصر ، هناك أربع خصائص يمكنك استخدامها: ` اليسار left ` ، ` اليمين right ` ، ` أعلى top ` و ` اسفل bottom `. إنها تمثل المدى الذي يجب أن تكون عليه كل حافة من حواف الحاوية الرئيسية. استخدم إما ` top ` أو ` bottom ` للموضع العمودي ، وإما ` left ` أو ` right ` للموضع الأفقي.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![رسم بياني يوضح كيفية ارتباط الخصائص العليا واليسرى والسفلية واليمنى بالحاوية الأصل](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ اختر المواضع الدقيقة لكل صورة من صورك ، واستخدم أيًا من الخصائص `left ` ، ` right ` ، ` top ` و ` bottom ` لتحديد تلك المواقع في تعليمات CSS الخاصة بك. على سبيل المثال ، يضع هذا الرمز صورة القط 100 بكسل من الأعلى و 60 بكسل من اليسار:
 
 ```css
     #imgTeaCat {
@@ -52,47 +52,47 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+ملاحظة: يمكن أن تكون قيم الموضع سالبة أيضًا! إذا استخدمت قيمة سالبة ، فستدفع العنصر خارج الحاوية ، بعد الحافة التي حددتها.
 
-### Making things overlap
+### جعل الأشياء تتداخل
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+قد ترغب في جعل بعض الصور تتداخل. ولكن كيف تختار أي واحد يكون في الأعلي ؟
 
-+ Choose two images and give them positions that cause them to overlap.
++ اختر صورتين وحدد لهما مواقع تجعلهما تتداخلان.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ إضف هذه الخاصية الإضافية ، `z-index: 10;` إلى واحد منهما ، ثم قم بإضافة `z-index: 7;` للاخر.
 
-+ Take a look at the result on your webpage.
++ ألق نظرة على النتيجة في صفحة الويب الخاصة بك.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ الآن قم بتبديل قيم z-index < </code> بحيث تبدل ` 7 ` و ` 10 ` بينهما. هل ترى أي فرق على صفحة الويب الخاصة بك؟
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: كيف تعمل خاصية z-index؟
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+تتيح لك خاصية `z-index` تحديد كيفية تداخل عنصرين أو أكثر. يمكن أن تكون القيمة أي عدد صحيح.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. العنصر الذي يحتوي على الرقم الأعلى التالي يكون خلف ذلك ، وأمام الآخرين ، وهكذا ، حتى تصل إلى العنصر ذي الرقم الأدنى ، والذي يظهر خلف كل العناصر الأخرى.
 
-\--- /collapse \---
+\--- collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+يمكنك وضع أي من عناصر HTML بهذه الطريقة ، وليس فقط الصور. على سبيل المثال ، يمكنك استخدام عنصر ` p ` لإضافة نص على الصورة.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## Challenge: عمل صور مجمعة
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ حاول إنشاء الصور المجمعة الخاصة بك كما موضح أدناه! استخدم الموضع الدقيق مع `z-index` بقيم مختلفة للحصول على تأثير التداخل بالطريقة التي تريدها.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+يوجد أدناه كود HTML لصور مجمّعة على موقع ويب ايرلندا الخاص بي. هناك ست صور و نص كلها داخل قسم ` div`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -106,11 +106,11 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
     </div>
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+فيما يلي قواعد CSS التي تحدد المواضع لكل صورة من الصور في المجموعة:
 
 ```css
     #imgHorse {
@@ -159,11 +159,11 @@ Here are the CSS rules that set the positions for each of my pictures in the col
     }
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+فيما يلي فئات CSS التي استخدمتها:
 
 ```css
     .collagePhoto {
@@ -177,10 +177,10 @@ Here are the CSS classes I've used:
     }
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
 ![Photo collage with text over the top](images/photoCollageExample.png)
 
-\--- /challenge \---
+\--- challenge/ \---
