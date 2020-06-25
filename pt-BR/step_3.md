@@ -1,22 +1,22 @@
-## Clickable cards
+## Cartões clicáveis
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+Aqui está uma técnica que você pode usar para criar uma galeria de fotos ou uma página de portfólio mostrando seus projetos: pequenos **cartões de visualização**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![Cartão de visualização mostrando uma miniatura da imagem e algum texto](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Adicione o seguinte código HTML ao seu site, onde quiser. Estou fazendo o meu no `index.html`. Você pode alterar a imagem e o texto para se adequar aos seus próprios cartões de visualização. Eu vou fazer um monte de destaques das atrações turísticas na Irlanda.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <h3>Parque Selvagem Fota</h3>
+        <p>Ilha Fota, Condado de Cork</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Imagem e texto antes de serem aplicados estilos](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ Adicione o seguinte código CSS para criar as classes `card` e `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -38,11 +38,11 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Imagem e texto com estilo para criar um pequeno efeito de cartão](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Vamos transformar o cartão de visualização em um link para que as pessoas possam clicar para ver mais informações.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Coloque todo o elemento `article` dentro de um elemento de link. Certifique-se de que a tag de fechamento `</a>` esteja depois da tag de fechamento `</article>`! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
 
 ```html
     <a href="attractions.html#scFota">  
