@@ -42,39 +42,39 @@ Aqui está uma técnica que você pode usar para criar uma galeria de fotos ou u
 
 Vamos transformar o cartão de visualização em um link para que as pessoas possam clicar para ver mais informações.
 
-+ Coloque todo o elemento `article` dentro de um elemento de link. Certifique-se de que a tag de fechamento `</a>` esteja depois da tag de fechamento `</article>`! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Coloque todo o elemento `article` dentro de um elemento de link. Certifique-se de que a tag de fechamento `</a>` esteja depois da tag de fechamento `</article>`! Sinta-se à vontade para alterar o link **URL** para o que quiser vincular. Pode ser outra página do seu site ou outro site.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>Parque Selvagem Fota</h3>
+            <p>Ilha Fota, Condado de Cork</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Texto e imagem que foram transformados em um link](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: Vinculando a uma parte específica de uma página
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+Nota como o valor de `href` no meu link termina em `#scFota`? Este é um truque legal que você pode usar para saltar para uma parte específica de uma página.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ Primeiro, digite o URL da página para vincular, seguido por `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ No arquivo de código para a página para a qual você está vinculando, encontre a parte para onde deseja ir e dê ao elemento um `id`, por exemplo, `<section id="scFota"`. O valor do `id` é o que você digita após o `#` no seu link.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: Redefinindo estilos
 
-Now that the whole preview card is a link, the text font may have changed.
+Agora que todo o cartão de visualização é um link, a fonte do texto pode ter sido alterada.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Nesse caso, você pode corrigi-lo adicionando uma **classe CSS** ao link: `class="cardLink"`. Aqui está o código CSS para colocar na sua folha de estilos:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Configurando o valor de qualquer propriedade para `inherit` faz usar o valor que o elemento **pai** tem. Portanto, neste caso, a cor do texto coincidirá com o resto do texto na página inicial.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Faça pelo menos quatro ou cinco desses cartões. Se você estiver trabalhando no meu site de exemplo, você pode fazer um para cada uma das seções na página Atrações. No passo seguinte, você aprenderá a organizar os cartões com um truque legal!
