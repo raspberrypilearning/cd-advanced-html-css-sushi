@@ -21,20 +21,20 @@ Neste projeto você vai descobrir como:
 + Criar o layout do site que você deseja
 + Fazer seu layout se ajustar automaticamente a diferentes tamanhos de tela
 + Fazer uma colagem de imagens e texto sobrepostos
-+ Apply some neat hover and click effects that you might have seen on other websites
++ Aplicar alguns efeitos elegantes quando clicar ou passar ou mouse sobre elementos que você pode ter visto em outros sites
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: O que você vai precisar
 
 ### Hardware
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Um computador capaz de acessar o site [trinket.io](https://trinket.io){:target="_blank"}
 
 ### Software
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Este projeto pode ser concluído em um navegador usando [trinket.io](https://trinket.io){:target="_blank"} ou offline usando um editor de texto sem formatação.
 
 \--- /collapse \---
