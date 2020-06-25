@@ -1,10 +1,10 @@
 ## Introdução
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+Neste projeto você aprenderá como fazer um site parecer polido e profissional usando efeitos e layouts legais.
 
-### What you will make
+### O que você vai fazer
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+Mova o seu cursor do mouse na janela abaixo para experimentar alguns dos efeitos que você aprenderá a usar no seu site:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,13 +14,13 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: O que você vai aprender
 
-In these Sushi Cards, you will find out how to:
+Neste projeto você vai descobrir como:
 
-+ Create any website layout you want
-+ Make your layout adjust itself automatically to different screen sizes
-+ Make a collage of overlapping pictures and text
++ Criar o layout do site que você deseja
++ Fazer seu layout se ajustar automaticamente a diferentes tamanhos de tela
++ Fazer uma colagem de imagens e texto sobrepostos
 + Apply some neat hover and click effects that you might have seen on other websites
 
 \--- /collapse \---
