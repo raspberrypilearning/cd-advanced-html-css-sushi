@@ -1,27 +1,27 @@
-## All in a row
+## Tudo em uma linha
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+Neste passo, você aprenderá alguns truques para organizar as coisas **horizontalmente** em uma página. Primeiro, você verá como centralizar as coisas. Então você organizará os elementos lado a lado em uma linha.
 
-+ Add the following CSS properties to the `.card` class:
++ Adicione as seguintes propriedades CSS a classe `.card`:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Você deve ver os cartões se movendo para o centro da página. Ao definir as margens esquerda e direita com `auto`, você pode fazer com que qualquer elemento fique no meio, em vez de ficar à esquerda.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![Os cartões aparecem no meio em vez de na esquerda](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ Arraste a borda da janela do navegador para tornar a página mais estreita e mais ampla — observe que os cartões permanecem centralizados.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ Coloque todos os links de cartões que você acabou de criar em um novo elemento contêiner. Não será um `article` ou uma `section`, mas sim um chamado `div`. Este é um contêiner de propósito geral que você pode usar para agrupar coisas e fazer layouts agradáveis.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ Adicione o seguinte código CSS na sua folha de estilo:
 
 ```css
     .cardContainer {
@@ -32,35 +32,35 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! Graças ao **Flex**, seus cartões agora são exibidos lado a lado!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ Arraste a borda da sua janela para tornar o site mais amplo e mais estreito, e veja como os cartões se movem para caber no tamanho da janela, às vezes passando para a próxima linha.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![Cartões organizados em duas linhas espaçados igualmente para caber na largura do navegador](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ Tente excluir as propriedades `width` e `height` das propriedades `.card` e veja o que acontece: `flex` inteligentemente se encaixa nos cartões como um quebra-cabeça, mantendo uma altura ao longo de tudo que está na mesma linha.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![Cartões organizados lado a lado com largura automática](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+Se você tiver um menu de navegação no topo da sua página, esse é outro lugar que você pode usar esse truque. Seu menu precisa ser composto por elementos de lista (`li`) para este próximo ponto. Se preferir, você pode experimentar com o meu site.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ Encontre as regras CSS para o menu. No meu site, esses são os blocos `nav ul`, `nav ul li` e `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ Exclua a propriedade `display: inline;` dos itens da lista. Então, na lista `nav ul`, adicione:
 
 ```css
     display: flex;
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![Menu com itens alinhados à esquerda](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+Você acaba com quase o mesmo menu, certo? Uma coisa legal sobre o `flex` é que você pode controlar o layout com a propriedade `justify-content`.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ Altere o valor de `justify-content` para `flex-end` e veja o que acontece. Ou mude para `space-around` para deixar os itens do menu igualmente espaçados, como fez para os cartões.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![Menu com itens espaçados uniformemente](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Menu com itens alinhados à direita](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** é uma ferramenta de layout muito poderosa que poderia preencher uma série de passos nesse projeto — você pode aprender mais sobre isso em [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
