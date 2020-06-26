@@ -79,15 +79,15 @@ O resto das propriedades que você definiu anteriormente para `nav ul` permanece
 
 ## Desafio: faça seu menu se ajustar para telas grandes
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ Você pode adicionar outro bloco de telas maiores que **1600 pixels**, com `flex-end` em vez de `space-around`?
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![Itens de menu à direita em uma tela larga](images/responsiveMenuWide.png)
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+O código a seguir define propriedades flex para itens de menu quando a tela for maior do que 1600 pixels:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -104,4 +104,4 @@ The following code defines flex properties for menu items when the screen is big
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+Você pode colocar quaisquer regras CSS que você gosta em blocos como estes para definir diferentes estilos para diferentes tamanhos de tela. Depois será especialmente útil quando você fizer layouts de grade com CSS!
