@@ -1,32 +1,32 @@
-## Design cool page layouts
+## Projete layouts legais de páginas
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ Para este passo, você deve trabalhar com uma página que contém um elemento `main` com três elementos dentro: um `article` e dois `aside`s. Vá em frente e crie-os primeiro, se você precisar. Se você deseja trabalhar com o meu site, adicione o código `aside` do passo anterior à página Atrações. 
 
-Here are three different page layouts you'll be applying:
+Aqui estão três layouts de página diferentes que você aplicará:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ Adicione novas classes CSS ao `main` e cada um dos três elementos dentro dele.
 
 ```html
     <main class="attPageLayoutGrid">
         <article class="attGridArticle">
-            <!--other stuff here-->
+            <!--outras coisas aqui-->
         </article>
         <aside class="attGridAside1">
-            <!--other stuff here-->
+            <!--outras coisas aqui-->
         </aside>
         <aside class="attGridAside2">
-            <!--other stuff here-->
+            <!--outras coisas aqui-->
         </aside>
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+O contêiner que você irá alterar o layout é o `main`, mas você pode fazer isso com qualquer tipo de contêiner, como `div` ou `article`, ou mesmo a página inteira `body`. A técnica que você vai usar se chama **CSS grid**.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+Neste exemplo, o `header` e o `footer` ficarão fora do design, mas é bastante comum incluí-los na grade também.
 
-+ Set the `display` property to `grid` on the overall container:
++ Defina a propriedade `display` como `grid` no contêiner geral:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+O que você acha que as propriedades `grid-column-gap` e `grid-row-gap` fazem?
 
-+ Next, you name a `grid-area` for each element: 
++ Em seguida, nomeie uma `grid-area` para cada elemento: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+Então você projeta seu layout! Vamos colocar os dois elementos `aside` lado a lado na parte inferior da página. Para isto você precisa de duas **colunas** de largura igual. Você pode manter a altura da **linha** automática.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ Coloque o seguinte código dentro das regras CSS `.attPageLayoutGrid`:
 
 ```css
     grid-template-rows: auto;
@@ -64,23 +64,23 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` significa **fração**. Observe como você faz o `article` ocupar todo o espaço sobre as duas colunas.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: Ajuda! Eu tenho erros e avisos!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+Se você estiver usando o Trinket, poderá observar alguns erros e avisos, mesmo se você digitou o código exatamente como acima. Isso ocorre porque o Trinket ainda não reconhece as propriedades grid do CSS. No entanto, o código ainda funcionará.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+Se o código da grade CSS fornece advertências de 'propriedade desconhecida' ou um erro como 'token inesperado 1 fr', você pode simplesmente ignorá-los.
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![Asides estão lado a lado na parte inferior](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+Vamos colocar os elementos `aside` à direita e fazê-los metade da largura do `article`.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ Altere os valores de `grid-template-columns` e `grid-template-areas` para:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -89,9 +89,9 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![Asides estão abaixo no lado direito](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ Se você não quer o elemento `aside` se estique todo até a parte inferior, você pode adicionar um espaço em branco usando um ponto: 
 
 ```css
     grid-template-areas: 
@@ -100,19 +100,19 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![Asides no lado direito e não esticados até embaixo](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Desafio: faça layouts diferentes para tamanhos de tela diferentes
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ Você pode usar as verificações de tamanho de tela que você adicionou anteriormente para fazer o layout mudar dependendo da largura da tela? Nota: se você já criou blocos CSS para cada tamanho de tela, você pode adicionar o novo código CSS a esses blocos em vez de criar novos.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+O código a seguir define um layout para a classe CSS acima quando a tela for maior que 1000 pixels:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+O código a seguir define um layout para a classe CSS acima quando a tela for maior do que 1600 pixels:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+Com a **grade CSS**, você pode criar praticamente qualquer layout que desejar. Se você quiser aprender mais, acesse [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
