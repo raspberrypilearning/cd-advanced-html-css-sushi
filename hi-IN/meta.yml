@@ -7,9 +7,9 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-technologies: html/css
-site_areas: कोडरडोज़ो, प्रोजेक्ट्स
-software: htmp-css-javascript
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
 steps:
