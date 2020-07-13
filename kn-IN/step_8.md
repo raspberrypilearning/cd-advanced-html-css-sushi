@@ -1,10 +1,10 @@
-## Photo collage
+## ಫೋಟೋ ಕೊಲಾಜ್
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+ಈ ಕಾರ್ಡ್‌ನಲ್ಲಿ ನೀವು HTML ಅಂಶಗಳನ್ನು ನಿಖರವಾಗಿ ಇರಿಸಲು ಮತ್ತು ಫೋಟೋ ಕೊಲಾಜ್ ಮಾಡಲು CSS ಅನ್ನು ಬಳಸಲು ಕಲಿಯುವಿರಿ.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ `div` ಅನ್ನು ಸೇರಿಸಿ ನಿಮ್ಮ ಪುಟಕ್ಕೆ ಮತ್ತು ನೀವು ಇಷ್ಟಪಡುವಷ್ಟು ಚಿತ್ರಗಳನ್ನು ಅದರಲ್ಲಿ ಇರಿಸಿ. `div` ನೀಡಿ ಮತ್ತು `img` ಅಂಶಗಳು `id` ಮೌಲ್ಯಗಳನ್ನು.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+ಫೋಟೋಗಳು ನಿಮ್ಮ ಕೋಡ್‌ನಲ್ಲಿ ಗೋಚರಿಸುವ ಕ್ರಮದಲ್ಲಿ ವೆಬ್ ಪುಟದಲ್ಲಿ ಒಂದರ ನಂತರ ಒಂದರಂತೆ ಕಾಣಿಸುತ್ತದೆ.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ ನಿಮ್ಮ CSS ಫೈಲ್‌ನಲ್ಲಿ, `div` ಒಳಗೆ ಇರುವ ಅಂಶಗಳಿಗಾಗಿ ಈ ಕೆಳಗಿನ CSS ವರ್ಗವನ್ನು ಸೇರಿಸಿ: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ ಮುಂದೆ, ನೀವು ಆಸ್ತಿಯನ್ನು ಸೇರಿಸುವ ಅಗತ್ಯವಿದೆ `position: relative;` ಕಂಟೇನರ್ಗೆ ಮತ್ತು ಅದಕ್ಕಾಗಿ ಗಾತ್ರವನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಿ. ಇದು ಇತರ ಅಂಶಗಳ ಸ್ಥಾನಗಳನ್ನು **relative to** (ಅಂದರೆ, ಒಳಗೆ) ಧಾರಕಕ್ಕೆ ವ್ಯಾಖ್ಯಾನಿಸುತ್ತದೆ.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ ನಂತರ **id selectors** ಬಳಸಿಕೊಂಡು ಪ್ರತಿಯೊಂದು ಅಂಶಗಳಿಗೆ ಶೈಲಿಯ ನಿಯಮಗಳ ಗುಂಪನ್ನು ರಚಿಸಿ ಅವುಗಳ ಗಾತ್ರಗಳನ್ನು ಹೊಂದಿಸಲು (`width` ಮತ್ತು / ಅಥವಾ `height` ಗುಣಲಕ್ಷಣಗಳು) ಹಾಗೆಯೇ ಅವುಗಳ ನಿಖರವಾದ ಸ್ಥಾನಗಳು.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+ಒಂದು ಅಂಶದ ಸ್ಥಾನವನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಲು, ನೀವು ಬಳಸಬಹುದಾದ ನಾಲ್ಕು ಗುಣಲಕ್ಷಣಗಳಿವೆ: `left`, `right`, ` top`, ಮತ್ತು `bottom`. ಪ್ರತಿಯೊಂದು ಅಂಚುಗಳು ಪೋಷಕರ ಅಂಚಿನಿಂದ ಎಷ್ಟು ದೂರವಿರಬೇಕು ಎಂಬುದನ್ನು ಅವು ಪ್ರತಿನಿಧಿಸುತ್ತವೆ. ಲಂಬ ಸ್ಥಾನಕ್ಕಾಗಿ `top` ಅಥವಾ `bottom` ಅನ್ನು ಬಳಸಿ, ಮತ್ತು ಸಮತಲ ಸ್ಥಾನಕ್ಕಾಗಿ `left` ಅಥವಾ `right` ಅನ್ನು ಬಳಸಿ.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![ಮೇಲಿನ, ಎಡ, ಕೆಳಗಿನ ಮತ್ತು ಬಲ ಗುಣಲಕ್ಷಣಗಳು ಮೂಲ ಧಾರಕಕ್ಕೆ ಹೇಗೆ ಸಂಬಂಧಿಸಿವೆ ಎಂಬುದನ್ನು ತೋರಿಸುವ ರೇಖಾಚಿತ್ರ](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ ನಿಮ್ಮ ಪ್ರತಿಯೊಂದು ಚಿತ್ರಕ್ಕೂ ನಿಖರವಾದ ಸ್ಥಾನಗಳನ್ನು ಆರಿಸಿ, ಮತ್ತು ಯಾವುದೇ ಗುಣಲಕ್ಷಣಗಳನ್ನು ಬಳಸಿ `left`, `right`, `top`, ಮತ್ತು `bottom` ನಿಮ್ಮ ಸಿಎಸ್ಎಸ್ ನಿಯಮಗಳಲ್ಲಿ ಆ ಸ್ಥಾನಗಳನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಲು. ಉದಾಹರಣೆಗೆ, ಈ ಕೋಡ್ ಬೆಕ್ಕಿನ ಚಿತ್ರವನ್ನು ಮೇಲಿನಿಂದ 100 pixel‌ಗಳನ್ನು ಮತ್ತು ಎಡದಿಂದ 60 ಪಿಕ್ಸೆಲ್‌ಗಳನ್ನು ಇರಿಸುತ್ತದೆ:
 
 ```css
     #imgTeaCat {
@@ -52,29 +52,29 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+ಗಮನಿಸಿ: ಸ್ಥಾನದ ಮೌಲ್ಯಗಳು ಸಹ negative ಣಾತ್ಮಕವಾಗಬಹುದು! ನೀವು negative ಣಾತ್ಮಕ ಮೌಲ್ಯವನ್ನು ಬಳಸಿದರೆ, ಅದು ನೀವು ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಯಾವುದೇ ಅಂಚಿನಲ್ಲಿರುವ ಅಂಶವನ್ನು ಧಾರಕದ ಹೊರಗೆ ತಳ್ಳುತ್ತದೆ.
 
-### Making things overlap
+### ವಿಷಯಗಳನ್ನು ಅತಿಕ್ರಮಿಸುತ್ತದೆ
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+ಕೆಲವು ಚಿತ್ರಗಳನ್ನು ಅತಿಕ್ರಮಿಸಲು ನೀವು ಬಯಸಬಹುದು. ಆದರೆ ಯಾವುದನ್ನು ಮೇಲಕ್ಕೆ ಹೋಗಬೇಕೆಂದು ನೀವು ಹೇಗೆ ಆರಿಸುತ್ತೀರಿ?
 
-+ Choose two images and give them positions that cause them to overlap.
++ ಎರಡು ಚಿತ್ರಗಳನ್ನು ಆರಿಸಿ ಮತ್ತು ಅವುಗಳನ್ನು ಅತಿಕ್ರಮಿಸಲು ಕಾರಣವಾಗುವ ಸ್ಥಾನಗಳನ್ನು ನೀಡಿ.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ ಹೆಚ್ಚುವರಿ ಆಸ್ತಿಯನ್ನು ಸೇರಿಸಿ, `z-index: 10;` ಅವುಗಳಲ್ಲಿ ಒಂದಕ್ಕೆ, ತದನಂತರ `z-index: 7` ಇನ್ನೊಂದಕ್ಕೆ.
 
-+ Take a look at the result on your webpage.
++ ನಿಮ್ಮwebpage ಫಲಿತಾಂಶವನ್ನು ನೋಡೋಣ.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ ಈಗ `z-index` ವಿನಿಮಯ ಮಾಡಿಕೊಳ್ಳಿ ಮೌಲ್ಯಗಳು, ಆದ್ದರಿಂದ `7` ಮತ್ತು `10` ಇತರ ಮಾರ್ಗಗಳು. ನಿಮ್ಮ ವೆಬ್ ಪುಟದಲ್ಲಿ ನೀವು ಏನಾದರೂ ವ್ಯತ್ಯಾಸವನ್ನು ನೋಡುತ್ತೀರಾ?
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: z-index ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ?
 
-The `z-index` property lets you decide how two or more elements should overlap. ಮೌಲ್ಯವು ಯಾವುದೇ ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆಯಾಗಿರಬಹುದು.
+`z-index` ಎರಡು ಅಥವಾ ಹೆಚ್ಚಿನ ಅಂಶಗಳು ಹೇಗೆ ಅತಿಕ್ರಮಿಸಬೇಕು ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸಲು ಆಸ್ತಿ ನಿಮಗೆ ಅನುಮತಿಸುತ್ತದೆ. ಮೌಲ್ಯವು ಯಾವುದೇ ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆಯಾಗಿರಬಹುದು.
 
 **highest** ಸಂಖ್ಯೆ **top** ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ರಾಶಿಯ, ಅಥವಾ ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಹೇಳುವುದಾದರೆ **front**. ಮುಂದಿನ ಅತ್ಯಧಿಕ ಸಂಖ್ಯೆಯ ಅಂಶವು ಅದರ ಹಿಂದೆ, ಮತ್ತು ಇತರರ ಮುಂದೆ, ಮತ್ತು ಹೀಗೆ, ನೀವು ಕಡಿಮೆ ಸಂಖ್ಯೆಯೊಂದಿಗೆ ಅಂಶವನ್ನು ಪಡೆಯುವವರೆಗೆ, ಅದು ಇತರ ಎಲ್ಲ ಅಂಶಗಳ ಹಿಂದೆ ಹಿಂಭಾಗದಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ.
 
