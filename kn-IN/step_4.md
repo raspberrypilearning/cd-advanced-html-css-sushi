@@ -1,27 +1,27 @@
-## All in a row
+## ಎಲ್ಲಾ ಸತತವಾಗಿ
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+ಈ ಕಾರ್ಡ್‌ನಲ್ಲಿ ನೀವು ವಿಷಯಗಳನ್ನು **horizontally**ಗಾಗೀ ಜೋಡಿಸಲು ಕೆಲವು ತಂತ್ರಗಳನ್ನು ಕಲಿಯುವಿರಿ ಒಂದು ಪುಟದಲ್ಲಿ. ಮೊದಲಿಗೆ, ವಿಷಯವನ್ನು ಕೇಂದ್ರೀಕರಿಸುವುದು ಹೇಗೆ ಎಂದು ನೀವು ನೋಡುತ್ತೀರಿ. ನಂತರ ನೀವು ಸತತವಾಗಿ ಅಂಶಗಳನ್ನು ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ ಜೋಡಿಸುತ್ತೀರಿ.
 
-+ Add the following CSS properties to the `.card` class:
++ `.card`‌ಗೆ ಕೆಳಗಿನ CSS ಗುಣಲಕ್ಷಣಗಳನ್ನು ಸೇರಿಸಿ ವರ್ಗ:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+ಕಾರ್ಡ್‌ಗಳು ಪುಟದ ಮಧ್ಯಭಾಗಕ್ಕೆ ಚಲಿಸುವುದನ್ನು ನೀವು ನೋಡಬೇಕು. ಎಡ ಮತ್ತು ಬಲ ಅಂಚುಗಳನ್ನು `auto`ಗೆ ಹೊಂದಿಸುವ ಮೂಲಕ, ನೀವು ಯಾವುದೇ ಅಂಶವನ್ನು ಎಡಕ್ಕೆ ಬದಲಾಗಿ ಮಧ್ಯದಲ್ಲಿ ಮಾಡುವಂತೆ ಮಾಡಬಹುದು.
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![ಕಾರ್ಡ್‌ಗಳು ಎಡಕ್ಕೆ ಬದಲಾಗಿ ಮಧ್ಯದಲ್ಲಿ ಗೋಚರಿಸುತ್ತವೆ](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ ಪುಟವನ್ನು ಕಿರಿದಾದ ಮತ್ತು ಅಗಲವಾಗಿಸಲು browser windowದ ಅಂಚನ್ನು ಎಳೆಯಿರಿ - ಕಾರ್ಡ್‌ಗಳು ಕೇಂದ್ರೀಕೃತವಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ ನೀವು ಮಾಡಿದ ಎಲ್ಲಾ ಕಾರ್ಡ್ ಲಿಂಕ್‌ಗಳನ್ನು ಹೊಸ ಕಂಟೇನರ್ ಅಂಶವಾಗಿ ಇರಿಸಿ. ಇದು `article` ಅಥವಾ `section` ಆಗುವುದಿಲ್ಲ, ಆದರೆ `div` ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತದೆ. ಇದು ಸಾಮಾನ್ಯ ಉದ್ದೇಶದ ಕಂಟೇನರ್ ಆಗಿದ್ದು, ನೀವು ವಿಷಯಗಳನ್ನು ಗುಂಪು ಮಾಡಲು ಮತ್ತು ಉತ್ತಮ ವಿನ್ಯಾಸಗಳನ್ನು ಮಾಡಲು ಬಳಸಬಹುದು.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ ನಿಮ್ಮ style sheet‌ನಲ್ಲಿ ಈ ಕೆಳಗಿನ CSS ಕೋಡ್ ಸೇರಿಸಿ:
 
 ```css
     .cardContainer {
@@ -32,21 +32,21 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! **Flex**ಗೆ ಧನ್ಯವಾದಗಳು, ನಿಮ್ಮ ಕಾರ್ಡ್‌ಗಳನ್ನು ಈಗ ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ವಿಶಾಲವಾಗಿ ಮತ್ತು ಕಿರಿದಾಗಿಸಲು ನಿಮ್ಮ ವಿಂಡೋದ ಅಂಚನ್ನು ಎಳೆಯಿರಿ ಮತ್ತು ವಿಂಡೋ ಗಾತ್ರಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ ಕಾರ್ಡ್‌ಗಳು ಹೇಗೆ ಚಲಿಸುತ್ತವೆ ಎಂಬುದನ್ನು ನೋಡಿ, ಕೆಲವೊಮ್ಮೆ ಮುಂದಿನ ಸಾಲಿಗೆ ಸುತ್ತಿಕೊಳ್ಳುತ್ತದೆ.
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![ಎರಡು ಸಾಲುಗಳಲ್ಲಿ ಜೋಡಿಸಲಾದ ಕಾರ್ಡ್‌ಗಳು ಬ್ರೌಸರ್ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದುವಂತೆ ಸಮನಾಗಿರುತ್ತವೆ](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ `width` ಅಳಿಸಲು ಪ್ರಯತ್ನಿಸಿ ಮತ್ತು `height` `.card`‌ನಿಂದ ಗುಣಲಕ್ಷಣಗಳು ವರ್ಗ ಮತ್ತು ಏನಾಗುತ್ತದೆ ನೋಡಿ: `flex` ಜಿಗ್ಸಾ ಪಜಲ್ನಂತೆ ಜಾಣತನದಿಂದ ಕಾರ್ಡ್‌ಗಳನ್ನು ಒಟ್ಟಿಗೆ ಹೊಂದಿಸುತ್ತದೆ, ಒಂದೇ ಸಾಲಿನಲ್ಲಿರುವ ಎಲ್ಲದರಲ್ಲೂ ಇನ್ನೂ ಎತ್ತರವನ್ನು ಇರಿಸುತ್ತದೆ.
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![ಕಾರ್ಡ್‌ಗಳು ಸ್ವಯಂಚಾಲಿತ ಅಗಲದೊಂದಿಗೆ ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ ಜೋಡಿಸಲ್ಪಟ್ಟಿವೆ](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+ನಿಮ್ಮ ಪುಟದ ಮೇಲ್ಭಾಗದಲ್ಲಿ ನೀವು ನ್ಯಾವಿಗೇಷನ್ ಮೆನು ಹೊಂದಿದ್ದರೆ, ನೀವು ಈ ಟ್ರಿಕ್ ಅನ್ನು ಬಳಸಬಹುದಾದ ಮತ್ತೊಂದು ಸ್ಥಳವಾಗಿದೆ. ನಿಮ್ಮ ಮೆನು ಪಟ್ಟಿ ಅಂಶಗಳಿಂದ ಕೂಡಿದೆ ( (`li`) ಈ ಮುಂದಿನ ಬಿಟ್‌ಗಾಗಿ. ನೀವು ಬಯಸಿದರೆ, ನೀವು ಅದನ್ನು ನನ್ನ ವೆಬ್‌ಸೈಟ್‌ನೊಂದಿಗೆ ಪ್ರಯತ್ನಿಸಬಹುದು.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ ಮೆನುಗಾಗಿ CSS ನಿಯಮಗಳನ್ನು ಹುಡುಕಿ. ನನ್ನ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ, ಅದು ಬ್ಲಾಕ್‌ಗಳು `nav ul`, `nav ul li`, ಮತ್ತು `nav ul li a`.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ ಆಸ್ತಿಯನ್ನು ಅಳಿಸಿ `display: inline;` ಪಟ್ಟಿ ಐಟಂಗಳಿಂದ. ನಂತರ, `nav ul` ಪಟ್ಟಿಯಲ್ಲಿ, ಸೇರಿಸಿ:
 
 ```css
     display: flex;
