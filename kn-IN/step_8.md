@@ -80,19 +80,19 @@ The element with the **highest** number ends up on **top** of the pile, or in ot
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+ನೀವು ಯಾವುದೇ HTML ಅಂಶಗಳನ್ನು ಈ ರೀತಿ ಇರಿಸಬಹುದು, ಕೇವಲ ಚಿತ್ರಗಳಲ್ಲ. ಉದಾಹರಣೆಗೆ, ನೀವು `p` ಬಳಸಬಹುದು ಫೋಟೋದ ಮೇಲೆ ಕೆಲವು ಪಠ್ಯವನ್ನು ಸೇರಿಸುವ ಅಂಶ.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## ಸವಾಲು: ಫೋಟೋ ಕೊಲಾಜ್ ಮಾಡಿ
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ ಕೆಳಗೆ ತೋರಿಸಿರುವಂತೆ ನಿಮ್ಮ ಸ್ವಂತ ಫೋಟೋಗಳ ಕೊಲಾಜ್ ರಚಿಸಲು ಪ್ರಯತ್ನಿಸಿ! ವಿಭಿನ್ನ `z-index` ದೊಂದಿಗೆ ನಿಖರವಾದ ಸ್ಥಾನೀಕರಣವನ್ನು ಬಳಸಿ ಅತಿಕ್ರಮಣ ಪರಿಣಾಮವನ್ನು ನೀವು ಬಯಸಿದ ರೀತಿಯಲ್ಲಿ ಪಡೆಯಲು ಮೌಲ್ಯಗಳು.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+ನನ್ನ ಐರ್ಲೆಂಡ್ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಫೋಟೋ ಕೊಲಾಜ್‌ಗಾಗಿ HTML ಕೋಡ್ ಕೆಳಗೆ ಇದೆ. `div` ಒಳಗೆ ಆರು ಫೋಟೋಗಳು ಮತ್ತು ಪಠ್ಯದ ತುಣುಕುಗಳಿವೆ.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+ಅಂಟು ಚಿತ್ರಣದಲ್ಲಿನ ನನ್ನ ಪ್ರತಿಯೊಂದು ಚಿತ್ರಗಳ ಸ್ಥಾನಗಳನ್ನು ಹೊಂದಿಸುವ CSS ನಿಯಮಗಳು ಇಲ್ಲಿವೆ:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+ನಾನು ಬಳಸಿದ CSS ತರಗತಿಗಳು ಇಲ್ಲಿವೆ:
 
 ```css
     .collagePhoto {
