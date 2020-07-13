@@ -1,20 +1,20 @@
-## Make your menu responsive
+## ನಿಮ್ಮ ಮೆನು ಸ್ಪಂದಿಸುವಂತೆ ಮಾಡಿ
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+**responsive** ವೆಬ್‌ಸೈಟ್ ಎನ್ನುವುದು ಪರದೆಯ ಗಾತ್ರಕ್ಕೆ ತಕ್ಕಂತೆ ಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ ಆದ್ದರಿಂದ ನೀವು ಅದನ್ನು ಕಂಪ್ಯೂಟರ್, ಮೊಬೈಲ್ ಫೋನ್ ಅಥವಾ ಟ್ಯಾಬ್ಲೆಟ್‌ನಲ್ಲಿ ನೋಡುತ್ತಿರಲಿ ಅದು ಯಾವಾಗಲೂ ಉತ್ತಮವಾಗಿ ಕಾಣುತ್ತದೆ. ನಿಮ್ಮ ಮೆನು ಸ್ಪಂದಿಸುವಂತೆ ಮಾಡಿ!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+ನೀವು ಸಾಮಾನ್ಯ ಶೈಲಿಗಳೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುತ್ತೀರಿ: ಇದು ನಿಮ್ಮ **default** ಆಗಿರುತ್ತದೆ ನಡವಳಿಕೆ.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: 'default' ಎಂದರೇನು?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+Default ಶೈಲಿಗಳು ನಿಮ್ಮ ಸಾಮಾನ್ಯ ಶೈಲಿಯ ನಿಯಮಗಳಾಗಿವೆ. ಯಾವುದೇ ವಿಶೇಷ ಷರತ್ತುಗಳನ್ನು ಪರಿಶೀಲಿಸುವ ಮೊದಲು ಅವುಗಳನ್ನು ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+ನೀವು ಕೋಡ್ ಅನ್ನು ಸೇರಿಸಬಹುದು ಅದು ಪರದೆಯ ಗಾತ್ರವನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ ಕೆಲವು ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮಾಡುತ್ತದೆ.
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ ನಿಮ್ಮ ಮೆನುಗೆ ಈ ಕೆಳಗಿನ CSS ನಿಯಮಗಳನ್ನು ಸೇರಿಸಿ. ನೀವು ಬಹುಶಃ ಬಣ್ಣಗಳು ಮತ್ತು ಗಡಿಗಳನ್ನು ಸಹ ವ್ಯಾಖ್ಯಾನಿಸಿದ್ದೀರಿ; ಇಲ್ಲಿ ಜಾಗವನ್ನು ಉಳಿಸಲು ನಾನು ಅವರನ್ನು ಬಿಟ್ಟಿದ್ದೇನೆ! ನಿಮ್ಮ ಮೆನುಗಾಗಿ ನೀವು ಈಗಾಗಲೇ CSS ನಿಯಮಗಳನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಿದ್ದರೆ, ನೀವು ಕಾಣೆಯಾಗಿರುವ ಕೆಳಗಿನ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಸೇರಿಸಿ ಅಥವಾ ಬದಲಾಯಿಸಿ.
 
 ```css
     nav ul {
@@ -30,23 +30,23 @@ You can add code that then checks the size of the screen and makes some adjustme
     }
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+ಮೇಲಿನ CSS ಕೋಡ್‌ನೊಂದಿಗೆ, ನಿಮ್ಮ ಮೆನು ಸಣ್ಣ ಪರದೆಗಳಿಗೆ ಸೂಕ್ತವಾಗಿರುತ್ತದೆ. ಇದನ್ನು **mobile-first** ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ ಅಭಿವೃದ್ಧಿ.
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![ಮೆನು ಐಟಂಗಳನ್ನು ಸಣ್ಣ ಪರದೆಯಲ್ಲಿ ಲಂಬವಾಗಿ ಜೋಡಿಸಲಾಗಿದೆ](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## title: 'mobile-first' ಎಂದರೇನು?
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಕೋಡಿಂಗ್ ಮಾಡುವಾಗ, ನೀವು ಕಂಪ್ಯೂಟರ್ ಪರದೆಯನ್ನು ಬಳಸುತ್ತೀರಿ, ಮತ್ತು ಆ ಪರದೆಯಲ್ಲಿ ಅದು ಹೇಗೆ ಕಾಣುತ್ತದೆ ಎಂಬುದರ ಆಧಾರದ ಮೇಲೆ ನಿಮ್ಮ ಶೈಲಿಗಳನ್ನು ನೀವು ಬಹುಶಃ ವ್ಯಾಖ್ಯಾನಿಸುತ್ತೀರಿ.
 
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+ನೀವು ಮೊದಲು ಮೊಬೈಲ್‌ಗಾಗಿ ಕೋಡ್ ಮಾಡಿದಾಗ, ಸ್ಮಾರ್ಟ್‌ಫೋನ್‌ಗಳಂತಹ ಸಣ್ಣ ಪರದೆಗಳಿಗೆ ಸೂಕ್ತವಾದ ಡೀಫಾಲ್ಟ್ ಶೈಲಿಗಳನ್ನು ನೀವು ಆರಿಸುತ್ತೀರಿ. ದೊಡ್ಡ ಪರದೆಗಳಿಗೆ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮಾಡಲು ನೀವು ಹೆಚ್ಚುವರಿ ಕೋಡ್ ಅನ್ನು ಸೇರಿಸುತ್ತೀರಿ.
 
 Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
 
 \--- /collapse \---
 
-+ Now add the following code to your style sheet:
++ ನಿಮ್ಮ style sheet‌ನಲ್ಲಿ ಈ ಕೆಳಗಿನ Css ಕೋಡ್ ಸೇರಿಸಿ:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -57,29 +57,29 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+ಮೇಲಿನ ಕೋಡ್‌ನ ಮೊದಲ ಸಾಲು browser window ಎಷ್ಟು ಗಾತ್ರದ್ದಾಗಿದೆ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ. ವಿಂಡೋ **1000 pixels**‌ಗಳಾಗಿದ್ದರೆ ವಿಶಾಲ ಅಥವಾ ಹೆಚ್ಚು, ಇದು ಬ್ಲಾಕ್ ಒಳಗೆ ಎಲ್ಲಾ ಶೈಲಿಯ ನಿಯಮಗಳನ್ನು ಅನ್ವಯಿಸುತ್ತದೆ.
 
 ![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
-## title: How does it work?
+## title: ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ?
 
-The block contains new values for only some properties of the `nav ul` menu.
+`nav ul` ನ ಕೆಲವು ಗುಣಲಕ್ಷಣಗಳಿಗೆ ಮಾತ್ರ ಬ್ಲಾಕ್ ಹೊಸ ಮೌಲ್ಯಗಳನ್ನು ಒಳಗೊಂಡಿದೆ ಮೆನು.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+ವಿಂಡೋ 1000 pixel‌ಗಳಿಗಿಂತ ಅಗಲವಾದಾಗಲೆಲ್ಲಾ, ಈ ಹೊಸ ಮೌಲ್ಯಗಳನ್ನು ನೀವು ಈಗಾಗಲೇ `nav ul` ಗಾಗಿ ವ್ಯಾಖ್ಯಾನಿಸಿರುವ ಮೌಲ್ಯಗಳಿಗೆ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+`nav ul` ಗಾಗಿ ನೀವು ಈ ಹಿಂದೆ ವ್ಯಾಖ್ಯಾನಿಸಿದ ಉಳಿದ ಗುಣಲಕ್ಷಣಗಳು ಅದೇ ಆಗಿರುತ್ತದೆ.
 
 \--- /collapse \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ ಕೋಡ್ ಬರೆಯಲು ನೀವು Trinket ಬಳಸುತ್ತಿದ್ದರೆ, ಯೋಜನೆಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಇದು ಸಹಾಯಕವಾಗಬಹುದು ಆದ್ದರಿಂದ ನೀವು ಅದನ್ನು ಪೂರ್ಣ ಗಾತ್ರದ ಪರದೆಯಲ್ಲಿ ಪರೀಕ್ಷಿಸಬಹುದು.
 
 \--- challenge \---
 
-## Challenge: make your menu adjust itself for big screens
+## ಸವಾಲು: ದೊಡ್ಡ ಮೆನುಗಳಿಗಾಗಿ ನಿಮ್ಮ ಮೆನು ಸ್ವತಃ ಹೊಂದಿಸಿಕೊಳ್ಳುವಂತೆ ಮಾಡಿ
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ **1600 pixel**‌ಗಳಿಗಿಂತ ದೊಡ್ಡದಾದ ಪರದೆಗಳಿಗಾಗಿ ನೀವು ಇನ್ನೊಂದು ಬ್ಲಾಕ್ ಅನ್ನು ಸೇರಿಸಬಹುದೇ, `flex-end‌ನೊಂದಿಗೆ` `space-around`?
 
 ![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
 
@@ -87,7 +87,7 @@ The rest of the properties you defined previously for `nav ul` will stay the sam
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+ಪರದೆಯು 1600 pixel‌ಗಳಿಗಿಂತ ದೊಡ್ಡದಾದಾಗ ಮೆನು ಐಟಂಗಳ ಫ್ಲೆಕ್ಸ್ ಗುಣಲಕ್ಷಣಗಳನ್ನು ಈ ಕೆಳಗಿನ ಕೋಡ್ ವ್ಯಾಖ್ಯಾನಿಸುತ್ತದೆ:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -104,4 +104,4 @@ The following code defines flex properties for menu items when the screen is big
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+ವಿಭಿನ್ನ ಪರದೆಯ ಗಾತ್ರಗಳಿಗೆ ವಿಭಿನ್ನ ಶೈಲಿಗಳನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಲು ನೀವು ಇಷ್ಟಪಡುವ ಯಾವುದೇ CSS ನಿಯಮಗಳನ್ನು ಈ ರೀತಿಯ ಬ್ಲಾಕ್ಗಳಾಗಿ ಇರಿಸಬಹುದು. ನೀವು ನಂತರ CSS ಗ್ರಿಡ್ ವಿನ್ಯಾಸಗಳನ್ನು ಮಾಡಿದಾಗ ಇದು ವಿಶೇಷವಾಗಿ ಉಪಯುಕ್ತವಾಗಿರುತ್ತದೆ!
