@@ -68,19 +68,19 @@
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: ಸಹಾಯ! ನನಗೆ ದೋಷಗಳು ಮತ್ತು ಎಚ್ಚರಿಕೆಗಳು ಸಿಕ್ಕಿವೆ!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+ನೀವು Trinket ಬಳಸುತ್ತಿದ್ದರೆ, ನೀವು ಕೋಡ್ ಅನ್ನು ನಿಖರವಾಗಿ ಮೇಲಿನಂತೆ ಟೈಪ್ ಮಾಡಿದರೂ ಸಹ, ಕೆಲವು ದೋಷಗಳು ಮತ್ತು ಎಚ್ಚರಿಕೆಗಳು ಗೋಚರಿಸುವುದನ್ನು ನೀವು ಗಮನಿಸಬಹುದು. CSS ಗ್ರಿಡ್ ಗುಣಲಕ್ಷಣಗಳನ್ನು Trinket ಇನ್ನೂ ಗುರುತಿಸದಿರುವುದು ಇದಕ್ಕೆ ಕಾರಣ. ಆದಾಗ್ಯೂ, ಕೋಡ್ ಇನ್ನೂ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+CSS ಗ್ರಿಡ್ ಕೋಡ್ ನಿಮಗೆ 'ಅಜ್ಞಾತ ಆಸ್ತಿ' ಎಚ್ಚರಿಕೆಗಳನ್ನು ಅಥವಾ 'ಅನಿರೀಕ್ಷಿತ ಟೋಕನ್ 1fr' ನಂತಹ ದೋಷವನ್ನು ನೀಡಿದರೆ, ನೀವು ಇವುಗಳನ್ನು ನಿರ್ಲಕ್ಷಿಸಬಹುದು.
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![ಪಕ್ಕದಲ್ಲಿ ಕೆಳಭಾಗದಲ್ಲಿ ಅಕ್ಕಪಕ್ಕವಿದೆ](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+ಅನ್ನು `aside` ಇಡೋಣ ಅಂಶಗಳು ಬಲಭಾಗದಲ್ಲಿವೆ ಮತ್ತು ಅವುಗಳನ್ನು `article` ಅರ್ಧ ಅಗಲವನ್ನಾಗಿ ಮಾಡಿ.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ `grid-template-columns` ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಿ ಮತ್ತು `grid-template-areas` ಗೆ:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -91,7 +91,7 @@ Let's put the `aside` elements over on the right and make them half the width of
 
 ![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ ನಿಮಗೆ `aside` ಬೇಡವಾದರೆ ಎಲ್ಲಾ ರೀತಿಯಲ್ಲಿ ಕೆಳಕ್ಕೆ ವಿಸ್ತರಿಸುವ ಅಂಶಗಳು, ನೀವು ಡಾಟ್ ಬಳಸಿ ಖಾಲಿ ಜಾಗವನ್ನು ಸೇರಿಸಬಹುದು: 
 
 ```css
     grid-template-areas: 
@@ -100,19 +100,19 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![ಬಲಭಾಗದಲ್ಲಿ ಮತ್ತು ಕೆಳಗೆ ವಿಸ್ತರಿಸಿಲ್ಲ](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## ಸವಾಲು: ವಿಭಿನ್ನ ಪರದೆಯ ಗಾತ್ರಗಳಿಗಾಗಿ ವಿಭಿನ್ನ ವಿನ್ಯಾಸಗಳನ್ನು ಮಾಡಿ
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ ಪರದೆಯು ಎಷ್ಟು ಅಗಲವಿದೆ ಎಂಬುದರ ಆಧಾರದ ಮೇಲೆ ವಿನ್ಯಾಸವನ್ನು ಬದಲಾಯಿಸಲು ನೀವು ಮೊದಲು ಸೇರಿಸಿದ ಪರದೆಯ ಗಾತ್ರದ ಪರಿಶೀಲನೆಗಳನ್ನು ಬಳಸಬಹುದೇ? ಗಮನಿಸಿ: ಪ್ರತಿ ಪರದೆಯ ಗಾತ್ರಕ್ಕೆ ನೀವು ಈಗಾಗಲೇ CSS ಬ್ಲಾಕ್ಗಳನ್ನು ರಚಿಸಿದ್ದರೆ, ಹೊಸದನ್ನು ರಚಿಸುವ ಬದಲು ನೀವು ಆ ಬ್ಲಾಕ್ಗಳಿಗೆ ಹೊಸ CSS ಕೋಡ್ ಅನ್ನು ಸೇರಿಸಬಹುದು.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+ಪರದೆಯು 1000 pixel‌ಗಳಿಗಿಂತ ದೊಡ್ಡದಾದಾಗ ಮೇಲಿನ CSS ವರ್ಗದ ವಿನ್ಯಾಸವನ್ನು ಈ ಕೆಳಗಿನ ಕೋಡ್ ವ್ಯಾಖ್ಯಾನಿಸುತ್ತದೆ:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+ಪರದೆಯು 1600 pixel‌ಗಳಿಗಿಂತ ದೊಡ್ಡದಾದಾಗ ಮೇಲಿನ CSS ವರ್ಗದ ವಿನ್ಯಾಸವನ್ನು ಈ ಕೆಳಗಿನ ಕೋಡ್ ವ್ಯಾಖ್ಯಾನಿಸುತ್ತದೆ:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+**CSS grid** ನೊಂದಿಗೆ, ನೀವು ಇಷ್ಟಪಡುವ ಯಾವುದೇ ವಿನ್ಯಾಸವನ್ನು ನೀವು ಮಾಡಬಹುದು. ನೀವು ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸಿದರೆ, [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid) ಗೆ ಹೋಗಿ {:target="_blank"}
