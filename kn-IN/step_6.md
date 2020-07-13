@@ -32,15 +32,15 @@ The `figcaption` element is your **caption**. It can go either above the `img` e
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: ಇದು ಏಕೆ ಉಪಯುಕ್ತವಾಗಿದೆ?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+`figure` ಅಂಶವು ಒಂದು ರೀತಿಯ **container** ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ನಿಮ್ಮ ಚಿತ್ರ ಮತ್ತು ಅದರ ಶೀರ್ಷಿಕೆಗಾಗಿ. ಶೈಲಿಗಳನ್ನು ವ್ಯಾಖ್ಯಾನಿಸುವಾಗ ಅವುಗಳನ್ನು ಒಂದು ಘಟಕವಾಗಿ ಪರಿಗಣಿಸಲು ಇದು ನಿಮ್ಮನ್ನು ಅನುಮತಿಸುತ್ತದೆ.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+ತಾರ್ಕಿಕವಾಗಿ ಅವುಗಳನ್ನು ಒಟ್ಟಿಗೆ ಗುಂಪು ಮಾಡುವುದು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್ ಕೋಡ್‌ನಲ್ಲಿ ಉತ್ತಮ ರಚನೆಯನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
 
 \--- /collapse \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+ನೀವು ಸಿಎಸ್ಎಸ್ ಕೋಡ್ ಅನ್ನು ಸ್ಟೈಲ್ `figure`ಗೆ ಬಳಸಬಹುದು ಮತ್ತು `figcaption` ನೀವು ತರಗತಿಗಳು, IDಗಳು ಅಥವಾ ಎಲಿಮೆಂಟ್ ಸೆಲೆಕ್ಟರ್‌ಗಳನ್ನು ಬಳಸುವ ಯಾವುದೇ ಅಂಶದಂತೆ. ಹೊಸ ಪಾತ್ರೆಯಿಂದ ಸೇರಿಸಲಾದ ಹೆಚ್ಚುವರಿ ಅಂತರವನ್ನು ತೆಗೆದುಹಾಕಲು ನಾನು ಈ ಕೆಳಗಿನ ನಿಯಮಗಳನ್ನು ಸೇರಿಸುತ್ತಿದ್ದೇನೆ:
 
 ```css
   figure { 
@@ -51,13 +51,13 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
   }
 ```
 
-### Side notes
+### ಅಡ್ಡ ಟಿಪ್ಪಣಿಗಳು
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+ನನ್ನ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿನ ಆಕರ್ಷಣೆಗಳ ಪುಟವು ಭೇಟಿ ನೀಡಬೇಕಾದ ಸ್ಥಳಗಳ ಪಟ್ಟಿಯಾಗಿದೆ. ಹವಾಮಾನದ ಬಗ್ಗೆ ಕೆಲವು ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸಲು ನಾನು ಬಯಸುತ್ತೇನೆ. ಆ ಮಾಹಿತಿಯು ನಿಜವಾಗಿಯೂ `article` ಸೇರಿಲ್ಲಎಲ್ಲಾ ಆಕರ್ಷಣೆಗಳೊಂದಿಗೆ ಅಂಶ. ನೀವು ಯಾವಾಗ ಅನ್ನು `aside` ಬಳಸಬಹುದು ಎಂಬುದಕ್ಕೆ ಇದು ಒಂದು ಉದಾಹರಣೆಯಾಗಿದೆ ಅಂಶ.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ `article` ಹೊಂದಿರುವ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನ ಪುಟಕ್ಕೆ ಹೋಗಿ ಅದರ ಮೇಲಿನ ಅಂಶ — ನಾನು `attractions.html` ಅನ್ನು ಬಳಸುತ್ತಿದ್ದೇನೆ.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
++ **Outside** `article` ಅಂಶದ, ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಜೋಡಿಗಳನ್ನು `<aside> </aside>` ನಿಮ್ಮ ಹೆಚ್ಚುವರಿ ವಿಷಯವನ್ನು ಹೊಂದಿರುವ ಟ್ಯಾಗ್‌ಗಳು.
 
 ```html
   <aside class="sideNoteStyle">
@@ -75,17 +75,17 @@ The Attractions page on my website is a list of places to visit. I want to add s
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: ಇದು ಏಕೆ ಉಪಯುಕ್ತವಾಗಿದೆ?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+`aside`, `article`, ಮತ್ತು ಇತರ ಪಾತ್ರೆಗಳು ಎಲ್ಲಾ ಹೋಲುತ್ತವೆ. ನಿಜವಾದ ವ್ಯತ್ಯಾಸವೆಂದರೆ **meaning**, ಅಂದರೆ, ನೀವು ಅವುಗಳನ್ನು ಏನು ಬಳಸುತ್ತೀರಿ.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+ನಿಮಗೆ ಸಾಧ್ಯವಾದಾಗಲೆಲ್ಲಾ ಅರ್ಥಪೂರ್ಣ HTML ಅಂಶಗಳನ್ನು ಬಳಸುವುದು ಮುಖ್ಯ. ಇದು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಉತ್ತಮ ರಚನೆಯನ್ನು ನೀಡುತ್ತದೆ ಮತ್ತು **screen readers** ಬಳಸುವ ಜನರಿಗೆ ವಿಶೇಷವಾಗಿ ಸಹಾಯಕವಾಗುತ್ತದೆ.
 
 \--- /collapse \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+ನೀವು ಅಲ್ಲಿ ಇತರ ಅಂಶವನ್ನು ಗುರುತಿಸಿದ್ದೀರಾ, `span`? ಹೆಚ್ಚುವರಿ CSS ಕೋಡ್ ಸೇರಿಸಲು ನೀವು ಬಳಸಬಹುದಾದ ವಿಶೇಷ ಟ್ಯಾಗ್ ಇದಾಗಿದೆ! ನೀವು `span` ಜೋಡಿ ನಡುವೆ ಏನು ಬೇಕಾದರೂ ಹಾಕಬಹುದು ಟ್ಯಾಗ್‌ಗಳು. **part** ಸ್ಟೈಲಿಂಗ್ ಮಾಡುವಂತಹ ವಿಷಯಗಳಿಗೆ ಇದು ಉಪಯುಕ್ತವಾಗಿದೆ ಪ್ಯಾರಾಗ್ರಾಫ್ನಲ್ಲಿನ ಪಠ್ಯದ.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ ಮೇಲಿನ HTML ಕೋಡ್‌ಗಾಗಿ ಸ್ಟೈಲಿಂಗ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಈ ಕೆಳಗಿನ CSS ಕೋಡ್ ಅನ್ನು ನಿಮ್ಮ style sheet‌ಗೆ ಸೇರಿಸಿ.
 
 ```css
   .sideNoteStyle {
@@ -100,8 +100,8 @@ Did you spot the other element in there, `span`? This is a special tag you can u
   }
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![ತಮ್ಮದೇ ಆದ ಸ್ಟೈಲಿಂಗ್‌ನೊಂದಿಗೆ ಹೆಚ್ಚುವರಿ ಟಿಪ್ಪಣಿಗಳು](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+ಮುಂದಿನ ಕಾರ್ಡ್‌ನಲ್ಲಿ, ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನ ವಿನ್ಯಾಸವನ್ನು ಹೆಚ್ಚು ಆಸಕ್ತಿಕರಗೊಳಿಸುವುದು ಹೇಗೆ ಎಂದು ನೀವು ಕಲಿಯಲಿದ್ದೀರಿ!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ ತಯಾರಾಗಲು, ಒಂದು `article` ಮತ್ತು ಎರಡು ಅನ್ನು ಹೊಂದಿರುವ ಪುಟವನ್ನು`aside` ಮಾಡಿ `<main> </main>`ಒಳಗೆ ಅಂಶಗಳು ಟ್ಯಾಗ್‌ಗಳು. ಅಥವಾ ನೀವು ಬಯಸಿದರೆ, ನೀವು ನನ್ನ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಆಕರ್ಷಣೆಗಳ ಪುಟದೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಬಹುದು.
