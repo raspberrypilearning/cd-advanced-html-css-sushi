@@ -4,7 +4,7 @@
 
 ### ಶೀರ್ಷಿಕೆಗಳೊಂದಿಗೆ ಚಿತ್ರಗಳು
 
-+ Find an `img` element where you have text above or below that goes with the picture. ನಾನು ಟಿಟೊ ಚಿತ್ರದೊಂದಿಗೆ `index.html`ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೇನೆ, ಆದರೆ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿರುವ ಯಾವುದನ್ನಾದರೂ ನೀವು ಹೋಗಬಹುದು. 
++ `img`ಅನ್ನು ಹುಡುಕಿ ನೀವು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಪಠ್ಯವನ್ನು ಹೊಂದಿರುವ ಅಂಶವು ಚಿತ್ರದೊಂದಿಗೆ ಹೋಗುತ್ತದೆ. ನಾನು ಟಿಟೊ ಚಿತ್ರದೊಂದಿಗೆ `index.html`ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೇನೆ, ಆದರೆ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿರುವ ಯಾವುದನ್ನಾದರೂ ನೀವು ಹೋಗಬಹುದು. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
@@ -26,7 +26,7 @@
   </figure>
 ```
 
-`figcaption` ಅಂಶವು ನಿಮ್ಮ **caption**. It can go either above the `img` element or below it.
+`figcaption` ಅಂಶವು ನಿಮ್ಮ **caption**. ಇದು `img` ಗಿಂತ ಮೇಲಕ್ಕೆ ಹೋಗಬಹುದು ಅಂಶ ಅಥವಾ ಅದರ ಕೆಳಗೆ.
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
