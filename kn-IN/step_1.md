@@ -1,10 +1,10 @@
-## Introduction
+## ಪರಿಚಯ
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+ತಂಪಾದ ಪರಿಣಾಮಗಳು ಮತ್ತು ವಿನ್ಯಾಸಗಳನ್ನು ಬಳಸಿಕೊಂಡು ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಹೊಳಪು ಮತ್ತು ವೃತ್ತಿಪರವಾಗಿ ಕಾಣುವಂತೆ ಮಾಡುವುದು ಹೇಗೆ ಎಂದು ಈ ಸುಶಿ ಕಾರ್ಡ್‌ಗಳು ನಿಮಗೆ ತೋರಿಸುತ್ತವೆ.
 
-### What you will make
+### ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಹೇಗೆ ಬಳಸಬೇಕೆಂದು ನೀವು ಕಲಿಯುವ ಕೆಲವು ಪರಿಣಾಮಗಳನ್ನು ಪ್ರಯತ್ನಿಸಲು ಕೆಳಗಿನ ವಿಂಡೋದಲ್ಲಿ ನಿಮ್ಮ ಮೌಸ್ cursor ಅನ್ನು ಸರಿಸಿ:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,27 +14,27 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: ನೀವು ಏನು ಕಲಿಯುವಿರಿ
 
-In these Sushi Cards, you will find out how to:
+ಈ ಸುಶಿ ಕಾರ್ಡ್‌ಗಳಲ್ಲಿ, ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ನೀವು ಕಂಡುಕೊಳ್ಳುತ್ತೀರಿ:
 
-+ Create any website layout you want
-+ Make your layout adjust itself automatically to different screen sizes
-+ Make a collage of overlapping pictures and text
-+ Apply some neat hover and click effects that you might have seen on other websites
++ ನಿಮಗೆ ಬೇಕಾದ ಯಾವುದೇ ವೆಬ್‌ಸೈಟ್ ವಿನ್ಯಾಸವನ್ನು ರಚಿಸಿ
++ ನಿಮ್ಮ ವಿನ್ಯಾಸವು ವಿಭಿನ್ನ ಪರದೆಯ ಗಾತ್ರಗಳಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಂದಿಸುವಂತೆ ಮಾಡಿ
++ ಅತಿಕ್ರಮಿಸುವ ಚಿತ್ರಗಳು ಮತ್ತು ಪಠ್ಯದ ಕೊಲಾಜ್ ಮಾಡಿ
++ ಇತರ ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ನೀವು ನೋಡಿರಬಹುದಾದ ಕೆಲವು ಅಚ್ಚುಕಟ್ಟಾಗಿ ಹೂವರ್ ಮತ್ತು ಕ್ಲಿಕ್ ಪರಿಣಾಮಗಳನ್ನು ಅನ್ವಯಿಸಿ
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: ನಿಮಗೆ ಬೇಕಾದುದನ್ನು
 
-### Hardware
+### ಯಂತ್ರಾಂಶ (hardware)
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ [trinket.io](https://trinket.io){:target="_blank"} ಪ್ರವೇಶಿಸಲು ಸಾಮರ್ಥ್ಯವಿರುವ ಕಂಪ್ಯೂಟರ್
 
-### Software
+### ಸಾಫ್ಟ್ವೇರ್
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ ಈ ಯೋಜನೆಯನ್ನು ವೆಬ್ ‌browserನಲ್ಲಿ [trinket.io](https://trinket.io) ಬಳಸಿ {:target"_blank"} ಅಥವಾ ಸರಳ ಪಠ್ಯ ಸಂಪಾದಕವನ್ನು ಬಳಸಿಕೊಂಡು ಆಫ್‌ಲೈನ್ ಬಳಸಿ ಪೂರ್ಣಗೊಳಿಸಬಹುದು.
 
 \--- /collapse \---
