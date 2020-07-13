@@ -1,10 +1,10 @@
-## Captions and side notes
+## ಶೀರ್ಷಿಕೆಗಳು ಮತ್ತು ಅಡ್ಡ ಟಿಪ್ಪಣಿಗಳು
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+ಈ ಕಾರ್ಡ್‌ನಲ್ಲಿ ನೀವು ಇನ್ನೂ ಎರಡು ಬಗೆಯ **container** ಬಗ್ಗೆ ಕಲಿಯುವಿರಿ ಅಂಶ: ಚಿತ್ರಕ್ಕೆ ಶೀರ್ಷಿಕೆ (ಶೀರ್ಷಿಕೆ ಅಥವಾ ಸಣ್ಣ ವಿವರಣೆಯಂತಹ ಕೆಲವು ಪಠ್ಯ) ಸೇರಿಸಲು ನೀವು ಬಳಸಬಹುದಾದ ಒಂದು, ಮತ್ತು ಇನ್ನೊಂದು ಹೆಚ್ಚುವರಿ ವಿಷಯವನ್ನು ನೀವು ಹೊಂದಿರುವಾಗ ಅದು ಪುಟದಲ್ಲಿನ ಮುಖ್ಯ ಮಾಹಿತಿಯೊಂದಿಗೆ ನಿಜವಾಗಿಯೂ ಸೇರುವುದಿಲ್ಲ.
 
-### Pictures with captions
+### ಶೀರ್ಷಿಕೆಗಳೊಂದಿಗೆ ಚಿತ್ರಗಳು
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ Find an `img` element where you have text above or below that goes with the picture. ನಾನು ಟಿಟೊ ಚಿತ್ರದೊಂದಿಗೆ `index.html`ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೇನೆ, ಆದರೆ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿರುವ ಯಾವುದನ್ನಾದರೂ ನೀವು ಹೋಗಬಹುದು. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ ಕೋಡ್ ಮೇಲಿನ ಸಾಲಿನಲ್ಲಿ, ಆರಂಭಿಕ ಟ್ಯಾಗ್ `<figure>` ಅನ್ನು ಸೇರಿಸಿ. ಕೋಡ್ ಮೇಲಿನ ಸಾಲಿನಲ್ಲಿ, ಆರಂಭಿಕ ಟ್ಯಾಗ್ `</figure>` ಅನ್ನು ಸೇರಿಸಿ.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ ಮುಂದೆ, `p` ಟ್ಯಾಗ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ, ಅಥವಾ ಪಠ್ಯದ ಸುತ್ತಲೂ ನೀವು ಹೊಂದಿರುವ ಯಾವುದೇ ಟ್ಯಾಗ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ (ಬಹುಶಃ ಇದು `h2`ನಂತಹ ಶೀರ್ಷಿಕೆಯಾಗಿದೆ?), ಮತ್ತು ಪಠ್ಯವನ್ನು `<figcaption> </figcaption>` ಬದಲಿಗೆ ಟ್ಯಾಗ್‌ಗಳು. ಇಡೀ ವಿಷಯವು ಈ ರೀತಿ ಕಾಣಬೇಕು:
 
 ```html
   <figure>
@@ -26,7 +26,7 @@ On this card you'll learn about two more types of **container** element: one tha
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+`figcaption` ಅಂಶವು ನಿಮ್ಮ **caption**. It can go either above the `img` element or below it.
 
 ![Picture of Tito with a caption](images/figureAndCaption.png)
 
