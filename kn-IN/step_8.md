@@ -74,9 +74,9 @@ You might want to have some of the pictures overlapping. But how do you choose w
 
 ## title: How does z-index work?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+The `z-index` property lets you decide how two or more elements should overlap. ಮೌಲ್ಯವು ಯಾವುದೇ ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆಯಾಗಿರಬಹುದು.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+**highest** ಸಂಖ್ಯೆ **top** ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ರಾಶಿಯ, ಅಥವಾ ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಹೇಳುವುದಾದರೆ **front**. ಮುಂದಿನ ಅತ್ಯಧಿಕ ಸಂಖ್ಯೆಯ ಅಂಶವು ಅದರ ಹಿಂದೆ, ಮತ್ತು ಇತರರ ಮುಂದೆ, ಮತ್ತು ಹೀಗೆ, ನೀವು ಕಡಿಮೆ ಸಂಖ್ಯೆಯೊಂದಿಗೆ ಅಂಶವನ್ನು ಪಡೆಯುವವರೆಗೆ, ಅದು ಇತರ ಎಲ್ಲ ಅಂಶಗಳ ಹಿಂದೆ ಹಿಂಭಾಗದಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ.
 
 \--- /collapse \---
 
