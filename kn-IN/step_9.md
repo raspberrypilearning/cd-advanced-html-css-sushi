@@ -1,12 +1,12 @@
-## Special effects
+## ವಿಶೇಷ ಪರಿಣಾಮಗಳು
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+ಈ ಕಾರ್ಡ್‌ನಲ್ಲಿ ನೀವು ಸಿಎಸ್‌ಎಸ್‌ನೊಂದಿಗೆ ಸಾಧಿಸಬಹುದಾದ ಇನ್ನೂ ಕೆಲವು ಉತ್ತಮ ಪರಿಣಾಮಗಳನ್ನು ಕಲಿಯುವಿರಿ.
 
-### Shadows and movement
+### ನೆರಳುಗಳು ಮತ್ತು ಚಲನೆ
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+ನೀವು ಮೊದಲು ಮಾಡಿದ ಕಾರ್ಡ್‌ಗಳ ಮೇಲೆ ನಿಮ್ಮcursor ಅನ್ನು ಸುಳಿದಾಡಿದಾಗ ಸ್ವಲ್ಪ ಚಲನೆಯನ್ನು ಸೇರಿಸೋಣ.
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ `.card:hover` ಅನ್ನು ಹುಡುಕಿ ಮೊದಲಿನಿಂದ ಸಿಎಸ್ಎಸ್ ವರ್ಗ ಮತ್ತು ಅದನ್ನು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಬದಲಾಯಿಸಿ:
 
 ```css
     .card:hover {
@@ -15,13 +15,13 @@ Let's add a little movement when you hover your cursor over the cards you made e
     }
 ```
 
-+ Try out different values in the `translate` function!
++ `translate` function ವಿಭಿನ್ನ ಮೌಲ್ಯಗಳನ್ನು ಪ್ರಯತ್ನಿಸಿ!
 
 ## \--- collapse \---
 
-## title: The `transform` property
+## title: `transform` ಆಸ್ತಿ
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+ನೀವು ಮಧ್ಯಂತರ HTML / CSS ಸುಶಿ ಕಾರ್ಡ್‌ಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದರೆ, `transform`ರವನ್ನು ನೀವು ನೆನಪಿರಬಹುದು ಕೆಲವು `@keyframes` ನಲ್ಲಿನ ಆಸ್ತಿ ಅನಿಮೇಷನ್. Here you see that you can also use the property on its own within a regular CSS block.
 
 One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
 
