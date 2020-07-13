@@ -1,10 +1,10 @@
-## Clickable cards
+## ಕ್ಲಿಕ್ ಮಾಡಬಹುದಾದ ಕಾರ್ಡ್‌ಗಳು
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+ಫೋಟೋ ಗ್ಯಾಲರಿ ಮಾಡಲು ಅಥವಾ ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ಗಳನ್ನು ತೋರಿಸುವ ಪೋರ್ಟ್ಫೋಲಿಯೋ ಪುಟವನ್ನು ಮಾಡಲು ನೀವು ಬಳಸಬಹುದಾದ ತಂತ್ರ ಇಲ್ಲಿದೆ: ಸ್ವಲ್ಪ **preview cards**.
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಈ ಕೆಳಗಿನ HTML ಕೋಡ್ ಅನ್ನು ಸೇರಿಸಿ, ನೀವು ಎಲ್ಲಿ ಬೇಕಾದರೂ. ನಾನು `index.html` ನಲ್ಲಿ ಗಣಿ ಮಾಡುತ್ತಿದ್ದೇನೆ. ನಿಮ್ಮ ಸ್ವಂತ ಪೂರ್ವವೀಕ್ಷಣೆ ಕಾರ್ಡ್‌ಗಳಿಗೆ ತಕ್ಕಂತೆ ನೀವು ಚಿತ್ರ ಮತ್ತು ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಬಹುದು. ನಾನು ಐರ್ಲೆಂಡ್‌ನ ಪ್ರವಾಸಿ ಆಕರ್ಷಣೆಗಳ ಮುಖ್ಯಾಂಶಗಳನ್ನು ಮಾಡಲಿದ್ದೇನೆ.
 
 ```html
     <article class="card">
@@ -16,7 +16,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text before styles are applied](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ ತರಗತಿಗಳು `card` ರಚಿಸಲು ಕೆಳಗಿನ CSS ಕೋಡ್ ಸೇರಿಸಿ ಮತ್ತು `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -40,9 +40,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
 
 ![Image and text with styling to create a small card effect](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+ಇಡೀ ಪೂರ್ವವೀಕ್ಷಣೆ ಕಾರ್ಡ್ ಅನ್ನು ಲಿಂಕ್ ಆಗಿ ಪರಿವರ್ತಿಸೋಣ ಆದ್ದರಿಂದ ಜನರು ಹೆಚ್ಚಿನ ಮಾಹಿತಿಯನ್ನು ನೋಡಲು ಕ್ಲಿಕ್ ಮಾಡಬಹುದು.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ ಸಂಪೂರ್ಣ `article` ಇರಿಸಿ ಲಿಂಕ್ ಅಂಶದೊಳಗಿನ ಅಂಶ. ಮುಚ್ಚುವಿಕೆಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ `</a>` ಟ್ಯಾಗ್ ಮುಚ್ಚಿದ ನಂತರ `</article>` ಟ್ಯಾಗ್! **URL**ಲಿಂಕ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ಹಿಂಜರಿಯಬೇಡಿ ನೀವು ಲಿಂಕ್ ಮಾಡಲು ಬಯಸುವ ಯಾವುದಕ್ಕೂ. ಅದು ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಮತ್ತೊಂದು ಪುಟವಾಗಬಹುದು ಅಥವಾ ಅದು ಸಂಪೂರ್ಣವಾಗಿ ಮತ್ತೊಂದು ವೆಬ್‌ಸೈಟ್ ಆಗಿರಬಹುದು.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -58,7 +58,7 @@ Let's turn the whole preview card into a link so people can click to see more in
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: ಪುಟದ ನಿರ್ದಿಷ್ಟ ಭಾಗಕ್ಕೆ ಲಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ
 
 `href`ನ ಮೌಲ್ಯ ಹೇಗೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ ನನ್ನ ಲಿಂಕ್‌ನಲ್ಲಿ `#scFota` ನಲ್ಲಿ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ? ಇದು ಪುಟದ ನಿರ್ದಿಷ್ಟ ಭಾಗಕ್ಕೆ ಹೋಗಲು ನೀವು ಬಳಸಬಹುದಾದ ಅಚ್ಚುಕಟ್ಟಾಗಿ ಟ್ರಿಕ್ ಆಗಿದೆ.
 
