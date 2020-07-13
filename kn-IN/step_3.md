@@ -60,21 +60,21 @@ Let's turn the whole preview card into a link so people can click to see more in
 
 ## title: Linking to a specific part of a page
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+`href`ನ ಮೌಲ್ಯ ಹೇಗೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ ನನ್ನ ಲಿಂಕ್‌ನಲ್ಲಿ `#scFota` ನಲ್ಲಿ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ? ಇದು ಪುಟದ ನಿರ್ದಿಷ್ಟ ಭಾಗಕ್ಕೆ ಹೋಗಲು ನೀವು ಬಳಸಬಹುದಾದ ಅಚ್ಚುಕಟ್ಟಾಗಿ ಟ್ರಿಕ್ ಆಗಿದೆ.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ ಮೊದಲಿಗೆ, ಲಿಂಕ್ ಮಾಡಲು ಪುಟದ URL ಅನ್ನು ಟೈಪ್ ಮಾಡಿ, ನಂತರ `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ ನೀವು ಲಿಂಕ್ ಮಾಡುತ್ತಿರುವ ಪುಟದ ಕೋಡ್ ಫೈಲ್‌ನಲ್ಲಿ, ನೀವು ಹೋಗಲು ಬಯಸುವ ಭಾಗವನ್ನು ಹುಡುಕಿ ಮತ್ತು ಆ ಅಂಶಕ್ಕೆ `id`ನೀಡಿ, ಉದಾಹರಣೆಗೆ, `<section id="scFota"`. `id`ಯ ಮೌಲ್ಯ `#`ನಂತರ ನೀವು ಟೈಪ್ ಮಾಡುವುದು ನಿಮ್ಮ ಲಿಂಕ್‌ನಲ್ಲಿ.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: ಶೈಲಿಗಳನ್ನು ಮರುಹೊಂದಿಸಲಾಗುತ್ತಿದೆ
 
-Now that the whole preview card is a link, the text font may have changed.
+ಈಗ ಇಡೀ ಪೂರ್ವವೀಕ್ಷಣೆ ಕಾರ್ಡ್ ಲಿಂಕ್ ಆಗಿರುವುದರಿಂದ, ಪಠ್ಯ ಫಾಂಟ್ ಬದಲಾಗಿರಬಹುದು.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ ಹಾಗಿದ್ದಲ್ಲಿ, ನೀವು **CSS class** ವನ್ನು ಸೇರಿಸುವ ಮೂಲಕ ಅದನ್ನು ಸರಿಪಡಿಸಬಹುದು ಲಿಂಕ್‌ಗೆ: `class="cardLink"`. ನಿಮ್ಮ style sheet‌ನಲ್ಲಿ ಹಾಕಲು CSS ಕೋಡ್ ಇಲ್ಲಿದೆ:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+ಯಾವುದೇ ಆಸ್ತಿಯ ಮೌಲ್ಯವನ್ನು `inherit`ಹೊಂದಿಸುವುದು **parent** ಮೌಲ್ಯವನ್ನು ಬಳಸುವಂತೆ ಮಾಡುತ್ತದೆ ಅಂಶ ಹೊಂದಿದೆ. ಆದ್ದರಿಂದ ಈ ಸಂದರ್ಭದಲ್ಲಿ, ಪಠ್ಯದ ಬಣ್ಣವು ಮುಖಪುಟದಲ್ಲಿನ ಉಳಿದ ಪಠ್ಯಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ ಈ ಕಾರ್ಡ್‌ಗಳಲ್ಲಿ ಕನಿಷ್ಠ ನಾಲ್ಕು ಅಥವಾ ಐದು ಕಾರ್ಡ್‌ಗಳನ್ನು ಮಾಡಿ. ನೀವು ನನ್ನ ಉದಾಹರಣೆ ವೆಬ್‌ಸೈಟ್‌ನಿಂದ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದರೆ, ಆಕರ್ಷಣೆಗಳ ಪುಟದಲ್ಲಿನ ಪ್ರತಿಯೊಂದು ವಿಭಾಗಗಳಿಗೆ ನೀವು ಒಂದನ್ನು ಮಾಡಬಹುದು. ಮುಂದಿನ ಸುಶಿ ಕಾರ್ಡ್‌ನಲ್ಲಿ, ಕಾರ್ಡ್‌ಗಳನ್ನು ತಂಪಾದ ಟ್ರಿಕ್‌ನೊಂದಿಗೆ ಹೇಗೆ ಜೋಡಿಸುವುದು ಎಂದು ನೀವು ಕಲಿಯುವಿರಿ!
