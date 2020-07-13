@@ -1,12 +1,12 @@
-## Design cool page layouts
+## ತಂಪಾದ ಪುಟ ವಿನ್ಯಾಸಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ ಈ ಕಾರ್ಡ್‌ಗಾಗಿ ನೀವು ಒಳಗೆ ಮೂರು ಅಂಶಗಳೊಂದಿಗೆ `main` ಅಂಶವನ್ನು ಹೊಂದಿರುವ ಪುಟದೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಬೇಕು: ಒಂದು `article` ಮತ್ತು ಎರಡು `aside` ಗಳು. ನಿಮಗೆ ಅಗತ್ಯವಿದ್ದರೆ ಮುಂದುವರಿಯಿರಿ ಮತ್ತು ಮೊದಲು ಇವುಗಳನ್ನು ರಚಿಸಿ. ನೀವು ನನ್ನ ವೆಬ್‌ಸೈಟ್‌ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಲು ಬಯಸಿದರೆ, ಅನ್ನು `aside` ಸೇರಿಸಿ ಹಿಂದಿನ ಸುಶಿ ಕಾರ್ಡ್‌ನಿಂದ ಆಕರ್ಷಣೆಗಳ ಪುಟಕ್ಕೆ ಕೋಡ್. 
 
-Here are three different page layouts you'll be applying:
+ನೀವು ಅನ್ವಯಿಸುವ ಮೂರು ವಿಭಿನ್ನ ಪುಟ ವಿನ್ಯಾಸಗಳು ಇಲ್ಲಿವೆ:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ `main` ಹೊಸ CSS ತರಗತಿಗಳನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಅದರೊಳಗಿನ ಮೂರು ಅಂಶಗಳು.
 
 ```html
     <main class="attPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+ನೀವು ವಿನ್ಯಾಸವನ್ನು ಬದಲಾಯಿಸುವ ಕಂಟೇನರ್ `main`, ಆದರೆ ನೀವು ಇದನ್ನು `div` ನಂತಹ ಯಾವುದೇ ರೀತಿಯ ಕಂಟೇನರ್‌ನೊಂದಿಗೆ ಮಾಡಬಹುದು ಅಥವಾ `article`, ಅಥವಾ ಇಡೀ ಪುಟ `boby`. ನೀವು ಬಳಸಲು ಹೊರಟಿರುವ ತಂತ್ರವನ್ನು **CSS grid** ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+ಈ ಉದಾಹರಣೆಯಲ್ಲಿ, `header` ಮತ್ತು `footer` ವಿನ್ಯಾಸದಿಂದ ಹೊರಗುಳಿಯಲಾಗುವುದು, ಆದರೆ ಅವುಗಳನ್ನು ಗ್ರಿಡ್‌ನಲ್ಲಿ ಸೇರಿಸುವುದು ತುಂಬಾ ಸಾಮಾನ್ಯವಾಗಿದೆ.
 
-+ Set the `display` property to `grid` on the overall container:
++ `display`ನವನ್ನು ಹೊಂದಿಸಿ `grid`‌ಗೆ ಆಸ್ತಿ ಒಟ್ಟಾರೆ ಪಾತ್ರೆಯಲ್ಲಿ:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+`grid-column-gap` ಏನು ಎಂದು ನೀವು ಯೋಚಿಸುತ್ತೀರಿ ಮತ್ತು `grid-row-gap` ಗುಣಲಕ್ಷಣಗಳು ಮಾಡುತ್ತವೆ?
 
-+ Next, you name a `grid-area` for each element: 
++ ಮುಂದೆ, ನೀವು `grid-area`ವನ್ನು ಹೆಸರಿಸಿ ಪ್ರತಿ ಅಂಶಕ್ಕೆ: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+ನಂತರ ನೀವು ನಿಮ್ಮ ವಿನ್ಯಾಸವನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸುತ್ತೀರಿ! ಎರಡು ಅನ್ನು `aside` ಇಡೋಣ ಅಂಶಗಳು ಪುಟದ ಕೆಳಭಾಗದಲ್ಲಿ ಅಕ್ಕಪಕ್ಕದಲ್ಲಿರುತ್ತವೆ. ಇದಕ್ಕಾಗಿ ನಿಮಗೆ ಎರಡು **columns** ಬೇಕಾಗುತ್ತವೆ ಸಮಾನ ಅಗಲ. ನೀವು **row** ಇರಿಸಬಹುದು ಎತ್ತರ ಸ್ವಯಂಚಾಲಿತ.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ ಕೆಳಗಿನ ಕೋಡ್ ಅನ್ನು `.attPageLayoutGrid` ಒಳಗೆ ಇರಿಸಿ CSS ನಿಯಮಗಳು:
 
 ```css
     grid-template-rows: auto;
@@ -64,7 +64,7 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` **fraction** ಸೂಚಿಸುತ್ತದೆ. ನೀವು `article`ವನ್ನು ಹೇಗೆ ಮಾಡುತ್ತೀರಿ ಎಂಬುದನ್ನು ಗಮನಿಸಿ ಎರಡು ಕಾಲಮ್‌ಗಳ ಮೇಲೆ ಎಲ್ಲಾ ಜಾಗವನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ.
 
 ## \--- collapse \---
 
