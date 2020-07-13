@@ -53,14 +53,14 @@ Voilà! **Flex**ಗೆ ಧನ್ಯವಾದಗಳು, ನಿಮ್ಮ ಕಾರ
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![ಐಟಂಗಳೊಂದಿಗೆ ಮೆನು ಎಡಕ್ಕೆ ಜೋಡಿಸಲಾಗಿದೆ](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+ನೀವು ಒಂದೇ ಮೆನುವಿನೊಂದಿಗೆ ಕೊನೆಗೊಳ್ಳುತ್ತೀರಿ, ಸರಿ? `flex` ಬಗ್ಗೆ ತಂಪಾದ ವಿಷಯ`justify-content`ದೊಂದಿಗೆ ನೀವು ವಿನ್ಯಾಸವನ್ನು ನಿಯಂತ್ರಿಸಬಹುದೇ.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ `justify-content` ಮೌಲ್ಯವನ್ನು ಬದಲಾಯಿಸಿ`flex-endಗೆ` ಮತ್ತು ಏನಾಗುತ್ತದೆ ನೋಡಿ. ಅಥವಾ ಅದನ್ನು `space-around` ನೀವು ಕಾರ್ಡ್‌ಗಳಿಗಾಗಿ ಮಾಡಿದಂತೆಯೇ ಮೆನು ಐಟಂಗಳನ್ನು ಸಮ ಅಂತರದಲ್ಲಿ ಮಾಡಲು.
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![ಸಮ ಅಂತರದಲ್ಲಿರುವ ಐಟಂಗಳೊಂದಿಗೆ ಮೆನು](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![ಐಟಂಗಳೊಂದಿಗೆ ಮೆನು ಬಲಕ್ಕೆ ಜೋಡಿಸಲಾಗಿದೆ](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** ಇಡೀ ಸುಶಿ ಕಾರ್ಡ್ ಸರಣಿಯನ್ನು ತನ್ನದೇ ಆದ ಭರ್ತಿ ಮಾಡಬಲ್ಲ ಸಾಕಷ್ಟು ಶಕ್ತಿಯುತ ವಿನ್ಯಾಸ ಸಾಧನವಾಗಿದೆ—ನೀವು ಇದರ ಬಗ್ಗೆ [dojo.soy/html3-flex](http://dojo.soy/html3-flex)ನಲ್ಲಿ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಬಹುದು.
