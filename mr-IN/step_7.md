@@ -1,12 +1,12 @@
-## Design cool page layouts
+## छान पृष्ठ (पेज) लेआउट डिझाइन करा
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ या कार्डासाठी आपण अश्या पृष्ठावर काम केले पाहिजे ज्यात एक `article` आणि दोन `aside` अश्या तीन घटकांसह `main` घटक आहे. पुढे जा आणि आपल्याला आवश्यक असल्यास हे आधी तयार करा. आपण माझ्या वेबसाइटवर काम करू इच्छित असल्यास, मागील सुशी कार्डवरून `aside` कोड आकर्षण पृष्ठावर जोडा. 
 
-Here are three different page layouts you'll be applying:
+येथे आपण तीन भिन्न पृष्ठ लेआउट्स लागू करत आहातः:
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ `main` वर नवीन CSS वर्ग जोडा आणि त्यातील प्रत्येकात तीनही घटक.
 
 ```html
     <main class="attPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+ज्या कंटेनरचे लेआउटआपण बदलत आहात ते `main` आहे, परंतु आपण हे `div` किंवा `article` कोणत्याही प्रकारच्या कंटेनरबाबत किंवा अगदी संपूर्ण पान `body` च्या बाबतसुद्धा करू शकता. आपण वापरत असलेल्या टेकनीकला **CSS grid** असे म्हणतात.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+या उदाहरणात, `header` आणि `footer` डिझाइनमधून वगळले जाईल परंतु त्यांना ग्रीडमध्ये समाविष्ट करणे अगदी नेहमीचे आहे.
 
-+ Set the `display` property to `grid` on the overall container:
++ एकूणच कंटेनर वर `grid` साठी `display` ही प्रॉपर्टी सेट करा:
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+`grid-column-gap` and `grid-row-gap` गुणधर्म काय करतात असे आपणास वाटते?
 
-+ Next, you name a `grid-area` for each element: 
++ पुढे, आपण प्रत्येक घटकासाठी `grid-area` नाव द्या: 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+मग आपण आपले लेआउट डिझाइन करा! चला पृष्ठाच्या तळाशी दोन `aside` घटक आजूबाजूला ठेवू या. यासाठी आपल्याला दोन समान रुंदीचे **columns** आवश्यक आहेत. आपण **row** चीउंची स्वयंचलित ठेवू शकता.
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ `.attPageLayoutGrid`CSS नियम मध्ये खालील कोड ठेवा:
 
 ```css
     grid-template-rows: auto;
@@ -64,23 +64,23 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+`fr` म्हणजे **fraction**. आपण दोन स्तंभांवरील सर्व जागा घेणारा `article` कसा बनवाल ते पहा </0>.
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## title: मदत! मला चुका आणि चेतावणी मिळाली!
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+आपण वरील कोड अगदी अचूक टाइप केले तरीही आपण ट्रिंकेट वापरत असल्यास, आपल्यास काही त्रुटी आणि चेतावण्या दिसतील. याचे कारण असे की ट्रिंकेट अद्याप CSS ग्रीड गुणधर्म ओळखत नाही. तथापि, कोड तरीही कार्य करेल.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+जर सीएसएस ग्रीड कोड आपल्याला ''unknown property ' चेतावणी किंवा ''unexpected token 1fr' सारखी चूक दाखवत असेल तर आपण त्याकडे दुर्लक्ष करू शकता.
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![Asides तळाशी शेजारी शेजारी आहेत](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+चला आपण `aside` घटक उजव्या बाजूला ठेवूया आणि त्यांना `article`च्या अर्ध्या रूंदीचे बनवू या.
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ `grid-template-columns` आणि `grid-template-areas`-स्तंभांची मूल्ये अशी बदला:
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -89,9 +89,9 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![Asides उजव्या बाजूला खाली आहेत](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ आपणास `aside`घटक तळापर्यंत पसरेल असा नको असल्यास आपण बिन्दु वापरुन रिक्त जागा जोडू शकता: 
 
 ```css
     grid-template-areas: 
@@ -100,19 +100,19 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![Asides उजवीकडे आणि खाली ताणले गेलेले नाहीत](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## Challenge: भिन्न स्क्रीन आकारांसाठी भिन्न लेआउट बनवा
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ स्क्रीन किती रुंद आहे यावर अवलंबून आपण लेआउट बदलण्यासाठी आधी जोडलेल्या स्क्रीन आकार तपासणीचा वापर करू शकता? टीप: प्रत्येक स्क्रीन आकारासाठी आधीपासून CSS ब्लॉक तयार केलेले असल्यास आपण नवीन ब्लॉक बनवण्याऐवजी त्याच ब्लॉकमध्ये नवीन CSS कोड जोडू शकता.
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+जेव्हा स्क्रीन 1000 पिक्सलपेक्षा मोठी असेल तेव्हा खालील कोड वरील CSS वर्गासाठी एक लेआउट परिभाषित करते:
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+जेव्हा स्क्रीन 1600 पिक्सलपेक्षा मोठी असेल तेव्हा खालील कोड वरील सीएसएस वर्गासाठी एक लेआउट परिभाषित करते:
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+**CSS grid** वापरुन, आपण आपल्यास आवडत असलेले जवळजवळ कोणतेही लेआउट बनवू शकता. आपण अधिक जाणून घेऊ इच्छित असल्यास [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"} वर जा
