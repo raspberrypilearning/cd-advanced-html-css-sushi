@@ -1,7 +1,7 @@
 ---
 title: دليل لبلادي 3.0
 hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
+description: أضف تنسيقات جميلة وتأثيرات رائعة إلى موقع الويب الخاص بك!
 theme: أحمر #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -28,6 +28,6 @@ steps:
   - 
     title: تصميم تخطيط صفحة رائع
   - 
-    title: Photo collage
+    title: ملصقات صور
   - 
     title: مؤثرات خاصة
