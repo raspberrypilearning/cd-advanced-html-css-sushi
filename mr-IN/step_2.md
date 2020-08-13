@@ -1,5 +1,5 @@
-## Getting set up
+## सुरुवात अशी करा
 
-To work through these Sushi Cards, you'll need to start with a website that you already made. For example, you can use the one that you made in the [HTML/CSS Intermediate Sushi Card series](https://projects.raspberrypi.org/en/projects/cd-intermediate-html-css-sushi){:target="_blank"}. If you prefer, you can work with [this trinket](http://dojo.soy/html3-website-start){:target="_blank"}, which is ready to use.
+या सुशी कार्ड्स द्वारे कार्य करण्यासाठी, आपण आधीपासून बनविलेल्या वेबसाइटसह प्रारंभ करणे आवश्यक आहे. उदाहरणार्थ, आपण [HTML/CSS Intermediate Sushi Card series](https://projects.raspberrypi.org/en/projects/cd-intermediate-html-css-sushi){:target="_blank"} मध्ये बनविलेलीचा वापर करु शकता. आपल्याला आवडल्यास आपण [this trinket](http://dojo.soy/html3-website-start){:target="_blank"}, जे वापरण्या साठी तयार आहे, सह कार्य करू शकता.
 
-As you'll be working with lots of code, you may find it easier to use an offline text editor on your computer instead of Trinket. You can download code from Trinket by selecting **Download** from the **Share** menu.
+आपण खूप सा-या कोड द्वारे कार्य करीत असल्यामुळे, आपल्याला, कदाचित, आपल्या संगणकावर trinket ऐवजी ऑफलाइन मजकूर संपादक वापरणे सोपे होईल. आपण ** सामायिक करा ** मेनू वापरुन ** डाऊनलोड ** निवडून ट्रिंकेटवरून आज्ञावली डाउनलोड करू शकता.
