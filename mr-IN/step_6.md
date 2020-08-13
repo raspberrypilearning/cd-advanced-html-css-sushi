@@ -1,10 +1,10 @@
-## Captions and side notes
+## मथळे आणि साइड नोट्स
 
-On this card you'll learn about two more types of **container** element: one that you can use to add a caption (some text like a title or short description) to a picture, and another for when you have extra stuff that doesn't really belong with the main information on a page.
+या कार्डवर आपण **container** घटकांच्या आणखी दोन प्रकारांबद्दल जाणून घ्या: आपण चित्रामध्ये मथळा (शीर्षक किंवा लहान वर्णनासारखे काही मजकूर) जोडण्यासाठी वापरू शकता आणि दुसरे आपल्याकडे पृष्ठावरील मुख्य माहितीव्यतिरिक्त असलेल्या अतिरिक्त सामग्रीसाठी.
 
-### Pictures with captions
+### मथळ्यांसह चित्रे
 
-+ Find an `img` element where you have text above or below that goes with the picture. I'm working with the Tito picture on `index.html`, but you can go with whatever is on your website. 
++ आपल्याकडे ज्याच्या वर किंवा खाली चित्रासह टेक्स्ट आहे त्या आहे असा `img` घटक शोधा. मी `index.html` वरील टिटो चित्रावर काम करीत आहे, परंतु आपण आपल्या वेबसाइटवर जे काही आहे त्यावर काम करू शकता. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
@@ -13,9 +13,9 @@ On this card you'll learn about two more types of **container** element: one tha
   </p>
 ```
 
-+ On the line above the code, add the opening tag `<figure>`. On a new line below the code, place the closing tag `</figure>`.
++ कोडच्या वरील ओळीवर, प्रारंभिक टॅग `<figure>` जोडा. कोडच्या खाली नवीन ओळीवर, अंतिम टॅग `</figure>` जोडा.
 
-+ Next, remove the `p` tags, or whatever tags you have around the text (maybe it's a heading, like `h2`?), and put the text in between `<figcaption> </figcaption>` tags instead. The whole thing should look something like this:
++ पुढे, `p` हा टॅग काढा किंवा मजकूराच्या आसपास आपल्याकडे असलेले कोणतेही टॅग काढा (कदाचित हे `h2`? सारखे शीर्षक असेल) आणि त्याऐवजी `<figcaption> </figcaption>` दरम्यान मजकूर ठेवा. सगळे मिळून यासारखे काहीतरी दिसायला हवे:
 
 ```html
   <figure>
@@ -26,21 +26,21 @@ On this card you'll learn about two more types of **container** element: one tha
   </figure>
 ```
 
-The `figcaption` element is your **caption**. It can go either above the `img` element or below it.
+`figcaption` घटक म्हणजे आपले **caption**. हे एकतर `img` घटकाच्या वर किंवा त्याखाली जाऊ शकते.
 
-![Picture of Tito with a caption](images/figureAndCaption.png)
+![मथळ्यासह टिटोचे चित्र](images/figureAndCaption.png)
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: हे का उपयुक्त आहे?
 
-The `figure` element acts as a sort of **container** for your picture and its caption. This allows you to treat them as one unit when defining styles.
+`figure`घटक आपल्या चित्र आणि त्याच्या मथळ्यासाठी **container** चे कार्य करतो. शैली परिभाषित करताना हे आपल्याला त्यांना एकच युनिट मानण्याची परवानगी देते.
 
-Grouping them together logically also helps to maintain good structure in your website code.
+तार्किकदृष्ट्या, त्यांचे एकत्रिकरण करणे, आपल्या संकेतस्थळाच्या कोडमध्ये चांगली रचना राखण्यासाठी मदत करते.
 
 \--- /collapse \---
 
-You can use CSS code to style `figure` and `figcaption` as you would any other element using classes, IDs, or element selectors. I'm adding the following rules to remove the extra spacing that was added by the new container:
+`figure` आणि `figcaption` यांच्या शैलीसाठी, आपण वर्ग, आयडी किंवा घटक निवडकांच्यासाठी जसा वापर करता तसाच CSS कोडचा वापर करू शकता. नवीन कंटेनरमुळे निर्माण झालेल्या अतिरिक्त रिकाम्या जागा हटवण्यासाठी, मी खालील नियम जोडत आहे:
 
 ```css
   figure { 
@@ -51,13 +51,13 @@ You can use CSS code to style `figure` and `figcaption` as you would any other e
   }
 ```
 
-### Side notes
+### साइड नोट्स
 
-The Attractions page on my website is a list of places to visit. I want to add some notes about weather and how to get around. That information doesn't really belong in the `article` element with all the attractions. This is an example of when you might use the `aside` element.
+माझ्या संकेतस्थळावरील आकर्षणे पृष्ठावर, भेट देत येतील अश्या ठिकाणांची यादी आहे. मला हवामान आणि आजूबाजूला कसे फिरायचे याबद्दल काही टिप्पण्या जोडायच्या आहेत. ती माहिती खरेतर सर्व आकर्षणासह `article`घटकाशी संबंधित नाही. आपण `aside` घटक कधी वापरू शकता त्याचे हे एक उदाहरण आहे.
 
-+ Go to a page of your website that has an `article` element on it — I'm using `attractions.html`.
++ `article` घटक असलेल्या आपल्या संकेतस्थळाच्या पृष्ठावर जा - मी `attractions.html` वापरत आहे.
 
-+ **Outside** of the `article` element, add one or more pairs of `<aside> </aside>` tags containing your extra stuff.
++ `article` च्या **Outside** घटकापैकी `<aside> </aside>` आपली अतिरिक्त सामग्री असलेल्या टॅगच्या एक किंवा अधिक जोड्या जोडा.
 
 ```html
   <aside class="sideNoteStyle">
@@ -75,17 +75,17 @@ The Attractions page on my website is a list of places to visit. I want to add s
 
 ## \--- collapse \---
 
-## title: Why is this useful?
+## title: हे का उपयुक्त आहे?
 
-The `aside`, `article`, and other containers are all similar. The only real difference is in the **meaning**, that is, what you use them for.
+`aside`, `article`,, आणि इतर सर्व कंटेनर समान आहेत. अर्थात **meaning** मध्येच फक्त वास्तविक फरक आहे, म्हणूनच तर आपण त्यांचा वापर करता.
 
-It's important to use meaningful HTML elements whenever you can. It gives your website better structure and is especially helpful for people using **screen readers**.
+जेव्हाही शक्य असेल तेव्हा अर्थपूर्ण एचटीएमएल घटक वापरणे महत्वाचे आहे. हे आपल्या वेबसाइटला चांगली रचना देते आणि **screen readers** वापरणार्‍या लोकांसाठी विशेषतः उपयुक्त आहे.
 
 \--- /collapse \---
 
-Did you spot the other element in there, `span`? This is a special tag you can use just for adding extra CSS code! You can put anything in between a pair of `span` tags. It's useful for things like styling a **part** of the text in a paragraph.
+आपल्याला तेथे इतर घटक आढळले, `span`? हा एक विशेष टॅग आहे जो आपण फक्त अतिरिक्त CSS कोड जोडण्यासाठी वापरू शकता! `span` टॅग जोडीच्या दरम्यान आपण काहीही ठेवू शकता. परिच्छेदामध्ये मजकूराचा **part** स्टाईल करण्यासारख्या गोष्टींसाठी हे उपयुक्त आहे.
 
-+ Add the following CSS code to your style sheet to complete the styling for the HTML code above.
++ वरील एचटीएमएल कोडचे स्टाईलिंग पूर्ण करण्यासाठी आपल्या CSS कोडमध्ये खालील सीएसएस कोड जोडा.
 
 ```css
   .sideNoteStyle {
@@ -100,8 +100,8 @@ Did you spot the other element in there, `span`? This is a special tag you can u
   }
 ```
 
-![Additional notes with their own styling](images/asidesStyled.png)
+![त्यांच्या स्वत: च्या स्टाईलसह अतिरिक्त नोट्स](images/asidesStyled.png)
 
-On the next card, you're going to learn how to make your website's layout more interesting!
+आपल्या वेबसाइटचा लेआउट अधिक मनोरंजक कसा बनवायचा हे आपण पुढील कार्डवर शिकणार आहात!
 
-+ To get ready, make a page that has one `article` and two `aside` elements inside the `<main> </main>` tags. Or if you prefer, you can work with the Attractions page on my website.
++ सज्ज होण्यासाठी, `article` आणि `<main> </main>` टॅग च्या मध्ये दोन `aside` घटक आहेत असे एक पृष्ठ बनवा. किंवा आपल्याला हवे असल्यास, आपण माझ्या संकेतस्थळावरील आकर्षण पृष्ठावर काम करू शकता.
