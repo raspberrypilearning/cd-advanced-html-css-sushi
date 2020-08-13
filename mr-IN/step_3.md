@@ -1,10 +1,10 @@
-## Clickable cards
+## क्लिक करण्यायोग्य कार्ड
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+फोटो गॅलरी बनविण्यासाठी आपण वापरू शकणारे तंत्र किंवा आवपले प्रोजेक्ट दर्शविणारे एक पोर्टफोलिओ पृष्ठ येथे आहेः थोडे **preview cards**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![कार्डचे, thumbnail आणि काही मजकूर दर्शावून पूर्वावलोकन करा](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ आपल्या वेबसाइटवर आपल्याला पाहिजे तेथे खालील HTML कोड जोडा. मी ` index.html ` वर माझे काम करत आहे. आपण आपल्या स्वतःच्या पूर्वावलोकन अनुरुप चित्र आणि मजकूर बदलू शकता. मी आयर्लंड मधील पर्यटकांच्या आकर्षणाबद्दल हाइलाइट्सचा एक एकत्र आणणार आहे.
 
 ```html
     <article class="card">
@@ -14,9 +14,9 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![शैली च्या अगोदर image आणि text लाग़ू होतात](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ वर्ग तयार करण्यासाठी खालील CSS कोड जोडा `card` and `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -38,11 +38,11 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![एका छोट्या कार्डचा परिणाम तयार करण्यासाठी स्टाईलसह Image आणि text](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+चला संपूर्ण पूर्वावलोकन (प्रिविव) कार्ड लिंक मध्ये बदलू जेणेकरुन अधिक माहिती पाहण्यासाठी लोक क्लिक करू शकतील.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ संपूर्ण`article` घटक एका लिंक घटक मध्ये ठेवा. ` </article>` टॅग बंद झाल्यानंतर `</a>` हा टॅग बंद असल्याचे सुनिश्चित करा! आपल्याला जो काही लिंक जोडायचा आहे त्यासाठी मोकळ्या मनाने **URL** यात बदल करा. तो म्हणजे आपल्या वेबसाइट दुसरे पृष्ठ असू शकते किंवा ते पूर्णपणे दुसरे वेबसाइट असू शकते.
 
 ```html
     <a href="attractions.html#scFota">  
@@ -54,27 +54,27 @@ Let's turn the whole preview card into a link so people can click to see more in
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![Text आणि चित्र लिंक मध्ये बदलले आहेत](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: पृष्ठा (page) च्या विशिष्ट भागाशी लिंक साधणे
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+माझ्या लिंक मध्ये `href` चे मूल्य ` #scFota ` वर कसे संपते हे पहा? आपण पृष्ठाच्या विशिष्ट भागावर जाण्यासाठी ही एक झकास युक्ती आहे.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ प्रथम, लिंक साधण्यासाठी पृष्ठाची URL टाइप करा, त्यानंतर ` # `.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ आपण ज्या पृष्ठाशी लिंक साधत आहात त्या कोड फायलीमध्ये आपल्याला ज्या भागावर जायचे आहे ते शोधा आणि त्या घटकास `id` द्या, उदाहरणार्थ, `<section id="scFota"`. `id`आपण आपल्या लिंकवर `#` नंतर जे टाइप करता तेच आहे.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: शैली पुनर्स्थापना
 
-Now that the whole preview card is a link, the text font may have changed.
+आता संपूर्ण पूर्वावलोकन कार्ड म्हणजे एक लिंक असल्यामुळे, मजकूराचा फॉन्ट बदलला जाऊ शकतो.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ तसे असल्यास, आपण `class="cardLink"` या दुव्यावर: **CSS class** जोडून हे फिक्स करू शकता. आपल्या शैली पत्रकात ठेवण्यासाठी येथे CSS कोड आहे:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+कोणत्याही प्रॉपर्टीचे मूल्य `inherit` मध्ये सेट केले म्हणजे त्याला **parent** घटकाचे मूल्य वापरता येते. तर या प्रकरणात मजकूराचा रंग मुख्यपृष्ठावरील उर्वरित मजकुराशी जुळेल.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ असले किमान चार किंवा पाच कार्डे बनवा. आपण माझ्या उदाहरणादाखल दिलेल्या वेबसाइट वरून वरुन काम करत असल्यास, आपण आकर्षण पृष्ठावरील प्रत्येक विभागात एक कार्य करू शकता. पुढील सुशी कार्डवर, आपण छान युक्तीने कार्डसची व्यवस्थित मांडणी कशी करावी हे शिकाल!
