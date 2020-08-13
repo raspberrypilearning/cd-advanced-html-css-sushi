@@ -1,6 +1,6 @@
 ## تصميم تخطيط صفحة رائع
 
-+ بالنسبة لهذه البطاقة ، يجب عليك العمل مع صفحة تحتوي على عنصر ` main` مع ثلاثة عناصر في الداخل: واحد `article` واثنين `aside`. Go ahead and create these first if you need to. إذا كنت ترغب في العمل في موقع الويب الخاص بي ، فقم بإضافة كود ` aside ` من بطاقة سوشي السابقة إلى صفحة الجذب السياحي. 
++ بالنسبة لهذه البطاقة ، يجب عليك العمل مع صفحة تحتوي على عنصر ` main` مع ثلاثة عناصر في الداخل: واحد `article` واثنين `aside`. انطلق وأنشئ هذه أولاً إذا كنت بحاجة إلى ذلك. إذا كنت ترغب في العمل في موقع الويب الخاص بي ، فقم بإضافة كود ` aside ` من بطاقة سوشي السابقة إلى صفحة الجذب السياحي. 
 
 فيما يلي ثلاثة تخطيطات مختلفة للصفحة التي ستطبقها:
 
@@ -52,7 +52,7 @@
     }
 ```
 
-Then you design your layout! دعنا نضع العناصر الاثنين `aside` جنبًا إلى جنب في أسفل الصفحة. لهذا تحتاج إلى عمودين ** columns** متساويين في العرض. يمكنك الاحتفاظ بارتفاع الصف ** row** التلقائي.
+ثم قم بتصميم تخطيطك! دعنا نضع العناصر الاثنين `aside` جنبًا إلى جنب في أسفل الصفحة. لهذا تحتاج إلى عمودين ** columns** متساويين في العرض. يمكنك الاحتفاظ بارتفاع الصف ** row** التلقائي.
 
 + ضع التعليمات البرمجية التالية داخل قواعد CSS `.attPageLayoutGrid `:
 
@@ -64,7 +64,7 @@ Then you design your layout! دعنا نضع العناصر الاثنين `asid
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. لاحظ كيف جعلت المقال `article ` يشغل كل المساحة على العمودين.
+`fr` تعني **fraction**. لاحظ كيف جعلت المقال `article ` يشغل كل المساحة على العمودين.
 
 ## \--- collapse \---
 
@@ -72,7 +72,7 @@ Then you design your layout! دعنا نضع العناصر الاثنين `asid
 
 إذا كنت تستخدم Trinket ، فقد تلاحظ ظهور بعض الأخطاء والتحذيرات ، حتى إذا قمت بكتابة الكود كما هو مذكور أعلاه. وذلك لأن Trinket لم يتعرف بعد على خصائص شبكة CSS. ومع ذلك ، فإن الكود لا يزال يعمل.
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+إذا كان رمز شبكة CSS يمنحك تحذيرات 'خاصية غير معروفة' أو خطأ مثل 'رمز غير متوقع 1fr'، يمكنك ببساطة تجاهل ذلك.
 
 \--- /collapse \---
 
@@ -91,7 +91,7 @@ If the CSS grid code gives you 'unknown property' warnings or an error like 'une
 
 ![Asides أسفل الجانب الأيمن](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ إذا كنت لا تريد ان تمدد عناصر `جانب` بالكامل إلى الأسفل ، يمكنك إضافة مسافة فارغة باستخدام نقطة: 
 
 ```css
     grid-template-areas: 
