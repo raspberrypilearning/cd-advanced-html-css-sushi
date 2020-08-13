@@ -1,0 +1,24 @@
+---
+title: ನನ್ನ ದೇಶಕ್ಕೆ ಮಾರ್ಗದರ್ಶಿ 3.0
+hero_image: images/banner.png
+description: ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಉತ್ತಮ ವಿನ್ಯಾಸಗಳು ಮತ್ತು ತಂಪಾದ ಪರಿಣಾಮಗಳನ್ನು ಸೇರಿಸಿ!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - title: ಪರಿಚಯ
+  - title: ಹೊಂದಿಸಲಾಗುತ್ತಿದೆ
+  - title: ಕ್ಲಿಕ್ ಮಾಡಬಹುದಾದ ಕಾರ್ಡ್‌ಗಳು
+  - title: ಎಲ್ಲಾ ಸತತವಾಗಿ
+  - title: ನಿಮ್ಮ ಮೆನು ಸ್ಪಂದಿಸುವಂತೆ ಮಾಡಿ
+  - title: ಶೀರ್ಷಿಕೆಗಳು ಮತ್ತು ಅಡ್ಡ ಟಿಪ್ಪಣಿಗಳು
+  - title: ತಂಪಾದ ಪುಟ ವಿನ್ಯಾಸಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ
+  - title: ಫೋಟೋ ಕೊಲಾಜ್
+  - title: ವಿಶೇಷ ಪರಿಣಾಮಗಳು
