@@ -87,9 +87,9 @@
     }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+ملاحظة: تعيين الخاصية `الموضع ` إلى `ثابت ` يعني أن الموضع الذي قمت بتعيين سيكون بصلة إلى نافذة المتصفح، لذلك ستبقى موضوعة عند التمرير.
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). الهدف **target ** للرابط سيكون هو lightbox ، الذي تقوم بتعيينه باستخدام المعرف `id `. قد تتعرف على هذه التقنية من ماسبق!
++ بعد ذلك، قم بتحديد الشيء الذي تريد النقر عليه لجعل صندوق الضوء يظهر ، وإضافة زوج من `a` حول هذا العنصر (في حالتي هي صورة أصغر من lemur). الهدف **target ** للرابط سيكون هو lightbox ، الذي تقوم بتعيينه باستخدام المعرف `id `. قد تتعرف على هذه التقنية من ماسبق!
 
 ```html
     <a href="#boxLemur">
@@ -109,4 +109,4 @@ Note: Setting the `position` property to `fixed` means the position you set will
 
 + حاول النقر على الرابط الجديد الخاص بك لرؤية صندوق الضوء يظهر! لجعله يختفي ، فقط انقر في أي مكان على الصفحة.
 
-يمكنك إضافة العديد من صناديق الضوء إلى الصفحة كما تشاء. They can all use the same CSS class — just make sure each one has a different `id`! لكل واحد ، تحتاج إلى جعل شيء ما على صفحة الويب الخاصة بك في رابط يمكنك النقر فوقه لإظهار مربع الضوء ، ثم استخدام المعرف ` id` كقيمة لــ ` href ` في هذا الرابط ، تمامًا كما فعلت أعلاه!
+يمكنك إضافة العديد من صناديق الضوء إلى الصفحة كما تشاء. يمكنهم جميعًا استخدام نفس فئة CSS - فقط تأكد من أن لكل واحد معرف `id` مختلف! لكل واحد ، تحتاج إلى جعل شيء ما على صفحة الويب الخاصة بك في رابط يمكنك النقر فوقه لإظهار مربع الضوء ، ثم استخدام المعرف ` id` كقيمة لــ ` href ` في هذا الرابط ، تمامًا كما فعلت أعلاه!
