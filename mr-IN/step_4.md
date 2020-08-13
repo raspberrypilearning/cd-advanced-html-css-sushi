@@ -1,27 +1,27 @@
-## All in a row
+## एका ओळीत
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+या कार्डवर आपण, एका पृष्ठावर गोष्टींची व्यवस्था **horizontally** करण्यासाठी काही युक्त्या शिकू शकता. प्रथम, आपण सामग्री केंद्रीत कशी करावी हे पहाल. नंतर आपण एका ओळीत बाजूबाजूला अशी घटकांची व्यवस्था कराल.
 
-+ Add the following CSS properties to the `.card` class:
++ पुढील CSS properties `.card` वर्गात जोडा:
 
 ```css
     margin-left: auto;
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+आपण पृष्ठाच्या मध्यभागी कार्डे हलताना पाहिले पाहिजेत. आपण कुठल्याही घटकाला डाव्या बाजू ऐवजी मध्यभागी आणण्यासाठी उजवा आणि डावा समास `auto` असा सेट करा.
 
 ![The cards appear in the middle instead of over to the left](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ पृष्ठ अरुंद आणि विस्तृत करण्यासाठी ब्राउझर विंडोची कड ओढून घ्या - कार्डे केंद्रीत ठेवण्याचे लक्षात ठेवा.
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ आपण नुकतेच तयार केलेले सर्व कार्ड लिंक्स एका नवीन कंटेनर घटकामध्ये ठेवा. याला `article` किंवा `section`, नव्हे तर एक`div` म्हणता येईल. हा एक सामान्य-हेतू कंटेनर आहे ज्याचा आपण गोष्‍टी एकत्र करणे आणि छान छान ले आऊट तयार करण्यासाठी वापरू शकता.
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ आपल्या शैली पत्रकात पुढील CSS कोड जोडा:
 
 ```css
     .cardContainer {
@@ -32,21 +32,21 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+Voilà! आपली कार्ड आता बाजूने दर्शविली जात आहेत **Flex** ला धन्यवाद!
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ वेबसाइट विस्तीर्ण आणि संकुचित करण्यासाठी आपल्या विंडोची कड ओढा आणि चौकटीच्या आकारात फिट बसण्यासाठी कार्डे कसे फिरतात, कधीकधी पुढील ओळीवर लपेटतात, ते पहा,.
 
 ![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ `width` आणि `height` या प्रॉपर्टी `.card` वर्गातून वगळण्याचा प्रयत्न करा आणि बघा काय होते आहे ते:`flex` अत्यंत हुशारीने, एका ओळीतील सर्व गोष्टी एकाच उंचीच्या करून एखाद्या जिगसॉ कोड्यासारखे अचूक बसवते.
 
 ![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+आपल्या पृष्ठाच्या शीर्षस्थानी आपल्याकडे नेव्हिगेशन मेनू असल्यास आपण ही युक्ती वापरू शकता असे हे आणखी एक ठिकाण आहे. पुढील कामासाठी आपले मेनू, सूची घटकानी ( (`li`) बनलेले असणे आवश्यक आहे. आपल्याला आवडल्यास, आपण माझ्या वेबसाइट वापरून पहा.
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ मेनूसाठी CSS नियम शोधा. माझ्या लिंकवर `nav ul`, `nav ul li`, and `nav ul li a` हे ब्लॉक आहेत.
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ यादीतील घटकातून `display: inline;` ही प्रॉपर्टी वगळा. नंतर, सूचीमध्ये `nav ul`, यामध्ये जोडा:
 
 ```css
     display: flex;
@@ -55,12 +55,12 @@ If you have a navigation menu at the top of your page, that's another place you 
 
 ![Menu with items aligned to the left](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+आपण त्याच मेनूसह काम संपवता, बरोबर? `flex` बद्दल छान गोष्ट ही आहे की आपण `justify-content` प्रॉपर्टी वापरुन लेआउट नियंत्रित करू शकता.
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ `justify-content` चे मूल्य `flex-end` अशी बदलून पहा आणि बघा काय होते ते. किंवा आपण कार्ड साठी केले तसे मेनू आयटेम समान अंतरावर करण्यासाठी `space-around` मध्ये बदला.
 
 ![Menu with items evenly spaced](images/flexMenuSpace.png)
 
 ![Menu with items aligned to the right](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**`flex`** हे स्वत: ची संपूर्ण सुशी कार्ड मालिका भरू शकणारे, एक सुंदर शक्तिशाली लेआउट साधन आहे - आपण त्याबद्दल [dojo.soy/html3-flex](http://dojo.soy/html3-flex) येथे अधिक जाणून घेऊ शकता.
