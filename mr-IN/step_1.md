@@ -1,10 +1,10 @@
-## Introduction
+## परिचय
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+हे सुशी कार्डस आपल्याला आपले संकेतस्थळ अधिक उन्नत आणि व्यावसायिक कसे बनवता येईल हे दर्शवतील.
 
-### What you will make
+### आपण काय तयार करणार आहोत
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+आपल्या संकेतस्थळावर वेगवेगळे परिणाम कसे वापरता येतील हे समजून घेण्यासाठी खालील विंडोच्या आजूबाजूला आपल्या माऊसचा कर्सर फिरवा:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,27 +14,27 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 ## \--- collapse \---
 
-## title: What you will learn
+## शीर्षक: आपण काय शिकणार
 
-In these Sushi Cards, you will find out how to:
+या सुशी कार्ड्समध्ये आपल्याला हे कसे मिळेल हे सापडेल:
 
-+ Create any website layout you want
-+ Make your layout adjust itself automatically to different screen sizes
-+ Make a collage of overlapping pictures and text
-+ Apply some neat hover and click effects that you might have seen on other websites
++ आपल्याला पाहिजे असलेला कोणताही वेबसाईट लेआउट तयार करा
++ आपले लेआउट वेगवेगळ्या स्क्रीन आकारांमध्ये स्वयंचलितपणे समायोजित करा
++ आच्छादित चित्रे आणि मजकूराचे कोलाज बनवा
++ इतर websites वर आपण पाहिले असतील असे hover आणि क्लिक परिणाम साधा
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## शीर्षक: आपल्याला काय आवश्यक आहे
 
-### Hardware
+### हार्डवेअर
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ एक संगणक ज्याच्यावर [trinket.io](https://trinket.io){:target="_blank"} हे उघडता येइल
 
-### Software
+### सॉफ्टवेअर
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ हा प्रोजेक्ट वेब-ब्राऊजर मध्ये [trinket.io](https://trinket.io){:target="_blank"} किंवा साधा मजकूर संपादन करणार्‍या एडिटर वापरून पूर्ण करू शकता.
 
 \--- /collapse \---
