@@ -16,7 +16,7 @@
 
 ![الصورة والنص قبل تطبيق الأنماط](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ أضف رمز CSS التالي لإنشاء الفئات `بطاقة` و `صورة مصغرة`:
 
 ```css
     .tinyPicture {
@@ -60,7 +60,7 @@
 
 ## title: الارتباط بجزء معين من الصفحة
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+لاحظ كيف أن قيمة ` href ` في الرابط الخاص بي تنتهي بـ ` #scFota ` ؟ هذه خدعة متقنة يمكنك استخدامها للانتقال إلى جزء معين من الصفحة.
 
 + أولاً ، اكتب عنوان URL للصفحة المراد الارتباط بها ، متبوعًا ` # `.
 
@@ -87,4 +87,4 @@ Notice how the value of `href` in my link ends in `#scFota`? This is a neat tric
 
 \--- /collapse \---
 
-+ اصنع على الأقل أربع أو خمس من هذه البطاقات. If you are working from my example website, you could do one for each of the sections on the Attractions page. في بطاقة سوشي التالية ، ستتعرف على كيفية ترتيب البطاقات بخدعة رائعة!
++ اصنع على الأقل أربع أو خمس من هذه البطاقات. إذا كنت تعمل من مثال موقع الويب الخاص بي ، فيمكنك القيام بواحد لكل قسم من أقسام صفحة الجذب السياحي. في بطاقة سوشي التالية ، ستتعرف على كيفية ترتيب البطاقات بخدعة رائعة!
