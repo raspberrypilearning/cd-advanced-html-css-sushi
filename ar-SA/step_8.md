@@ -4,7 +4,7 @@
 
 ![](images/photoCollageWithText_wide.png)
 
-+ أضف ` div` إلى صفحتك وضع فية صور بقدر ما تريد. Give the `div` and the `img` elements `id` values.
++ أضف ` div` إلى صفحتك وضع فية صور بقدر ما تريد. اعطي قيم للعناصر `div`و `img` `id`.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -15,7 +15,7 @@
 
 ستظهر الصور واحدة تلو الأخرى على صفحة الويب ، بالترتيب الذي تظهر به في الكود.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ في ملف CSS ، أضف فئة CSS التالية للعناصر داخل ` div `: 
 
 ```css
     .absPos {
@@ -36,7 +36,7 @@
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ ثم قم بإنشاء مجموعة من قواعد النمط لكل عنصر باستخدام ** id selectors ** لتعيين أحجامها (خصائص ` width ` و / أو ` height `) وكذلك مواقعهم بالضبط.
 
 لتحديد موضع عنصر ، هناك أربع خصائص يمكنك استخدامها: ` اليسار left ` ، ` اليمين right ` ، ` أعلى top ` و ` اسفل bottom `. إنها تمثل المدى الذي يجب أن تكون عليه كل حافة من حواف الحاوية الرئيسية. استخدم إما ` top ` أو ` bottom ` للموضع العمودي ، وإما ` left ` أو ` right ` للموضع الأفقي.
 
@@ -76,7 +76,7 @@
 
 تتيح لك خاصية `z-index` تحديد كيفية تداخل عنصرين أو أكثر. يمكن أن تكون القيمة أي عدد صحيح.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. العنصر الذي يحتوي على الرقم الأعلى التالي يكون خلف ذلك ، وأمام الآخرين ، وهكذا ، حتى تصل إلى العنصر ذي الرقم الأدنى ، والذي يظهر خلف كل العناصر الأخرى.
+العنصر الذي يحمل ** الرقم الاكبر ** يكون في ** أعلى ** المجموعة ، أو بعبارة أخرى في ** الواجهة **. العنصر الذي يحتوي على الرقم الأعلى التالي يكون خلف ذلك ، وأمام الآخرين ، وهكذا ، حتى تصل إلى العنصر ذي الرقم الأدنى ، والذي يظهر خلف كل العناصر الأخرى.
 
 \--- collapse \---
 
@@ -181,6 +181,6 @@ The element with the **highest** number ends up on **top** of the pile, or in ot
 
 \--- hints/ \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![ملصقات صور مع النص في الجزء الاعلى](images/photoCollageExample.png)
 
 \--- challenge/ \---
