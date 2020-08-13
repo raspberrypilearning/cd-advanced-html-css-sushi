@@ -15,7 +15,7 @@
 
 + اسحب حافة نافذة المتصفح لجعل الصفحة أضيق وأوسع نطاقًا - لاحظ أن البطاقات تظل في المركز.
 
-+ Put all of the card links you just made into a new container element. لن تكون ` article` أو `section ` ، ولكن واحدة تسمى ` div `. هذه حاوية متعددة الأغراض يمكنك استخدامها لتجميع الأشياء وعمل تخطيطات لطيفة.
++ ضع كل روابط البطاقة التي قمت بها للتو في عنصر حاوية جديد. لن تكون ` article` أو `section ` ، ولكن واحدة تسمى ` div `. هذه حاوية متعددة الأغراض يمكنك استخدامها لتجميع الأشياء وعمل تخطيطات لطيفة.
 
 ```html
     <div class="cardContainer">
@@ -38,7 +38,7 @@
 
 ![البطاقات مرتبة في صفين متباعدين بالتساوي لتناسب عرض المتصفح](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ حاول حذف الخصائص `العرض ` و `ارتفاع ` من عنصر `البطاقة.` وانظر ما يحدث: `مربع ` يناسب البطاقات بذكاء مثل لغز جيغسو, مع الحفاظ على ارتفاع متساوي عبر كل شيء في نفس الصف.
 
 ![بطاقات مرتبة جنبًا إلى جنب مع عرض تلقائي](images/flexAutoWidths.png)
 
