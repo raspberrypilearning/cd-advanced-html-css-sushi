@@ -4,7 +4,7 @@ Con questa scheda imparerai altri due tipi di elementi **container**: uno che pu
 
 ### Immagini con didascalie
 
-+ Trova un ` img ` elemento in cui hai testo sopra o sotto che va con l'immagine. Sto lavorando con l'immagine di Tito su `index.html`, ma puoi usare qualunque cosa si trovi sul tuo sito web. 
++ Trova un elemento ` img ` in cui hai testo sopra o sotto che va con l'immagine. Sto lavorando con l'immagine di Tito su `index.html`, ma puoi usare qualunque cosa si trovi sul tuo sito web. 
 
 ```html
   <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito the dog" />          
