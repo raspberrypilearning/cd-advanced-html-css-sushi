@@ -18,10 +18,10 @@ Sposta il cursore del mouse sulla finestra qui sotto per provare alcuni degli ef
 
 Con queste Sushi Cards scoprirai come:
 
-+ Crea qualsiasi layout del sito web che desideri
-+ Fai in modo che il tuo layout si regoli automaticamente in base alle dimensioni dello schermo
-+ Crea un collage di immagini e testo sovrapposti
-+ Applica alcuni effetti al passaggio del mouse e al clic che potresti aver visto su altri siti web
++ Creare qualsiasi layout del sito web che desideri
++ Fare in modo che il tuo layout si regoli automaticamente in base alle dimensioni dello schermo
++ Creare un collage di immagini e testo sovrapposti
++ Applicare alcuni effetti al passaggio del mouse e al clic che potresti aver visto su altri siti web
 
 \--- /collapse \---
 
