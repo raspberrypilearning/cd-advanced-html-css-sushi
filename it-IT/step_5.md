@@ -77,7 +77,7 @@ Il resto delle proprietà che hai definito precedentemente per `nav ul` rimarrà
 
 \--- challenge \---
 
-## Sfida: fai in modo che il tuo menu si adatti automaticamente per schermi grandi
+## Sfida: fai in modo che il tuo menù si adatti automaticamente per schermi grandi
 
 + Riesci ad aggiungere un altro blocco per schermi più grandi di **1600 pixel**, con `flex-end` invece di `space-around`?
 
