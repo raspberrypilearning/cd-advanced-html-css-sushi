@@ -60,7 +60,7 @@ Trasformiamo l'intera scheda di anteprima in un link in modo che le persone poss
 
 ## title: Collegamento a una parte specifica di una pagina
 
-Hai notato come il valore di `href` nel mio collegamento termina con `#scFota`? Questo è un trucchetto che puoi usare per saltare direttamente a una particolare parte di una pagina.
+Notice how the value of `href` in my link ends in `#scFota`? Questo è un trucchetto che puoi usare per saltare direttamente a una particolare parte di una pagina.
 
 + Innanzitutto, digita l'URL della pagina a cui collegarti, seguito da `#`.
 
