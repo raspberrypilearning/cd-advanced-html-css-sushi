@@ -1,20 +1,20 @@
-## Make your menu responsive
+## 使您的菜单响应
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+一个**响应式**网站是一个根据屏幕大小调整的网站，这样它总是看起来很棒， 是否在电脑、手机或平板电脑上查看它。 让我们制作您的响应式菜单！
 
-You'll start with the regular styles: this will be your **default** behaviour.
+您将从常规样式开始：这是您的** 默认 **行为。
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## 标题：“默认”是什么意思？
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+默认样式是您的常规样式规则集。 在检查任何特殊条件之前，无论如何都应用它们。
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+您可以添加代码，然后检查屏幕大小，并在必要时做一些调整。
 
 \--- /collapse \---
 
-+ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
++ 在您的菜单中添加以下CSS规则。 您可能还定义了颜色和边框。我省去了它们以节省空间！ 如果您已经为菜单定义了CSS规则，则只需添加或更改缺少的属性和值即可。
 
 ```css
     nav ul {
@@ -30,23 +30,23 @@ You can add code that then checks the size of the screen and makes some adjustme
     }
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+使用上面的CSS代码，您的菜单将最适合小屏幕。 这称为** 移动优先 **开发。
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![菜单项垂直堆叠在小屏幕上](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## 标题：“移动优先”是什么意思？
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+在编写网站代码时，通常会使用计算机屏幕，并且可能会根据其在屏幕上的外观来定义样式。
 
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+当您为移动设备编写代码时，您将选择适合于小屏幕（例如智能手机）的默认样式。 然后，您添加额外的代码以针对更大的屏幕进行调整。
 
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
+因为越来越多的人在他们的智能手机或平板电脑上而不是在电脑上浏览互联网， 考虑到这一点，开发您的网站会是一项很好的练习。
 
 \--- /collapse \---
 
-+ Now add the following code to your style sheet:
++ 现在，将以下代码添加到样式表中：
 
 ```css
     @media all and (min-width: 1000px) {
@@ -57,37 +57,37 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+上面的第一行代码检查浏览器窗口的大小。 如果窗口是** 1000像素**或更多，它将应用块内的所有样式规则。
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![菜单项在更宽的屏幕上均匀分布在一行上](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
-## title: How does it work?
+## 标题：它是如何工作的？
 
-The block contains new values for only some properties of the `nav ul` menu.
+该块仅包含`nav ul`菜单中的一些属性的新值。
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+只要窗口宽于1000像素，就会应用这些新值，而不是您已经定义的` nav ul `值 。
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+您先前定义的`nav ul`的其余属性将保持不变。
 
 \--- /collapse \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ 如果您正在使用Trinket编写代码，则下载项目可能会有所帮助，以便可以在全尺寸屏幕上对其进行测试。
 
 \--- challenge \---
 
-## Challenge: make your menu adjust itself for big screens
+## 挑战：使您的菜单适应大屏幕
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ 您是否添加另一个块，为长度大于** 1600像素**的屏幕 ，使用` flex-end `而不是` space-around ` ？
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![大屏幕右侧的菜单项](images/responsiveMenuWide.png)
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+下面的代码定义菜单项在屏幕大于1600像素时的 flex 属性：
 
 ```css
     @media all and (min-width: 1600px) {
@@ -104,4 +104,4 @@ The following code defines flex properties for menu items when the screen is big
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+您可以将所需的任何CSS规则放入此类块中，以针对不同的屏幕尺寸定义不同的样式。 当您稍后使用 CSS 网格布局时，它将特别有用！
