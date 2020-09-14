@@ -1,10 +1,10 @@
-## Photo collage
+## 照片拼贴
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+在这张卡上，您将学习如何使用CSS精确定位HTML元素并制作照片拼贴。
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ 添加` div `到页面上，并在其中放置尽可能多的图像。 给出`div`和`img`元素`id`值。
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+照片将按照在代码中的显示顺序依次显示在网页上。
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ 在您的CSS文件中，为` div中的元素添加以下CSS类` ： 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ 接下来，您需要添加属性` position：relative; `容器本身并为其定义尺寸。 这样就可以相对于**定义其他元素的位置** （即在容器内）。
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ 然后使用**id 选择器**为每个元素创建一套样式规则来设置他们的大小(`宽`和/或`身高`属性) 以及他们的确切位置。
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+要定义元素的位置，可以使用四个属性：`left` ，`right` ，`top`和`bottom` 。 它们表示每个边缘应距父对象的边缘多远。 使用` top `或` bottom `表示垂直位置，`left `或`right`为水平位置。
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![该图显示了top，left，bottom和right属性与父容器的关系](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ 选择您每张图片的确切位置，并使用任意属性`left`， `right`, `top`, 和`bottom`, 以在您的 CSS 规则中定义那些职位。 例如，此代码将猫的图片从顶部放置100个像素，从左侧放置60个像素：
 
 ```css
     #imgTeaCat {
@@ -52,57 +52,57 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+注意：位置值也可以为负！ 如果使用负值，它将把元素推到容器外部，超出指定的边缘。
 
-### Making things overlap
+### 使事物重叠
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+您可能需要重叠一些图片。 但你如何选择哪个在上面？
 
-+ Choose two images and give them positions that cause them to overlap.
++ 选择两个图像，并赋予它们使其重叠的位置。
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ 添加额外的属性，`z-index: 10; ` 到其中一个, 然后添加`z-index: 7; ` 到另一个。
 
-+ Take a look at the result on your webpage.
++ 查看您网页上的结果。
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ 现在交换` z-index `值，这样` 7 `和` 10 `反过来。 您在网页上看到任何不同吗？
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## 标题：z-index如何工作？
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+`z-index`属性让您决定两个或多个元素应如何重叠。 该值可以是任何整数。
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+**最高**编号的元素最终是**最高**的位置，或用其他语言说是在**前面**。 编号次高的元素位于其后，位于其他元素的前面，依此类推，直到到达编号最小的元素，该元素出现在所有其他元素的后面。
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+您可以通过这种方式放置任何HTML元素，而不仅仅是图像。 例如，您可以使用` p `元素在照片上添加一些文字。
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## 挑战：制作照片拼贴
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ 尝试创建自己的照片拼贴，如下图所示！ 使用精确位置和不同的`z-index`值来获得你想要的重叠效果。
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+下面是我的爱尔兰网站上照片整理的 HTML 代码。 在`div`内有六张照片和一张文本。
 
 ```html
     <div id="photoBox" class="relPos">
-        <img id="imgStreet" class="collagePhoto absPos" src="ireland-1474045_640.jpg" alt="Irish town" />
-        <img id="imgTeaCat" class="collagePhoto absPos" src="ireland-2360846_640.jpg" alt="Even cats drink tea in Ireland!" />
-        <img id="imgCoast" class="collagePhoto absPos" src="cattle-2369463_640.jpg" alt="Cows at the coast" />
-        <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
-        <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
-        <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <1 />
+        <2 />
+        <3 />
+        <4 />
+        <5 />
+        <6 />
+        <p id="photoText" class="absPos">爱尔兰</p>
     </div>
 ```
 
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+以下是CSS规则，可为拼贴中的每张图片设置位置：
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+这里是我使用的 CSS 类：
 
 ```css
     .collagePhoto {
@@ -181,6 +181,6 @@ Here are the CSS classes I've used:
 
 \--- /hints \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![顶部带有文字的照片拼贴](images/photoCollageExample.png)
 
 \--- /challenge \---
