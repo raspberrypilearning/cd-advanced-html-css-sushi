@@ -1,12 +1,12 @@
-## Special effects
+## 特殊效果。
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+在这张卡上，您将学到一些CSS可以达到的更好的效果。
 
-### Shadows and movement
+### 阴影和运动
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+让我们在你先前制作的卡片上悬停光标时添加一点动作。
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ 查找早些时候的 `.card:hover` CSS 类，并将其更改为以下：
 
 ```css
     .card:hover {
@@ -15,61 +15,61 @@ Let's add a little movement when you hover your cursor over the cards you made e
     }
 ```
 
-+ Try out different values in the `translate` function!
++ 尝试在 ` translate ` 函数中不同的值！
 
 ## \--- collapse \---
 
-## title: The `transform` property
+## 标题：` transform `属性
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+如果您完成了中介HTML/CSS Sushi卡片，您可以记得在一些`@keyframes`动画中使用`transform`属性。 你在这里看到你也可以在常规的 CSS 块内自行使用该属性。
 
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+您可以将其设置为 ` rotate `，以使元素转弯。 其他是` translateY ` ，它可以上下移动内容，然后` translateX ` ，用于左右移动。
 
 \--- /collapse \---
 
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
++ 在 `box-shadow` 属性上调整不同的像素值来查看它们做什么。 
 
 ## \--- collapse \---
 
-## title: What's `rgba`?
+## 标题：什么是 `rgba`？
 
-`rgba(0,0,0,0.2)` is another way of defining a colour.
+`rgba(0,0,0,0.2)`是确定颜色的另一种方式。
 
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+它具有通常的三个数字（从` 0开始`到` 255 ` ）代表红色，绿色和蓝色。
 
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+第四个数字叫做**alpha**值，定义了**transpart**(或see-throug)是什么的。 这是一个十进制数字，介于`0`和`1`之间，`1`是根本看不到，而`0`则是完全看不到的。 这意味着一个元素的阿尔法值越低，它就越能看到。
 
 \--- /collapse \---
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ 最后，先前将以下属性添加到`.card`类，从而使移动变得顺畅： 
 
 ```css
     transition: all 0.2s ease-out;
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+持续时间`0.2s`意味着`过渡`持续时间0.2秒。
 
-### Lightbox
+### 灯箱
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+您在网站加载时可能看到的另一个效果是 **lightbox**：您点击某些东西，其他东西会变暗， 像一个更大的图片或弹出框一样，出现在所有东西的前面。
 
-![Lightbox effect in action](images/lightboxLemur.png)
+![灯箱效果发挥作用](images/lightboxLemur.png)
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+要获得这个效果，您将会创建两个链接：一个用于实际的灯箱(挂起的部分)， 和一件你点击来让灯箱出现的事情。 我要在我的网站的景点页面上做这个效果。 您可以在任何有图片的页面上做这个效果
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ 决定当你点击时你想要出现的东西， 并将它们全部添加到您的页面中，介于 `a ` 标签来创建链接。 请确保您给链接一个`id`。 代码可以在页面上的任何位置：您将在下一步中隐藏元素！
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
-        <h3>Lemur!!</h3>
-        <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+        <h3>狐猴!! </h3>
+        <2 />
+        <p>狐猴享受一点零食</p>
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+您可以在链接标记之间放置任何您喜欢的东西。 我有一张大图，一个标题和一些文字。 也许您只想要一张图片而没有文字！
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ 为灯箱添加以下CSS代码。 你能做些什么吗？
 
 ```css
     .lightbox{
@@ -87,9 +87,9 @@ You can put anything you like in between the link tags. I've got a big picture, 
     }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+注意：设置` position `属性固定为` fixed `表示您设置的位置将相对于浏览器窗口，因此在您滚动时它将保持不变。
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ 接下来，决定你想要点击什么来让灯箱出现， 并添加一对`a`的标签围绕那个元素添加一对（在我的情况下是一个小图片）。 链接的 **target** 将是灯箱，您使用的是`id`。 你可能会从早些时候认识到这种方法！
 
 ```html
     <a href="#boxLemur">
@@ -97,7 +97,7 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ 最后添加以下CSS代码。 请注意，这是一个**伪类** ;它应该放在` .lightbox`的代码之后类而不是里面！
 
 ```css
     .lightbox:target {
@@ -105,8 +105,8 @@ Note: Setting the `position` property to `fixed` means the position you set will
     }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+当灯箱成为最后一次点击链接的目标时，`:target` 伪类会被应用。 所以当您点击任何地方时，`可见性`将被恢复到`隐藏`。
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ 尝试点击您的新链接以查看灯箱！ 要使其消失，只需单击页面上的任意位置。
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+您可以向页面添加任意数量的灯箱。 他们都可以使用相同的 CSS 类 — 确保每个人都有不同的 `id` ！ 对于每一个人，你需要在你的网页上做一些东西，你可以点击来显示灯箱， 然后使用`id`作为该链接中的`href`值，就像你在上面所做的那样！
