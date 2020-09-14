@@ -1,22 +1,22 @@
-## Clickable cards
+## 可点击的卡片
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+这是一种可以用来制作相册或用于展示项目的投资组合页面的技术:**预览卡**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![预览卡显示图像缩略图和一些文本](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ 在您喜欢的任何地方，将以下HTML代码添加到您的网站。 我把它加在`index.html`. 您可以更改图片和文本以适合您自己的预览卡。 我将为爱尔兰的旅游景点做一批亮点。
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <h3>佛塔野生动物园</h3>
+        <p>科克郡佛塔岛</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![应用样式之前的图像和文本](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ 添加以下CSS代码以创建类`card` 和 `tinyPicture`:
 
 ```css
     .tinyPicture {
@@ -38,43 +38,43 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![要创建小卡片特效的图像和文本](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+让我们将整个预览卡变成一个链接，以便人们单击以查看更多信息。
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ 将整个 `article`元素放在链接元素中。 确保结束 `</a>`标签在结束`</article>` 标签之后! 随意将链接**URL**更改为您想要链接的任何内容。 那可能是您网站上的另一个页面，或者可能完全是另一个网站。
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>佛塔野生动物园</h3>
+            <p>科克郡佛塔岛</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![已转换为链接的文本和图片](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## 标题：链接到页面的特定部分
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+注意` href`的值如何在我的链接中以` #scFota` 结尾？ 这是一个巧妙的技巧，可用于跳转到页面的特定部分。
 
-+ First, type the URL of the page to link to, followed by `#`.
++ 首先，键入要链接到的页面的URL，然后输入`＃ ` 。
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ 在要链接到的页面的代码文件中，找到要跳转到的部分，并为该元素提供一个` id ` ，例如`<section id =“ scFota” ` 。 `id`的值是您在链接中输入的`#`之后。
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## 标题：重置样式
 
-Now that the whole preview card is a link, the text font may have changed.
+既然整个预览卡是一个链接，文本字体可能已更改。
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ 如果是，您可以通过添加一个 **CSS 类** 到链接中来修复它：`class="cardLink"`。 这是放在样式表中的CSS代码：
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+将任何属性的值设定为`继承`，使它使用了**parent**元素的值。 因此，在这种情况下，文本颜色将与主页上其余文本相匹配。
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ 至少制作四张或五张这些卡。 如果您使用我的示例网站，则可以对“景点”页面上的每个部分进行操作。 在下一张“寿司卡”上，您将学习如何通过有趣的技巧来安排卡！
