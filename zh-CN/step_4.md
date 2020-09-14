@@ -1,27 +1,27 @@
-## All in a row
+## 全部在一行
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+在这张卡片上，您将学习一些在页面上**水平**安排事物的技巧。 首先，您将了解如何使内容居中。 然后，您将并排排列元素。
 
-+ Add the following CSS properties to the `.card` class:
++ 将以下CSS属性添加到` .card `类：
 
 ```css
-    margin-left: auto;
-    margin-right: auto;
+    左边距：自动；
+右边距：自动；
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+您应该看到卡片移动到页面的中央。 通过将左右边距设置为`自动` ，您可以使任何元素位于中间，而不是位于左侧。
 
-![The cards appear in the middle instead of over to the left](images/marginAuto.png)
+![卡片显示在中间，而不是在左侧](images/marginAuto.png)
 
-+ Drag the edge of the browser window to make the page narrower and wider — notice that the cards stay centered.
++ 拖动浏览器窗口的边缘以使页面更窄和更宽-请注意，卡片保持居中。
 
-+ Put all of the card links you just made into a new container element. It's not going to be an `article` or a `section`, but one called `div`. This is a general-purpose container you can use for grouping things and making nice layouts.
++ 将您刚才创建的所有卡片链接放入一个新的容器元素中。 不会是`article`或`section` ，但一个叫` div ` 。 这是一个通用容器，可用于对事物进行分组和进行漂亮的布局。
 
 ```html
     <div class="cardContainer">
 ```
 
-+ Add the following CSS code in your style sheet:
++ 在你的样式表中添加以下CSS代码：
 
 ```css
     .cardContainer {
@@ -32,35 +32,35 @@ You should see the cards move to the center of the page. By setting the left and
     }
 ```
 
-Voilà! Thanks to **Flex**, your cards are now displayed side by side!
+瞧！ 多亏了** Flex ** ，您的卡片现在可以并排显示！
 
-+ Drag the edge of your window to make the website wider and narrower, and watch how the cards move around to fit the window size, sometimes wrapping to the next line.
++ 拖动窗口的边缘可以使网站变宽和变窄，并观察卡片如何移动以适合窗口大小，有时会绕到下一行。
 
-![Cards arranged in two rows spaced evenly to fit the browser width](images/flexSideBySide.png)
+![卡分为两行，均匀排列以适合浏览器宽度](images/flexSideBySide.png)
 
-+ Try deleting the `width` and `height` properties from the `.card` class and see what happens: `flex` cleverly fits the cards together like a jigsaw puzzle, keeping an even height across everything that's in the same row.
++ 尝试删除` .card`类中`宽度`和`高度` 的属性，看看会发生什么：` flex `像拼图游戏一样巧妙地将卡片组合在一起，使同一行中的所有东西保持均匀的高度。
 
-![Cards arranged side by side with automatic width](images/flexAutoWidths.png)
+![并排排列的卡片具有自动宽度](images/flexAutoWidths.png)
 
-If you have a navigation menu at the top of your page, that's another place you can use this trick. Your menu needs to be composed of list elements( (`li`) for this next bit. If you prefer, you can try it out with my website.
+如果您在页面顶部有一个导航菜单，那是您可以使用这个技巧的另一个地方。 您的菜单需要包含列表元素(`li`)才能接下来进行此操作。 如果你喜欢，你可以尝试使用我的网站。
 
-+ Find the CSS rules for the menu. In my website, that's the blocks `nav ul`, `nav ul li`, and `nav ul li a`.
++ 找到菜单的CSS规则。 在我的网站上，那是`nav ul`、`nav ul li`和`nav ul li a`。
 
-+ Delete the property `display: inline;` from the list items. Then, in the list `nav ul`, add in:
++ 从列表项中删除属性` display:inline; `。 然后，在列表` nav ul中` ， 加入：
 
 ```css
     display: flex;
     justify-content: flex-start;
 ```
 
-![Menu with items aligned to the left](images/flexMenuStart.png)
+![菜单项向左对齐](images/flexMenuStart.png)
 
-You end up with pretty much the same menu, right? The cool thing about `flex` is you can control the layout with the property `justify-content`.
+您最终得到的菜单几乎相同，对吗？ 关于`flex`的很酷的事情是你可以用属性`justicify-content`控制布局。
 
-+ Change the value of `justify-content` to `flex-end` and see what happens. Or change it to `space-around` to make the menu items evenly spaced, just like you did for the cards.
++ 更改` justify-content`的值至` flex-end `看看会发生什么。 或将其更改为`space-around`使菜单项均匀分布，就像您制作卡片时一样。
 
-![Menu with items evenly spaced](images/flexMenuSpace.png)
+![菜单项均匀分布](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![菜单项右对齐的菜单](images/flexMenuEnd.png)
 
-**`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
+**` flex `**是一个非常强大的布局工具，可以填满自己的整个Sushi Card系列-您可以在[ dojo.soy/html3-flex上了解有关它的更多信息](http://dojo.soy/html3-flex) 。
