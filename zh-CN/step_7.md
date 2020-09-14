@@ -1,12 +1,12 @@
-## Design cool page layouts
+## 设计漂亮的页面布局
 
-+ For this card you should work with a page that contains a `main` element with three elements inside: one `article` and two `aside`s. Go ahead and create these first if you need to. If you want to work with my website, add the `aside` code from the previous Sushi Card to the Attractions page. 
++ 对于这张卡片，您应该使用一个包含三个元素的 `main` 元素的页面：一个`article` 和两个`aside`. 如果需要，请先创建这些。 如果您想要与我的网站合作，请从上一张Sushi卡添加`aside`代码到Attraction页面。 
 
-Here are three different page layouts you'll be applying:
+这里有三个不同的页面布局：
 
 ![](images/cssGridLayouts.png)
 
-+ Add new CSS classes to `main` and each of three elements inside it.
++ 将新的 CSS 类添加到 `main` 以及其中的三个元素。
 
 ```html
     <main class="attPageLayoutGrid">
@@ -22,11 +22,11 @@ Here are three different page layouts you'll be applying:
     </main>
 ```
 
-The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
+您要更改其布局的容器是` main ` ，但是您可以使用任何类型的容器（例如` div `或` article ` ，甚至整个页面` body ` 。 您将要使用的技术称为** CSS网格** 。
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+在这个例子中，`header`和`footer`将被排除在设计之外，但将它们也包括在网格中是很常见的。
 
-+ Set the `display` property to `grid` on the overall container:
++ 设置` display `属性到` grid `在整个容器上：
 
 ```css
     .attPageLayoutGrid {
@@ -36,9 +36,9 @@ In this example, the `header` and `footer` will be left out of the design, but i
     }
 ```
 
-What do you think the `grid-column-gap` and `grid-row-gap` properties do?
+您如何看待` grid-column-gap `和` grid-row-gap `属性吗？
 
-+ Next, you name a `grid-area` for each element: 
++ 接下来，你为每个元素命名一个`grid-area` 
 
 ```css
     .attGridArticle {
@@ -52,9 +52,9 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+然后你设计你的布局！ 让我们将两个`aside`元素并排在页面底部。 为此，您需要两个** 列 **宽度相等。 您可以保留**行**高度自动。
 
-+ Put the following code inside the `.attPageLayoutGrid` CSS rules:
++ 将以下代码放入` .attPageLayoutGrid中` CSS规则：
 
 ```css
     grid-template-rows: auto;
@@ -64,23 +64,23 @@ Then you design your layout! Let's put the two `aside` elements side by side at 
         "agAside1 agAside2";
 ```
 
-`fr` stands for **fraction**. Notice how you make the `article` take up all the space over the two columns.
+` fr `代表** fraction ** 。 注意如何制作` article `占用两列的所有空间。
 
 ## \--- collapse \---
 
-## title: Help! I got errors and warnings!
+## 标题：帮助 ！ 我收到错误和警告！
 
-If you are using Trinket, you may notice some errors and warnings appear, even if you typed the code exactly as above. This is because Trinket does not yet recognise the CSS grid properties. However, the code will still work.
+如果您正在使用Trinket，您可能会发现一些错误和警告出现，即使您输入的代码与上面完全相同。 这是因为Trinket尚无法识别CSS网格属性。 然而，该守则仍然有效。
 
-If the CSS grid code gives you 'unknown property' warnings or an error like 'unexpected token 1fr', you can simply ignore these.
+如果CSS网格代码为您提供“未知属性”警告或类似“意外令牌1fr”的错误，则可以将其忽略。
 
 \--- /collapse \---
 
-![Asides are side by side at the bottom](images/cssGridAsidesAtBottom.png)
+![旁边并排在底部](images/cssGridAsidesAtBottom.png)
 
-Let's put the `aside` elements over on the right and make them half the width of the `article`.
+让我们将`aside`元素放在右侧，并使它们的宽度为`article`的一半 。
 
-+ Change the values of `grid-template-columns` and `grid-template-areas` to:
++ 更改` grid-template-columns `的值 和` grid-template-areas `至：
 
 ```css
     grid-template-columns: 2fr 1fr;
@@ -89,9 +89,9 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle agAside2";
 ```
 
-![Asides are down the right hand side](images/cssGridAsidesOnRight.png)
+![旁边在右手边](images/cssGridAsidesOnRight.png)
 
-+ If you don't want the `aside` elements to stretch all the way to the bottom, you can add a blank space using a dot: 
++ 如果你不想让`aside`元素伸展至底部，你可以使用以下点添加空白空间： 
 
 ```css
     grid-template-areas: 
@@ -100,19 +100,19 @@ Let's put the `aside` elements over on the right and make them half the width of
         "agArticle . ";
 ```
 
-![Asides on the right and not stretched down](images/cssGridAsidesTopRight.png)
+![右侧的边并没有向下伸展](images/cssGridAsidesTopRight.png)
 
 \--- challenge \---
 
-## Challenge: make different layouts for different screen sizes
+## 挑战：为不同的屏幕大小设定不同的布局
 
-+ Can you use the screen size checks you added earlier to make the layout change depending on how wide the screen is? Note: if you already created CSS blocks for each screen size, you can add the new CSS code to those blocks instead of creating new ones.
++ 您能使用您早些时候添加的屏幕大小检查来根据屏幕宽度改变布局吗？ 注意：如果您已经为每个屏幕大小创建了 CSS 块 您可以将新的 CSS 代码添加到这些块，而不是创建新块。
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1000 pixels:
+下面的代码定义了屏幕大于 1000 像素的 CSS 类的布局：
 
 ```css
     @media all and (min-width: 1000px) {
@@ -129,7 +129,7 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- hint \---
 
-The following code defines a layout for the CSS class above when the screen is bigger than 1600 pixels:
+下面的代码定义了屏幕大于 1600 像素的 CSS 类的布局：
 
 ```css
     @media all and (min-width: 1600px) {
@@ -149,4 +149,4 @@ The following code defines a layout for the CSS class above when the screen is b
 
 \--- /challenge \---
 
-With **CSS grid**, you can make almost any layout you like. If you want to learn more, go to [dojo.soy/html3-css-grid](http://dojo.soy/html3-css-grid){:target="_blank"}
+使用 **CSS 网格**, 你可以制作几乎任何你喜欢的布局。 如果要了解更多信息，请转到[ dojo.soy/html3-css-grid ](http://dojo.soy/html3-css-grid) {：target =“ _ blank”}
