@@ -4,7 +4,7 @@
 
 ![](images/photoCollageWithText_wide.png)
 
-+ أضف ` div` إلى صفحتك وضع فية صور بقدر ما تريد. اعطي قيم للعناصر `div`و `img` `id`.
++ أضف `div` إلى صفحتك وضع فية صور بقدر ما تريد. اعطي قيم للعناصر `div`و `img` `id`.
 
 ```html
     <div id="photoBox" class="relPos">

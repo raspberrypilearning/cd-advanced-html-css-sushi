@@ -17,14 +17,14 @@
 
 + بعد ذلك ، قم بإزالة العلامات `p` ، أو أي علامات لديك حول النص (ربما يكون عنوانًا ، مثل `h2` ؟) ، ثم ضع النص بين العلامات `figcaption` بدلا من ذلك. يجب أن يبدو الكود مشابه لهذا الشكل:
 
-
-<pre><code class="html">  <figure>
+```html
+  <figure>
       <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="تيتو الكلب" />          
       <figcaption>
       تيتو المرشد سياحي!
       </figcaption>
   </figure>
-`</pre> 
+```
     
 `figcaption` للعنصر هو **caption**. يمكن أن توضع إما فوق العنصر `img` أو تحته.
     
