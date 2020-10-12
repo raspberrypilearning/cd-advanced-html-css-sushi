@@ -7,7 +7,7 @@ Neste passo, você aprenderá mais dois tipos de elemento **contêiner**: um que
 + Encontre um elemento `img` onde você tem texto acima ou abaixo que combina com a imagem. Estou trabalhando com a imagem do Tito em `index.html`, mas você pode usar o que estiver no seu site. 
 
 ```html
-  <0 />          
+  <img id="titoPicture" class="solidRoundBorders" src="tito.png" alt="Tito o cachorro" />  		
   <p>
     Guia turístico Tito!
   </p>
