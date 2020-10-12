@@ -1,0 +1,24 @@
+---
+title: Guia para o meu país 3.0
+hero_image: images/banner.png
+description: Adicione belos layouts e efeitos interessantes ao seu site!
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 01/01/2017
+steps:
+  - title: Introdução
+  - title: Preparando
+  - title: Cartões clicáveis
+  - title: Tudo em uma linha
+  - title: Torne seu menu responsivo
+  - title: Legendas e notas laterais
+  - title: Projete layouts legais de páginas
+  - title: Colagem de fotos
+  - title: Efeitos especiais
