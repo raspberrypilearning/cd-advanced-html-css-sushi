@@ -1,8 +1,8 @@
-## Special effects
+## Efectos especiales
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+En esta tarjeta, aprenderás más efectos geniales que puedes lograr con CSS.
 
-### Shadows and movement
+### Sombras y movimiento
 
 Let's add a little movement when you hover your cursor over the cards you made earlier.
 
@@ -12,7 +12,7 @@ Let's add a little movement when you hover your cursor over the cards you made e
     .card:hover {
         box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
         transform: translateY(-2px);
-    }
+}
 ```
 
 + Try out different values in the `translate` function!
@@ -57,7 +57,7 @@ Another effect you've probably seen on loads of websites is **lightbox**: you cl
 
 To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Asegúrate de dar al enlace un `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
@@ -67,9 +67,9 @@ To get this effect you will make two links: one for the actual lightbox (the bit
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+Puedes poner lo que quieras entre las etiquetas de los enlaces. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ Add the following CSS code for the lightbox. ¿Puedes averiguar qué es lo que hace?
 
 ```css
     .lightbox{
@@ -92,12 +92,11 @@ Note: Setting the `position` property to `fixed` means the position you set will
 + Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
 
 ```html
-    <a href="#boxLemur">
-        <img src="monkey-2223271_640.jpg" class="mediumPics">
-    </a>
+    <a href="#boxLemur"><img src="monkey-2223271_640.jpg" class="mediumPics">
+</a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ Por último, agrega el siguiente código CSS. Ten en cuenta que esta es una **pseudo-clase**; ¡debería ir después del código para la clase `.lightbox` y no dentro de ella!
 
 ```css
     .lightbox:target {
@@ -105,7 +104,7 @@ Note: Setting the `position` property to `fixed` means the position you set will
     }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. Así que cuando hagas clic en cualquier lugar, la `visibilidad` volverá a `oculto`.
 
 + Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
 
