@@ -1,10 +1,10 @@
-## Introduction
+## Introducción
 
 Estas tarjetas de sushi te mostrarán cómo hacer que un sitio web tenga un aspecto pulido y profesional utilizando efectos y diseños increíbles.
 
-### What you will make
+### Lo que harás
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+Mueve el cursor del mouse por la ventana que sale a continuación para probar algunos de los efectos que aprenderás a usar en tu sitio web:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -21,13 +21,13 @@ In these Sushi Cards, you will find out how to:
 + Create any website layout you want
 + Make your layout adjust itself automatically to different screen sizes
 + Make a collage of overlapping pictures and text
-+ Apply some neat hover and click effects that you might have seen on other websites
++ Aplicar algunos efectos de desplazamiento y clic que hayas visto en otros sitios web
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## título: Lo que necesitarás
 
 ### Hardware
 
@@ -35,6 +35,6 @@ In these Sushi Cards, you will find out how to:
 
 ### Software
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Este proyecto se puede completar en un navegador web usando [trinket.io](https://trinket.io){:target="_blank"} o de manera offline utilizando un editor de texto sin formato.
 
 \--- /collapse \---
