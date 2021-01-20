@@ -14,7 +14,9 @@ Du kannst einen Code hinzufügen, der dann die Größe des Bildschirms überprü
 
 \--- /collapse \---
 
-+ Füge deinem Menu die folgenden CSS-Regeln hinzu. Wahrscheinlich hast Du auch Farben und Ränder definiert. Ich habe sie hier weggelassen, um Platz zu sparen! Falls Du bereits CSS-Regeln für dein Menu definiert hast, füge diese hier einfach hinzu oder ändere die Werte entsprechend.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
