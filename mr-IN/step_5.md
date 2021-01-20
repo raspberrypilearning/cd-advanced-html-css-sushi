@@ -14,7 +14,9 @@
 
 \--- /collapse \---
 
-+ आपल्या मेनूमध्ये खालील CSS नियम जोडा. आपल्याकडे कदाचित रंग आणि किनारी देखील परिभाषित केलेली असतील; मी त्यांना येथे जागा वाचवण्यासाठी दुर्लक्षिले आहे! आपल्याकडे आपल्या मेनूसाठी आधीपासूनच CSS नियम परिभाषित असल्यास, आपण गहाळ असलेले गुणधर्म आणि मूल्ये फक्त जोडा किंवा बदला.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
