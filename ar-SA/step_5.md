@@ -14,7 +14,9 @@
 
 \--- /collapse \---
 
-+ أضف قواعد CSS التالية إلى قائمتك. ربما لديك ألوان وحدود محددة كذلك ؛ لقد تركتهم لتوفير المساحة هنا! إذا كان لديك بالفعل قواعد CSS محددة لقائمتك ، فما عليك سوى إضافة أو تغيير الخصائص والقيم أدناه.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
