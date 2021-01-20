@@ -14,7 +14,9 @@
 
 \--- /ढहने \---
 
-+ अपने मेनू में निम्नलिखित CSS नियम जोड़ें। आपके पास संभवतः रंग और सीमाएँ भी परिभाषित हैं; मैंने उन्हें यहाँ जगह बचाने के लिए छोड़ दिया है! यदि आपके पास पहले से ही अपने मेनू के लिए CSS नियम परिभाषित हैं, तो बस नीचे दिए गए properties और values को जोड़ें या गायब करें।
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
