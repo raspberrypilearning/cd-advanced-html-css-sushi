@@ -2,7 +2,7 @@
 
 A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Empezarás con los estilos regulares: este será tu comportamiento **predeterminado**.
 
 ## \--- collapse \---
 
@@ -15,6 +15,8 @@ You can add code that then checks the size of the screen and makes some adjustme
 \--- /collapse \---
 
 + Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
@@ -32,7 +34,7 @@ You can add code that then checks the size of the screen and makes some adjustme
 
 With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![Elementos de menú apilados verticalmente en una pantalla pequeña](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
@@ -57,7 +59,7 @@ Since more and more people browse the internet on their smartphones or tablets r
     }
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+La primera línea de código de arriba comprueba el tamaño de la ventana del navegador. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
 
 ![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
 
@@ -81,7 +83,7 @@ The rest of the properties you defined previously for `nav ul` will stay the sam
 
 + Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![Elementos de menú a la derecha en una pantalla ancha](images/responsiveMenuWide.png)
 
 \--- hints \---
 
