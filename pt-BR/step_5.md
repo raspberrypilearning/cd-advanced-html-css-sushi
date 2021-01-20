@@ -14,7 +14,9 @@ Você pode adicionar um código que verifica o tamanho da tela e faz alguns ajus
 
 \--- /collapse \---
 
-+ Adicione as seguintes regras CSS ao seu menu. Você provavelmente também tem cores e bordas definidas; Eu os deixei de fora para economizar espaço aqui! Se você já tem regras CSS definidas para o seu menu, basta adicionar ou alterar as propriedades e valores abaixo que estão faltando.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
