@@ -24,7 +24,7 @@ Here are three different page layouts you'll be applying:
 
 The container you'll change the layout of is `main`, but you could do this with any kind of container, like a `div` or `article`, or even the whole page `body`. The technique you're going to use is called **CSS grid**.
 
-In this example, the `header` and `footer` will be left out of the design, but it's quite common to include them in the grid too.
+En este ejemplo, el `encabezado` y `pie de página` quedarán fuera del diseño, pero es bastante común incluirlos en la cuadrícula también.
 
 + Set the `display` property to `grid` on the overall container:
 
@@ -38,7 +38,7 @@ In this example, the `header` and `footer` will be left out of the design, but i
 
 What do you think the `grid-column-gap` and `grid-row-gap` properties do?
 
-+ Next, you name a `grid-area` for each element: 
++ Luego, nombra un ` área-grid ` para cada elemento: 
 
 ```css
     .attGridArticle {
@@ -52,7 +52,7 @@ What do you think the `grid-column-gap` and `grid-row-gap` properties do?
     }
 ```
 
-Then you design your layout! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
+¡Entonces crea tu diseño! Let's put the two `aside` elements side by side at the bottom of the page. For this you need two **columns** of equal width. You can keep the **row** height automatic.
 
 + Put the following code inside the `.attPageLayoutGrid` CSS rules:
 
