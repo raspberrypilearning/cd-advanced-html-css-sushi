@@ -16,6 +16,8 @@ You can add code that then checks the size of the screen and makes some adjustme
 
 + Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
 
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
+
 ```css
     nav ul {
         padding: 0.5em;
