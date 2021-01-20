@@ -1,10 +1,10 @@
-## Clickable cards
+## Tarjetas interactivas
 
 Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
 
 ![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ Añade el siguiente código HTML a tu sitio web, donde quieras. Estoy haciendo el mío en `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
 
 ```html
     <article class="card">
@@ -14,7 +14,7 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![Imagen y texto antes de que se apliquen los estilos](images/cardUnstyled.png)
 
 + Add the following CSS code to create the classes `card` and `tinyPicture`:
 
@@ -38,18 +38,18 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![Imagen y texto con estilo para crear un pequeño efecto en la tarjeta](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+Vamos a convertir toda la tarjeta de vista previa en un enlace para que la gente pueda hacer clic para ver más información.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ Coloca todo el elemento `artículo` dentro de un elemento de enlace. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>Parque de vida silvestre de Fota</h3>
+            <p>Isla de Fota, Condado de Cork</p>
         </article>
     </a>
 ```
@@ -58,13 +58,13 @@ Let's turn the whole preview card into a link so people can click to see more in
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## título: Enlazando a una parte específica de una página
 
 Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
 
 + First, type the URL of the page to link to, followed by `#`.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. El valor del `id` es lo que escribes después del `#` en tu enlace.
 
 \--- /collapse \---
 
@@ -72,9 +72,9 @@ Notice how the value of `href` in my link ends in `#scFota`? This is a neat tric
 
 ## title: Resetting styles
 
-Now that the whole preview card is a link, the text font may have changed.
+Ahora que toda la tarjeta de vista previa es un enlace, la fuente de texto podría haber cambiado.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ Si es así, puedes arreglarlo añadiendo una clase **CSS** al enlace: `class="cardLink"`. Aquí está el código CSS para poner en tu hoja de estilo:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+Setting the value of any property to `inherit` makes it use the value that the **parent** element has. Así que en este caso, el color del texto coincidirá con el resto del texto de la página principal.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ Haz al menos cuatro o cinco de estas cartas. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
