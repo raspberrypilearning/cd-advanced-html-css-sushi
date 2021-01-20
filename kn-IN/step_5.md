@@ -14,7 +14,9 @@ Default ಶೈಲಿಗಳು ನಿಮ್ಮ ಸಾಮಾನ್ಯ ಶೈಲಿ
 
 \--- /collapse \---
 
-+ ನಿಮ್ಮ ಮೆನುಗೆ ಈ ಕೆಳಗಿನ CSS ನಿಯಮಗಳನ್ನು ಸೇರಿಸಿ. ನೀವು ಬಹುಶಃ ಬಣ್ಣಗಳು ಮತ್ತು ಗಡಿಗಳನ್ನು ಸಹ ವ್ಯಾಖ್ಯಾನಿಸಿದ್ದೀರಿ; ಇಲ್ಲಿ ಜಾಗವನ್ನು ಉಳಿಸಲು ನಾನು ಅವರನ್ನು ಬಿಟ್ಟಿದ್ದೇನೆ! ನಿಮ್ಮ ಮೆನುಗಾಗಿ ನೀವು ಈಗಾಗಲೇ CSS ನಿಯಮಗಳನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಿದ್ದರೆ, ನೀವು ಕಾಣೆಯಾಗಿರುವ ಕೆಳಗಿನ ಗುಣಲಕ್ಷಣಗಳು ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಸೇರಿಸಿ ಅಥವಾ ಬದಲಾಯಿಸಿ.
++ Add the following CSS rules to your menu. You probably have colours and borders defined as well; I've left them out to save space here! If you already have CSS rules defined for your menu, just add in or change the properties and values below that you are missing.
+
++ You will notice that the padding and margins have `em` values rather than the `px` values used previously. Pixels (px) are a static size but in a responsive website `em` is used to make adjustments for the size of the screen.
 
 ```css
     nav ul {
