@@ -1,6 +1,6 @@
 ## All in a row
 
-On this card you will learn some tricks for arranging things **horizontally** on a page. First, you'll see how to get stuff centered. Then you'll arrange elements side by side in a row.
+En esta tarjeta aprenderás algunos trucos para organizar las cosas ** horizontalmente ** en una página. Primero, verás cómo centrar las cosas. Then you'll arrange elements side by side in a row.
 
 + Add the following CSS properties to the `.card` class:
 
@@ -9,7 +9,7 @@ On this card you will learn some tricks for arranging things **horizontally** on
     margin-right: auto;
 ```
 
-You should see the cards move to the center of the page. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
+Deberías ver que las tarjetas se mueven al centro de la página. By setting the left and right margins to `auto`, you can make any element be in the middle instead of over to the left.
 
 ![The cards appear in the middle instead of over to the left](images/marginAuto.png)
 
@@ -61,6 +61,6 @@ You end up with pretty much the same menu, right? The cool thing about `flex` is
 
 ![Menu with items evenly spaced](images/flexMenuSpace.png)
 
-![Menu with items aligned to the right](images/flexMenuEnd.png)
+![Menú con elementos alineados a la derecha](images/flexMenuEnd.png)
 
 **`flex`** is a pretty powerful layout tool that could fill a whole Sushi Card series of its own — you can learn more about it at [dojo.soy/html3-flex](http://dojo.soy/html3-flex).
