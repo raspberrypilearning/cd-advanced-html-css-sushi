@@ -2,7 +2,7 @@
 title: Tour durch mein Land 3.0
 hero_image: images/banner.png
 description: Füge Deiner Website schöne Layouts und coole Effekte hinzu!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -13,12 +13,14 @@ software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
 steps:
-  - title: Einleitung
-  - title: Vorbereitungen
-  - title: Klickbare Karten
-  - title: Alles in einer Reihe
-  - title: Lass dein Menu reagieren
-  - title: Bildunterschriften und Randnotizen
-  - title: Gestalte coole Seitenlayouts
-  - title: Fotocollage
-  - title: Spezialeffekte
+- title: Einleitung
+  completion: engaged
+- title: Vorbereitungen
+- title: Klickbare Karten
+- title: Alles in einer Reihe
+- title: Lass dein Menu reagieren
+- title: Bildunterschriften und Randnotizen
+- title: Gestalte coole Seitenlayouts
+- title: Fotocollage
+  completion: internal
+- title: Spezialeffekte

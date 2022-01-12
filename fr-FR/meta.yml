@@ -2,7 +2,7 @@
 title: Guide de mon pays 3.0
 hero_image: images/banner.png
 description: Ajoute de belles mises en page et des effets sympas à ton site Web !
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -13,12 +13,14 @@ software: html-css-javascript
 version: 4.1.0
 last_tested: 2017-01-01
 steps:
-  - title: Introduction
-  - title: Mise en place
-  - title: Cartes cliquables
-  - title: Tout à la suite
-  - title: Rendre ton menu adaptable
-  - title: Légendes et notes annexes
-  - title: Concevoir une belle mise en page
-  - title: Collage de photos
-  - title: Effets spéciaux
+- title: Introduction
+  completion: engaged
+- title: Mise en place
+- title: Cartes cliquables
+- title: Tout à la suite
+- title: Rendre ton menu adaptable
+- title: Légendes et notes annexes
+- title: Concevoir une belle mise en page
+- title: Collage de photos
+  completion: internal
+- title: Effets spéciaux
