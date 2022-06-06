@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
 - title: ಪರಿಚಯ
-  completion: engaged
 - title: ಹೊಂದಿಸಲಾಗುತ್ತಿದೆ
 - title: ಕ್ಲಿಕ್ ಮಾಡಬಹುದಾದ ಕಾರ್ಡ್‌ಗಳು
 - title: ಎಲ್ಲಾ ಸತತವಾಗಿ
+  completion:
+  - engaged
 - title: ನಿಮ್ಮ ಮೆನು ಸ್ಪಂದಿಸುವಂತೆ ಮಾಡಿ
 - title: ಶೀರ್ಷಿಕೆಗಳು ಮತ್ತು ಅಡ್ಡ ಟಿಪ್ಪಣಿಗಳು
 - title: ತಂಪಾದ ಪುಟ ವಿನ್ಯಾಸಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ
 - title: ಫೋಟೋ ಕೊಲಾಜ್
-  completion: internal
 - title: ವಿಶೇಷ ಪರಿಣಾಮಗಳು
+  completion:
+  - internal

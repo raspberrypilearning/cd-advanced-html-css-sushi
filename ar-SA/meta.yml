@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
 - title: المقدمة
-  completion: engaged
 - title: هيا بنا لنبدأ
 - title: بطاقات قابلة للنقر
 - title: وضع الكل في صف
+  completion:
+  - engaged
 - title: اجعل قائمتك قابلة للاستجابة
 - title: التسميات التوضيحية والملاحظات الجانبية
 - title: تصميم تخطيط صفحة رائع
 - title: ملصقات صور
-  completion: internal
 - title: مؤثرات خاصة
+  completion:
+  - internal

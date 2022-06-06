@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 01/01/2017
 steps:
 - title: Introdução
-  completion: engaged
 - title: Preparando
 - title: Cartões clicáveis
 - title: Tudo em uma linha
+  completion:
+  - engaged
 - title: Torne seu menu responsivo
 - title: Legendas e notas laterais
 - title: Projete layouts legais de páginas
 - title: Colagem de fotos
-  completion: internal
 - title: Efeitos especiais
+  completion:
+  - internal

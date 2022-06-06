@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 2017/01/01
 steps:
 - title: Introduzione
-  completion: engaged
 - title: Preparazione
 - title: Schede selezionabili
 - title: Tutto su una fila
+  completion:
+  - engaged
 - title: Rendi il tuo menu reattivo
 - title: Didascalie e note a margine
 - title: Progettare layout di pagina interessanti
 - title: Collage di foto
-  completion: internal
 - title: Effetti speciali
+  completion:
+  - internal

@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Mise en place
 - title: Cartes cliquables
 - title: Tout à la suite
+  completion:
+  - engaged
 - title: Rendre ton menu adaptable
 - title: Légendes et notes annexes
 - title: Concevoir une belle mise en page
 - title: Collage de photos
-  completion: internal
 - title: Effets spéciaux
+  completion:
+  - internal

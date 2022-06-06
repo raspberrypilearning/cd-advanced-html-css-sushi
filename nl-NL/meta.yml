@@ -14,13 +14,15 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
 - title: Inleiding
-  completion: engaged
 - title: Opstarten
 - title: Klikbare kaarten
 - title: Alles op één rij
+  completion:
+  - engaged
 - title: Pas je menu automatisch aan
 - title: Onderschriften en kanttekeningen
 - title: Ontwerp coole pagina-layouts
 - title: Foto collage
-  completion: internal
 - title: Speciale effecten
+  completion:
+  - internal
