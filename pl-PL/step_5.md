@@ -1,16 +1,16 @@
-## Make your menu responsive
+## Spraw, by Twoje menu było responsywne
 
-A **responsive** website is one that adjusts itself to the screen size so it always looks great, whether you're looking at it on a computer, mobile phone, or tablet. Let's make your menu responsive!
+**Responsywna** strona to taka, która dostosowuje się do rozmiaru ekranu tak, że zawsze wygląda świetnie. Nieważne czy patrzysz na nią na komputerze, telefonie komórkowym lub tablecie. Spraw, by Twoje menu było responsywne!
 
-You'll start with the regular styles: this will be your **default** behaviour.
+Zaczniesz od regularnych stylów: będzie to twoje **domyślne zachowanie**.
 
 ## \--- collapse \---
 
-## title: What does 'default' mean?
+## title: Co oznacza „domyślne”?
 
-The default styles are your normal set of style rules. They are applied no matter what, before checking any special conditions.
+Domyślne style to normalny zestaw reguł stylu. Są stosowane bez względu na wszystko, przed sprawdzeniem specjalnych warunków.
 
-You can add code that then checks the size of the screen and makes some adjustments if necessary.
+Możesz dodać kod, który następnie sprawdza rozmiar ekranu i w razie potrzeby wprowadza pewne korekty.
 
 \--- /collapse \---
 
@@ -26,78 +26,78 @@ You can add code that then checks the size of the screen and makes some adjustme
     }
     nav ul li {
         text-align: center; 
-        list-style-type: none;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
+        list-style-type: brak;
+        margin-right: 0,5em;
+        margin-left: 0,5em;
+}
 ```
 
-With the CSS code above, your menu will be best suited to small screens. This is called **mobile-first** development.
+Z powyższym kodem CSS Twoje menu będzie najlepiej dostosowane do małych ekranów. To nazywa się rozwój typu **najpierw mobilne**.
 
-![Menu items stacked vertically on a small screen](images/responsiveMenuMobile.png)
+![Części menu ułożone pionowo na małym ekranie](images/responsiveMenuMobile.png)
 
 ## \--- collapse \---
 
-## title: What does 'mobile-first' mean?
+## title: Co oznacza "najpierw mobilne"?
 
-Quite often when coding a website, you will be using a computer screen, and you'll probably define your styles based on how it looks on that screen.
+Dość często podczas kodowania strony internetowej będziesz korzystać z ekranu komputera, a prawdopodobnie określisz swoje style na podstawie tego, jak wygląda na tym ekranie.
 
-When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+Kiedy piszesz stronę najpierw dla telefonu komórkowego, zamiast tego wybierasz domyślne style odpowiednie dla małych ekranów, takich jak smartfony. Następnie dodajesz dodatkowy kod, aby wprowadzić zmiany dla większych ekranów.
 
-Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it's good practise to develop your website with this in mind.
+Ponieważ coraz więcej osób przegląda Internet na swoich smartfonach lub tabletach, a nie na komputerze, To dobra praktyka, aby rozwijać swoją witrynę mając to na uwadze.
 
 \--- /collapse \---
 
-+ Now add the following code to your style sheet:
++ Teraz dodaj następujący kod do arkusza stylów:
 
 ```css
-    @media all and (min-width: 1000px) {
+    @media all i (min-width: 1000px) {
         nav ul {
             flex-direction: row;
             justify-content: space-around;
         }
-    }
+}
 ```
 
-The first line of code above checks what size the browser window is. If the window is **1000 pixels** wide or more, it will apply all the style rules inside the block.
+Pierwszy wiersz kodu powyżej sprawdza, jaki rozmiar ma okno przeglądarki. Jeśli okno jest **1000 pikseli** szerokie lub większe, to zastosuje wszystkie reguły stylu wewnątrz bloku.
 
-![Menu items spaced evenly across one line on a wider screen](images/responsiveMenuMedium.png)
+![Części menu rozmieszczone równomiernie w jednej linii na szerszym ekranie](images/responsiveMenuMedium.png)
 
 ## \--- collapse \---
 
-## title: How does it work?
+## title: Jak to działa?
 
-The block contains new values for only some properties of the `nav ul` menu.
+Blok zawiera nowe wartości tylko dla niektórych właściwości menu `nav ul`.
 
-Whenever the window is wider than 1000 pixels, these new values will be applied instead of the ones you already defined for `nav ul`.
+Gdy okno jest szersze niż 1000 pikseli, te nowe wartości zostaną zastosowane zamiast tych, które już zdefiniowałeś dla `nav ul`.
 
-The rest of the properties you defined previously for `nav ul` will stay the same.
+Reszta właściwości zdefiniowanych wcześniej dla `nav ul` pozostanie taka sama.
 
 \--- /collapse \---
 
-+ If you are using Trinket to write code, it might be helpful to download the project so you can test it out on a full-size screen.
++ Jeśli używasz Trinket do pisania kodu, pomocne może być pobranie projektu, dzięki czemu możesz przetestować go na pełnym ekranie.
 
 \--- challenge \---
 
-## Challenge: make your menu adjust itself for big screens
+## Wyzwanie: dostosuj menu do dużych ekranów
 
-+ Can you add another block for screens bigger than **1600 pixels**, with `flex-end` instead of `space-around`?
++ Czy możesz dodać kolejny blok dla ekranów większych niż **1600 pikseli**, z `flex-end` zamiast `space-around`?
 
-![Menu items to the right on a wide screen](images/responsiveMenuWide.png)
+![Elementy menu po prawej stronie na szerokim ekranie](images/responsiveMenuWide.png)
 
 \--- hints \---
 
 \--- hint \---
 
-The following code defines flex properties for menu items when the screen is bigger than 1600 pixels:
+Poniższy kod definiuje właściwości flex dla pozycji menu, gdy ekran jest większy niż 1600 pikseli:
 
 ```css
-    @media all and (min-width: 1600px) {
+    @media all i (min-width: 1600px) {
         nav ul {
             flex-direction: row;
             justify-content: flex-end;
         }
-    }  
+}  
 ```
 
 \--- /hint \---
@@ -106,4 +106,4 @@ The following code defines flex properties for menu items when the screen is big
 
 \--- /challenge \---
 
-You can put any CSS rules you like into blocks like these to define different styles for different screen sizes. It’ll be especially useful when you do CSS grid layouts later!
+Możesz umieścić w takich blokach dowolne reguły CSS, aby zdefiniować różne style dla różnych rozmiarów ekranu. Będzie to szczególnie przydatne, gdy później zrobisz układy siatki CSS!
