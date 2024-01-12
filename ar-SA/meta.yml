@@ -2,7 +2,7 @@
 title: دليل لبلادي 3.0
 hero_image: images/banner.png
 description: أضف تنسيقات جميلة وتأثيرات رائعة إلى موقع الويب الخاص بك!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: بطاقات قابلة للنقر
   - 
     title: جميع مافي الصف
+    completion:
+      - engaged
   - 
     title: اجعل قائمتك قابلة للاستجابة
   - 
@@ -31,3 +33,5 @@ steps:
     title: ملصقات صور
   - 
     title: مؤثرات خاصة
+    completion:
+      - internal
