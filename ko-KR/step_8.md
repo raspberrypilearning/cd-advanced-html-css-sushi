@@ -1,10 +1,10 @@
-## Photo collage
+## 사진 콜라주
 
-On this card you will learn to use CSS to exactly position HTML elements and make a photo collage.
+이번 카드에서는 HTML 요소의 포지션을 정확하게 정하는 CSS 사용법과 사진 콜라주 만드는 법을 배웁니다.
 
 ![](images/photoCollageWithText_wide.png)
 
-+ Add a `div` to your page and put as many images in it as you like. Give the `div` and the `img` elements `id` values.
++ `div`를 자신의 페이지에 추가하고 그 안에 원하는 만큼의 사진을 넣어줍니다. `div`와 `img` 요소에 `id` 값을 부여합니다.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -13,9 +13,9 @@ On this card you will learn to use CSS to exactly position HTML elements and mak
     </div>
 ```
 
-The photos will appear one after the other on the web page, in the order they appear in your code.
+해당 사진들은 부여한 코드에따라 웹페이지에 한 개가 나타고 다른 한 개가 나타납니다.
 
-+ In your CSS file, add the following CSS class for the elements inside the `div`: 
++ 자신의 CSS 파일에서 다음의 CSS 클래스를 `div`에 있는 요소에 추가합니다: 
 
 ```css
     .absPos {
@@ -23,7 +23,7 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Next, you need to add the property `position: relative;` to the container itself and define a size for it. This makes it so that the positions of the other elements are defined **relative to** (that is, within) the container.
++ 다음으로, `position: relative;` 속성을 해당 컨테이너에 추가하고 컨테이너의 사이즈를 정의 합니다. 이 과정은 **관련된** 컨테이너로 (that is, within) 정의된 다른 요소의 위치를 만들기 위함입니다.
 
 ```css
     .relPos {
@@ -36,13 +36,13 @@ The photos will appear one after the other on the web page, in the order they ap
     }
 ```
 
-+ Then create a set of style rules for each of the elements using **id selectors** to set their sizes (`width` and/or `height` properties) as well as their exact positions.
++ 각각의 요소의 일련의 스타일 규칙을 **id 선택기**를 이용하여 크기(`너비`와 혹은 `높이`속성) 를 설정하기 위해 스타일 룰과 정확한 위치 역시 생성합니다.
 
-To define the position of an element, there are four properties you can use: `left`, `right`, `top`, and `bottom`. They represent how far each of the edges should be from the parent's edge. Use either `top` or `bottom` for the vertical position, and either `left` or `right` for the horizontal position.
+요소의 위치를 정의내리기 위해, 사용할 수 있는 다음의 속성이 4개 있습니다: `left`, `right`, `top`, `bottom` 이것들은 부모의 가장자리로부터 각각의 가장자리가 얼마나 떨어져야 하는 지 나타냅니다. 수직 위치를 만들기 위해 `top` 혹은 `bottom`를 사용하고, `left` 혹은 `right`을 사용하여 수평위치를 만듭니다.
 
-![Diagram showing how the top, left, bottom and right properties relate to the parent container](images/cssPositionProperties.png)
+![위, 왼쪽, 아래 그리고 오른쪽 속성을 어떻게 부모 컨테이너로 관련시키는 지 보여주는 표](images/cssPositionProperties.png)
 
-+ Choose exact positions for each of your pictures, and use any of the properties `left`, `right`, `top`, and `bottom` to define those positions in your CSS rules. For example, this code places the cat picture 100 pixels from the top and 60 pixels from the left:
++ 사진 각각의 정확한 포지션을 정하고, CSS 규칙의 포지션을 정의하기 위해 `left`, `right`, `top`, `bottom` 속성들 중 사용합니다. 예를 들어, 이 코드는 고양이를 그림 위에서 부터 100픽셀, 왼쪽에서 부터 60픽셀로 배치합니다.
 
 ```css
     #imgTeaCat {
@@ -52,47 +52,47 @@ To define the position of an element, there are four properties you can use: `le
     }
 ```
 
-Note: The position values can also be negative! If you use a negative value, it will push the element off outside the container, over whichever edge you've specified.
+참고: 위치 값도 음수 일 수 있습니다! 음수 값을 사용하게 되면, 요소를 컨테이너의 지정한 가장자리 밖으로 밀어냅니다.
 
-### Making things overlap
+### 사물을 겹쳐서 배치하기
 
-You might want to have some of the pictures overlapping. But how do you choose which one goes on top?
+일부 사진들을 겹쳐서 매치하고 싶을 수 있습니다. 하지만 하나를 위에 오도록 어떻게 선택할까요?
 
-+ Choose two images and give them positions that cause them to overlap.
++ 두 이미지를 선택하고 겹치도록 위치를 부여합니다.
 
-+ Add an extra property, `z-index: 10;` to one of them, and then add `z-index: 7;` to the other.
++ 하나에는 `z-index: 10;`를, 나머지 하나에는 `z-index: 7;`속성을 더해줍니다.
 
-+ Take a look at the result on your webpage.
++ 웹페이지의 결과를 확인합니다.
 
 ![](images/horse10Cat7.png)
 
-+ Now swap the `z-index` values, so that the `7` and the `10` are the other way around. Do you see any difference on your web page?
++ `7`과 `10`을 바꾸기 위해 `z-index`값을 바꿉니다. 웹페이지 차이점을 확인할 수 있나요?
 
 ![](images/horse7Cat10.png)
 
 ## \--- collapse \---
 
-## title: How does z-index work?
+## title: z-index는 어떻게 작동하나요?
 
-The `z-index` property lets you decide how two or more elements should overlap. The value can be any whole number.
+`z-index` 속성은 두 개이상의 요소를 겹치는 것을 결정하게 합니다. 값은 전체 값 아무거나 올 수 있습니다.
 
-The element with the **highest** number ends up on **top** of the pile, or in other words at the very **front**. The element with the next highest number is behind that, and in front of the others, and so on, until you get to the element with the lowest number, which appears at the back behind all of the other elements.
+**가장 높은** 값의 요소가 **위**로 오도록 끝나고 다시 말해 제일 **앞**에 옵니다. 다음으로 높은 값의 요소가 그 뒤에 오고, 다른 것들의 앞에 옵니다. 가장 낮은 값의 요소를 얻을 때까지 반복하면 그것은 다른 요소들의 뒤에 나타나게 됩니다.
 
 \--- /collapse \---
 
-You can position any HTML elements in this way, not just images. For example, you could use a `p` element to add some text over a photo.
+사진을 제외한 모든 HTML 요소에 이런 방식로 포지션을 배치할 수 있습니다. 예를 들어, `p`요소를 사진에 텍스트로 추가하기 위해 사용할 수 있습니다.
 
 \--- challenge \---
 
-## Challenge: make a photo collage
+## 도전: 콜라주 사진을 만들어봅니다.
 
-+ Try creating your own collage of photos like the one shown below! Use exact positioning together with different `z-index` values to get the overlap effect the way you want it.
++ 아래 보이는 것처럼 나만의 콜라주 사진을 만들어 봅시다! 원하는 방식으로 겹치기 위해 다양한 `z-index` 값으로 정확한 위치를 사용합시다.
 
 \--- hints \---
 
 \--- hint \---
 
-Below is the HTML code for the photo collage on my Ireland website. There are six photos and a piece of text all inside a `div`.
+아래에 있는 것은 저의 아일랜드 웹사이트의 콜라주 사진을 위한 HTML 코드입니다. 여섯 개의 사진이 있고 모든 `div` 안에 텍스트가 있습니다.
 
 ```html
     <div id="photoBox" class="relPos">
@@ -102,7 +102,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
         <img id="imgTrees" class="collagePhoto absPos" src="ireland-2614852_640.jpg" alt="Tree tunnel" />
         <img id="imgSheep" class="collagePhoto absPos" src="sheep-456989_640.jpg" alt="Sheep on the road" />
         <img id="imgHorse" class="collagePhoto absPos" src="connemara-pony-512028_640.jpg" alt="Connemara pony" />
-        <p id="photoText" class="absPos">Ireland</p>
+        <p id="photoText" class="absPos">아일랜드</p>
     </div>
 ```
 
@@ -110,7 +110,7 @@ Below is the HTML code for the photo collage on my Ireland website. There are si
 
 \--- hint \---
 
-Here are the CSS rules that set the positions for each of my pictures in the collage:
+다음은 콜라주 안의 사진 각각의 포지션을 정하는 CSS 규칙입니다:
 
 ```css
     #imgHorse {
@@ -163,7 +163,7 @@ Here are the CSS rules that set the positions for each of my pictures in the col
 
 \--- hint \---
 
-Here are the CSS classes I've used:
+다음은 제가 사용한 CSS 클래스입니다:
 
 ```css
     .collagePhoto {
@@ -181,6 +181,6 @@ Here are the CSS classes I've used:
 
 \--- /hints \---
 
-![Photo collage with text over the top](images/photoCollageExample.png)
+![위에 텍스트와 있는 콜라주 사진](images/photoCollageExample.png)
 
 \--- /challenge \---
