@@ -1,0 +1,28 @@
+---
+title: Przewodnik po moim kraju 3.0
+hero_image: images/banner.png
+description: Dodaj ładne układy i fajne efekty na swojej stronie!
+theme: red
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+technologies: html-css-javascript
+site_areas: coderdojo, projects
+software: html-css-javascript
+version: 4.1.0
+last_tested: 2017-01-01
+steps:
+  - title: Wprowadzenie
+  - title: Przygotowanie
+  - title: Klikalne karty
+  - title: Układ poziomy
+    completion:
+      - engaged
+  - title: Spraw, by Twoje menu było responsywne
+  - title: Podpisy i dodatkowe notatki
+  - title: Zaprojektuj fajne układy stron
+  - title: Kolaż zdjęć
+  - title: Efekty specjalne
+    completion:
+      - internal
