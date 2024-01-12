@@ -2,7 +2,7 @@
 title: Guida al mio paese 3.0
 hero_image: images / banner.png
 description: Aggiungi bei layout e fantastici effetti al tuo sito web!
-theme: rosso #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: rosso
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: Schede selezionabili
   - 
     title: Tutto in una riga
+    completion:
+      - engaged
   - 
     title: Rendi il tuo menu reattivo
   - 
@@ -31,3 +33,5 @@ steps:
     title: Collage di foto
   - 
     title: Effetti speciali
+    completion:
+      - internal
