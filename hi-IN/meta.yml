@@ -2,7 +2,7 @@
 title: मेरे देश के लिए गाइड 3.0
 hero_image: images/banner.png
 description: अपनी वेबसाइट पर अच्छा लेआउट और आकर्षित प्रभाव जोड़ें!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: क्लिक करने योग्य कार्ड
   - 
     title: सभी एक पंक्ति में
+    completion:
+      - engaged
   - 
     title: अपने मेनू को उत्तरदायी बनाएं
   - 
@@ -31,3 +33,5 @@ steps:
     title: फोटो कोलाज़
   - 
     title: विशेष प्रभाव
+    completion:
+      - internal
