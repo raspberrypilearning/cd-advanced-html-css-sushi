@@ -2,7 +2,7 @@
 title: Guía a mi país 3.0
 hero_image: images/banner.png
 description: Add nice layouts and cool effects to your website!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: Tarjetas interactivas
   - 
     title: All in a row
+    completion:
+      - engaged
   - 
     title: Haz tu menú interactivo
   - 
@@ -31,3 +33,5 @@ steps:
     title: Collage de fotos
   - 
     title: Efectos especiales
+    completion:
+      - internal
