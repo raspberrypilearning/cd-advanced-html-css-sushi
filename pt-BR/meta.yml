@@ -2,7 +2,7 @@
 title: Guia para o meu país 3.0
 hero_image: images/banner.png
 description: Adicione belos layouts e efeitos interessantes ao seu site!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: Cartões clicáveis
   - 
     title: Tudo em uma linha
+    completion:
+      - engaged
   - 
     title: Torne seu menu responsivo
   - 
@@ -31,3 +33,5 @@ steps:
     title: Colagem de fotos
   - 
     title: Efeitos especiais
+    completion:
+      - internal
