@@ -2,7 +2,7 @@
 title: Gids voor mijn land 3.0
 hero_image: images/banner.png
 description: Voeg leuke lay-outs en coole effecten toe aan je website!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: Klikbare kaarten
   - 
     title: Alles op één rij
+    completion:
+      - engaged
   - 
     title: Pas je menu automatisch aan
   - 
@@ -31,3 +33,5 @@ steps:
     title: Foto collage
   - 
     title: Speciale effecten
+    completion:
+      - internal
