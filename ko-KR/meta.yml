@@ -1,8 +1,8 @@
 ---
-title: Guide to my country 3.0
+title: 아일랜드 여행 가이드 3.0
 hero_image: images/banner.png
-description: Add nice layouts and cool effects to your website!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+description: 웹 사이트에 멋진 레이아웃과 효과를 추가하십시오!
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -14,20 +14,24 @@ version: 4.1.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: 소개
   - 
-    title: Getting setup
+    title: 설정하기
   - 
-    title: Clickable cards
+    title: 클릭 할 수 있는 카드
   - 
-    title: All in a row
+    title: 일렬로 세우기
+    completion:
+      - engaged
   - 
-    title: Make your menu responsive
+    title: 반응하는 메뉴 만들기
   - 
-    title: Captions and side notes
+    title: 설명 및 참조
   - 
-    title: Design cool page layouts
+    title: 멋진 레이아웃 페이지 디자인
   - 
-    title: Photo collage
+    title: 사진 콜라주
   - 
-    title: Special effects
+    title: 특수 효과
+    completion:
+      - internal
