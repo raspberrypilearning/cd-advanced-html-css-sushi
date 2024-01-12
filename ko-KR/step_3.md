@@ -1,22 +1,22 @@
-## Clickable cards
+## 클릭할 수 있는 카드
 
-Here's a technique you could use to make a photo gallery, or a portfolio page showing off your projects: little **preview cards**.
+다음은 사진 갤러리를 만들거나 프로젝트들을 뽐낼 수 있는 포트폴리오 페이지를 만드는데 사용할 수 있는 기술입니다: **사진 미리보기**.
 
-![Preview card showing an image thumbnail and some text](images/cardsPreview.png)
+![이미지 썸네일 및 일부 텍스트를 보여주는 미리보기 사진](images/cardsPreview.png)
 
-+ Add the following HTML code to your website, anywhere you like. I'm doing mine on `index.html`. You can change the picture and text to suit your own preview cards. I'm going to do a bunch of highlights of the tourist attractions in Ireland.
++ 웹 사이트에 다음 HTML 코드를 원하는 곳에 추가하십시오. 저는 제 것을 `index.html`에서 하고 있습니다. 미리보기 사진에 맞게 그림과 텍스트를 변경할 수 있습니다. 저는 아일랜드의 관광 명소 사진들을 사용하겠습니다.
 
 ```html
     <article class="card">
         <img src="monkey-2223271_640.jpg" class="tinyPicture">
-        <h3>Fota Wildlife Park</h3>
-        <p>Fota Island, County Cork</p>
+        <h3> 포타 야생동물 공원</h3>
+        <p> 코크 주 포타 섬</p>
     </article>
 ```
 
-![Image and text before styles are applied](images/cardUnstyled.png)
+![모습이 적용되기 전의 이미지와 텍스트](images/cardUnstyled.png)
 
-+ Add the following CSS code to create the classes `card` and `tinyPicture`:
++ 다음 CSS 코드를 추가하여 `카드`와 `작은 사진` class를 만드세요:
 
 ```css
     .tinyPicture {
@@ -38,43 +38,43 @@ Here's a technique you could use to make a photo gallery, or a portfolio page sh
     }
 ```
 
-![Image and text with styling to create a small card effect](images/cardStyled.png)
+![작은 사진 효과를 만들기 위한 스타일이 적용된 이미지 및 텍스트](images/cardStyled.png)
 
-Let's turn the whole preview card into a link so people can click to see more information.
+사람들이 클릭하여 자세한 정보를 볼 수 있도록 모든 미리보기 사진 링크를 걸어두겠습니다.
 
-+ Place the whole `article` element inside a link element. Make sure the closing `</a>` tag is after the closing `</article>` tag! Feel free to change the link **URL** to whatever you want to link to. That could be another page on your website, or it could be another website entirely.
++ `기사`안의 요소 전체를 링크 요소 안에 위치시키세요. 닫는 태그`</a>`이 `</article>`뒤에 오게 하세요! **URL**을 원하는 링크로 자유롭게 바꾸세요. 당신의 웹사이트의 다른 페이지여도 좋고, 아니면 전혀 다른 웹사이트여도 좋습니다.
 
 ```html
     <a href="attractions.html#scFota">  
         <article class="card ">
             <img src="monkey-2223271_640.jpg" class="tinyPicture">
-            <h3>Fota Wildlife Park</h3>
-            <p>Fota Island, County Cork</p>
+            <h3>포타 야생동물공원</h3>
+            <p>코크 주 포타 섬</p>
         </article>
     </a>
 ```
 
-![Text and picture that has been turned into a link](images/cardLink.png)
+![링크로 연결된 텍스트와 사진](images/cardLink.png)
 
 ## \--- collapse \---
 
-## title: Linking to a specific part of a page
+## title: 페이지의 특정 부분으로 링크걸기
 
-Notice how the value of `href` in my link ends in `#scFota`? This is a neat trick you can use to jump to a particular part of a page.
+제 링크의 `href` 값이 `#scFota`로 어떻게 끝나는지에 주목 해 주세요. 이 방법은 페이지의 특정 부분으로 이동할 때 사용할 수 있는 간단한 방법입니다.
 
-+ First, type the URL of the page to link to, followed by `#`.
++ 먼저 링크할 페이지의 URL을 입력한 다음 `#`를 입력합니다.
 
-+ In the code file for the page you are linking to, find the part you want to jump to and give that element an `id`, for example, `<section id="scFota"`. The value of the `id` is what you type after the `#` in your link.
++ 예를 들어, 연결하고자 하는 페이지의 코드 파일에서 이동할 부분을 찾은 다음 해당 요소에 `id`를 부여합니다. `<section id="scFota"` 이 `id` 값이 귀하의 링크에서 `#`뒤에 입력할 내용입니다.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Resetting styles
+## title: 스타일 초기화
 
-Now that the whole preview card is a link, the text font may have changed.
+이제 전체 미리보기 카드가 링크이고, 글씨체도 변경할 것입니다.
 
-+ If so, you can fix it by adding a **CSS class** to the link: `class="cardLink"`. Here's the CSS code to put in your style sheet:
++ **CSS class**를 해당 링크에 추가함으로써 글씨체를 수정할 수 있습니다: `class="cardLink"`. 다음은 스타일 시트에 넣을 CSS 코드입니다:
 
 ```css
     .cardLink {
@@ -83,8 +83,8 @@ Now that the whole preview card is a link, the text font may have changed.
     }
 ```
 
-Setting the value of any property to `inherit` makes it use the value that the **parent** element has. So in this case, the text colour will match the rest of the text on the homepage.
+속성 값을 `상속`으로 설정하면 **부모** 요소가 가진 값을 사용할 수 있습니다. 이 경우에서는 글자 색이 홈페이지의 나머지 글자와 맞춰질 것입니다.
 
 \--- /collapse \---
 
-+ Make at least four or five of these cards. If you are working from my example website, you could do one for each of the sections on the Attractions page. On the next Sushi Card, you'll learn how to arrange the cards with a cool trick!
++ 적어도 4~5개의 카드를 만드세요. 만약 저의 예시 웹사이트에서 하고 있다면, 관광 명소 페이지의 각 섹션마다 하나씩 할 수 있습니다. 다음 초밥 카드에서는 멋진 방법으로 카드를 배열하는 법을 배울 것입니다!
