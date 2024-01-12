@@ -1,75 +1,75 @@
-## Special effects
+## Efekty specjalne
 
-On this card you'll learn a few more nice effects that you can achieve with CSS.
+Na tej karcie nauczysz się kilku ciekawych efektów, które możesz osiągnąć za pomocą CSS.
 
-### Shadows and movement
+### Cienie i ruch
 
-Let's add a little movement when you hover your cursor over the cards you made earlier.
+Dodajmy trochę ruchu, gdy poruszasz kursorem nad kartami, które wcześniej wykonałeś.
 
-+ Find the `.card:hover` CSS class from earlier and change it to the following:
++ Znajdź wcześniej utworzoną klasę CSS `.card:hover` i zmień ją następująco:
 
 ```css
-    .card:hover {
-        box-shadow: 0px 2px 2px rgba(0,0,0,0.2); 
+    .card: hover {
+        box-shadow: 0px 2px 2px rgba(0,0,0,0,2); 
         transform: translateY(-2px);
-    }
+}
 ```
 
-+ Try out different values in the `translate` function!
++ Wypróbuj różne wartości w funkcji `translate`!
 
 ## \--- collapse \---
 
-## title: The `transform` property
+## title: Właściwość `transform`
 
-If you completed the Intermediate HTML/CSS Sushi Cards, you may remember using the `transform` property in some `@keyframes` animations. Here you see that you can also use the property on its own within a regular CSS block.
+Jeśli ukończyłeś karty Sushi HTML/CSS dla średnio zaawansowanych, być może pamiętasz o użyciu właściwości `transform` w niektórych animacjach`@keyframes`. Tutaj zobaczysz, że możesz również użyć tej właściwości w zwykłym bloku CSS.
 
-One kind of value you can set it to is `rotate`, to make an element turn. Others are `translateY`, which moves something up or down, and `translateX`, for movement from side to side.
+Jedną z wartości, którą możesz ustawić, jest `rotate`, aby obrócić element. Innymi właściwościami są `translateY`, które przesuwają coś w górę lub w dół, i `translateX`, aby poruszać się z boku na bok.
 
 \--- /collapse \---
 
-+ Play about with different pixel values in the `box-shadow` property to see what they do. 
++ Eksperymentuj z różnymi wartościami w pikselach(px) we właściwości `box-shadow` aby zobaczyć, jak to wpływa na efekt. 
 
 ## \--- collapse \---
 
-## title: What's `rgba`?
+## title: Co to jest `rgba`?
 
-`rgba(0,0,0,0.2)` is another way of defining a colour.
+`rgba(0,0,0,0.2)` to inny sposób definiowania koloru.
 
-It's got the usual three numbers (from `0` up to `255`) for red, green, and blue.
+`rgba()` używa liczb (od `0` do <0>255</0>) dla koloru czerwonego, zielonego i niebieskiego.
 
-The fourth number, called the **alpha** value, defines how **transparent** (or see-through) something is. It is a decimal number between `0` and `1`, with `1` being not see-through at all, and `0` being completely invisible. This means the lower the alpha value of an element, the more see-through it is.
+Czwarta liczba, nazywana wartością **alfa**, która określa, jak **przeźroczyste** (lub prześwitujące) coś jest. Jest to liczba dziesiętna od `0` do `1`, przy czym `1` w ogóle nie jest przezroczysta, a `0` jest całkowicie niewidoczny. Oznacza to, że im niższa wartość alfa elementu, tym bardziej jest on przeźroczysty.
 
 \--- /collapse \---
 
-+ Finally, make the movement smooth by adding the following property to the `.card` class from earlier: 
++ Na koniec spraw, aby ruch został wygładzony, dodając następującą właściwość do klasy `.card` z wcześniej: 
 
 ```css
     transition: all 0.2s ease-out;
 ```
 
-A duration of `0.2s` means the `transition` lasts for 0.2 seconds.
+Czas trwania `0.2 s` oznacza, że `przejścia` trwają 0.2 sekundy.
 
 ### Lightbox
 
-Another effect you've probably seen on loads of websites is **lightbox**: you click on something and the website dims while something else, like a bigger picture or a popup box, appears in front of everything.
+Innym efektem, jaki prawdopodobnie widziałeś na wielu stronach internetowych, jest **lightbox**: klikasz na coś, a strona internetowa ściemnia się, gdy coś innego, jak większy obrazek lub wyskakujące okienko, pojawia się przed wszystkim.
 
-![Lightbox effect in action](images/lightboxLemur.png)
+![Efekt Lightbox w akcji](images/lightboxLemur.png)
 
-To get this effect you will make two links: one for the actual lightbox (the bit that pops up), and one for the thing that you click to make the lightbox appear. I'm going to do mine on the Attractions page of my website. You go with whatever page you have pictures on!
+Aby uzyskać ten efekt, musisz utworzyć dwa odnośniki: jeden dla rzeczywistego lightboxa (element, który wyskakuje), i jeden dla rzeczy, którą klikniesz, aby wyświetlić lightbox. Zamierzam zrobić takie coś na podstronie Atrakcje mojej witryny internetowej. Ty możesz to zrobić na jakiejkolwiek stronie, na której masz zdjęcia!
 
-+ Decide what things you want to appear when you click, and add them all to your page in between a set of `a` tags to make a link. Make sure you give the link an `id`. The code can go anywhere on the page: you will be making the elements invisible in the next step!
++ Zdecyduj, jakie rzeczy chcesz wyświetlać po kliknięciu i dodaj je wszystkie do swojej strony pomiędzy znacznikami `a`, aby utworzyć odnośnik. Upewnij się, że masz `id` dodane do odnośnika. Kod możesz umieścić gdziekolwiek na stronie: w następnym kroku uczynisz elementy niewidocznymi!
 
 ```html
     <a href="#_" class="lightbox" id="boxLemur">
         <h3>Lemur!!</h3>
         <img src="monkey-2223271_640.jpg" alt="Picture of a lemur" />
-        <p>A lemur enjoying a little snack</p>
+        <p>Lemur cieszący się małą przekąską</p>
     </a>
 ```
 
-You can put anything you like in between the link tags. I've got a big picture, a heading, and some text. Maybe you just want a picture and no text!
+Możesz umieścić wszystko, co ci się podoba, pomiędzy znacznikami linku. Mam nagłówek, duży obraz oraz jakiś tekst. Może ty po prostu chcesz mieć obraz bez żadnego tekstu?
 
-+ Add the following CSS code for the lightbox. Can you work out what some of it does?
++ Dodaj następujący kod CSS dla lightbox. Czy potrafisz zrozumieć, co to robi?
 
 ```css
     .lightbox{
@@ -87,9 +87,9 @@ You can put anything you like in between the link tags. I've got a big picture, 
     }
 ```
 
-Note: Setting the `position` property to `fixed` means the position you set will be relative to the browser window, so it will stay put when you scroll.
+Uwaga: Ustawienie właściwości `position` na `fixed` oznacza, że pozycja będzie ustawiona względem okna przeglądarki, więc pozostanie ona nieruchoma podczas przewijania.
 
-+ Next, decide what thing you want to click to make the lightbox appear, and add add a pair of `a` tags around that element (in my case it's a smaller picture of a lemur). The **target** of the link will be the lightbox, which you set using the `id`. You might recognise this technique from earlier!
++ Następnie zdecyduj, co chcesz kliknąć, aby pojawił się lightbox, i dodaj parę znaczników `a` wokół tego elementu (w moim przypadku jest to mniejszy obraz lemura). **Obiektem docelowym** linku będzie lightbox, który ustawisz za pomocą jego `id`. Być może rozpoznajesz tę technikę z wcześniejszych materiałów!
 
 ```html
     <a href="#boxLemur">
@@ -97,7 +97,7 @@ Note: Setting the `position` property to `fixed` means the position you set will
     </a>
 ```
 
-+ Finally add the following CSS code. Note that this is a **pseudo-class**; it should go after the code for the `.lightbox` class and not inside it!
++ Na koniec dodaj następujący kod CSS. Należy zauważyć, że jest to **pseudoklasa** i powinna znajdować się za kodem klasy `.lightbox` a nie wewnątrz!
 
 ```css
     .lightbox:target {
@@ -105,8 +105,8 @@ Note: Setting the `position` property to `fixed` means the position you set will
     }
 ```
 
-The `:target` pseudo-class gets applied whenever the lightbox was the target of the last link clicked. So when you click anywhere, the `visibility` will be set back to `hidden`.
+Pseudoklasa `:target` zostanie zastosowana za każdym razem, gdy lightbox był celem ostatniego klikniętego łącza. Więc po kliknięciu w dowolnym innym miejscu, `visibility` zostanie ustawione z powrotem na `hidden`.
 
-+ Try clicking your new link to see the lightbox appear! To make it go away, just click anywhere on the page.
++ Spróbuj kliknąć twój nowy odnośnik, aby zobaczyć lightbox! Aby on zniknął, wystarczy kliknąć gdziekolwiek na stronie.
 
-You can add as many lightboxes as you want to a page. They can all use the same CSS class — just make sure each one has a different `id`! For each one, you need to make something on your webpage into a link that you can click to make the lightbox appear, and then use the `id` as the `href` value in that link, just as you've done above!
+Możesz dodać dowolną liczbę lightboxów do strony. Wszystkie mogą używać tej samej klasy CSS - wystarczy upewnić się, że każdy z nich ma inne `id`! Dla każdego z nich musisz utworzyć coś na swojej stronie internetowej działające jako odnośnik, który możesz kliknąć, aby pojawił się lightbox, a następnie użyć `id` jako wartości `href` w tym odnośniku, tak jak powyżej!
