@@ -2,7 +2,7 @@
 title: ನನ್ನ ದೇಶಕ್ಕೆ ಮಾರ್ಗದರ್ಶಿ 3.0
 hero_image: images/banner.png
 description: ನಿಮ್ಮ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಉತ್ತಮ ವಿನ್ಯಾಸಗಳು ಮತ್ತು ತಂಪಾದ ಪರಿಣಾಮಗಳನ್ನು ಸೇರಿಸಿ!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: ಕ್ಲಿಕ್ ಮಾಡಬಹುದಾದ ಕಾರ್ಡ್‌ಗಳು
   - 
     title: ಎಲ್ಲಾ ಸತತವಾಗಿ
+    completion:
+      - engaged
   - 
     title: ನಿಮ್ಮ ಮೆನು ಸ್ಪಂದಿಸುವಂತೆ ಮಾಡಿ
   - 
@@ -31,3 +33,5 @@ steps:
     title: ಫೋಟೋ ಕೊಲಾಜ್
   - 
     title: ವಿಶೇಷ ಪರಿಣಾಮಗಳು
+    completion:
+      - internal
