@@ -2,7 +2,7 @@
 title: माझ्या देशाचे मार्गदर्शन ३. ०
 hero_image: images/banner.png
 description: आपल्या वेबसाइटवर छान लेआउट आणि प्रभावी वैशिष्ठ्ये जोडा!
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: क्लिक करण्या योग्य कार्ड
   - 
     title: एका पंक्तीत
+    completion:
+      - engaged
   - 
     title: आपला menu प्रतिसाद देणारा करा
   - 
@@ -31,3 +33,5 @@ steps:
     title: छायाचित्रांचा कोलाज
   - 
     title: विशेष प्रभाव
+    completion:
+      - internal
