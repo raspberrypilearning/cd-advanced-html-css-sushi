@@ -1,10 +1,10 @@
-## Introduction
+## Wprowadzenie
 
-These Sushi Cards will show you how to make a website look polished and professional using cool effects and layouts.
+Dzięki tym kartom Sushi nauczysz się jak dopracować strony internetowe i nadać im profesjonalny wygląd przy użyciu efektów i układów.
 
-### What you will make
+### Co będziesz robić
 
-Move your mouse cursor around in the window below to try out some of the effects you'll learn how to use on your website:
+Rusz kursorem myszy w poniższym oknie, aby wypróbować efekty i układy, których nauczysz się i wykorzystasz na swojej stronie:
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/643a5cabdc?outputOnly=true&start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -14,27 +14,27 @@ Move your mouse cursor around in the window below to try out some of the effects
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Czego się nauczysz
 
-In these Sushi Cards, you will find out how to:
+W tych kartach sushi dowiesz się, jak:
 
-+ Create any website layout you want
-+ Make your layout adjust itself automatically to different screen sizes
-+ Make a collage of overlapping pictures and text
-+ Apply some neat hover and click effects that you might have seen on other websites
++ Utworzyć układ strony jaki zechcesz
++ Dostosować swój układ tak, aby automatycznie dopasowywał się do różnych rozmiarów ekranu
++ Zróbić kolaż nakładających się na siebie zdjęć oraz tekstu
++ Stosować interesujące efekty jakie można spotkać na innych stronach po najechaniu lub kliknięciu myszą
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Czego będziesz potrzebować
 
-### Hardware
+### Sprzęt
 
-+ A computer capable of accessing [trinket.io](https://trinket.io){:target="_blank"}
++ Komputer, na którym jest dostęp do strony [trinket.io](https://trinket.io){:target="_blank"}
 
-### Software
+### Oprogramowanie
 
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io){:target="_blank"} or offline using a plain text editor.
++ Ten projekt można ukończyć w przeglądarce internetowej za pomocą [trinket.io](https://trinket.io){:target="_blank"} lub offline za pomocą edytora tekstu.
 
 \--- /collapse \---
