@@ -2,7 +2,7 @@
 title: 我的国家3.0指南
 hero_image: images/banner.png
 description: 为您的网站添加漂亮的布局和炫酷效果！
-theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -21,6 +21,8 @@ steps:
     title: 可点击的卡片
   - 
     title: 全部在一行
+    completion:
+      - engaged
   - 
     title: 使您的菜单响应
   - 
@@ -31,3 +33,5 @@ steps:
     title: 照片拼贴
   - 
     title: 特殊效果。
+    completion:
+      - internal
